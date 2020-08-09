@@ -1,0 +1,14 @@
+==846== NVPROF is profiling process 846, command: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==846== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==846== Profiling application: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==846== Profiling result:
+==846== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"dram_read_transactions","Device Memory Read Transactions",259242,259242,259242
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"dram_read_transactions","Device Memory Read Transactions",259240,259268,259254
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"dram_read_transactions","Device Memory Read Transactions",257348,257348,257348
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"dram_read_transactions","Device Memory Read Transactions",257292,257364,257293
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"dram_read_transactions","Device Memory Read Transactions",259218,259330,259229
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"dram_read_transactions","Device Memory Read Transactions",126380,126380,126380
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"dram_read_transactions","Device Memory Read Transactions",129548,129548,129548
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"dram_read_transactions","Device Memory Read Transactions",126508,126508,126508

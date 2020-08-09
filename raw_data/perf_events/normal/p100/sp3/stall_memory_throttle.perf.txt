@@ -1,0 +1,9 @@
+==19616== NVPROF is profiling process 19616, command: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==19616== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19616== Profiling application: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==19616== Profiling result:
+==19616== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.005307%,0.005307%,0.005307%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",5,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.028622%,0.046882%,0.037135%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",5,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.004413%,0.004828%,0.004650%

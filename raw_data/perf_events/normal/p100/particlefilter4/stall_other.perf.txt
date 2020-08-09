@@ -1,0 +1,10 @@
+==10530== NVPROF is profiling process 10530, command: ./particlefilter -x 128 -y 128 -z 10 -np 4000
+==10530== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10530== Profiling application: ./particlefilter -x 128 -y 128 -z 10 -np 4000
+==10530== Profiling result:
+==10530== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"stall_other","Issue Stall Reasons (Other)",7.565953%,8.102410%,7.843999%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"stall_other","Issue Stall Reasons (Other)",8.834542%,10.276424%,9.597534%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"stall_other","Issue Stall Reasons (Other)",0.674261%,0.744345%,0.694127%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"stall_other","Issue Stall Reasons (Other)",6.484872%,6.588539%,6.513676%

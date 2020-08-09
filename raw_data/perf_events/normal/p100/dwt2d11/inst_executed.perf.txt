@@ -1,0 +1,8 @@
+==6670== NVPROF is profiling process 6670, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==6670== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==6670== Profiling result:
+==6670== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_executed","Instructions Executed",300614,300614,300614
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"inst_executed","Instructions Executed",25857,95973,60915
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_executed","Instructions Executed",393216,393216,393216

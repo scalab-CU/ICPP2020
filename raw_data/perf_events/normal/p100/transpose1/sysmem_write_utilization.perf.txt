@@ -1,0 +1,13 @@
+==17790== NVPROF is profiling process 17790, command: ./transpose -dimX=1024 -dimY=1024 2>&1 > /dev/null
+==17790== Profiling application: ./transpose -dimX=1024 -dimY=1024 2>&1 > /dev/null
+==17790== Profiling result:
+==17790== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"

@@ -1,0 +1,9 @@
+==20057== NVPROF is profiling process 20057, command: ./mergeSort 32 2>&1 > /dev/null
+==20057== Profiling application: ./mergeSort 32 2>&1 > /dev/null
+==20057== Profiling result:
+==20057== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",30,"global_hit_rate","Global Hit Rate in unified l1/tex",90.000000%,93.535047%,92.188229%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",15,"global_hit_rate","Global Hit Rate in unified l1/tex",4.193923%,35.790317%,13.774676%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"global_hit_rate","Global Hit Rate in unified l1/tex",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",15,"global_hit_rate","Global Hit Rate in unified l1/tex",51.010510%,52.337527%,52.011816%

@@ -1,0 +1,7 @@
+==17114== NVPROF is profiling process 17114, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==17114== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17114== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==17114== Profiling result:
+==17114== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_other","Issue Stall Reasons (Other)",36.285052%,36.453943%,36.384227%

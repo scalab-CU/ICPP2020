@@ -1,0 +1,10 @@
+==5016== NVPROF is profiling process 5016, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==5016== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==5016== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==5016== Profiling result:
+==5016== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",15.470281%,15.470281%,15.470281%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.009609%,0.009609%,0.009609%

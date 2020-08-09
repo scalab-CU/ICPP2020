@@ -1,0 +1,9 @@
+==6522== NVPROF is profiling process 6522, command: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==6522== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6522== Profiling application: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==6522== Profiling result:
+==6522== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.371368,1.371368,1.371368
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.318053,1.318053,1.318053
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.069051,2.069051,2.069051

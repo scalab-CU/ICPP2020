@@ -1,0 +1,8 @@
+==1406== NVPROF is profiling process 1406, command: ./recursiveGaussian -image=./data/sample7.ppm 2>&1 > /dev/null
+==1406== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1406== Profiling application: ./recursiveGaussian -image=./data/sample7.ppm 2>&1 > /dev/null
+==1406== Profiling result:
+==1406== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_write_throughput","Device Memory Write Throughput",2.160504GB/s,2.221492GB/s,2.205849GB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_write_throughput","Device Memory Write Throughput",148.711203GB/s,156.743659GB/s,152.473390GB/s

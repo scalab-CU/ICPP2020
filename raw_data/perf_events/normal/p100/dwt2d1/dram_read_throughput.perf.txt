@@ -1,0 +1,10 @@
+==32493== NVPROF is profiling process 32493, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==32493== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32493== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==32493== Profiling result:
+==32493== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",59.937713GB/s,60.504616GB/s,60.286078GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",117.726642GB/s,120.097375GB/s,118.801608GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",22.136867GB/s,22.959623GB/s,22.447265GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"dram_read_throughput","Device Memory Read Throughput",68.392741GB/s,68.392741GB/s,68.392741GB/s

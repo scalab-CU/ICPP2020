@@ -1,0 +1,8 @@
+==5913== NVPROF is profiling process 5913, command: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==5913== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5913== Profiling application: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==5913== Profiling result:
+==5913== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=256, bool=1>(int*, int*, unsigned int)",101,"gld_throughput","Global Load Throughput",391.735325GB/s,398.895856GB/s,395.439327GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=32, bool=1>(int*, int*, unsigned int)",100,"gld_throughput","Global Load Throughput",113.871560MB/s,121.101500MB/s,119.175910MB/s

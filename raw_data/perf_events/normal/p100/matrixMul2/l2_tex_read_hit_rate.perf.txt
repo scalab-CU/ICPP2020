@@ -1,0 +1,7 @@
+==11057== NVPROF is profiling process 11057, command: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==11057== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11057== Profiling application: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==11057== Profiling result:
+==11057== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",70.441639%,83.868243%,79.098758%

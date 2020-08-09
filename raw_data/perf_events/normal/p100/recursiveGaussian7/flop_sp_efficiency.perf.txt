@@ -1,0 +1,8 @@
+==3433== NVPROF is profiling process 3433, command: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==3433== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3433== Profiling application: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==3433== Profiling result:
+==3433== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.624531%,0.863877%,0.744067%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%

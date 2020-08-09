@@ -1,0 +1,10 @@
+==14158== NVPROF is profiling process 14158, command: ././aes e 128 ./data/LAND.bmp ./data/key128.txt
+==14158== Profiling application: ././aes e 128 ./data/LAND.bmp ./data/key128.txt
+==14158== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.341126,0.000080,,,,,,,,,,770.000000,9.223272,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.341216,0.000001,,,,,,,,,,0.171875,0.170742,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.341452,0.000001,,,,,,,,,,770.000000,717.118382,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.341504,0.000155,770,1,1,256,1,1,27,6.000000,0,,,,,"Tesla K40m (0)","1","7","aesEncrypt128(unsigned int*, unsigned int*, int) [119]"
+0.341684,0.000088,,,,,,,,,,770.000000,8.381127,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

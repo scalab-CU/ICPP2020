@@ -1,0 +1,16 @@
+==7644== NVPROF is profiling process 7644, command: ././crc_gpu input1.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X1EC00000  
+value in hostpartialcrc = 0X8B8367B8  
+
+Execution time: 55.568672 ms
+After cuda, hostpartialcrc[0] = 0X85D45906  
+After cuda, hostpartialcrc[0] = 2245286150  
+Program Ended Successfully!
+==7644== Profiling application: ././crc_gpu input1.in 2>&1 > /dev/null
+==7644== Profiling result:
+==7644== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"double_precision_fu_utilization","Double-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"

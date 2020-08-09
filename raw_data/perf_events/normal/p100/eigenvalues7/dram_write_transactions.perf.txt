@@ -1,0 +1,9 @@
+==16588== NVPROF is profiling process 16588, command: ./eigenvalues --matrix-size=7200 2>&1 > /dev/null
+==16588== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16588== Profiling application: ./eigenvalues --matrix-size=7200 2>&1 > /dev/null
+==16588== Profiling result:
+==16588== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"dram_write_transactions","Device Memory Write Transactions",2043,2276,2158
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"dram_write_transactions","Device Memory Write Transactions",13,1127,1001
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"dram_write_transactions","Device Memory Write Transactions",787,1020,907

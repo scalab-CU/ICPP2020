@@ -1,0 +1,18 @@
+==10709== NVPROF is profiling process 10709, command: ./mri-q 32_32_32_dataset.bin out.bin
+==10709== Profiling application: ./mri-q 32_32_32_dataset.bin out.bin
+==10709== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,KB,GB/s,,,,,,
+0.330019,0.000002,,,,,,,,,,0.125000,0.068987,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330033,0.000001,,,,,,,,,,0.125000,0.133046,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330087,0.000003,1,1,1,512,1,1,10,0,0,,,,,"Tesla K40m (0)","1","7","ComputePhiMag_GPU(float*, float*, float*, int) [118]"
+0.330104,0.000002,,,,,,,,,,0.125000,0.074506,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.330516,0.000016,,,,,,,,,,128.000000,7.568844,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330565,0.000016,,,,,,,,,,128.000000,7.538462,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330613,0.000015,,,,,,,,,,128.000000,8.047885,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330643,0.000001,,,,,,,,,,128.000000,158.945719,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.330658,0.000001,,,,,,,,,,128.000000,158.945719,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.330682,0.000001,,,,,,,,,,0.500000,0.372529,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.330698,0.000057,128,1,1,256,1,1,26,0,0,,,,,"Tesla K40m (0)","1","7","ComputeQ_GPU(int, int, float*, float*, float*, float*, float*) [155]"
+0.330793,0.000014,,,,,,,,,,128.000000,8.553133,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.330892,0.000014,,,,,,,,,,128.000000,8.571751,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

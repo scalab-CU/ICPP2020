@@ -1,0 +1,8 @@
+read 65536 points
+==1895== NVPROF is profiling process 1895, command: ./streamcluster 10 40 256 65536 131072 1000 none output.txt 1 2>&1 > /dev/null
+finish local search
+==1895== Profiling application: ./streamcluster 10 40 256 65536 131072 1000 none output.txt 1 2>&1 > /dev/null
+==1895== Profiling result:
+==1895== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",3978,"gld_requested_throughput","Requested Global Load Throughput",5.340922GB/s,6.031619GB/s,5.982417GB/s

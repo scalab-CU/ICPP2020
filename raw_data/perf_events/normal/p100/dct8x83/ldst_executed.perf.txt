@@ -1,0 +1,13 @@
+==20983== NVPROF is profiling process 20983, command: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==20983== Profiling application: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==20983== Profiling result:
+==20983== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"ldst_executed","Executed Load/Store Instructions",1015808,1015808,1015808
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"ldst_executed","Executed Load/Store Instructions",229376,229376,229376
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"ldst_executed","Executed Load/Store Instructions",294912,294912,294912
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"ldst_executed","Executed Load/Store Instructions",294912,294912,294912
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"ldst_executed","Executed Load/Store Instructions",1277952,1277952,1277952
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"ldst_executed","Executed Load/Store Instructions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"ldst_executed","Executed Load/Store Instructions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"ldst_executed","Executed Load/Store Instructions",262144,262144,262144

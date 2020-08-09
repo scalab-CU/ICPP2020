@@ -1,0 +1,19 @@
+==13734== NVPROF is profiling process 13734, command: ./shfl_scan 100000 2>&1 > /dev/null
+==13734== Profiling application: ./shfl_scan 100000 2>&1 > /dev/null
+==13734== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.334136,0.000002,,,,,,,,,,0.001488,0.687909,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.335163,0.000035,,,,,,,,,,0.381470,10.749337,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.335245,0.000006,390,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.335256,0.000003,2,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.335263,0.000004,389,1,1,256,1,1,8,0.015625,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.335283,0.000032,,,,,,,,,,0.381470,11.806828,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.335327,0.000002,,,,,,,,,,0.001488,0.890235,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.340507,0.000001,,,,,,,,,,7.910156,5747.590746,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.340533,0.000001,,,,,,,,,,7.910156,8324.096943,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.340560,0.000033,1080,1,1,120,1,1,32,0.500000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.340616,0.000635,,,,,,,,,,7.910156,12.171631,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.341879,0.000138,60,1,1,32,8,1,21,1.125000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.342035,0.000634,,,,,,,,,,7.910156,12.174700,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

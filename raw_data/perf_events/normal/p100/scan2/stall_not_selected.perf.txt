@@ -1,0 +1,9 @@
+==10087== NVPROF is profiling process 10087, command: ./scan 128 2>&1 > /dev/null
+==10087== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10087== Profiling application: ./scan 128 2>&1 > /dev/null
+==10087== Profiling result:
+==10087== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.028161%,0.104556%,0.061924%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.089255%,1.034328%,0.773720%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.037535%,0.044662%,0.040815%

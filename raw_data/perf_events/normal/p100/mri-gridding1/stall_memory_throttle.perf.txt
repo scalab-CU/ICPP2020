@@ -1,0 +1,15 @@
+==22902== NVPROF is profiling process 22902, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==22902== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22902== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==22902== Profiling result:
+==22902== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",14.328015%,14.328015%,14.328015%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.011426%,0.011782%,0.011663%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.032410%,1.057110%,0.158630%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.030927%,0.037944%,0.032716%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.029638%,0.976888%,0.148790%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",20.113366%,20.113366%,20.113366%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.083648%,0.083648%,0.083648%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.932800%,1.068206%,1.005502%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.006375%,0.019670%,0.017797%

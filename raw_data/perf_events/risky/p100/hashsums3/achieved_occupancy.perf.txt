@@ -1,0 +1,16 @@
+==13642== NVPROF is profiling process 13642, command: ././crc_gpu input2.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X9EC00000  
+value in hostpartialcrc = 0XB3277B8  
+
+Execution time: 77.026817 ms
+After cuda, hostpartialcrc[0] = 0X7D69D5EC  
+After cuda, hostpartialcrc[0] = 2104088044  
+Program Ended Successfully!
+==13642== Profiling application: ././crc_gpu input2.in 2>&1 > /dev/null
+==13642== Profiling result:
+==13642== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"achieved_occupancy","Achieved Occupancy",0.015625,0.015625,0.015625

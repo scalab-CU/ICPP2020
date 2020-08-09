@@ -1,0 +1,10 @@
+==15704== NVPROF is profiling process 15704, command: ./sortingNetworks 10 2>&1 > /dev/null
+==15704== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15704== Profiling application: ./sortingNetworks 10 2>&1 > /dev/null
+==15704== Profiling result:
+==15704== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"dram_utilization","Device Memory Utilization","Low (2)","Low (3)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"dram_utilization","Device Memory Utilization","High (7)","High (7)","High (7)"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"dram_utilization","Device Memory Utilization","High (7)","High (7)","High (7)"

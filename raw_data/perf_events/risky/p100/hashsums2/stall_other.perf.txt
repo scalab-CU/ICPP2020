@@ -1,0 +1,17 @@
+==8254== NVPROF is profiling process 8254, command: ././crc_gpu input1.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X76C00000  
+value in hostpartialcrc = 0XE95427B8  
+
+==8254== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 296.963470 ms
+After cuda, hostpartialcrc[0] = 0X85D45906  
+After cuda, hostpartialcrc[0] = 2245286150  
+Program Ended Successfully!
+==8254== Profiling application: ././crc_gpu input1.in 2>&1 > /dev/null
+==8254== Profiling result:
+==8254== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_other","Issue Stall Reasons (Other)",1.789591%,1.789591%,1.789591%

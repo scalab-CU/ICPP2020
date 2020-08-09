@@ -1,0 +1,9 @@
+==2227== NVPROF is profiling process 2227, command: ./particlefilter -x 512 -y 512 -z 10 -np 4000
+==2227== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 4000
+==2227== Profiling result:
+==2227== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",95.858265%,95.862939%,95.860862%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",92.191817%,92.626272%,92.493169%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",33.563782%,34.521981%,33.897708%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",88.895165%,88.900161%,88.895720%

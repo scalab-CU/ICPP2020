@@ -1,0 +1,7 @@
+==19873== NVPROF is profiling process 19873, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==19873== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==19873== Profiling result:
+==19873== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"flop_count_sp","Floating Point Operations(Single Precision)",33562624,33562624,33562624
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"flop_count_sp","Floating Point Operations(Single Precision)",33562816,33562816,33562816

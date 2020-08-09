@@ -1,0 +1,15 @@
+==9201== NVPROF is profiling process 9201, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==9201== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9201== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==9201== Profiling result:
+==9201== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.301992%,0.301992%,0.301992%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",7.637454%,7.752368%,7.696313%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.202321%,2.725417%,2.406718%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",7.160403%,8.023517%,7.725435%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",7.219813%,10.251631%,8.206030%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.357203%,0.357203%,0.357203%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",5.723997%,5.723997%,5.723997%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.909418%,4.994470%,4.964347%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",6.854074%,12.378446%,11.414371%

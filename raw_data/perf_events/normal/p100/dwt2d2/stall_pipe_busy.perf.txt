@@ -1,0 +1,10 @@
+==7638== NVPROF is profiling process 7638, command: ./dwt2d sample0.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==7638== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7638== Profiling application: ./dwt2d sample0.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==7638== Profiling result:
+==7638== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.230441%,1.940576%,1.689529%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",2.250336%,2.302124%,2.279849%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.846066%,2.080615%,1.971876%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.101700%,0.101700%,0.101700%

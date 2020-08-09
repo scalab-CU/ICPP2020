@@ -1,0 +1,9 @@
+==8785== NVPROF is profiling process 8785, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==8785== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==8785== Profiling result:
+==8785== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_executed","Instructions Executed",300614,300614,300614
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"inst_executed","Instructions Executed",1236844,1236844,1236844
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"inst_executed","Instructions Executed",95973,95973,95973
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_executed","Instructions Executed",1572864,1572864,1572864

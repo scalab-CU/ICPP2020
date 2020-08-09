@@ -1,0 +1,9 @@
+==1888== NVPROF is profiling process 1888, command: ./eigenvalues --matrix-size=10000 2>&1 > /dev/null
+==1888== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1888== Profiling application: ./eigenvalues --matrix-size=10000 2>&1 > /dev/null
+==1888== Profiling result:
+==1888== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,657.861328KB/s,49.437500KB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,1.008307MB/s,50.532227KB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"dram_read_throughput","Device Memory Read Throughput",0.000000B/s,1.306182MB/s,49.495117KB/s

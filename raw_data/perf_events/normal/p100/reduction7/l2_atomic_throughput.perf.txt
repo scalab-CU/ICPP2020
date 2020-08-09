@@ -1,0 +1,7 @@
+==15434== NVPROF is profiling process 15434, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==15434== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==15434== Profiling result:
+==15434== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"l2_atomic_throughput","L2 Throughput (Atomic requests)",0.000000B/s,0.000000B/s,0.000000B/s

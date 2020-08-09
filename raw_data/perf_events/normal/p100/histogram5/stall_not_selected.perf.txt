@@ -1,0 +1,10 @@
+==4041== NVPROF is profiling process 4041, command: ./histogram 120 2>&1 > /dev/null
+==4041== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4041== Profiling application: ./histogram 120 2>&1 > /dev/null
+==4041== Profiling result:
+==4041== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.633893%,1.654551%,1.648725%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.335724%,0.448268%,0.409617%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.051427%,0.061681%,0.054517%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"stall_not_selected","Issue Stall Reasons (Not Selected)",3.187872%,3.238676%,3.207103%

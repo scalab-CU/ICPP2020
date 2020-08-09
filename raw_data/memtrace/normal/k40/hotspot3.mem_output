@@ -1,0 +1,9 @@
+==7305== NVPROF is profiling process 7305, command: ./hotspot 8192 2 2 ./inputGen/temp_8192 ./inputGen/power_8192 output.out
+==7305== Profiling application: ./hotspot 8192 2 2 ./inputGen/temp_8192 ./inputGen/power_8192 output.out
+==7305== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+22.941529,0.073659,,,,,,,,,,256.000000,3.394039,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+23.015883,0.034497,,,,,,,,,,256.000000,7.246923,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+23.050393,0.021878,683,683,1,16,16,1,29,3.000000,0,,,,,"Tesla K40m (0)","1","7","calculate_temp(int, float*, float*, float*, int, int, int, int, float, float, float, float, float, float) [123]"
+23.072273,0.098651,,,,,,,,,,256.000000,2.534183,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

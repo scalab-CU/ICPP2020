@@ -1,0 +1,9 @@
+==8709== NVPROF is profiling process 8709, command: ./scan 32 2>&1 > /dev/null
+==8709== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8709== Profiling application: ./scan 32 2>&1 > /dev/null
+==8709== Profiling result:
+==8709== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.964529%,5.885224%,3.816324%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.465984%,11.910113%,10.119900%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.025403%,1.202503%,1.082927%

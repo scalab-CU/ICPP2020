@@ -1,0 +1,14 @@
+==17344== NVPROF is profiling process 17344, command: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==17344== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17344== Profiling application: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==17344== Profiling result:
+==17344== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.198649%,1.198649%,1.198649%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.390506%,3.204609%,2.297557%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.573643%,0.573643%,0.573643%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.539761%,5.241537%,0.599656%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.456837%,0.460487%,0.458874%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.106498%,1.106498%,1.106498%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",6.308265%,6.308265%,6.308265%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.958549%,0.958549%,0.958549%

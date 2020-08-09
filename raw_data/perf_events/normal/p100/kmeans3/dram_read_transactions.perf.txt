@@ -1,0 +1,8 @@
+==5254== NVPROF is profiling process 5254, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==5254== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5254== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==5254== Profiling result:
+==5254== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"dram_read_transactions","Device Memory Read Transactions",102003164,102003164,102003164
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"dram_read_transactions","Device Memory Read Transactions",64004585,64007521,64006053

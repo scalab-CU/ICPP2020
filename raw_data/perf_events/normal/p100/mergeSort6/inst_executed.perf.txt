@@ -1,0 +1,9 @@
+==29578== NVPROF is profiling process 29578, command: ./mergeSort 6 2>&1 > /dev/null
+==29578== Profiling application: ./mergeSort 6 2>&1 > /dev/null
+==29578== Profiling result:
+==29578== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"inst_executed","Instructions Executed",140544,375296,250742
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"inst_executed","Instructions Executed",291072,525312,397371
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"inst_executed","Instructions Executed",148930560,148930560,148930560
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"inst_executed","Instructions Executed",21927242,32941404,31972710

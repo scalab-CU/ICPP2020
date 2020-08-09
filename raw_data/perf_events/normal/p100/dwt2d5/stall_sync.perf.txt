@@ -1,0 +1,9 @@
+==1643== NVPROF is profiling process 1643, command: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==1643== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1643== Profiling application: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==1643== Profiling result:
+==1643== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_sync","Issue Stall Reasons (Synchronization)",17.920172%,19.603805%,18.847033%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"stall_sync","Issue Stall Reasons (Synchronization)",21.549880%,30.530546%,25.800805%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_sync","Issue Stall Reasons (Synchronization)",21.657763%,21.657763%,21.657763%

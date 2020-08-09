@@ -1,0 +1,10 @@
+==24557== NVPROF is profiling process 24557, command: ./mergeSort 4 2>&1 > /dev/null
+==24557== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24557== Profiling application: ./mergeSort 4 2>&1 > /dev/null
+==24557== Profiling result:
+==24557== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"shared_efficiency","Shared Memory Efficiency",62.186318%,62.186318%,62.186318%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"shared_efficiency","Shared Memory Efficiency",70.982386%,75.269941%,71.599442%

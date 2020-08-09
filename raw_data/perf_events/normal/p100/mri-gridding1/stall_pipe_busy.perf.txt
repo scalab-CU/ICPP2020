@@ -1,0 +1,15 @@
+==8884== NVPROF is profiling process 8884, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==8884== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8884== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==8884== Profiling result:
+==8884== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.039492%,0.039492%,0.039492%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.231319%,0.234586%,0.232746%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.399499%,1.892794%,0.628636%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.101282%,0.166594%,0.151609%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.044908%,0.928375%,0.161441%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.027369%,0.027369%,0.027369%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.327544%,1.327544%,1.327544%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.347222%,1.371766%,1.361457%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.637211%,1.159186%,1.059144%

@@ -1,0 +1,7 @@
+==6387== NVPROF is profiling process 6387, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==6387== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==6387== Profiling result:
+==6387== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",109.101275GB/s,109.101275GB/s,109.101275GB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",106.409084GB/s,108.714305GB/s,107.443426GB/s

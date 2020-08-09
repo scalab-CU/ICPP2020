@@ -1,0 +1,10 @@
+==26481== NVPROF is profiling process 26481, command: ./corr2048 2>&1 > /dev/null
+==26481== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26481== Profiling application: ./corr2048 2>&1 > /dev/null
+==26481== Profiling result:
+==26481== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",68.809438%,68.809438%,68.809438%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",67.715863%,67.715863%,67.715863%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",20.617723%,20.617723%,20.617723%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",53.283612%,53.283612%,53.283612%

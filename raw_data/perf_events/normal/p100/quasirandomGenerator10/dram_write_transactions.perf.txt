@@ -1,0 +1,8 @@
+==20030== NVPROF is profiling process 20030, command: ./quasirandomGenerator 64 2>&1 > /dev/null
+==20030== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20030== Profiling application: ./quasirandomGenerator 64 2>&1 > /dev/null
+==20030== Profiling result:
+==20030== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"dram_write_transactions","Device Memory Write Transactions",12577775,13721893,13664409
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"dram_write_transactions","Device Memory Write Transactions",11610200,13192309,13102738

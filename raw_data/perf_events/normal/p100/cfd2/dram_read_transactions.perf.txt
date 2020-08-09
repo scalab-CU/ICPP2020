@@ -1,0 +1,10 @@
+==7620== NVPROF is profiling process 7620, command: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==7620== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7620== Profiling application: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==7620== Profiling result:
+==7620== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"dram_read_transactions","Device Memory Read Transactions",18,35,24
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"dram_read_transactions","Device Memory Read Transactions",136524,141327,138548
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"dram_read_transactions","Device Memory Read Transactions",266123,266253,266125
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"dram_read_transactions","Device Memory Read Transactions",515301,522078,518767

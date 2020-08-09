@@ -1,0 +1,10 @@
+==28931== NVPROF is profiling process 28931, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==28931== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28931== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==28931== Profiling result:
+==28931== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",42.160730%,44.689440%,43.162736%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",44.653881%,45.999747%,45.430333%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",31.319133%,37.153323%,33.919509%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",47.392924%,47.392924%,47.392924%

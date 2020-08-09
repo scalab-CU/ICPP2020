@@ -1,0 +1,10 @@
+==15635== NVPROF is profiling process 15635, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==15635== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Cuda error in file 'cuda_attack.cu' in line 234 : invalid argument.
+==15635== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==15635== Profiling result:
+==15635== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"gld_throughput","Global Load Throughput",143.736328KB/s,143.736328KB/s,143.735352KB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"gld_throughput","Global Load Throughput",373.093597MB/s,373.093597MB/s,373.093596MB/s
+======== Error: Application returned non-zero code 1

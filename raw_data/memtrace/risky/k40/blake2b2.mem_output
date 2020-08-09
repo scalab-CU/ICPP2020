@@ -1,0 +1,12 @@
+==5995== NVPROF is profiling process 5995, command: ././blake2b "The quick brown fox jumps over the lazy dog gpu project"
+==5995== Profiling application: ././blake2b "The quick brown fox jumps over the lazy dog gpu project"
+==5995== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,
+0.338990,0.000002,,,,,,,,,,64,37.398993,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.339002,0.000001,,,,,,,,,,192,190.734863,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.339012,0.000001,,,,,,,,,,104,103.314717,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.339216,0.000003,,,,,,,,,,64,20.077353,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.339245,0.000001,,,,,,,,,,128,127.156575,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.339285,0.000029,1,1,1,4,1,1,32,128,128,,,,,"Tesla K40m (0)","1","7","iter_compressor(unsigned long const *, unsigned long, unsigned char*, short) [115]"
+0.339317,0.000002,,,,,,,,,,64,37.398993,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

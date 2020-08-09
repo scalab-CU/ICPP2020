@@ -1,0 +1,15 @@
+==317162== NVPROF is profiling process 317162, command: ./cdpLUDecomposition -matrix-size=10000
+==317162== Warning: In CUDA 9.0, devices with compute capability 7.0 don't support CDP tracing.
+checkresult: cublas failed
+==317162== Profiling application: ./cdpLUDecomposition -matrix-size=10000
+==317162== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.961153,0.000756,,,,,,,,,,8.000000,10.329896,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.961916,0.001186,,,,,,,,,,8.000000,6.588890,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.963107,0.000091,,,,,,,,,,0.003906,0.041793,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.963201,0.000007,,,,,,,,,,0.000004,0.000504,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.963232,0.000004,,,,,,,,,,0.000099,0.022871,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.439790,0.000936,,,,,,,,,,8.000000,8.345939,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.440955,0.000036,,,,,,,,,,8.000000,218.886585,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+======== Error: Application returned non-zero code 255

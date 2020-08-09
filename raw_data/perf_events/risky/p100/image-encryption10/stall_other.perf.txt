@@ -1,0 +1,9 @@
+==9807== NVPROF is profiling process 9807, command: ././enc npark.ppm 2>&1 > /dev/null
+==9807== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9807== Profiling application: ././enc npark.ppm 2>&1 > /dev/null
+==9807== Profiling result:
+==9807== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"stall_other","Issue Stall Reasons (Other)",18.440527%,26.497301%,22.803007%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"stall_other","Issue Stall Reasons (Other)",16.922802%,21.563611%,19.588966%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"stall_other","Issue Stall Reasons (Other)",0.314061%,0.567066%,0.362062%

@@ -1,0 +1,10 @@
+==20290== NVPROF is profiling process 20290, command: ./histogram 200 2>&1 > /dev/null
+==20290== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20290== Profiling application: ./histogram 200 2>&1 > /dev/null
+==20290== Profiling result:
+==20290== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_utilization","Device Memory Utilization","Mid (5)","Mid (5)","Mid (5)"
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_utilization","Device Memory Utilization","High (8)","High (8)","High (8)"

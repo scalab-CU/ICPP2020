@@ -1,0 +1,8 @@
+==5792== NVPROF is profiling process 5792, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==5792== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5792== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==5792== Profiling result:
+==5792== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.734599%,6.210291%,4.767797%
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",6.901280%,8.213333%,7.886517%

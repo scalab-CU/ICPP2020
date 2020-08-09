@@ -1,0 +1,7 @@
+==23430== NVPROF is profiling process 23430, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==23430== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==23430== Profiling result:
+==23430== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.161644,0.163887,0.162292
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.027964,0.050633,0.050290

@@ -1,0 +1,8 @@
+==8444== NVPROF is profiling process 8444, command: ./recursiveGaussian -image=./data/sample8.ppm 2>&1 > /dev/null
+==8444== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8444== Profiling application: ./recursiveGaussian -image=./data/sample8.ppm 2>&1 > /dev/null
+==8444== Profiling result:
+==8444== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"gld_transactions_per_request","Global Load Transactions Per Request",7.941176,8.000000,7.970588
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"gld_transactions_per_request","Global Load Transactions Per Request",7.941176,8.000000,7.970588

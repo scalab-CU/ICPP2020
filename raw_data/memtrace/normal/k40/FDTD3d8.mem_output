@@ -1,0 +1,15 @@
+==64487== NVPROF is profiling process 64487, command: ./FDTD3d -dimx=280 -dimy=280 -dimz=280
+==64487== Profiling application: ./FDTD3d -dimx=280 -dimy=280 -dimz=280
+==64487== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.830648,0.030872,,,,,,,,,,91.125000,2.882508,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.861864,0.029594,,,,,,,,,,91.125000,3.007051,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.891476,0.000001,,,,,,,,,,0.000019,0.014552,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.891572,0.005940,9,18,1,32,16,1,80,3.750000,0,,,,,"Tesla K40m (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [130]"
+0.897515,0.005943,9,18,1,32,16,1,80,3.750000,0,,,,,"Tesla K40m (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [137]"
+0.903461,0.005943,9,18,1,32,16,1,80,3.750000,0,,,,,"Tesla K40m (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [144]"
+0.909406,0.005956,9,18,1,32,16,1,80,3.750000,0,,,,,"Tesla K40m (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [151]"
+0.915367,0.005933,9,18,1,32,16,1,80,3.750000,0,,,,,"Tesla K40m (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [158]"
+0.921325,0.040270,,,,,,,,,,91.125000,2.209799,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

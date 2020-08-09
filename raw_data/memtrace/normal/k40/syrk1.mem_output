@@ -1,0 +1,9 @@
+==16243== NVPROF is profiling process 16243, command: ./syrk2048
+==16243== Profiling application: ./syrk2048
+==16243== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.322567,0.002484,,,,,,,,,,16.000000,6.289878,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.325219,0.002506,,,,,,,,,,16.000000,6.236056,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.327788,1.692175,64,256,1,32,8,1,18,0,0,,,,,"Tesla K40m (0)","1","7","syrk_kernel(float, float, float*, float*) [114]"
+2.019995,0.005911,,,,,,,,,,16.000000,2.643392,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

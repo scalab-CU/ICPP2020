@@ -1,0 +1,9 @@
+==15835== NVPROF is profiling process 15835, command: ./eigenvalues --matrix-size=3072 2>&1 > /dev/null
+==15835== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15835== Profiling application: ./eigenvalues --matrix-size=3072 2>&1 > /dev/null
+==15835== Profiling result:
+==15835== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",2.403304%,2.407917%,2.407050%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.062843%,0.062893%,0.062880%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.031435%,0.031454%,0.031451%

@@ -1,0 +1,15 @@
+==12832== NVPROF is profiling process 12832, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==12832== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12832== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==12832== Profiling result:
+==12832== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"dram_read_throughput","Device Memory Read Throughput",7.267820MB/s,80.567211MB/s,9.633029MB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"dram_read_throughput","Device Memory Read Throughput",4.696009GB/s,14.043150GB/s,6.405115GB/s
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"dram_read_throughput","Device Memory Read Throughput",11.257314GB/s,15.478335GB/s,14.533563GB/s
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"dram_read_throughput","Device Memory Read Throughput",22.234424GB/s,51.895419GB/s,27.117004GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"dram_read_throughput","Device Memory Read Throughput",3.947696GB/s,7.344982GB/s,5.145796GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"dram_read_throughput","Device Memory Read Throughput",4.833158GB/s,9.318089GB/s,6.216715GB/s
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"dram_read_throughput","Device Memory Read Throughput",2.236617GB/s,12.359626GB/s,6.446907GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"dram_read_throughput","Device Memory Read Throughput",3.828487GB/s,7.159217GB/s,5.017862GB/s
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"dram_read_throughput","Device Memory Read Throughput",831.050375MB/s,1.081302GB/s,966.831064MB/s

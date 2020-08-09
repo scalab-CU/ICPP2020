@@ -1,0 +1,13 @@
+==29028== NVPROF is profiling process 29028, command: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==29028== Profiling application: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==29028== Profiling result:
+==29028== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"issued_ipc","Issued IPC",0.691405,0.691405,0.691405
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"issued_ipc","Issued IPC",0.327517,0.339992,0.333754
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"issued_ipc","Issued IPC",0.670285,0.670285,0.670285
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"issued_ipc","Issued IPC",0.654881,0.723847,0.711000
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"issued_ipc","Issued IPC",0.407515,0.411360,0.410574
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"issued_ipc","Issued IPC",1.669574,1.669574,1.669574
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"issued_ipc","Issued IPC",1.096815,1.096815,1.096815
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"issued_ipc","Issued IPC",1.614703,1.614703,1.614703

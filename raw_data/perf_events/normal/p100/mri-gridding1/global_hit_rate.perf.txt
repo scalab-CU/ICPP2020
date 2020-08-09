@@ -1,0 +1,14 @@
+==19046== NVPROF is profiling process 19046, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==19046== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==19046== Profiling result:
+==19046== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"global_hit_rate","Global Hit Rate in unified l1/tex",81.575836%,81.575836%,81.575836%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"global_hit_rate","Global Hit Rate in unified l1/tex",0.339059%,0.561035%,0.482487%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,50.000000%,44.444444%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"global_hit_rate","Global Hit Rate in unified l1/tex",49.803206%,49.833186%,49.806954%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,50.000000%,44.444444%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"global_hit_rate","Global Hit Rate in unified l1/tex",55.048323%,55.048323%,55.048323%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"global_hit_rate","Global Hit Rate in unified l1/tex",87.765506%,87.765506%,87.765506%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"global_hit_rate","Global Hit Rate in unified l1/tex",49.999988%,50.000000%,49.999999%

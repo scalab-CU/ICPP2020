@@ -1,0 +1,33 @@
+==1602== NVPROF is profiling process 1602, command: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==1602== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1602== Profiling application: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==1602== Profiling result:
+==1602== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"dram_read_transactions","Device Memory Read Transactions",305128,320877,308616
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"dram_read_transactions","Device Memory Read Transactions",53337760,54793694,54533838
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"dram_read_transactions","Device Memory Read Transactions",87039571,88860861,88300938
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"dram_read_transactions","Device Memory Read Transactions",97495,102088,99486
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"dram_read_transactions","Device Memory Read Transactions",16419,16419,16419
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"dram_read_transactions","Device Memory Read Transactions",499,753,629
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"dram_read_transactions","Device Memory Read Transactions",843,1058,941
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"dram_read_transactions","Device Memory Read Transactions",2346,2873,2574
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"dram_read_transactions","Device Memory Read Transactions",141,1930,490
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"dram_read_transactions","Device Memory Read Transactions",182324,192308,185668
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"dram_read_transactions","Device Memory Read Transactions",1346,1584,1457
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"dram_read_transactions","Device Memory Read Transactions",3068,3100,3078
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"dram_read_transactions","Device Memory Read Transactions",2262,2582,2417
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"dram_read_transactions","Device Memory Read Transactions",8,52,18
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"dram_read_transactions","Device Memory Read Transactions",48188,50828,49617
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"dram_read_transactions","Device Memory Read Transactions",1742,2108,1916
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"dram_read_transactions","Device Memory Read Transactions",853,1048,944
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"dram_read_transactions","Device Memory Read Transactions",1537,1563,1548
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"dram_read_transactions","Device Memory Read Transactions",118876,124748,120174
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"dram_read_transactions","Device Memory Read Transactions",3052,3084,3061
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"dram_read_transactions","Device Memory Read Transactions",13881,16463,14958
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"dram_read_transactions","Device Memory Read Transactions",210291,218659,212183
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"dram_read_transactions","Device Memory Read Transactions",4628,5573,5092
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"dram_read_transactions","Device Memory Read Transactions",74,1714,337
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"dram_read_transactions","Device Memory Read Transactions",283660,299340,287043
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"dram_read_transactions","Device Memory Read Transactions",160570,168528,162494
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"dram_read_transactions","Device Memory Read Transactions",12358,16009,14099

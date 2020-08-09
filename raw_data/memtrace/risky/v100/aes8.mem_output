@@ -1,0 +1,10 @@
+==104665== NVPROF is profiling process 104665, command: ././aes e 256 ./data/LAND.bmp ./data/key256.txt
+==104665== Profiling application: ././aes e 256 ./data/LAND.bmp ./data/key256.txt
+==104665== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.467714,0.000067,,,,,,,,,,770.000000,11.037897,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.467791,0.000001,,,,,,,,,,0.234375,0.194026,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.467833,0.000001,,,,,,,,,,770.000000,717.118382,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.467873,0.000037,770,1,1,256,1,1,32,6.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","aesEncrypt256(unsigned int*, unsigned int*, int) [119]"
+0.467933,0.000061,,,,,,,,,,770.000000,12.077783,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

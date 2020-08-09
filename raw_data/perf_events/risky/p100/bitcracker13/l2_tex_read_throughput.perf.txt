@@ -1,0 +1,9 @@
+==26614== NVPROF is profiling process 26614, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==26614== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==26614== Profiling result:
+==26614== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",723.323862MB/s,723.323862MB/s,723.323861MB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",539.632812KB/s,539.632812KB/s,539.631836KB/s

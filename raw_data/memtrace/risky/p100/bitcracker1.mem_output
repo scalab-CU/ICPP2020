@@ -1,0 +1,18 @@
+==22525== NVPROF is profiling process 22525, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==22525== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==22525== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.328947,0.000002,,,,,,,,,,0.000015,0.008169,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328961,0.000001,,,,,,,,,,0.000038,0.034240,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.329006,0.009382,1024,1,1,16,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*) [118]"
+0.359334,0.000002,,,,,,,,,,0.000042,0.026134,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.359360,0.000001,,,,,,,,,,0.000015,0.013696,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.359584,0.000001,,,,,,,,,,0.000004,0.003326,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.359636,0.000003,,,,,,,,,,0.000015,0.004801,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.389872,0.002911,,,,,,,,,,32.000000,10.734612,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy HtoD]"
+0.392793,209.849562,256,1,1,1024,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","14","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int) [160]"
+210.242361,0.000002,,,,,,,,,,0.000004,0.001532,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy DtoH]"
+210.266819,0.002908,,,,,,,,,,32.000000,10.745482,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy HtoD]"
+210.269735,168.841338,256,1,1,1024,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","14","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int) [183]"
+379.111079,0.000001,,,,,,,,,,0.000004,0.002531,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy DtoH]"

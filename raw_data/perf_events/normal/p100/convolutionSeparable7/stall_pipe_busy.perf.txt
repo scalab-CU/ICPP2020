@@ -1,0 +1,8 @@
+==6579== NVPROF is profiling process 6579, command: ./convolutionSeparable 9216 2>&1 > /dev/null
+==6579== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6579== Profiling application: ./convolutionSeparable 9216 2>&1 > /dev/null
+==6579== Profiling result:
+==6579== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.109250%,0.127542%,0.118759%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",2.979297%,3.421576%,3.206200%

@@ -1,0 +1,32 @@
+==7233== NVPROF is profiling process 7233, command: ./bin/CoMD-cuda -e -x 48 -y 48 -z 48 2>&1 > /dev/null
+==7233== Profiling application: ./bin/CoMD-cuda -e -x 48 -y 48 -z 48 2>&1 > /dev/null
+==7233== Profiling result:
+==7233== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"achieved_occupancy","Achieved Occupancy",0.925530,0.944292,0.934605
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"achieved_occupancy","Achieved Occupancy",0.956034,0.960992,0.958944
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"achieved_occupancy","Achieved Occupancy",0.353622,0.372464,0.359408
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"achieved_occupancy","Achieved Occupancy",0.957593,0.963024,0.960549
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"achieved_occupancy","Achieved Occupancy",0.612130,0.612130,0.612130
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"achieved_occupancy","Achieved Occupancy",0.158576,0.169344,0.162923
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"achieved_occupancy","Achieved Occupancy",0.102071,0.118177,0.109612
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"achieved_occupancy","Achieved Occupancy",0.530484,0.728711,0.570637
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"achieved_occupancy","Achieved Occupancy",0.056585,0.213803,0.069887
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"achieved_occupancy","Achieved Occupancy",0.873742,0.893485,0.886484
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"achieved_occupancy","Achieved Occupancy",0.297308,0.328991,0.310522
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"achieved_occupancy","Achieved Occupancy",0.412412,0.427832,0.420388
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"achieved_occupancy","Achieved Occupancy",0.264787,0.386062,0.300863
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"achieved_occupancy","Achieved Occupancy",0.047768,0.060124,0.057934
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"achieved_occupancy","Achieved Occupancy",0.123696,0.125934,0.124159
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"achieved_occupancy","Achieved Occupancy",0.111832,0.128067,0.119275
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"achieved_occupancy","Achieved Occupancy",0.285891,0.401809,0.307116
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"achieved_occupancy","Achieved Occupancy",0.259590,0.288932,0.275294
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"achieved_occupancy","Achieved Occupancy",0.881435,0.900140,0.889050
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"achieved_occupancy","Achieved Occupancy",0.280277,0.318885,0.284125
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"achieved_occupancy","Achieved Occupancy",0.234592,0.383323,0.291442
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"achieved_occupancy","Achieved Occupancy",0.862308,0.873562,0.867912
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"achieved_occupancy","Achieved Occupancy",0.110695,0.129476,0.118084
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"achieved_occupancy","Achieved Occupancy",0.062025,0.062450,0.062241
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"achieved_occupancy","Achieved Occupancy",0.904329,0.935393,0.920721
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"achieved_occupancy","Achieved Occupancy",0.824785,0.917894,0.842969
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"achieved_occupancy","Achieved Occupancy",0.112585,0.130578,0.120591

@@ -1,0 +1,14 @@
+==15245== NVPROF is profiling process 15245, command: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==15245== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15245== Profiling application: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==15245== Profiling result:
+==15245== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",7.500376%,7.500376%,7.500376%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",3.819931%,3.874634%,3.847283%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",6.478639%,6.478639%,6.478639%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",6.281043%,6.949435%,6.657894%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",4.118377%,4.136654%,4.127850%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%

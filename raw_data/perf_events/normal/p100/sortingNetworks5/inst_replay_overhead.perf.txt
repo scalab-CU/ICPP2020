@@ -1,0 +1,9 @@
+==23800== NVPROF is profiling process 23800, command: ./sortingNetworks 5 2>&1 > /dev/null
+==23800== Profiling application: ./sortingNetworks 5 2>&1 > /dev/null
+==23800== Profiling result:
+==23800== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"inst_replay_overhead","Instruction Replay Overhead",0.000354,0.001022,0.000590
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"inst_replay_overhead","Instruction Replay Overhead",0.001801,0.002505,0.001879
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"inst_replay_overhead","Instruction Replay Overhead",0.000403,0.000573,0.000433
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"inst_replay_overhead","Instruction Replay Overhead",0.009497,0.017244,0.009995

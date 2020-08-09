@@ -1,0 +1,7 @@
+==3029== NVPROF is profiling process 3029, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==3029== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==3029== Profiling result:
+==3029== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"tex_cache_throughput","Unified Cache Throughput",28.257017GB/s,341.160930GB/s,330.197436GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"tex_cache_throughput","Unified Cache Throughput",50.193384MB/s,67.535442MB/s,66.452818MB/s

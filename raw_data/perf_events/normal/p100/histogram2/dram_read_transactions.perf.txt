@@ -1,0 +1,10 @@
+==8208== NVPROF is profiling process 8208, command: ./histogram 128 2>&1 > /dev/null
+==8208== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8208== Profiling application: ./histogram 128 2>&1 > /dev/null
+==8208== Profiling result:
+==8208== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",4194316,4194548,4194336
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",7688,7740,7699
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",69920,69952,69929
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",4194316,4194844,4194360

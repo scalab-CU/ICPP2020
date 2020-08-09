@@ -1,0 +1,9 @@
+==5527== NVPROF is profiling process 5527, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==5527== Execution timeout, stopping the application...
+==5527== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==5527== Warning: Found 1 invalid records in the result.
+==5527== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==5527== Profiling result:
+==5527== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",194,"inst_integer","Integer Instructions",80820043776,80820043776,80820043776

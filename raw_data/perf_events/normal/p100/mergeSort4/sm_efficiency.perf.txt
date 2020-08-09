@@ -1,0 +1,9 @@
+==10257== NVPROF is profiling process 10257, command: ./mergeSort 4 2>&1 > /dev/null
+==10257== Profiling application: ./mergeSort 4 2>&1 > /dev/null
+==10257== Profiling result:
+==10257== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"sm_efficiency","Multiprocessor Activity",36.639129%,69.860018%,54.882146%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"sm_efficiency","Multiprocessor Activity",72.006370%,78.579087%,74.832265%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"sm_efficiency","Multiprocessor Activity",98.700047%,98.700047%,98.700047%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"sm_efficiency","Multiprocessor Activity",97.814941%,98.086447%,97.981526%

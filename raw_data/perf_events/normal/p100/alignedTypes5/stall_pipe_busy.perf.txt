@@ -1,0 +1,18 @@
+==20802== NVPROF is profiling process 20802, command: ./alignedTypes 16 2>&1 > /dev/null
+==20802== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20802== Profiling application: ./alignedTypes 16 2>&1 > /dev/null
+==20802== Profiling result:
+==20802== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.026598%,0.027515%,0.027278%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.135574%,0.143200%,0.140584%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.118688%,0.124706%,0.123238%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.116801%,0.121624%,0.120456%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.004833%,0.005170%,0.005018%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.032282%,0.034458%,0.033988%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.157556%,0.167546%,0.165771%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.135681%,0.143312%,0.141652%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.062679%,0.065423%,0.064643%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.076431%,0.093447%,0.082534%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.036384%,0.038031%,0.037453%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.104730%,0.108725%,0.107458%

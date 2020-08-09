@@ -1,0 +1,30 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.00988s]
+Opening ./data/sample6.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.30722s]
+  Renumbering tree... [0.10781s]
+  Flattening Tree... [0.23846s]
+==6966== NVPROF is profiling process 6966, command: ./mum ./data/NC_003997.20k.fna ./data/sample6.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+25 queries (12500000 bp), need 112496450 bytes on the GPU [0.05637s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 12500250 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 25 queries (99996200 bytes) ...done
+Using blocks of 25 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 12500250
+	ref: 80084992
+	results: 99996200
+==6966== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+kernel time= 8862.959961
+==6966== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample6.fna
+==6966== Profiling result:
+==6966== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",37.206078%,37.206078%,37.206078%

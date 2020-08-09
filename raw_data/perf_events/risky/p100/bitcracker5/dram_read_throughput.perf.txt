@@ -1,0 +1,10 @@
+==14422== NVPROF is profiling process 14422, command: ././build/bitcracker_cuda -f ./test_hash/imgWin7_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==14422== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==14422== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin7_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==14422== Profiling result:
+==14422== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",2,"dram_read_throughput","Device Memory Read Throughput",8.119290GB/s,8.541803GB/s,8.307542GB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_read_throughput","Device Memory Read Throughput",32.011149GB/s,32.011149GB/s,32.011149GB/s

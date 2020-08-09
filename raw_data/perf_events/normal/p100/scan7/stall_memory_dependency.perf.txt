@@ -1,0 +1,9 @@
+==10146== NVPROF is profiling process 10146, command: ./scan 96 2>&1 > /dev/null
+==10146== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10146== Profiling application: ./scan 96 2>&1 > /dev/null
+==10146== Profiling result:
+==10146== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",43.235575%,53.483388%,48.602276%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_memory_dependency","Issue Stall Reasons (Data Request)",35.106421%,65.209039%,42.267601%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",49.700390%,53.855404%,51.835679%

@@ -1,0 +1,14 @@
+==15972== NVPROF is profiling process 15972, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==15972== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==15972== Profiling result:
+==15972== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"tex_cache_transactions","Unified Cache Transactions",2560,4608,3730
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"tex_cache_transactions","Unified Cache Transactions",1532,2568,2042
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"tex_cache_transactions","Unified Cache Transactions",104473,125178,116030
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"tex_cache_transactions","Unified Cache Transactions",303658,393750,364404
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"tex_cache_transactions","Unified Cache Transactions",738,1250,994
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"tex_cache_transactions","Unified Cache Transactions",1516,2544,2025
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"tex_cache_transactions","Unified Cache Transactions",1145917,1991850,1619210
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"tex_cache_transactions","Unified Cache Transactions",738,1250,994
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"tex_cache_transactions","Unified Cache Transactions",14643,14968,14753

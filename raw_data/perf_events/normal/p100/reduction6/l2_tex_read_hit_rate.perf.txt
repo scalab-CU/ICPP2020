@@ -1,0 +1,8 @@
+==32533== NVPROF is profiling process 32533, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==32533== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32533== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==32533== Profiling result:
+==32533== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%

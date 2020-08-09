@@ -1,0 +1,10 @@
+==26482== NVPROF is profiling process 26482, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==26482== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==26482== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==26482== Profiling result:
+==26482== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"gst_efficiency","Global Memory Store Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"gst_efficiency","Global Memory Store Efficiency",12.500000%,12.500000%,12.500000%

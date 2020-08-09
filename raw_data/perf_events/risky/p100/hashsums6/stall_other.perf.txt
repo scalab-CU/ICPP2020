@@ -1,0 +1,17 @@
+==8314== NVPROF is profiling process 8314, command: ././crc_gpu input5.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X33000000  
+value in hostpartialcrc = 0XA3FD97B8  
+
+==8314== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 806.860962 ms
+After cuda, hostpartialcrc[0] = 0XE8D7209F  
+After cuda, hostpartialcrc[0] = 3906412703  
+Program Ended Successfully!
+==8314== Profiling application: ././crc_gpu input5.in 2>&1 > /dev/null
+==8314== Profiling result:
+==8314== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_other","Issue Stall Reasons (Other)",1.014828%,1.014828%,1.014828%

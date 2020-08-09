@@ -1,0 +1,12 @@
+==26392== NVPROF is profiling process 26392, command: ././blake2b "nvcc -arch=sm_30 blake2b.c blake2b-gpu.cu -o gpu_b2b_sum"
+==26392== Profiling application: ././blake2b "nvcc -arch=sm_30 blake2b.c blake2b-gpu.cu -o gpu_b2b_sum"
+==26392== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,
+0.341268,0.000002,,,,,,,,,,64,39.736429,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.341279,0.000001,,,,,,,,,,192,163.487025,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.341288,0.000001,,,,,,,,,,104,88.555471,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.341494,0.000001,,,,,,,,,,64,43.348832,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.341512,0.000001,,,,,,,,,,128,108.991350,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.341554,0.000012,1,1,1,4,1,1,32,128,128,,,,,"Tesla P100-PCIE-12GB (0)","1","7","iter_compressor(unsigned long const *, unsigned long, unsigned char*, short) [115]"
+0.341573,0.000001,,,,,,,,,,64,45.413062,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

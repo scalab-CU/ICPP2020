@@ -1,0 +1,12 @@
+==23677== NVPROF is profiling process 23677, command: ./newdelete 2>&1 > /dev/null
+==23677== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23677== Profiling application: ./newdelete 2>&1 > /dev/null
+==23677== Profiling result:
+==23677== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","complexVector(int*)",1,"local_memory_overhead","Local Memory Overhead",72.000000%,72.000000%,72.000000%
+"Tesla P100-PCIE-12GB (0)","placementNew(int*)",1,"local_memory_overhead","Local Memory Overhead",50.950570%,50.950570%,50.950570%
+"Tesla P100-PCIE-12GB (0)","containerFill(Container<int>**)",1,"local_memory_overhead","Local Memory Overhead",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","vectorCreate(Container<int>**, int)",1,"local_memory_overhead","Local Memory Overhead",66.972477%,66.972477%,66.972477%
+"Tesla P100-PCIE-12GB (0)","containerDelete(Container<int>**)",1,"local_memory_overhead","Local Memory Overhead",50.420168%,50.420168%,50.420168%
+"Tesla P100-PCIE-12GB (0)","containerConsume(Container<int>**, int*)",1,"local_memory_overhead","Local Memory Overhead",3.723189%,3.723189%,3.723189%

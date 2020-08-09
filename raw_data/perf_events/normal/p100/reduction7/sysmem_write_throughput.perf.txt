@@ -1,0 +1,7 @@
+==18727== NVPROF is profiling process 18727, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==18727== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==18727== Profiling result:
+==18727== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"sysmem_write_throughput","System Memory Write Throughput",888.434570KB/s,38.146973MB/s,1.709103MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"sysmem_write_throughput","System Memory Write Throughput",31.789144MB/s,45.863507MB/s,45.486965MB/s

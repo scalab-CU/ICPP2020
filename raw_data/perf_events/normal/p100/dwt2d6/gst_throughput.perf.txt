@@ -1,0 +1,9 @@
+==19385== NVPROF is profiling process 19385, command: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==19385== Profiling application: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==19385== Profiling result:
+==19385== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_throughput","Global Store Throughput",52.766903GB/s,80.986182GB/s,68.463949GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gst_throughput","Global Store Throughput",100.649055GB/s,129.564334GB/s,116.706804GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gst_throughput","Global Store Throughput",17.749276GB/s,30.441777GB/s,24.488305GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_throughput","Global Store Throughput",270.491696GB/s,270.491696GB/s,270.491696GB/s

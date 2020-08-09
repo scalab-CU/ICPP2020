@@ -1,0 +1,14 @@
+==20499== NVPROF is profiling process 20499, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==20499== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==20499== Profiling result:
+==20499== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.610243,0.675697,0.650193
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.149100,0.511852,0.443141
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.304007,0.390147,0.360609
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.166630,0.928408,0.346341
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.152960,0.428268,0.341016
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.152207,0.494510,0.452533
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.099150,0.318443,0.198221
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.165678,0.495752,0.406783
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.484706,0.599985,0.567065

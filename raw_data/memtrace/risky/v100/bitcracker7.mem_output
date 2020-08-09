@@ -1,0 +1,15 @@
+==282386== NVPROF is profiling process 282386, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==282386== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==282386== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.488580,0.000002,,,,,,,,,,0.000015,0.008955,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.488595,0.000001,,,,,,,,,,0.000038,0.032338,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.488638,0.002819,1024,1,1,16,1,1,64,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*) [118]"
+0.510368,0.000002,,,,,,,,,,0.000042,0.027246,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.510385,0.000001,,,,,,,,,,0.000015,0.013305,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.510577,0.000001,,,,,,,,,,0.000004,0.003424,"Pinned","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.510661,0.000003,,,,,,,,,,0.000015,0.005478,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.515008,0.002748,,,,,,,,,,32.000000,11.371907,"Pinned","Device","Tesla V100-PCIE-16GB (0)","1","14","[CUDA memcpy HtoD]"
+0.517767,27.363482,256,1,1,1024,1,1,64,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","14","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int) [160]"
+27.881255,0.000002,,,,,,,,,,0.000004,0.001712,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","14","[CUDA memcpy DtoH]"

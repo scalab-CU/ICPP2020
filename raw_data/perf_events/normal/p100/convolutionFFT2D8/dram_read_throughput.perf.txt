@@ -1,0 +1,18 @@
+==30540== NVPROF is profiling process 30540, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==30540== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30540== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==30540== Profiling result:
+==30540== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"dram_read_throughput","Device Memory Read Throughput",178.534250GB/s,178.534250GB/s,178.534250GB/s
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",319.942350MB/s,380.676650MB/s,342.137143MB/s
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"dram_read_throughput","Device Memory Read Throughput",165.861901GB/s,166.367144GB/s,166.114140GB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"dram_read_throughput","Device Memory Read Throughput",166.385150GB/s,173.225480GB/s,171.449075GB/s
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"dram_read_throughput","Device Memory Read Throughput",245.690309GB/s,245.816560GB/s,245.753534GB/s
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",173.400153GB/s,184.662878GB/s,180.744674GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"dram_read_throughput","Device Memory Read Throughput",168.288532GB/s,168.288532GB/s,168.288532GB/s
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"dram_read_throughput","Device Memory Read Throughput",231.093528GB/s,231.093528GB/s,231.093528GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"dram_read_throughput","Device Memory Read Throughput",168.825557GB/s,169.607981GB/s,169.215848GB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"dram_read_throughput","Device Memory Read Throughput",158.662359GB/s,185.290028GB/s,171.465490GB/s
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"dram_read_throughput","Device Memory Read Throughput",175.003230GB/s,175.675974GB/s,175.463749GB/s
+======== Error: Application returned non-zero code 1

@@ -1,0 +1,10 @@
+==16028== NVPROF is profiling process 16028, command: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==16028== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16028== Profiling application: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==16028== Profiling result:
+==16028== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_texture","Issue Stall Reasons (Texture)",17.786961%,18.192233%,17.967415%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_texture","Issue Stall Reasons (Texture)",3.197771%,5.197744%,4.114646%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_texture","Issue Stall Reasons (Texture)",0.065405%,0.142599%,0.100327%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_texture","Issue Stall Reasons (Texture)",0.017521%,0.075843%,0.040666%

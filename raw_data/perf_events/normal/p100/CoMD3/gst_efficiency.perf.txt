@@ -1,0 +1,33 @@
+==31311== NVPROF is profiling process 31311, command: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==31311== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==31311== Profiling application: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==31311== Profiling result:
+==31311== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"gst_efficiency","Global Memory Store Efficiency",73.579005%,77.320210%,76.507118%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"gst_efficiency","Global Memory Store Efficiency",73.574494%,77.336405%,76.527060%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"gst_efficiency","Global Memory Store Efficiency",73.595363%,77.358030%,76.512708%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"gst_efficiency","Global Memory Store Efficiency",31.230605%,99.987701%,48.655839%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"gst_efficiency","Global Memory Store Efficiency",73.772598%,74.517059%,74.391058%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"gst_efficiency","Global Memory Store Efficiency",12.500000%,12.500000%,12.500000%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"gst_efficiency","Global Memory Store Efficiency",58.962073%,61.517288%,60.118008%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"gst_efficiency","Global Memory Store Efficiency",98.364486%,99.910486%,98.910665%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"gst_efficiency","Global Memory Store Efficiency",80.498137%,83.413092%,82.795878%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"gst_efficiency","Global Memory Store Efficiency",73.190393%,74.043049%,73.898637%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"gst_efficiency","Global Memory Store Efficiency",59.619182%,60.051043%,59.907209%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"gst_efficiency","Global Memory Store Efficiency",78.869537%,79.974048%,79.341277%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"gst_efficiency","Global Memory Store Efficiency",91.666667%,94.444444%,92.720386%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"gst_efficiency","Global Memory Store Efficiency",12.500000%,12.500000%,12.500000%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"gst_efficiency","Global Memory Store Efficiency",81.135903%,84.715849%,83.620417%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"gst_efficiency","Global Memory Store Efficiency",99.981975%,100.000000%,99.993992%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"gst_efficiency","Global Memory Store Efficiency",99.959016%,99.959016%,99.959016%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"gst_efficiency","Global Memory Store Efficiency",73.626690%,77.393765%,76.491214%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"gst_efficiency","Global Memory Store Efficiency",59.619182%,60.051043%,59.907209%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"gst_efficiency","Global Memory Store Efficiency",75.832807%,76.864756%,76.291890%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"gst_efficiency","Global Memory Store Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"gst_efficiency","Global Memory Store Efficiency",99.981975%,100.000000%,99.993992%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"gst_efficiency","Global Memory Store Efficiency",98.821721%,99.557522%,99.240227%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"gst_efficiency","Global Memory Store Efficiency",73.609753%,77.331733%,76.520514%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"gst_efficiency","Global Memory Store Efficiency",38.006390%,39.396737%,38.865967%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"gst_efficiency","Global Memory Store Efficiency",66.719619%,69.213904%,68.378309%

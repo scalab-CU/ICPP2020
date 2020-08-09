@@ -1,0 +1,8 @@
+==13746== NVPROF is profiling process 13746, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==13746== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13746== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==13746== Profiling result:
+==13746== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"dram_read_throughput","Device Memory Read Throughput",23.860408GB/s,358.989079GB/s,348.996320GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"dram_read_throughput","Device Memory Read Throughput",121.101500MB/s,435.077488MB/s,174.897655MB/s

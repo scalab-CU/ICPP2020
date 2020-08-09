@@ -1,0 +1,7 @@
+==30603== NVPROF is profiling process 30603, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==30603== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==30603== Profiling result:
+==30603== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"global_hit_rate","Global Hit Rate in unified l1/tex",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"global_hit_rate","Global Hit Rate in unified l1/tex",50.000000%,50.000000%,50.000000%

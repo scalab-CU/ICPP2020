@@ -1,0 +1,7 @@
+==18009== NVPROF is profiling process 18009, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==18009== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==18009== Profiling result:
+==18009== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"shared_store_throughput","Shared Memory Store Throughput",266.774799MB/s,266.774799MB/s,266.774797MB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"shared_store_throughput","Shared Memory Store Throughput",274.394530MB/s,281.454223MB/s,278.154581MB/s

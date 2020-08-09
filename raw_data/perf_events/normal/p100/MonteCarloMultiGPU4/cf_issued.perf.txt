@@ -1,0 +1,7 @@
+==26112== NVPROF is profiling process 26112, command: ./MonteCarloMultiGPU -size=80 2>&1 > /dev/null
+==26112== Profiling application: ./MonteCarloMultiGPU -size=80 2>&1 > /dev/null
+==26112== Profiling result:
+==26112== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"cf_issued","Issued Control-Flow Instructions",97959680,97959680,97959680
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"cf_issued","Issued Control-Flow Instructions",312539264,312539264,312539264

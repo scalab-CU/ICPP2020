@@ -1,0 +1,14 @@
+==25376== NVPROF is profiling process 25376, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25376== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25376== Profiling result:
+==25376== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"achieved_occupancy","Achieved Occupancy",0.493756,0.496580,0.495322
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"achieved_occupancy","Achieved Occupancy",0.062110,0.062468,0.062343
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"achieved_occupancy","Achieved Occupancy",0.243698,0.296388,0.253183
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"achieved_occupancy","Achieved Occupancy",0.277940,0.462749,0.316916
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"achieved_occupancy","Achieved Occupancy",0.058979,0.061668,0.059608
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"achieved_occupancy","Achieved Occupancy",0.062159,0.062471,0.062314
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"achieved_occupancy","Achieved Occupancy",0.383357,0.439152,0.416288
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"achieved_occupancy","Achieved Occupancy",0.058738,0.061095,0.059703
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"achieved_occupancy","Achieved Occupancy",0.352004,0.499188,0.380659

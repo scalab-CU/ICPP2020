@@ -1,0 +1,7 @@
+==12490== NVPROF is profiling process 12490, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==12490== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12490== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==12490== Profiling result:
+==12490== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.001448%,0.001454%,0.001451%

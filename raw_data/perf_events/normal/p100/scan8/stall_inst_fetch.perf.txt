@@ -1,0 +1,9 @@
+==24511== NVPROF is profiling process 24511, command: ./scan 100 2>&1 > /dev/null
+==24511== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24511== Profiling application: ./scan 100 2>&1 > /dev/null
+==24511== Profiling result:
+==24511== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.130986%,3.921733%,0.370417%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.219359%,1.630557%,1.169790%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.323969%,0.400679%,0.338340%

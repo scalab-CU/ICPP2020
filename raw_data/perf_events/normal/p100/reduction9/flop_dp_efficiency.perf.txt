@@ -1,0 +1,8 @@
+==10723== NVPROF is profiling process 10723, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==10723== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10723== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==10723== Profiling result:
+==10723== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000312%,0.000916%,0.000830%
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.090827%,1.448679%,0.793180%

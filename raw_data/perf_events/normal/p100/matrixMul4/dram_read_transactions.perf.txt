@@ -1,0 +1,7 @@
+==12599== NVPROF is profiling process 12599, command: ./matrixMul -wA=3072 -hA=3072 -wB=3072 -hB=3072 2>&1 > /dev/null
+==12599== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12599== Profiling application: ./matrixMul -wA=3072 -hA=3072 -wB=3072 -hB=3072 2>&1 > /dev/null
+==12599== Profiling result:
+==12599== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"dram_read_transactions","Device Memory Read Transactions",115824047,116612635,116105964

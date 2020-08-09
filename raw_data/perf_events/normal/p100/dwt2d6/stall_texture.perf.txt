@@ -1,0 +1,10 @@
+==11817== NVPROF is profiling process 11817, command: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==11817== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11817== Profiling application: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==11817== Profiling result:
+==11817== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_texture","Issue Stall Reasons (Texture)",0.000860%,0.001164%,0.001034%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"stall_texture","Issue Stall Reasons (Texture)",0.002259%,0.006140%,0.004652%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_texture","Issue Stall Reasons (Texture)",1.327452%,1.327452%,1.327452%

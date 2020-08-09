@@ -1,0 +1,14 @@
+==23780== NVPROF is profiling process 23780, command: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==23780== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23780== Profiling application: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==23780== Profiling result:
+==23780== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",2052305,2073597,2062951
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",2073600,2073600,2073600
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0

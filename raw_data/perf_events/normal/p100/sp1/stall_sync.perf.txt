@@ -1,0 +1,15 @@
+==25134== NVPROF is profiling process 25134, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25134== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25134== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25134== Profiling result:
+==25134== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"stall_sync","Issue Stall Reasons (Synchronization)",46.388353%,51.648225%,49.261057%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"stall_sync","Issue Stall Reasons (Synchronization)",7.380680%,18.533136%,14.600308%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"stall_sync","Issue Stall Reasons (Synchronization)",8.218376%,14.042816%,12.097892%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"stall_sync","Issue Stall Reasons (Synchronization)",1.738652%,17.993270%,7.311602%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"stall_sync","Issue Stall Reasons (Synchronization)",5.647154%,18.907484%,14.750844%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"stall_sync","Issue Stall Reasons (Synchronization)",1.486872%,19.637060%,7.224873%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%

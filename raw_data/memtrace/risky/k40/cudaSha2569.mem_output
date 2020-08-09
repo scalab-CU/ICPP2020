@@ -1,0 +1,15 @@
+==4971== NVPROF is profiling process 4971, command: ././sha256 example7.txt
+==4971== Profiling application: ././sha256 example7.txt
+==4971== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Unified Memory","Virtual Address","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,B,,
+0.334931,,,,,,,,,,,,,,,,,,"PC 0xae77a2b1","0x2305041000","[Unified Memory CPU page faults]"
+0.334993,0.000002,,,,,,,,,,,,,,"Tesla K40m (0)",,,4096.000000,"0x2305040000","[Unified Memory Memcpy DtoH]"
+0.334995,0.000002,,,,,,,,,,,,,,"Tesla K40m (0)",,,4096.000000,"0x2305041000","[Unified Memory Memcpy DtoH]"
+0.334997,0.000007,,,,,,,,,,,,,,"Tesla K40m (0)",,,57344.000000,"0x2305042000","[Unified Memory Memcpy DtoH]"
+0.335194,0.000002,,,,,,,,,,256,162.219684,"Pageable","Device","Tesla K40m (0)","1","7",,,"[CUDA memcpy HtoD]"
+0.335308,0.000003,,,,,,,,,,,,,,"Tesla K40m (0)",,,12288.000000,"0x2305040000","[Unified Memory Memcpy HtoD]"
+0.335384,0.000112,1,1,1,4,1,1,93,0,0,,,,,"Tesla K40m (0)","1","7",,,"sha256_cuda(JOB**, int) [120]"
+0.335506,,,,,,,,,,,,,,,,,,"PC 0x40394a","0x2305040000","[Unified Memory CPU page faults]"
+0.335518,0.000002,,,,,,,,,,,,,,"Tesla K40m (0)",,,4096.000000,"0x2305040000","[Unified Memory Memcpy DtoH]"
+0.335519,0.000007,,,,,,,,,,,,,,"Tesla K40m (0)",,,61440.000000,"0x2305041000","[Unified Memory Memcpy DtoH]"

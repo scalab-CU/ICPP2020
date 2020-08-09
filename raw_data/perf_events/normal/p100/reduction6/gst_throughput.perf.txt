@@ -1,0 +1,7 @@
+==12870== NVPROF is profiling process 12870, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==12870== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==12870== Profiling result:
+==12870== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"gst_throughput","Global Store Throughput",415.205144MB/s,3.218507GB/s,3.143917GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"gst_throughput","Global Store Throughput",5.643043MB/s,8.594080MB/s,8.503460MB/s

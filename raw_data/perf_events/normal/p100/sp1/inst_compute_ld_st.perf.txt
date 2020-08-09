@@ -1,0 +1,14 @@
+==19615== NVPROF is profiling process 19615, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==19615== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==19615== Profiling result:
+==19615== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"inst_compute_ld_st","Load/Store Instructions",46240,83232,67378
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"inst_compute_ld_st","Load/Store Instructions",12448,74464,47833
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"inst_compute_ld_st","Load/Store Instructions",276853,436725,350232
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"inst_compute_ld_st","Load/Store Instructions",360250,1113849,704781
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"inst_compute_ld_st","Load/Store Instructions",10728,18192,13607
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"inst_compute_ld_st","Load/Store Instructions",44544,69616,49694
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"inst_compute_ld_st","Load/Store Instructions",963425,4404612,2371422
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"inst_compute_ld_st","Load/Store Instructions",14856,24384,17914
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"inst_compute_ld_st","Load/Store Instructions",109723,110980,110299

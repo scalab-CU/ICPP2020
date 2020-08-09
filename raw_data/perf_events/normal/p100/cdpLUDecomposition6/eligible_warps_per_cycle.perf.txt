@@ -1,0 +1,11 @@
+==11315== NVPROF is profiling process 11315, command: ./cdpLUDecomposition -matrix-size=5120
+==11315== Profiling application: ./cdpLUDecomposition -matrix-size=5120
+==11315== Profiling result:
+==11315== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.285747,1.285747,1.285747
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.561021,1.561021,1.561021
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.637058,0.676981,0.661763
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.257194,0.257194,0.257194
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.405542,0.867717,0.594968
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.391147,1.391147,1.391147

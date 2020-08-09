@@ -1,0 +1,6 @@
+==23141== NVPROF is profiling process 23141, command: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==23141== Profiling application: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==23141== Profiling result:
+==23141== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",99.982893%,99.982893%,99.982893%

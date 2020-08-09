@@ -1,0 +1,9 @@
+==4989== NVPROF is profiling process 4989, command: ./scan 128 2>&1 > /dev/null
+==4989== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4989== Profiling application: ./scan 128 2>&1 > /dev/null
+==4989== Profiling result:
+==4989== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.103895%,2.269364%,0.287030%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.216591%,1.625890%,1.167983%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.324044%,0.377805%,0.338094%

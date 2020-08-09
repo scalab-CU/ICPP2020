@@ -1,0 +1,8 @@
+==15285== NVPROF is profiling process 15285, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==15285== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==15285== Profiling result:
+==15285== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_store_throughput","Shared Memory Store Throughput",79.176319GB/s,149.197876GB/s,114.492375GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"shared_store_throughput","Shared Memory Store Throughput",214.771924GB/s,373.953576GB/s,323.095959GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_store_throughput","Shared Memory Store Throughput",70.255766GB/s,70.255766GB/s,70.255766GB/s

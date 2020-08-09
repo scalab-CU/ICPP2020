@@ -1,0 +1,13 @@
+==9862== NVPROF is profiling process 9862, command: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==9862== Profiling application: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==9862== Profiling result:
+==9862== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000754,0.000754,0.000754
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"inst_replay_overhead","Instruction Replay Overhead",0.000509,0.001081,0.000795
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.004799,0.004799,0.004799
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.001525,0.003201,0.001679
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"inst_replay_overhead","Instruction Replay Overhead",0.000313,0.001111,0.000428
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.002072,0.002072,0.002072
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000369,0.000369,0.000369
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.002231,0.002231,0.002231

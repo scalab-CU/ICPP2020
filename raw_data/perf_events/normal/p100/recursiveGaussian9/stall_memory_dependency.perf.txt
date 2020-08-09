@@ -1,0 +1,8 @@
+==28579== NVPROF is profiling process 28579, command: ./recursiveGaussian -image=./data/sample3.ppm 2>&1 > /dev/null
+==28579== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28579== Profiling application: ./recursiveGaussian -image=./data/sample3.ppm 2>&1 > /dev/null
+==28579== Profiling result:
+==28579== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"stall_memory_dependency","Issue Stall Reasons (Data Request)",38.717252%,40.788082%,39.744539%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"stall_memory_dependency","Issue Stall Reasons (Data Request)",63.650098%,68.619374%,66.411445%

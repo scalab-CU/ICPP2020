@@ -1,0 +1,8 @@
+==16813== NVPROF is profiling process 16813, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==16813== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==16813== Profiling result:
+==16813== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"ipc","Executed IPC",0.217689,0.491984,0.399573
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"ipc","Executed IPC",0.605912,0.707819,0.658749
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"ipc","Executed IPC",0.594823,0.594823,0.594823

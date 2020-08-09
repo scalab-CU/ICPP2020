@@ -1,0 +1,8 @@
+==16803== NVPROF is profiling process 16803, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==16803== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16803== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==16803== Profiling result:
+==16803== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000

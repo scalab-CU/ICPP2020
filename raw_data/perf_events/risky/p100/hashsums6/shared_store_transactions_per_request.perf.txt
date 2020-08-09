@@ -1,0 +1,17 @@
+==17551== NVPROF is profiling process 17551, command: ././crc_gpu input5.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X1F000000  
+value in hostpartialcrc = 0X8D34F7B8  
+
+==17551== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 526.189514 ms
+After cuda, hostpartialcrc[0] = 0XE8D7209F  
+After cuda, hostpartialcrc[0] = 3906412703  
+Program Ended Successfully!
+==17551== Profiling application: ././crc_gpu input5.in 2>&1 > /dev/null
+==17551== Profiling result:
+==17551== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.000000,2.000000,2.000000

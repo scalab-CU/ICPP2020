@@ -1,0 +1,11 @@
+==15895== NVPROF is profiling process 15895, command: ./cdpLUDecomposition -matrix-size=10000
+==15895== Profiling application: ./cdpLUDecomposition -matrix-size=10000
+==15895== Profiling result:
+==15895== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"gst_throughput","Global Store Throughput",109.925286GB/s,109.925286GB/s,109.925286GB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"gst_throughput","Global Store Throughput",16.973364GB/s,18.100580GB/s,17.671101GB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"gst_throughput","Global Store Throughput",20.763899GB/s,20.763899GB/s,20.763899GB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"gst_throughput","Global Store Throughput",616.797521MB/s,616.797521MB/s,616.797520MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"gst_throughput","Global Store Throughput",47.241404GB/s,59.604645GB/s,51.295941GB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"gst_throughput","Global Store Throughput",29.584474GB/s,29.584474GB/s,29.584474GB/s

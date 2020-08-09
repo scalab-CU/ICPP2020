@@ -1,0 +1,11 @@
+==5582== NVPROF is profiling process 5582, command: ./shfl_scan 800000 2>&1 > /dev/null
+==5582== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5582== Profiling application: ./shfl_scan 800000 2>&1 > /dev/null
+==5582== Profiling result:
+==5582== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"dram_read_throughput","Device Memory Read Throughput",64.638121GB/s,64.638121GB/s,64.638121GB/s
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"dram_read_throughput","Device Memory Read Throughput",56.187218GB/s,56.187218GB/s,56.187218GB/s
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"dram_read_throughput","Device Memory Read Throughput",125.659831GB/s,125.659831GB/s,125.659831GB/s
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"dram_read_throughput","Device Memory Read Throughput",2.882341GB/s,82.073309GB/s,72.511679GB/s
+======== Error: Application returned non-zero code 1

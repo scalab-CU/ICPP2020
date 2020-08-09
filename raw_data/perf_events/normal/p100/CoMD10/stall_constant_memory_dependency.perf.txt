@@ -1,0 +1,13 @@
+==9498== NVPROF is profiling process 9498, command: ./bin/CoMD-cuda -x 48 -y 48 -z 48 2>&1 > /dev/null
+==9498== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [64,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [65,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [66,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [67,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [68,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [69,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [70,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [657,0,0], thread: [71,0,0] Assertion `jAtom < 64` failed.
+==9498== Error: Application encountered error: device-side assert triggered (710).
+*** Error in `./bin/CoMD-cuda': malloc(): memory corruption: 0x000000000789c870 ***
+======== Error: CUDA device error.

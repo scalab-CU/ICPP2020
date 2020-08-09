@@ -1,0 +1,14 @@
+==24328== NVPROF is profiling process 24328, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==24328== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==24328== Profiling result:
+==24328== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"gld_requested_throughput","Requested Global Load Throughput",268.082945MB/s,281.523641MB/s,278.106565MB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"gld_requested_throughput","Requested Global Load Throughput",98.573013MB/s,184.957208MB/s,137.676130MB/s
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"gld_requested_throughput","Requested Global Load Throughput",437.050364MB/s,929.401129MB/s,674.687682MB/s
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"gld_requested_throughput","Requested Global Load Throughput",1.683668GB/s,5.098083GB/s,2.977866GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"gld_requested_throughput","Requested Global Load Throughput",101.455940MB/s,181.516113MB/s,142.747322MB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"gld_requested_throughput","Requested Global Load Throughput",97.233025MB/s,175.478067MB/s,135.296926MB/s
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"gld_requested_throughput","Requested Global Load Throughput",1.043963GB/s,4.452916GB/s,2.350054GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"gld_requested_throughput","Requested Global Load Throughput",100.445643MB/s,181.375868MB/s,142.392673MB/s
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"gld_requested_throughput","Requested Global Load Throughput",25.451083MB/s,34.601891MB/s,30.111176MB/s

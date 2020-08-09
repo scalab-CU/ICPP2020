@@ -1,0 +1,10 @@
+==6105== NVPROF is profiling process 6105, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==6105== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==6105== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==6105== Profiling result:
+==6105== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"l2_utilization","L2 Cache Utilization","Low (2)","Low (2)","Low (2)"
+==6105== Warning: One or more events or metrics overflowed. Rerun with "--print-gpu-trace" for detail.

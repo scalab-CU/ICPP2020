@@ -1,0 +1,14 @@
+==15806== NVPROF is profiling process 15806, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==15806== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==15806== Profiling result:
+==15806== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"sm_efficiency","Multiprocessor Activity",1.455650%,1.616410%,1.554577%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"sm_efficiency","Multiprocessor Activity",2.276588%,6.464986%,4.591364%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"sm_efficiency","Multiprocessor Activity",41.655156%,43.724249%,42.545288%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"sm_efficiency","Multiprocessor Activity",77.593672%,89.555025%,84.283440%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"sm_efficiency","Multiprocessor Activity",2.542366%,6.722326%,3.200883%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"sm_efficiency","Multiprocessor Activity",2.640223%,6.498891%,4.744234%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"sm_efficiency","Multiprocessor Activity",85.105535%,93.204473%,90.719312%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"sm_efficiency","Multiprocessor Activity",2.630514%,6.833221%,3.287362%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"sm_efficiency","Multiprocessor Activity",3.816949%,5.812327%,4.256208%

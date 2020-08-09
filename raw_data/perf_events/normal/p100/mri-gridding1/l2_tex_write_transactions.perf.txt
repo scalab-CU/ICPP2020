@@ -1,0 +1,14 @@
+==5436== NVPROF is profiling process 5436, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==5436== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==5436== Profiling result:
+==5436== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",1991933,1991933,1991933
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",2821904,2821904,2821904
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32,16384,1873
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",5188,2097153,266683
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",32,16384,1873
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",663978,663978,663978
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",8388608,8388608,8388608
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",2697416,2697416,2697416
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",5229,2113538,268767

@@ -1,0 +1,8 @@
+==19985== NVPROF is profiling process 19985, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==19985== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==19985== Profiling result:
+==19985== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex_cache_transactions","Unified Cache Transactions",38012,38012,38012
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"tex_cache_transactions","Unified Cache Transactions",2736,10692,6714
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex_cache_transactions","Unified Cache Transactions",24576,24576,24576

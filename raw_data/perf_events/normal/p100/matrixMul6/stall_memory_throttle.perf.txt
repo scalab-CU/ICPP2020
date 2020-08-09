@@ -1,0 +1,7 @@
+==8036== NVPROF is profiling process 8036, command: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==8036== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8036== Profiling application: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==8036== Profiling result:
+==8036== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.002903%,0.002911%,0.002907%

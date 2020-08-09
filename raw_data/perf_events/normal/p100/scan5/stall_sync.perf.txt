@@ -1,0 +1,9 @@
+==428== NVPROF is profiling process 428, command: ./scan 32 2>&1 > /dev/null
+==428== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==428== Profiling application: ./scan 32 2>&1 > /dev/null
+==428== Profiling result:
+==428== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_sync","Issue Stall Reasons (Synchronization)",20.499154%,24.737146%,22.980152%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,24.702702%,20.401712%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_sync","Issue Stall Reasons (Synchronization)",34.642838%,36.710221%,35.642233%

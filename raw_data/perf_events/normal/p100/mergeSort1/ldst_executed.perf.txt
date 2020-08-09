@@ -1,0 +1,9 @@
+==8033== NVPROF is profiling process 8033, command: ./mergeSort 1 2>&1 > /dev/null
+==8033== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==8033== Profiling result:
+==8033== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"ldst_executed","Executed Load/Store Instructions",1792,4096,2944
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"ldst_executed","Executed Load/Store Instructions",3840,6144,4992
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"ldst_executed","Executed Load/Store Instructions",3751936,3751936,3751936
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"ldst_executed","Executed Load/Store Instructions",1464101,1481064,1477335

@@ -1,0 +1,11 @@
+==24313== NVPROF is profiling process 24313, command: ./cdpLUDecomposition -matrix-size=1024
+==24313== Profiling application: ./cdpLUDecomposition -matrix-size=1024
+==24313== Profiling result:
+==24313== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"tex_cache_throughput","Unified Cache Throughput",172.298883GB/s,172.298883GB/s,172.298883GB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"tex_cache_throughput","Unified Cache Throughput",139.900763GB/s,147.842864GB/s,144.721222GB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"tex_cache_throughput","Unified Cache Throughput",324.812297GB/s,324.812297GB/s,324.812297GB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"tex_cache_throughput","Unified Cache Throughput",835.181393MB/s,835.181393MB/s,835.181392MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"tex_cache_throughput","Unified Cache Throughput",209.988353GB/s,402.018682GB/s,325.525007GB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"tex_cache_throughput","Unified Cache Throughput",446.277905GB/s,446.277905GB/s,446.277905GB/s

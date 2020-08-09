@@ -1,0 +1,8 @@
+==19067== NVPROF is profiling process 19067, command: ./convolutionSeparable 3072 2>&1 > /dev/null
+==19067== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19067== Profiling application: ./convolutionSeparable 3072 2>&1 > /dev/null
+==19067== Profiling result:
+==19067== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",7.000134%,8.250707%,7.502044%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",14.389684%,16.225120%,15.371647%

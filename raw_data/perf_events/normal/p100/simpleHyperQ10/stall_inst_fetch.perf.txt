@@ -1,0 +1,9 @@
+==9719== NVPROF is profiling process 9719, command: ./simpleHyperQ -nstreams=50 2>&1 > /dev/null
+==9719== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9719== Profiling application: ./simpleHyperQ -nstreams=50 2>&1 > /dev/null
+==9719== Profiling result:
+==9719== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",50,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",27.271805%,27.880356%,27.284477%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",8.049848%,8.049848%,8.049848%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",50,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",27.272075%,27.276463%,27.272494%

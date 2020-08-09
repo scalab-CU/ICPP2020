@@ -1,0 +1,14 @@
+==25741== NVPROF is profiling process 25741, command: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==25741== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25741== Profiling application: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==25741== Profiling result:
+==25741== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.255369%,0.255369%,0.255369%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.634495%,23.998057%,12.316276%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",9.612495%,9.612495%,9.612495%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",10.327218%,11.293474%,10.843137%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.117121%,0.121858%,0.119433%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",2.017606%,2.017606%,2.017606%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.067747%,0.067747%,0.067747%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",2.842938%,2.842938%,2.842938%

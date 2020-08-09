@@ -1,0 +1,13 @@
+==31476== NVPROF is profiling process 31476, command: ./transpose -dimX=10000 -dimY=10000 2>&1 > /dev/null
+==31476== Profiling application: ./transpose -dimX=10000 -dimY=10000 2>&1 > /dev/null
+==31476== Profiling result:
+==31476== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000075,0.000134,0.000087
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000083,0.000132,0.000096
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000096,0.000145,0.000107
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000095,0.000152,0.000107
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000067,0.000089,0.000073
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000085,0.000171,0.000097
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000329,0.000395,0.000364
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000102,0.000143,0.000112

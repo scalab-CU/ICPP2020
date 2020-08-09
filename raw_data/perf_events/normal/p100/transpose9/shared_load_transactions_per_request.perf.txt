@@ -1,0 +1,14 @@
+==17776== NVPROF is profiling process 17776, command: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==17776== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17776== Profiling application: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==17776== Profiling result:
+==17776== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",2.000000,2.000000,2.000000

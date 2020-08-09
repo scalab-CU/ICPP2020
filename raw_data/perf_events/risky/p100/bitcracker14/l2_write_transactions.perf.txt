@@ -1,0 +1,9 @@
+==9677== NVPROF is profiling process 9677, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==9677== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==9677== Profiling result:
+==9677== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"l2_write_transactions","L2 Write Transactions",178372,178372,178372
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"l2_write_transactions","L2 Write Transactions",78774026,78774026,78774026

@@ -1,0 +1,8 @@
+==8424== NVPROF is profiling process 8424, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==8424== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8424== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==8424== Profiling result:
+==8424== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%

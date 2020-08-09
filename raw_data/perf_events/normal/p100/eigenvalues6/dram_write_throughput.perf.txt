@@ -1,0 +1,9 @@
+==11758== NVPROF is profiling process 11758, command: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==11758== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11758== Profiling application: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==11758== Profiling result:
+==11758== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"dram_write_throughput","Device Memory Write Throughput",2.923196MB/s,3.675399MB/s,3.292759MB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"dram_write_throughput","Device Memory Write Throughput",49.455078KB/s,4.604885MB/s,3.474702MB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"dram_write_throughput","Device Memory Write Throughput",2.221334MB/s,3.399071MB/s,2.567451MB/s

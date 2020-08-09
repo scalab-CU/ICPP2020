@@ -1,0 +1,9 @@
+==30516== NVPROF is profiling process 30516, command: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==30516== Execution timeout, stopping the application...
+==30516== Profiling application: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==30516== Warning: Found 1 invalid records in the result.
+==30516== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==30516== Profiling result:
+==30516== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",90,"inst_compute_ld_st","Load/Store Instructions",184575590400,184575590400,184575590400

@@ -1,0 +1,10 @@
+==10532== NVPROF is profiling process 10532, command: ./sortingNetworks 1 2>&1 > /dev/null
+==10532== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10532== Profiling application: ./sortingNetworks 1 2>&1 > /dev/null
+==10532== Profiling result:
+==10532== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"stall_texture","Issue Stall Reasons (Texture)",0.103471%,0.351659%,0.186165%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"stall_texture","Issue Stall Reasons (Texture)",0.840918%,1.266526%,1.043642%
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"stall_texture","Issue Stall Reasons (Texture)",0.167948%,0.238944%,0.204057%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"stall_texture","Issue Stall Reasons (Texture)",5.636071%,6.034229%,5.813973%

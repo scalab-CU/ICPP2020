@@ -1,0 +1,16 @@
+==27601== NVPROF is profiling process 27601, command: ././crc_gpu input3.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XD2E00000  
+value in hostpartialcrc = 0X44C547B8  
+
+Execution time: 98.664833 ms
+After cuda, hostpartialcrc[0] = 0X58175018  
+After cuda, hostpartialcrc[0] = 1477922840  
+Program Ended Successfully!
+==27601== Profiling application: ././crc_gpu input3.in 2>&1 > /dev/null
+==27601== Profiling result:
+==27601== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"local_load_throughput","Local Memory Load Throughput",78.596601MB/s,78.596601MB/s,78.596601MB/s

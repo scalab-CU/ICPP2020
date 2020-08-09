@@ -1,0 +1,8 @@
+==23770== NVPROF is profiling process 23770, command: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==23770== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23770== Profiling application: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==23770== Profiling result:
+==23770== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"gld_efficiency","Global Memory Load Efficiency",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"gld_efficiency","Global Memory Load Efficiency",50.000000%,50.000000%,50.000000%

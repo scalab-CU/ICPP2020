@@ -1,0 +1,13 @@
+==15649== NVPROF is profiling process 15649, command: ./transpose -dimX=10000 -dimY=10000 2>&1 > /dev/null
+==15649== Profiling application: ./transpose -dimX=10000 -dimY=10000 2>&1 > /dev/null
+==15649== Profiling result:
+==15649== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12500000,12500000
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",100000000,100000000,100000000
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",12500000,12640984,12501395

@@ -1,0 +1,9 @@
+==7036== NVPROF is profiling process 7036, command: ./scan 96 2>&1 > /dev/null
+==7036== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7036== Profiling application: ./scan 96 2>&1 > /dev/null
+==7036== Profiling result:
+==7036== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",14.592308%,20.362579%,18.161176%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.335985%,12.383691%,10.064876%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",0.908430%,1.154733%,1.005141%

@@ -1,0 +1,26 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.01061s]
+Opening ./data/sample6.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.37081s]
+  Renumbering tree... [0.13376s]
+  Flattening Tree... [0.28203s]
+==17599== NVPROF is profiling process 17599, command: ./mum ./data/NC_003997.20k.fna ./data/sample6.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+25 queries (12500000 bp), need 112496450 bytes on the GPU [0.05543s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 12500250 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 25 queries (99996200 bytes) ...done
+Using blocks of 25 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 12500250
+	ref: 80084992
+	results: 99996200
+==17599== Error: Application encountered error: an illegal memory access was encountered (700).
+Kernel execution failed: an illegal memory access was encountered.
+======== Error: CUDA device error.

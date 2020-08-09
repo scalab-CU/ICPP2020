@@ -1,0 +1,9 @@
+==181527== NVPROF is profiling process 181527, command: ./hotspot 512 2 2 ./temp_512 ./power_512 output.out
+==181527== Profiling application: ./hotspot 512 2 2 ./temp_512 ./power_512 output.out
+==181527== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.634080,0.000088,,,,,,,,,,1.000000,11.073267,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.634503,0.000088,,,,,,,,,,1.000000,11.097553,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.634601,0.000013,43,43,1,16,16,1,32,3.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","calculate_temp(int, float*, float*, float*, int, int, int, int, float, float, float, float, float, float) [123]"
+0.634618,0.000080,,,,,,,,,,1.000000,12.148869,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

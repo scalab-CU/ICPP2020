@@ -1,0 +1,8 @@
+==6901== NVPROF is profiling process 6901, command: ./recursiveGaussian -image=./data/sample2.ppm 2>&1 > /dev/null
+==6901== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6901== Profiling application: ./recursiveGaussian -image=./data/sample2.ppm 2>&1 > /dev/null
+==6901== Profiling result:
+==6901== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"shared_efficiency","Shared Memory Efficiency",50.000000%,50.000000%,50.000000%

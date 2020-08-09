@@ -1,0 +1,8 @@
+==11877== NVPROF is profiling process 11877, command: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==11877== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11877== Profiling application: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==11877== Profiling result:
+==11877== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",17.455606%,17.455606%,17.455606%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",9.436463%,9.436463%,9.436463%

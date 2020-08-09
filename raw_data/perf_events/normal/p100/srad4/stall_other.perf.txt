@@ -1,0 +1,12 @@
+==24434== NVPROF is profiling process 24434, command: ./srad 200 0.5 1920 1080
+==24434== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24434== Profiling application: ./srad 200 0.5 1920 1080
+==24434== Profiling result:
+==24434== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","compress(long, float*)",1,"stall_other","Issue Stall Reasons (Other)",14.297786%,14.297786%,14.297786%
+"Tesla P100-PCIE-12GB (0)","reduce(long, int, int, float*, float*)",600,"stall_other","Issue Stall Reasons (Other)",5.050557%,45.744941%,21.681886%
+"Tesla P100-PCIE-12GB (0)","srad2(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float*, float*)",200,"stall_other","Issue Stall Reasons (Other)",23.810673%,24.662366%,24.140727%
+"Tesla P100-PCIE-12GB (0)","extract(long, float*)",1,"stall_other","Issue Stall Reasons (Other)",36.656460%,36.656460%,36.656460%
+"Tesla P100-PCIE-12GB (0)","prepare(long, float*, float*, float*)",200,"stall_other","Issue Stall Reasons (Other)",3.777345%,4.282564%,4.063369%
+"Tesla P100-PCIE-12GB (0)","srad(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float, float*, float*)",200,"stall_other","Issue Stall Reasons (Other)",65.748732%,66.641217%,66.214564%

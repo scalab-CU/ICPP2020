@@ -1,0 +1,14 @@
+==465== NVPROF is profiling process 465, command: ./transpose -dimX=6000 -dimY=6000 2>&1 > /dev/null
+==465== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==465== Profiling application: ./transpose -dimX=6000 -dimY=6000 2>&1 > /dev/null
+==465== Profiling result:
+==465== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",370.716637GB/s,381.064883GB/s,376.854387GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",372.066014GB/s,381.250126GB/s,376.615819GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",279.223130GB/s,286.156627GB/s,283.139629GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",279.185929GB/s,285.990644GB/s,283.372842GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",201.938292GB/s,206.264588GB/s,204.498346GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",371.445132GB/s,381.018871GB/s,377.263694GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",59.221835GB/s,59.781785GB/s,59.495054GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"gld_throughput","Global Load Throughput",278.672225GB/s,286.006807GB/s,283.307927GB/s

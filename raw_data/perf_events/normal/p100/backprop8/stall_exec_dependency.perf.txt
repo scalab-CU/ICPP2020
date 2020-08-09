@@ -1,0 +1,8 @@
+==2229== NVPROF is profiling process 2229, command: ./backprop 600000
+==2229== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2229== Profiling application: ./backprop 600000
+==2229== Profiling result:
+==2229== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",11.565928%,11.565928%,11.565928%
+"Tesla P100-PCIE-12GB (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.573356%,2.573356%,2.573356%

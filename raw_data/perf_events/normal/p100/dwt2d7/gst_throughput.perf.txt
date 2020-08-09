@@ -1,0 +1,8 @@
+==11041== NVPROF is profiling process 11041, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==11041== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==11041== Profiling result:
+==11041== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_throughput","Global Store Throughput",25.442539GB/s,48.357134GB/s,37.039507GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"gst_throughput","Global Store Throughput",80.149014GB/s,141.006552GB/s,121.723404GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_throughput","Global Store Throughput",284.225006GB/s,284.225006GB/s,284.225006GB/s

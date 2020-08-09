@@ -1,0 +1,8 @@
+==32048== NVPROF is profiling process 32048, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==32048== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32048== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==32048== Profiling result:
+==32048== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_other","Issue Stall Reasons (Other)",2.576607%,33.174357%,18.577158%
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"stall_other","Issue Stall Reasons (Other)",2.234175%,2.822967%,2.516752%

@@ -1,0 +1,13 @@
+==13960== NVPROF is profiling process 13960, command: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==13960== Profiling application: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==13960== Profiling result:
+==13960== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"sysmem_read_transactions","System Memory Read Transactions",0,0,0

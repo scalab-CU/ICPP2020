@@ -1,0 +1,9 @@
+==14915== NVPROF is profiling process 14915, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==14915== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==14915== Profiling result:
+==14915== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"issue_slots","Issue Slots",298994,299066,299020
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"issue_slots","Issue Slots",959729,959913,959790
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"issue_slots","Issue Slots",105558,105655,105592
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"issue_slots","Issue Slots",1537488,1537488,1537488

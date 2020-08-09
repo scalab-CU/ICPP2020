@@ -1,0 +1,8 @@
+==7308== NVPROF is profiling process 7308, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==7308== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7308== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==7308== Profiling result:
+==7308== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"stall_other","Issue Stall Reasons (Other)",12.542553%,12.542553%,12.542553%
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"stall_other","Issue Stall Reasons (Other)",60.416010%,60.469194%,60.442602%

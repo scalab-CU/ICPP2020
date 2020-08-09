@@ -1,0 +1,14 @@
+==15026== NVPROF is profiling process 15026, command: ./dct8x8 sample7.bmp 2>&1 > /dev/null
+==15026== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15026== Profiling application: ./dct8x8 sample7.bmp 2>&1 > /dev/null
+==15026== Profiling result:
+==15026== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",9.302041%,9.302041%,9.302041%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.369236%,0.516397%,0.442816%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.899446%,0.899446%,0.899446%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.464626%,0.653902%,0.573691%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",10.031558%,10.086594%,10.067331%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",3.384947%,3.384947%,3.384947%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.792011%,0.792011%,0.792011%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",3.956631%,3.956631%,3.956631%

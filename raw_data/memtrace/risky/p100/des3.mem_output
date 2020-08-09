@@ -1,0 +1,9 @@
+==22132== NVPROF is profiling process 22132, command: ././des --cipher 0x736164666A6B6A64 --key-alphabet ades --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==22132== Profiling application: ././des --cipher 0x736164666A6B6A64 --key-alphabet ades --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==22132== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,B,MB/s,,,,,,
+0.326373,0.000002,,,,,,,,,,3,1.753078,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326383,0.000001,,,,,,,,,,7,5.960464,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326422,6.661444,274,1,1,256,1,1,39,4.531250,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","kernel(char const *, char const *, unsigned int, unsigned int, unsigned int, unsigned long) [119]"
+6.987938,0.000002,,,,,,,,,,16,7.690922,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

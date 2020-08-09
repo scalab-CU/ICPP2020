@@ -1,0 +1,8 @@
+==32585== NVPROF is profiling process 32585, command: ./FDTD3d -dimx=240 -dimy=240 -dimz=240 2>&1 > /dev/null
+==32585== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32585== Profiling application: ./FDTD3d -dimx=240 -dimy=240 -dimz=240 2>&1 > /dev/null
+==32585== Profiling result:
+==32585== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","FiniteDifferencesKernel(float*, float const *, int, int, int)",5,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.099109%,0.116801%,0.109111%
+======== Error: Application returned non-zero code 1

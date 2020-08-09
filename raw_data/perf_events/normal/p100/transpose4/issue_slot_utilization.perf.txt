@@ -1,0 +1,13 @@
+==13952== NVPROF is profiling process 13952, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==13952== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==13952== Profiling result:
+==13952== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",37.776204%,37.956256%,37.850451%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",33.424545%,33.601744%,33.530105%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",26.592380%,26.776657%,26.686190%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",28.168332%,28.397927%,28.274318%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",36.296098%,36.658221%,36.500079%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",20.470154%,20.590605%,20.537288%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",4.186722%,4.254925%,4.249342%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"issue_slot_utilization","Issue Slot Utilization",25.859238%,26.027245%,25.933126%

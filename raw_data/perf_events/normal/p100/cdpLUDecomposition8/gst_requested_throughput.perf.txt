@@ -1,0 +1,11 @@
+==12797== NVPROF is profiling process 12797, command: ./cdpLUDecomposition -matrix-size=7168
+==12797== Profiling application: ./cdpLUDecomposition -matrix-size=7168
+==12797== Profiling result:
+==12797== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"gst_requested_throughput","Requested Global Store Throughput",25.458083GB/s,25.458083GB/s,25.458083GB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"gst_requested_throughput","Requested Global Store Throughput",9.419096GB/s,9.740786GB/s,9.564484GB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"gst_requested_throughput","Requested Global Store Throughput",8.703843GB/s,8.703843GB/s,8.703843GB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"gst_requested_throughput","Requested Global Store Throughput",191.508175MB/s,191.508175MB/s,191.508174MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"gst_requested_throughput","Requested Global Store Throughput",9.112445GB/s,12.288210GB/s,10.459355GB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"gst_requested_throughput","Requested Global Store Throughput",10.890196GB/s,10.890196GB/s,10.890196GB/s

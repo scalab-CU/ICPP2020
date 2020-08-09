@@ -1,0 +1,7 @@
+==7256== NVPROF is profiling process 7256, command: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==7256== Profiling application: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==7256== Profiling result:
+==7256== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=256, bool=1>(int*, int*, unsigned int)",101,"inst_inter_thread_communication","Inter-Thread Instructions",12288,12288,12288
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=32, bool=1>(int*, int*, unsigned int)",100,"inst_inter_thread_communication","Inter-Thread Instructions",192,192,192

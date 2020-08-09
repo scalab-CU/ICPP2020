@@ -1,0 +1,8 @@
+==914== NVPROF is profiling process 914, command: ./kmeans -i ./data/1024000_34.txt 2>&1 > /dev/null
+==914== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==914== Profiling application: ./kmeans -i ./data/1024000_34.txt 2>&1 > /dev/null
+==914== Profiling result:
+==914== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",10.022962%,10.022962%,10.022962%
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"tex_cache_hit_rate","Unified Cache Hit Rate",50.251344%,50.253988%,50.252666%

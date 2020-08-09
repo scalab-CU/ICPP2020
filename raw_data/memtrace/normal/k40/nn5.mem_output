@@ -1,0 +1,8 @@
+==1208== NVPROF is profiling process 1208, command: ./nn list1024k.txt -r 5 -lat 30 -lng 20
+==1208== Profiling application: ./nn list1024k.txt -r 5 -lat 30 -lng 20
+==1208== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.312706,0.002225,,,,,,,,,,8.000000,3.510613,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.314988,0.000074,4096,1,1,256,1,1,9,0,0,,,,,"Tesla K40m (0)","1","7","euclid(latLong*, float*, int, float, float) [116]"
+0.315126,0.001934,,,,,,,,,,4.000000,2.020076,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

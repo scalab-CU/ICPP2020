@@ -1,0 +1,8 @@
+==8672== NVPROF is profiling process 8672, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==8672== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8672== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==8672== Profiling result:
+==8672== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0

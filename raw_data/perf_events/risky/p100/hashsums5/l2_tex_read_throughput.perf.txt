@@ -1,0 +1,16 @@
+==30011== NVPROF is profiling process 30011, command: ././crc_gpu input4.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X82E00000  
+value in hostpartialcrc = 0XEF98F7B8  
+
+Execution time: 115.624611 ms
+After cuda, hostpartialcrc[0] = 0X692C6C22  
+After cuda, hostpartialcrc[0] = 1764518946  
+Program Ended Successfully!
+==30011== Profiling application: ././crc_gpu input4.in 2>&1 > /dev/null
+==30011== Profiling result:
+==30011== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",8.995973MB/s,8.995973MB/s,8.995972MB/s

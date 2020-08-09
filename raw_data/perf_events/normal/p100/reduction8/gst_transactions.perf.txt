@@ -1,0 +1,7 @@
+==12331== NVPROF is profiling process 12331, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==12331== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==12331== Profiling result:
+==12331== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"gst_transactions","Global Store Transactions",1,1,1
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"gst_transactions","Global Store Transactions",128,65536,32994

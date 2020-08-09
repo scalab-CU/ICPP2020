@@ -1,0 +1,17 @@
+==6628== NVPROF is profiling process 6628, command: ./convolutionFFT2D 8000
+==6628== Profiling application: ./convolutionFFT2D 8000
+==6628== Profiling result:
+==6628== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"tex_fu_utilization","Texture Function Unit Utilization","Low (3)","Low (3)","Low (3)"
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"tex_fu_utilization","Texture Function Unit Utilization","Low (2)","Low (2)","Low (2)"
+======== Error: Application returned non-zero code 1

@@ -1,0 +1,9 @@
+==10945== NVPROF is profiling process 10945, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==10945== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==10945== Profiling result:
+==10945== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex_cache_throughput","Unified Cache Throughput",49.581840GB/s,81.570124GB/s,67.090525GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"tex_cache_throughput","Unified Cache Throughput",116.937752GB/s,154.842880GB/s,137.500918GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"tex_cache_throughput","Unified Cache Throughput",17.531164GB/s,33.303348GB/s,25.445573GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex_cache_throughput","Unified Cache Throughput",67.766643GB/s,67.766643GB/s,67.766643GB/s

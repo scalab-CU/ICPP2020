@@ -1,0 +1,9 @@
+==4828== NVPROF is profiling process 4828, command: ./eigenvalues --matrix-size=1024 2>&1 > /dev/null
+==4828== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4828== Profiling application: ./eigenvalues --matrix-size=1024 2>&1 > /dev/null
+==4828== Profiling result:
+==4828== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",15117894,15117894,15117894
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",395901,395901,395901
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",883872,883872,883872

@@ -1,0 +1,9 @@
+==10111== NVPROF is profiling process 10111, command: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==10111== Execution timeout, stopping the application...
+==10111== Profiling application: ./matrixMul -wA=5120 -hA=5120 -wB=5120 -hB=5120 2>&1 > /dev/null
+==10111== Warning: Found 1 invalid records in the result.
+==10111== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==10111== Profiling result:
+==10111== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",129,"flop_count_sp","Floating Point Operations(Single Precision)",268435456000,268435456000,268435456000

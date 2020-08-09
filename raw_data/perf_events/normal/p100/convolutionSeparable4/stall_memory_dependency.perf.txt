@@ -1,0 +1,8 @@
+==15331== NVPROF is profiling process 15331, command: ./convolutionSeparable 6144 2>&1 > /dev/null
+==15331== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15331== Profiling application: ./convolutionSeparable 6144 2>&1 > /dev/null
+==15331== Profiling result:
+==15331== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",10.105555%,11.113479%,10.494490%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",15.386002%,16.560891%,16.032189%

@@ -1,0 +1,7 @@
+==7117== NVPROF is profiling process 7117, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==7117== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==7117== Profiling result:
+==7117== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"global_hit_rate","Global Hit Rate in unified l1/tex",0.000000%,0.000000%,0.000000%

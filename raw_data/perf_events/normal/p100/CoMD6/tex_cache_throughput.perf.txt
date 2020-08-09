@@ -1,0 +1,32 @@
+==1775== NVPROF is profiling process 1775, command: ./bin/CoMD-cuda -e -x 72 -y 72 -z 72 2>&1 > /dev/null
+==1775== Profiling application: ./bin/CoMD-cuda -e -x 72 -y 72 -z 72 2>&1 > /dev/null
+==1775== Profiling result:
+==1775== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"tex_cache_throughput","Unified Cache Throughput",182.144613GB/s,195.007387GB/s,189.801504GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"tex_cache_throughput","Unified Cache Throughput",406.161856GB/s,414.796597GB/s,409.329055GB/s
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"tex_cache_throughput","Unified Cache Throughput",26.021106GB/s,29.648562GB/s,28.146584GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"tex_cache_throughput","Unified Cache Throughput",353.022260GB/s,359.358251GB/s,355.331479GB/s
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"tex_cache_throughput","Unified Cache Throughput",151.531948GB/s,151.531948GB/s,151.531948GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"tex_cache_throughput","Unified Cache Throughput",86.136479GB/s,87.215078GB/s,86.922967GB/s
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"tex_cache_throughput","Unified Cache Throughput",129.572802GB/s,159.007041GB/s,144.358816GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"tex_cache_throughput","Unified Cache Throughput",338.410602GB/s,390.054088GB/s,372.362546GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"tex_cache_throughput","Unified Cache Throughput",3.577125GB/s,131.373503GB/s,17.735645GB/s
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"tex_cache_throughput","Unified Cache Throughput",156.981731GB/s,165.836725GB/s,162.756422GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"tex_cache_throughput","Unified Cache Throughput",147.761959GB/s,155.882925GB/s,152.593993GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"tex_cache_throughput","Unified Cache Throughput",261.718051GB/s,267.110844GB/s,264.920448GB/s
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"tex_cache_throughput","Unified Cache Throughput",193.715096GB/s,251.034478GB/s,231.985523GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"tex_cache_throughput","Unified Cache Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"tex_cache_throughput","Unified Cache Throughput",11.789239GB/s,13.665399GB/s,13.061146GB/s
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"tex_cache_throughput","Unified Cache Throughput",204.761952GB/s,256.173645GB/s,235.353221GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"tex_cache_throughput","Unified Cache Throughput",212.270181GB/s,247.941718GB/s,238.025983GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"tex_cache_throughput","Unified Cache Throughput",71.803375GB/s,79.848417GB/s,77.400901GB/s
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"tex_cache_throughput","Unified Cache Throughput",297.908746GB/s,329.584263GB/s,322.221513GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"tex_cache_throughput","Unified Cache Throughput",228.667571GB/s,229.190051GB/s,228.969871GB/s
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"tex_cache_throughput","Unified Cache Throughput",166.617907GB/s,215.039171GB/s,200.116073GB/s
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"tex_cache_throughput","Unified Cache Throughput",384.795116GB/s,399.561069GB/s,394.838177GB/s
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"tex_cache_throughput","Unified Cache Throughput",114.951815GB/s,156.166143GB/s,143.369654GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"tex_cache_throughput","Unified Cache Throughput",0.986924GB/s,63.755966GB/s,13.643749GB/s
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"tex_cache_throughput","Unified Cache Throughput",150.353943GB/s,164.214177GB/s,158.312668GB/s
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"tex_cache_throughput","Unified Cache Throughput",247.188787GB/s,261.952610GB/s,256.983733GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"tex_cache_throughput","Unified Cache Throughput",83.565145GB/s,100.779262GB/s,92.520065GB/s

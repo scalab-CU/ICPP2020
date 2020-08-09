@@ -1,0 +1,8 @@
+==17185== NVPROF is profiling process 17185, command: ./reduction -n=16777216 -type=double 2>&1 > /dev/null
+==17185== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17185== Profiling application: ./reduction -n=16777216 -type=double 2>&1 > /dev/null
+==17185== Profiling result:
+==17185== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<double, unsigned int=256, bool=1>(double*, double*, unsigned int)",101,"stall_other","Issue Stall Reasons (Other)",0.656762%,0.682513%,0.667615%
+"Tesla P100-PCIE-12GB (0)","void reduce6<double, unsigned int=32, bool=1>(double*, double*, unsigned int)",100,"stall_other","Issue Stall Reasons (Other)",2.179177%,3.044280%,2.485109%

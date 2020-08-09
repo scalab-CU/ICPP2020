@@ -1,0 +1,14 @@
+==5242== NVPROF is profiling process 5242, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==5242== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5242== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==5242== Profiling result:
+==5242== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8391869,9341045,9329299
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8391499,9340658,9329725
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8396971,9716039,9699202
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8396897,9715220,9697968
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",10273433,10284037,10278383
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8389522,9341520,9330279
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",14128792,17131134,16924915
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"dram_write_transactions","Device Memory Write Transactions",8396444,9714349,9697857

@@ -1,0 +1,11 @@
+==415825== NVPROF is profiling process 415825, command: ./cdpAdvancedQuicksort --size=3000000 --seed=2000
+==415825== Warning: In CUDA 9.0, devices with compute capability 7.0 don't support CDP tracing.
+==415825== Profiling application: ./cdpAdvancedQuicksort --size=3000000 --seed=2000
+==415825== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.666243,0.002103,,,,,,,,,,11.444092,5.315515,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.668620,0.000001,,,,,,,,,,0.000122,0.093132,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.668813,0.000002,,,,,,,,,,0.000031,0.019007,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.679307,0.000003,,,,,,,,,,0.000031,0.010957,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.679679,0.001952,,,,,,,,,,11.444092,5.726734,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

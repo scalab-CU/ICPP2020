@@ -1,0 +1,32 @@
+==15041== NVPROF is profiling process 15041, command: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==15041== Profiling application: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==15041== Profiling result:
+==15041== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"sm_efficiency","Multiprocessor Activity",86.718631%,90.611986%,88.677645%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"sm_efficiency","Multiprocessor Activity",92.701982%,95.518986%,94.119115%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"sm_efficiency","Multiprocessor Activity",74.779926%,82.343331%,78.744680%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"sm_efficiency","Multiprocessor Activity",92.823965%,95.234723%,94.224306%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"sm_efficiency","Multiprocessor Activity",58.780303%,58.780303%,58.780303%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"sm_efficiency","Multiprocessor Activity",75.755147%,78.742209%,77.386404%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"sm_efficiency","Multiprocessor Activity",60.777003%,73.193345%,67.503360%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"sm_efficiency","Multiprocessor Activity",41.741367%,49.391030%,45.251198%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"sm_efficiency","Multiprocessor Activity",3.407774%,33.359449%,7.909885%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"sm_efficiency","Multiprocessor Activity",87.967921%,91.103650%,89.691168%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"sm_efficiency","Multiprocessor Activity",53.907950%,59.415473%,57.541697%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"sm_efficiency","Multiprocessor Activity",79.024641%,81.083189%,80.392906%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"sm_efficiency","Multiprocessor Activity",29.420689%,41.991418%,34.461503%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"sm_efficiency","Multiprocessor Activity",0.076066%,0.490279%,0.310318%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"sm_efficiency","Multiprocessor Activity",88.088035%,91.282021%,89.886631%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"sm_efficiency","Multiprocessor Activity",30.511905%,50.003705%,45.741211%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"sm_efficiency","Multiprocessor Activity",29.667125%,37.673011%,32.676782%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"sm_efficiency","Multiprocessor Activity",25.101800%,31.079872%,27.931183%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"sm_efficiency","Multiprocessor Activity",82.733072%,87.465135%,85.650954%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"sm_efficiency","Multiprocessor Activity",87.806555%,89.027708%,88.716941%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"sm_efficiency","Multiprocessor Activity",63.833773%,73.227167%,69.560414%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"sm_efficiency","Multiprocessor Activity",86.309620%,88.267781%,87.075032%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"sm_efficiency","Multiprocessor Activity",22.806283%,42.576051%,27.522984%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"sm_efficiency","Multiprocessor Activity",0.574750%,13.835713%,2.405913%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"sm_efficiency","Multiprocessor Activity",87.285702%,92.883777%,90.277040%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"sm_efficiency","Multiprocessor Activity",70.328215%,87.570740%,85.859916%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"sm_efficiency","Multiprocessor Activity",41.070504%,49.525020%,45.811037%

@@ -1,0 +1,9 @@
+==31395== NVPROF is profiling process 31395, command: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==31395== Profiling application: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==31395== Profiling result:
+==31395== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_load_throughput","Shared Memory Load Throughput",186.060830GB/s,300.028485GB/s,248.205110GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_load_throughput","Shared Memory Load Throughput",440.377842GB/s,555.259018GB/s,506.337519GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_load_throughput","Shared Memory Load Throughput",60.394459GB/s,115.483999GB/s,88.328847GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_load_throughput","Shared Memory Load Throughput",270.465980GB/s,270.465980GB/s,270.465980GB/s

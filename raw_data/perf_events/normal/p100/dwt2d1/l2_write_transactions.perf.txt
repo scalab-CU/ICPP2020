@@ -1,0 +1,9 @@
+==9857== NVPROF is profiling process 9857, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==9857== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==9857== Profiling result:
+==9857== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_write_transactions","L2 Write Transactions",32781,32781,32781
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_write_transactions","L2 Write Transactions",131089,131089,131089
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_write_transactions","L2 Write Transactions",8205,8205,8205
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_write_transactions","L2 Write Transactions",393284,393284,393284

@@ -1,0 +1,8 @@
+==20536== NVPROF is profiling process 20536, command: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==20536== Profiling application: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==20536== Profiling result:
+==20536== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",24.980474GB/s,48.049126GB/s,36.680246GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",77.570312GB/s,144.550186GB/s,122.679140GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",279.831986GB/s,279.831986GB/s,279.831986GB/s

@@ -1,0 +1,9 @@
+==4605== NVPROF is profiling process 4605, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==4605== Execution timeout, stopping the application...
+==4605== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==4605== Warning: Found 1 invalid records in the result.
+==4605== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==4605== Profiling result:
+==4605== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",74,"flop_count_sp","Floating Point Operations(Single Precision)",463856467968,463856467968,463856467968

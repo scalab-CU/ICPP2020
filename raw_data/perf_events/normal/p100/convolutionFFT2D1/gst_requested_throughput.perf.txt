@@ -1,0 +1,16 @@
+==23186== NVPROF is profiling process 23186, command: ./convolutionFFT2D 1000
+==23186== Profiling application: ./convolutionFFT2D 1000
+==23186== Profiling result:
+==23186== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=8, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"gst_requested_throughput","Requested Global Store Throughput",15.682335GB/s,15.917435GB/s,15.783714GB/s
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"gst_requested_throughput","Requested Global Store Throughput",26.433969GB/s,26.433969GB/s,26.433969GB/s
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"gst_requested_throughput","Requested Global Store Throughput",16.255812MB/s,16.689301MB/s,16.505836MB/s
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"gst_requested_throughput","Requested Global Store Throughput",26.805648GB/s,26.864455GB/s,26.835019GB/s
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"gst_requested_throughput","Requested Global Store Throughput",28.384687GB/s,28.597434GB/s,28.492196GB/s
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"gst_requested_throughput","Requested Global Store Throughput",15.038962GB/s,15.119056GB/s,15.090398GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"gst_requested_throughput","Requested Global Store Throughput",24.058152GB/s,24.058152GB/s,24.058152GB/s
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=512, unsigned int=1, unsigned int=8, unsigned int=16, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"gst_requested_throughput","Requested Global Store Throughput",15.550482GB/s,15.919511GB/s,15.758810GB/s
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"gst_requested_throughput","Requested Global Store Throughput",26.870368GB/s,26.870368GB/s,26.870368GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"gst_requested_throughput","Requested Global Store Throughput",26.229799GB/s,26.354138GB/s,26.291821GB/s
+======== Error: Application returned non-zero code 1

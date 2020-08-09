@@ -1,0 +1,8 @@
+read 131072 points
+==19327== NVPROF is profiling process 19327, command: ./streamcluster 10 20 256 131072 524288 1000 none output.txt 1 2>&1 > /dev/null
+finish local search
+==19327== Profiling application: ./streamcluster 10 20 256 131072 524288 1000 none output.txt 1 2>&1 > /dev/null
+==19327== Profiling result:
+==19327== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",1611,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",50071,1102843,97782

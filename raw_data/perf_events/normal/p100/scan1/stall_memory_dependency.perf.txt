@@ -1,0 +1,9 @@
+==3964== NVPROF is profiling process 3964, command: ./scan 13 2>&1 > /dev/null
+==3964== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3964== Profiling application: ./scan 13 2>&1 > /dev/null
+==3964== Profiling result:
+==3964== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",48.744803%,66.792564%,57.034053%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_memory_dependency","Issue Stall Reasons (Data Request)",36.018670%,64.411163%,42.364513%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",50.703773%,53.055033%,51.915846%

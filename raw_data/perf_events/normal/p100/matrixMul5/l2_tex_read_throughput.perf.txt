@@ -1,0 +1,6 @@
+==4010== NVPROF is profiling process 4010, command: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==4010== Profiling application: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==4010== Profiling result:
+==4010== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",235.766319GB/s,261.680810GB/s,239.111771GB/s

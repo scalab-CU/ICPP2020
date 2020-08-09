@@ -1,0 +1,15 @@
+==195387== NVPROF is profiling process 195387, command: ./backprop 262144
+==195387== Profiling application: ./backprop 262144
+==195387== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.473011,0.000090,,,,,,,,,,1.000004,10.891519,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.473321,0.003714,,,,,,,,,,17.000065,4.469553,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.477040,0.000074,1,16384,1,16,16,1,21,1.062500,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int) [116]"
+0.477116,0.000080,,,,,,,,,,1.000000,12.149020,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.478445,0.000001,,,,,,,,,,0.000065,0.058208,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.478673,0.003678,,,,,,,,,,17.000065,4.513924,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.482574,0.003660,,,,,,,,,,17.000065,4.535786,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.486265,0.000097,1,16384,1,16,16,1,27,0.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*) [132]"
+0.486381,0.000083,,,,,,,,,,1.000004,11.805970,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.486680,0.002846,,,,,,,,,,17.000065,5.833561,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

@@ -1,0 +1,18 @@
+==1229== NVPROF is profiling process 1229, command: ./alignedTypes 2 2>&1 > /dev/null
+==1229== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1229== Profiling application: ./alignedTypes 2 2>&1 > /dev/null
+==1229== Profiling result:
+==1229== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"stall_other","Issue Stall Reasons (Other)",9.844046%,10.353397%,10.089983%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.898836%,0.928740%,0.910427%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"stall_other","Issue Stall Reasons (Other)",1.676698%,1.787280%,1.737845%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.549053%,0.570269%,0.559359%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"stall_other","Issue Stall Reasons (Other)",3.940185%,4.298332%,4.075846%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"stall_other","Issue Stall Reasons (Other)",3.075066%,3.351433%,3.184510%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"stall_other","Issue Stall Reasons (Other)",1.023992%,1.043122%,1.033359%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.902989%,0.922605%,0.911847%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.358810%,0.364242%,0.360954%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.921309%,0.932861%,0.926106%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"stall_other","Issue Stall Reasons (Other)",1.563724%,1.757469%,1.668653%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"stall_other","Issue Stall Reasons (Other)",0.452005%,0.467406%,0.460099%

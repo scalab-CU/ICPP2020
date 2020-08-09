@@ -1,0 +1,32 @@
+==25309== NVPROF is profiling process 25309, command: ./bin/CoMD-cuda -e -x 64 -y 64 -z 64 2>&1 > /dev/null
+==25309== Profiling application: ./bin/CoMD-cuda -e -x 64 -y 64 -z 64 2>&1 > /dev/null
+==25309== Profiling result:
+==25309== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"ipc","Executed IPC",0.087877,0.093944,0.091827
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"ipc","Executed IPC",0.205959,0.210418,0.209063
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"ipc","Executed IPC",0.174146,0.186755,0.178582
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"ipc","Executed IPC",0.044970,0.050783,0.048107
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"ipc","Executed IPC",0.529953,0.529953,0.529953
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"ipc","Executed IPC",0.266969,0.290610,0.270030
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"ipc","Executed IPC",0.362634,0.474982,0.415521
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"ipc","Executed IPC",0.901765,1.017364,0.932759
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"ipc","Executed IPC",0.021946,0.301276,0.052675
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"ipc","Executed IPC",0.223470,0.244079,0.231109
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"ipc","Executed IPC",0.412403,0.460586,0.425921
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"ipc","Executed IPC",0.955866,1.030654,0.963447
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"ipc","Executed IPC",0.362938,0.528964,0.459240
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"ipc","Executed IPC",0.038172,0.091133,0.072543
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"ipc","Executed IPC",0.019077,0.023945,0.022682
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"ipc","Executed IPC",0.382027,0.499233,0.455326
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"ipc","Executed IPC",0.413699,0.524258,0.504179
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"ipc","Executed IPC",0.259238,0.331207,0.294443
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"ipc","Executed IPC",0.186489,0.202327,0.192060
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"ipc","Executed IPC",0.605731,0.655839,0.607270
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"ipc","Executed IPC",0.245110,0.377993,0.295793
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"ipc","Executed IPC",0.351451,0.362519,0.359102
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"ipc","Executed IPC",0.227482,0.390382,0.348984
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"ipc","Executed IPC",0.095248,0.298656,0.225064
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"ipc","Executed IPC",0.063489,0.068086,0.066196
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"ipc","Executed IPC",0.314918,0.350640,0.327514
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"ipc","Executed IPC",0.065171,0.079242,0.072504

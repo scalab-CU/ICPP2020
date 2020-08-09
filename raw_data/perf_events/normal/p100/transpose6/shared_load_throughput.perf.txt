@@ -1,0 +1,13 @@
+==26452== NVPROF is profiling process 26452, command: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==26452== Profiling application: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==26452== Profiling result:
+==26452== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",187.182881GB/s,188.814693GB/s,188.155413GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",375.157477GB/s,378.242861GB/s,376.767525GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",1236.825792GB/s,1258.553985GB/s,1247.461247GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",309.154325GB/s,315.543793GB/s,311.980570GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",220.524759GB/s,223.917671GB/s,222.319311GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"shared_load_throughput","Shared Memory Load Throughput",309.668300GB/s,316.401399GB/s,312.328390GB/s

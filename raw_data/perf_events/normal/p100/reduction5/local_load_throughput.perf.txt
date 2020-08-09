@@ -1,0 +1,7 @@
+==8635== NVPROF is profiling process 8635, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==8635== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==8635== Profiling result:
+==8635== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"local_load_throughput","Local Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s

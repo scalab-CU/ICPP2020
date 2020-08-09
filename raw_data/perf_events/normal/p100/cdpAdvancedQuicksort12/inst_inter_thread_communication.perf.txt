@@ -1,0 +1,7 @@
+==17225== NVPROF is profiling process 17225, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==17225== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==17225== Profiling result:
+==17225== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"inst_inter_thread_communication","Inter-Thread Instructions",0,0,0
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",1999,"inst_inter_thread_communication","Inter-Thread Instructions",26599,163501828,74834123

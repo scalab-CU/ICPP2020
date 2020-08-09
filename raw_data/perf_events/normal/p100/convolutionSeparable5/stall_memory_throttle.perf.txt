@@ -1,0 +1,8 @@
+==4364== NVPROF is profiling process 4364, command: ./convolutionSeparable 7168 2>&1 > /dev/null
+==4364== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4364== Profiling application: ./convolutionSeparable 7168 2>&1 > /dev/null
+==4364== Profiling result:
+==4364== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",11.145152%,12.075585%,11.324252%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",5.529149%,6.892237%,5.821092%

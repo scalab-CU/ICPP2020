@@ -1,0 +1,7 @@
+==6034== NVPROF is profiling process 6034, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==6034== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==6034== Profiling result:
+==6034== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%

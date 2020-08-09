@@ -1,0 +1,9 @@
+==2701== NVPROF is profiling process 2701, command: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==2701== Profiling application: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==2701== Profiling result:
+==2701== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",49.412910GB/s,78.003349GB/s,65.271986GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",108.332345GB/s,135.905560GB/s,125.127332GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",17.511442GB/s,31.531507GB/s,24.889214GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",67.666470GB/s,67.666470GB/s,67.666470GB/s

@@ -1,0 +1,18 @@
+==4381== NVPROF is profiling process 4381, command: ./alignedTypes 1 2>&1 > /dev/null
+==4381== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4381== Profiling application: ./alignedTypes 1 2>&1 > /dev/null
+==4381== Profiling result:
+==4381== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.547976%,0.618419%,0.579199%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.853440%,1.889142%,1.870567%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.879816%,1.932158%,1.909464%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.429077%,1.452520%,1.443011%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.667135%,1.107193%,0.695164%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.725662%,0.756418%,0.744764%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.135647%,2.152258%,2.143557%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.848680%,1.889737%,1.869771%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.911167%,0.932838%,0.923951%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.429897%,2.465861%,2.451319%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.733471%,0.770653%,0.758842%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.840584%,1.888039%,1.864183%

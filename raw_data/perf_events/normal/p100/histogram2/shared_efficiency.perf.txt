@@ -1,0 +1,10 @@
+==8199== NVPROF is profiling process 8199, command: ./histogram 128 2>&1 > /dev/null
+==8199== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8199== Profiling application: ./histogram 128 2>&1 > /dev/null
+==8199== Profiling result:
+==8199== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",0.077680%,0.077680%,0.077680%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",70.972222%,70.972222%,70.972222%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",70.972222%,70.972222%,70.972222%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",13.768378%,13.768378%,13.768378%

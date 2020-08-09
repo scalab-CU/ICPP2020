@@ -1,0 +1,10 @@
+==23039== NVPROF is profiling process 23039, command: ./mergeSort 16 2>&1 > /dev/null
+==23039== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23039== Profiling application: ./mergeSort 16 2>&1 > /dev/null
+==23039== Profiling result:
+==23039== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",28,"gld_throughput","Global Load Throughput",552.659321GB/s,610.874242GB/s,594.696798GB/s
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",14,"gld_throughput","Global Load Throughput",170.094986GB/s,221.496355GB/s,194.326061GB/s
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"gld_throughput","Global Load Throughput",68.110092GB/s,68.110092GB/s,68.110092GB/s
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",14,"gld_throughput","Global Load Throughput",331.138328GB/s,336.230282GB/s,333.563141GB/s

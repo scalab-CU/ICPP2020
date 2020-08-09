@@ -1,0 +1,8 @@
+==7392== NVPROF is profiling process 7392, command: ./convolutionSeparable 3072 2>&1 > /dev/null
+==7392== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7392== Profiling application: ./convolutionSeparable 3072 2>&1 > /dev/null
+==7392== Profiling result:
+==7392== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",17.041174%,17.528516%,17.271987%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",15.406553%,15.873175%,15.679930%

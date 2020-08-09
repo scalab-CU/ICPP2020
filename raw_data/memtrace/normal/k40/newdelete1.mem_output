@@ -1,0 +1,14 @@
+==25964== NVPROF is profiling process 25964, command: ./newdelete
+==25964== Profiling application: ./newdelete
+==25964== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.326771,0.000036,1,1,1,1,1,1,32,0.000000,0,,,,,"Tesla K40m (0)","1","7","vectorCreate(Container<int>**, int) [113]"
+0.326958,0.000007,128,1,1,128,1,1,32,0.000000,0,,,,,"Tesla K40m (0)","1","7","containerFill(Container<int>**) [117]"
+0.326968,0.000032,128,1,1,128,1,1,32,0.000000,0,,,,,"Tesla K40m (0)","1","7","containerConsume(Container<int>**, int*) [121]"
+0.327002,0.000031,1,1,1,1,1,1,32,0.000000,0,,,,,"Tesla K40m (0)","1","7","containerDelete(Container<int>**) [124]"
+0.327069,0.000009,,,,,,,,,,64.000000,6.885735,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.327750,0.000108,1,1,1,1024,1,1,32,4.039062,0,,,,,"Tesla K40m (0)","1","7","placementNew(int*) [132]"
+0.327875,0.000003,,,,,,,,,,4.000000,1.471720,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.328221,0.000114,1,1,1,1024,1,1,32,16.039062,0,,,,,"Tesla K40m (0)","1","7","complexVector(int*) [139]"
+0.328351,0.000002,,,,,,,,,,4.000000,1.610936,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

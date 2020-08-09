@@ -1,0 +1,8 @@
+==6099== NVPROF is profiling process 6099, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==6099== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6099== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==6099== Profiling result:
+==6099== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"dram_read_throughput","Device Memory Read Throughput",108.964959GB/s,108.964959GB/s,108.964959GB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"dram_read_throughput","Device Memory Read Throughput",104.108372GB/s,107.136254GB/s,105.763412GB/s

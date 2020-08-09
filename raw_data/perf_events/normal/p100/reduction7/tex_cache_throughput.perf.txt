@@ -1,0 +1,7 @@
+==4129== NVPROF is profiling process 4129, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==4129== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==4129== Profiling result:
+==4129== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"tex_cache_throughput","Unified Cache Throughput",28.257017GB/s,365.347519GB/s,352.663459GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"tex_cache_throughput","Unified Cache Throughput",47.387543MB/s,73.381612MB/s,72.695882MB/s

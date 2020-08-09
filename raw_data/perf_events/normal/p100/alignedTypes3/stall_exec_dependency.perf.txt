@@ -1,0 +1,18 @@
+==11213== NVPROF is profiling process 11213, command: ./alignedTypes 4 2>&1 > /dev/null
+==11213== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11213== Profiling application: ./alignedTypes 4 2>&1 > /dev/null
+==11213== Profiling result:
+==11213== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",9.855271%,10.971172%,10.342305%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",4.929208%,5.010603%,4.963626%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.309358%,5.443272%,5.384140%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",4.226420%,4.292772%,4.260009%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",15.629466%,16.171713%,15.903507%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",4.194730%,4.477880%,4.375074%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.845015%,5.880534%,5.857728%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",4.926102%,4.998656%,4.954765%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.937725%,2.969610%,2.953975%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.336900%,5.819008%,5.611852%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.929835%,7.246689%,7.125843%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",3.837315%,3.891838%,3.866670%

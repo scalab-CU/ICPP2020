@@ -1,0 +1,12 @@
+==19757== NVPROF is profiling process 19757, command: ./cdpLUDecomposition -matrix-size=5120
+==19757== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19757== Profiling application: ./cdpLUDecomposition -matrix-size=5120
+==19757== Profiling result:
+==19757== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"gld_throughput","Global Load Throughput",195.250020GB/s,195.250020GB/s,195.250020GB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"gld_throughput","Global Load Throughput",135.701422GB/s,137.448622GB/s,136.374296GB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"gld_throughput","Global Load Throughput",339.510670GB/s,339.510670GB/s,339.510670GB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"gld_throughput","Global Load Throughput",966.284346MB/s,966.284346MB/s,966.284345MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"gld_throughput","Global Load Throughput",46.396926GB/s,48.984877GB/s,47.619918GB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"gld_throughput","Global Load Throughput",28.752270GB/s,28.752270GB/s,28.752270GB/s

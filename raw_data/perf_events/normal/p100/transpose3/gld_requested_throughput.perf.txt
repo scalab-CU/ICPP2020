@@ -1,0 +1,13 @@
+==29507== NVPROF is profiling process 29507, command: ./transpose -dimX=4096 -dimY=4096 2>&1 > /dev/null
+==29507== Profiling application: ./transpose -dimX=4096 -dimY=4096 2>&1 > /dev/null
+==29507== Profiling result:
+==29507== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.336114GB/s,15.429523GB/s,15.396307GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.474652GB/s,15.537559GB/s,15.508290GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.203032GB/s,15.261837GB/s,15.236237GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.219499GB/s,15.280464GB/s,15.251181GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.004716GB/s,15.075364GB/s,15.042992GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.713415GB/s,15.785678GB/s,15.749348GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",13.912011GB/s,14.152535GB/s,14.047477GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"gld_requested_throughput","Requested Global Load Throughput",15.250162GB/s,15.316413GB/s,15.287203GB/s

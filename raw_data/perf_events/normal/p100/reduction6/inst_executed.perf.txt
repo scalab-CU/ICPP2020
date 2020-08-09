@@ -1,0 +1,7 @@
+==11992== NVPROF is profiling process 11992, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==11992== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==11992== Profiling result:
+==11992== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"inst_executed","Instructions Executed",31040,15892480,8001216
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"inst_executed","Instructions Executed",102,102,102

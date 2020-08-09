@@ -1,0 +1,8 @@
+==16689== NVPROF is profiling process 16689, command: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==16689== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16689== Profiling application: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==16689== Profiling result:
+==16689== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"shared_efficiency","Shared Memory Efficiency",30.528846%,30.528846%,30.528846%

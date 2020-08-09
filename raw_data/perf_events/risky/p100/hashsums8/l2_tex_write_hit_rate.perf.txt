@@ -1,0 +1,17 @@
+==6625== NVPROF is profiling process 6625, command: ././crc_gpu input7.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XEF200000  
+value in hostpartialcrc = 0X5B80E7B8  
+
+==6625== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 536.176819 ms
+After cuda, hostpartialcrc[0] = 0XDEDDA639  
+After cuda, hostpartialcrc[0] = 3739067961  
+Program Ended Successfully!
+==6625== Profiling application: ././crc_gpu input7.in 2>&1 > /dev/null
+==6625== Profiling result:
+==6625== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",98.078792%,98.078792%,98.078792%

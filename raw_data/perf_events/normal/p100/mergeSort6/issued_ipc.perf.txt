@@ -1,0 +1,9 @@
+==21400== NVPROF is profiling process 21400, command: ./mergeSort 6 2>&1 > /dev/null
+==21400== Profiling application: ./mergeSort 6 2>&1 > /dev/null
+==21400== Profiling result:
+==21400== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"issued_ipc","Issued IPC",0.339045,0.775721,0.604442
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"issued_ipc","Issued IPC",0.073870,0.128307,0.102437
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"issued_ipc","Issued IPC",1.456701,1.456701,1.456701
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"issued_ipc","Issued IPC",1.395620,1.415773,1.409570

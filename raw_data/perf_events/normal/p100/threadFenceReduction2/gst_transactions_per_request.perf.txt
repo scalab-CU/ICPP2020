@@ -1,0 +1,8 @@
+==2712== NVPROF is profiling process 2712, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==2712== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2712== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==2712== Profiling result:
+==2712== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"gst_transactions_per_request","Global Store Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"gst_transactions_per_request","Global Store Transactions Per Request",1.000000,1.000000,1.000000

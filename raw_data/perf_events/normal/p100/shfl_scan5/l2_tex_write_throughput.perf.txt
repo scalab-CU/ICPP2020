@@ -1,0 +1,10 @@
+==26363== NVPROF is profiling process 26363, command: ./shfl_scan 100000 2>&1 > /dev/null
+==26363== Profiling application: ./shfl_scan 100000 2>&1 > /dev/null
+==26363== Profiling result:
+==26363== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",227.305849GB/s,227.305849GB/s,227.305849GB/s
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",55.189880GB/s,55.189880GB/s,55.189880GB/s
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",72.456896GB/s,72.456896GB/s,72.456896GB/s
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",423.855251MB/s,41.909516GB/s,28.013317GB/s
+======== Error: Application returned non-zero code 1

@@ -1,0 +1,10 @@
+==8850== NVPROF is profiling process 8850, command: ./sortingNetworks 3 2>&1 > /dev/null
+==8850== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8850== Profiling application: ./sortingNetworks 3 2>&1 > /dev/null
+==8850== Profiling result:
+==8850== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.837962%,0.887549%,0.865800%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.390322%,0.414096%,0.401002%
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.309755%,0.336797%,0.320734%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.133626%,0.147113%,0.139168%

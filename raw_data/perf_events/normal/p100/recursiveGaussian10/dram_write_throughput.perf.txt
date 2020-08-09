@@ -1,0 +1,8 @@
+==8811== NVPROF is profiling process 8811, command: ./recursiveGaussian -image=./data/sample4.ppm 2>&1 > /dev/null
+==8811== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8811== Profiling application: ./recursiveGaussian -image=./data/sample4.ppm 2>&1 > /dev/null
+==8811== Profiling result:
+==8811== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_write_throughput","Device Memory Write Throughput",1.968681GB/s,2.176829GB/s,2.077385GB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_write_throughput","Device Memory Write Throughput",150.807378GB/s,159.068427GB/s,155.082255GB/s

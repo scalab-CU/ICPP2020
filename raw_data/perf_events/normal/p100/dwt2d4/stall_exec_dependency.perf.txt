@@ -1,0 +1,10 @@
+==17464== NVPROF is profiling process 17464, command: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==17464== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17464== Profiling application: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==17464== Profiling result:
+==17464== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.447009%,20.721355%,17.857343%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",11.056951%,14.057308%,12.940030%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",26.476125%,27.965061%,27.365523%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",3.935574%,3.935574%,3.935574%

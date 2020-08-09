@@ -1,0 +1,10 @@
+==31287== NVPROF is profiling process 31287, command: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==31287== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==31287== Profiling application: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==31287== Profiling result:
+==31287== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",16.263270%,17.950320%,17.550956%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",23.808977%,25.163921%,24.520007%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.124833%,1.190785%,1.142949%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",30.333987%,30.484137%,30.432448%

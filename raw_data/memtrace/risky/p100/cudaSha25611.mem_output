@@ -1,0 +1,14 @@
+==17606== NVPROF is profiling process 17606, command: ././sha256 example9.txt
+==17606== Profiling application: ././sha256 example9.txt
+==17606== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Unified Memory","Virtual Address","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,B,,
+0.537054,,,,,,,,,,,,,,,,,,"PC 0xe936e2b1","0x152dbe000000","[Unified Memory CPU page faults]"
+0.537236,0.000002,,,,,,,,,,256,143.950840,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7",,,"[CUDA memcpy HtoD]"
+0.537279,0.000228,1,1,1,4,1,1,91,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7",,,"sha256_cuda(JOB**, int) [120]"
+0.537285,0.000146,,,,,,,,,,,,,,"Tesla P100-PCIE-12GB (0)",,,"1","0x152dbe000000","[Unified Memory GPU page faults]"
+0.537408,0.000002,,,,,,,,,,,,,,"Tesla P100-PCIE-12GB (0)",,,4096.000000,"0x152dbe000000","[Unified Memory Memcpy HtoD]"
+0.537410,0.000006,,,,,,,,,,,,,,"Tesla P100-PCIE-12GB (0)",,,61440.000000,"0x152dbe001000","[Unified Memory Memcpy HtoD]"
+0.537509,,,,,,,,,,,,,,,,,,"PC 0x40394a","0x152dbe000000","[Unified Memory CPU page faults]"
+0.537599,0.000002,,,,,,,,,,,,,,"Tesla P100-PCIE-12GB (0)",,,4096.000000,"0x152dbe000000","[Unified Memory Memcpy DtoH]"
+0.537601,0.000005,,,,,,,,,,,,,,"Tesla P100-PCIE-12GB (0)",,,61440.000000,"0x152dbe001000","[Unified Memory Memcpy DtoH]"

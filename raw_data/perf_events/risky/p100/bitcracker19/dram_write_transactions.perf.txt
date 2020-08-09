@@ -1,0 +1,8 @@
+==18667== NVPROF is profiling process 18667, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==18667== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==18667== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==18667== Profiling result:
+==18667== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"dram_write_transactions","Device Memory Write Transactions",275234,275234,275234
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_write_transactions","Device Memory Write Transactions",26136953,26136953,26136953

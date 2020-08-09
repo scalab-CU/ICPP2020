@@ -1,0 +1,14 @@
+==21381== NVPROF is profiling process 21381, command: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==21381== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21381== Profiling application: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==21381== Profiling result:
+==21381== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",49.992310%,49.995605%,49.994199%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",49.989807%,49.994690%,49.992793%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",49.792419%,49.805908%,49.797944%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",96.873150%,96.873569%,96.873361%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",49.990784%,49.995300%,49.992844%

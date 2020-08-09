@@ -1,0 +1,10 @@
+Loading words from stdin ...
+Loaded 1000 words.
+
+==20499== NVPROF is profiling process 20499, command: ././cuda_md5 1000 "what do you want" 2>&1 > /dev/null
+GPU MD5 time : 1105.15ms
+==20499== Profiling application: ././cuda_md5 1000 "what do you want" 2>&1 > /dev/null
+==20499== Profiling result:
+==20499== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","md5_calc(unsigned int*, unsigned int*, int)",1000,"inst_compute_ld_st","Load/Store Instructions",510,510,510

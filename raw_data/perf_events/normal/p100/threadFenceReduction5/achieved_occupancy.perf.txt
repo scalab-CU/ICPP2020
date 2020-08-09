@@ -1,0 +1,7 @@
+==8238== NVPROF is profiling process 8238, command: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==8238== Profiling application: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==8238== Profiling result:
+==8238== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"achieved_occupancy","Achieved Occupancy",0.071742,0.071742,0.071742
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"achieved_occupancy","Achieved Occupancy",0.071852,0.071908,0.071880

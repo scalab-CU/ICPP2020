@@ -1,0 +1,18 @@
+==15848== NVPROF is profiling process 15848, command: ./convolutionFFT2D 2000 2>&1 > /dev/null
+==15848== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15848== Profiling application: ./convolutionFFT2D 2000 2>&1 > /dev/null
+==15848== Profiling result:
+==15848== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.217079%,0.217079%,0.217079%
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",25.016995%,48.289084%,38.360952%
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.216715%,0.222000%,0.219357%
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.153818%,0.324207%,0.239013%
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.241103%,0.244565%,0.243169%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.950954%,0.950954%,0.950954%
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.147599%,0.147599%,0.147599%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=32, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.198518%,0.385318%,0.244265%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.253856%,0.484786%,0.369321%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.384419%,1.060818%,0.470947%
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=2, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.382526%,0.694754%,0.442723%
+======== Error: Application returned non-zero code 1

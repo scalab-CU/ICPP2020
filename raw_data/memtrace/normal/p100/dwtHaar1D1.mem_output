@@ -1,0 +1,12 @@
+==27860== NVPROF is profiling process 27860, command: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat
+==27860== Profiling application: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat
+==27860== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,KB,KB,GB/s,,,,,,
+0.364505,0.000003,,,,,,,,,,16.000000,4.415159,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.364543,0.000002,4,1,1,512,1,1,8,0,0.000000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","initValue(float*, float) [115]"
+0.364556,0.000005,4,1,1,512,1,1,16,0,4.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int) [123]"
+0.364573,0.000002,,,,,,,,,,0.015625,0.005970,"Device","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoD]"
+0.364583,0.000002,1,1,1,2,1,1,16,0,0.015625,,,,,"Tesla P100-PCIE-12GB (0)","1","7","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int) [132]"
+0.364593,0.000002,,,,,,,,,,0.003906,0.002376,"Device","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoD]"
+0.364600,0.000002,,,,,,,,,,16.000000,7.012311,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

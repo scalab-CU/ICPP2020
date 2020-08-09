@@ -1,0 +1,16 @@
+==18033== NVPROF is profiling process 18033, command: ././crc_gpu input7.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X37200000  
+value in hostpartialcrc = 0XA7A437B8  
+
+Execution time: 192.815811 ms
+After cuda, hostpartialcrc[0] = 0XDEDDA639  
+After cuda, hostpartialcrc[0] = 3739067961  
+Program Ended Successfully!
+==18033== Profiling application: ././crc_gpu input7.in 2>&1 > /dev/null
+==18033== Profiling result:
+==18033== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"tex_fu_utilization","Texture Function Unit Utilization","Low (1)","Low (1)","Low (1)"

@@ -1,0 +1,8 @@
+==22043== NVPROF is profiling process 22043, command: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==22043== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22043== Profiling application: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==22043== Profiling result:
+==22043== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"stall_sync","Issue Stall Reasons (Synchronization)",0.112619%,0.112619%,0.112619%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"stall_sync","Issue Stall Reasons (Synchronization)",0.137361%,0.174231%,0.155745%

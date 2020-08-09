@@ -1,0 +1,10 @@
+==643== NVPROF is profiling process 643, command: ./c++11_cuda sample8.txt
+==643== Profiling application: ./c++11_cuda sample8.txt
+==643== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.368761,0.000323,,,,,,,,,,3.074172,9.293255,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.369184,0.000003,,,,,,,,,,0.000004,0.001200,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.369219,0.001021,8,1,1,256,1,1,8,0,0,,,,,"Tesla K40m (0)","1","7","xyzw_frequency(int*, char*, int) [116]"
+0.370243,0.364255,1,1,1,1,1,1,11,0,0,,,,,"Tesla K40m (0)","1","7","xyzw_frequency_thrust_device(int*, char*, int) [121]"
+0.734503,0.000002,,,,,,,,,,0.000004,0.001878,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

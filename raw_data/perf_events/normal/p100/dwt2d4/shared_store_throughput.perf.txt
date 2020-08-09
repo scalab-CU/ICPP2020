@@ -1,0 +1,9 @@
+==15434== NVPROF is profiling process 15434, command: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==15434== Profiling application: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==15434== Profiling result:
+==15434== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_store_throughput","Shared Memory Store Throughput",114.631938GB/s,185.383263GB/s,153.204770GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"shared_store_throughput","Shared Memory Store Throughput",274.120610GB/s,343.080227GB/s,315.062165GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"shared_store_throughput","Shared Memory Store Throughput",42.723431GB/s,77.884020GB/s,61.068152GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_store_throughput","Shared Memory Store Throughput",66.729398GB/s,66.729398GB/s,66.729398GB/s

@@ -1,0 +1,9 @@
+==32368== NVPROF is profiling process 32368, command: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==32368== Profiling application: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==32368== Profiling result:
+==32368== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_requested_throughput","Requested Global Load Throughput",3.205269GB/s,3.225437GB/s,3.214981GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_requested_throughput","Requested Global Load Throughput",5.832646GB/s,5.873163GB/s,5.849310GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_requested_throughput","Requested Global Load Throughput",1.348597GB/s,1.357798GB/s,1.353007GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_requested_throughput","Requested Global Load Throughput",14.247836GB/s,14.247836GB/s,14.247836GB/s

@@ -1,0 +1,9 @@
+==25159== NVPROF is profiling process 25159, command: ././cuda_md5 376899a4223fc371e583d3308e968d05 2>&1 > /dev/null
+==25159== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25159== Profiling application: ././cuda_md5 376899a4223fc371e583d3308e968d05 2>&1 > /dev/null
+==25159== Profiling result:
+==25159== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","BruteKernel(password_t*, unsigned int, unsigned long, unsigned long, bool volatile *)",4,"tex_cache_hit_rate","Unified Cache Hit Rate",66.339066%,83.220425%,70.755151%
+"Tesla P100-PCIE-12GB (0)","DictKernel(password_t*, password_t*, bool volatile *, unsigned int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",75.554474%,75.554474%,75.554474%
+==25159== Warning: One or more events or metrics can't be profiled. Rerun with "--print-gpu-trace" for detail.

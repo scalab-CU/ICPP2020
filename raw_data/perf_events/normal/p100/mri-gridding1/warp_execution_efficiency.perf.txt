@@ -1,0 +1,14 @@
+==30640== NVPROF is profiling process 30640, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==30640== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==30640== Profiling result:
+==30640== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"warp_execution_efficiency","Warp Execution Efficiency",99.999247%,99.999247%,99.999247%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"warp_execution_efficiency","Warp Execution Efficiency",88.821402%,88.821404%,88.821403%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"warp_execution_efficiency","Warp Execution Efficiency",98.824359%,98.836715%,98.828568%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"warp_execution_efficiency","Warp Execution Efficiency",78.285256%,88.434972%,80.545613%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"warp_execution_efficiency","Warp Execution Efficiency",77.267157%,87.804276%,79.615094%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"warp_execution_efficiency","Warp Execution Efficiency",99.999184%,99.999184%,99.999184%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"warp_execution_efficiency","Warp Execution Efficiency",94.494406%,94.494406%,94.494406%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"warp_execution_efficiency","Warp Execution Efficiency",96.490086%,96.492295%,96.490651%

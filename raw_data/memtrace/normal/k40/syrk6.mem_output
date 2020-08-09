@@ -1,0 +1,9 @@
+==14080== NVPROF is profiling process 14080, command: ./syrk6000
+==14080== Profiling application: ./syrk6000
+==14080== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.310130,0.017644,,,,,,,,,,137.329102,7.601005,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.327909,0.017436,,,,,,,,,,137.329102,7.691753,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.345465,43.113047,188,750,1,32,8,1,17,0,0,,,,,"Tesla K40m (0)","1","7","syrk_kernel(float, float, float*, float*) [114]"
+43.458595,0.049660,,,,,,,,,,137.329102,2.700567,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

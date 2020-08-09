@@ -1,0 +1,15 @@
+==17278== NVPROF is profiling process 17278, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==17278== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17278== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==17278== Profiling result:
+==17278== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.123745%,0.123745%,0.123745%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.573410%,0.578430%,0.576224%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.000000%,2.425031%,0.286804%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.175509%,0.203806%,0.188303%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.000000%,1.957121%,0.227402%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.192355%,0.192355%,0.192355%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",2.977834%,2.977834%,2.977834%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.968604%,2.036342%,2.017351%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.041336%,1.809280%,1.676010%

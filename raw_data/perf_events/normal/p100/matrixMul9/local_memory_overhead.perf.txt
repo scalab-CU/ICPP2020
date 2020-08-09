@@ -1,0 +1,7 @@
+==20099== NVPROF is profiling process 20099, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==20099== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20099== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==20099== Profiling result:
+==20099== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"local_memory_overhead","Local Memory Overhead",0.000000%,0.012694%,0.001460%

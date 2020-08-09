@@ -1,0 +1,9 @@
+==3329== NVPROF is profiling process 3329, command: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==3329== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3329== Profiling application: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==3329== Profiling result:
+==3329== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%

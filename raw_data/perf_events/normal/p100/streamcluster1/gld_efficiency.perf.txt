@@ -1,0 +1,9 @@
+read 65536 points
+==3679== NVPROF is profiling process 3679, command: ./streamcluster 10 20 256 65536 65536 1000 none output.txt 1 2>&1 > /dev/null
+==3679== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+finish local search
+==3679== Profiling application: ./streamcluster 10 20 256 65536 65536 1000 none output.txt 1 2>&1 > /dev/null
+==3679== Profiling result:
+==3679== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",1611,"gld_efficiency","Global Memory Load Efficiency",33.439653%,33.819448%,33.649661%

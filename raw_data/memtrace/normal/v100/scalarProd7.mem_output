@@ -1,0 +1,9 @@
+==181059== NVPROF is profiling process 181059, command: ./scalarProd 5000
+==181059== Profiling application: ./scalarProd 5000
+==181059== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.154835,0.017200,,,,,,,,,,78.125000,4.435620,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.172260,0.016924,,,,,,,,,,78.125000,4.508074,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.189265,0.000210,128,1,1,256,1,1,24,4.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","scalarProdGPU(float*, float*, float*, int, int) [120]"
+1.189501,0.000003,,,,,,,,,,0.019073,6.194364,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

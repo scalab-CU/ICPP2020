@@ -1,0 +1,8 @@
+==25344== NVPROF is profiling process 25344, command: ./convolutionSeparable 10240 2>&1 > /dev/null
+==25344== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25344== Profiling application: ./convolutionSeparable 10240 2>&1 > /dev/null
+==25344== Profiling result:
+==25344== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",9.087122%,10.844562%,9.788545%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",16.311391%,18.427000%,16.838995%

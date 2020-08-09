@@ -1,0 +1,10 @@
+==22444== NVPROF is profiling process 22444, command: ./corr2500 2>&1 > /dev/null
+==22444== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22444== Profiling application: ./corr2500 2>&1 > /dev/null
+==22444== Profiling result:
+==22444== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",46784,46784,46784
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",784031,784031,784031
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",3791008,3791008,3791008
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",43504,43504,43504

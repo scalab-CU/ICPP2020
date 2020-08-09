@@ -1,0 +1,11 @@
+==5387== NVPROF is profiling process 5387, command: ./shfl_scan 524288
+==5387== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5387== Profiling application: ./shfl_scan 524288
+==5387== Profiling result:
+==5387== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",49.652545%,49.652545%,49.652545%
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"tex_cache_hit_rate","Unified Cache Hit Rate",49.612403%,50.000000%,49.806202%
+======== Error: Application returned non-zero code 1

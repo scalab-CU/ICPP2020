@@ -1,0 +1,7 @@
+==9376== NVPROF is profiling process 9376, command: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==9376== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9376== Profiling application: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==9376== Profiling result:
+==9376== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"dram_read_transactions","Device Memory Read Transactions",1377831,2098835,1750920

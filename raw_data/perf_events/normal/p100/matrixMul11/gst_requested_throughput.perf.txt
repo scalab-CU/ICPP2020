@@ -1,0 +1,6 @@
+==26885== NVPROF is profiling process 26885, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==26885== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==26885== Profiling result:
+==26885== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"gst_requested_throughput","Requested Global Store Throughput",409.371493MB/s,409.850886MB/s,409.738609MB/s

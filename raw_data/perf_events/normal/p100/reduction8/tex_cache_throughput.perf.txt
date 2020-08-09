@@ -1,0 +1,7 @@
+==2224== NVPROF is profiling process 2224, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==2224== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==2224== Profiling result:
+==2224== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"tex_cache_throughput","Unified Cache Throughput",98.443800MB/s,142.605505MB/s,140.119175MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"tex_cache_throughput","Unified Cache Throughput",49.541523GB/s,348.558363GB/s,343.903693GB/s

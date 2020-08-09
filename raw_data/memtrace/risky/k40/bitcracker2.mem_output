@@ -1,0 +1,19 @@
+==13103== NVPROF is profiling process 13103, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+Cuda error in file 'cuda_attack.cu' in line 210 : the launch timed out and was terminated.
+==13103== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==13103== Warning: Found 2 invalid records in the result.
+==13103== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==13103== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.295329,0.000011,,,,,,,,,,0.000015,0.001328,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.295351,0.000005,,,,,,,,,,0.000038,0.008011,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.328771,0.000028,,,,,,,,,,0.000042,0.001449,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.328813,0.000006,,,,,,,,,,0.000015,0.002630,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.329057,0.000018,,,,,,,,,,0.000004,0.000208,"Pinned","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.329113,0.000018,,,,,,,,,,0.000015,0.000831,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.363567,0.000024,,,,,,,,,,32.000000,1321.912014,"Pinned","Device","Tesla K40m (0)","1","14","[CUDA memcpy HtoD]"
+0.363697,0.000007,,,,,,,,,,0.000004,0.000523,"Device","Pinned","Tesla K40m (0)","1","14","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

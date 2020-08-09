@@ -1,0 +1,9 @@
+==9870== NVPROF is profiling process 9870, command: ./mergeSort 2 2>&1 > /dev/null
+==9870== Profiling application: ./mergeSort 2 2>&1 > /dev/null
+==9870== Profiling result:
+==9870== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",22,"inst_per_warp","Instructions per warp",183.000000,443.000000,313.000000
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",11,"inst_per_warp","Instructions per warp",379.000000,639.000000,509.000000
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"inst_per_warp","Instructions per warp",1515.000000,1515.000000,1515.000000
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",11,"inst_per_warp","Instructions per warp",165.350159,167.574249,167.130754

@@ -1,0 +1,9 @@
+==3865== NVPROF is profiling process 3865, command: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==3865== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3865== Profiling application: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==3865== Profiling result:
+==3865== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",3.885839%,3.885839%,3.885839%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",5,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.395802%,3.109267%,2.556266%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",5,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",0.561654%,0.565087%,0.563756%

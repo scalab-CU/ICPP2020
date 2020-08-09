@@ -1,0 +1,15 @@
+==23325== NVPROF is profiling process 23325, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==23325== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23325== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==23325== Profiling result:
+==23325== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gld_efficiency","Global Memory Load Efficiency",18.421050%,18.421050%,18.421050%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gld_efficiency","Global Memory Load Efficiency",94.852314%,94.852314%,94.852314%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gld_efficiency","Global Memory Load Efficiency",12.500000%,50.000000%,45.833333%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gld_efficiency","Global Memory Load Efficiency",49.852405%,49.854068%,49.852613%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gld_efficiency","Global Memory Load Efficiency",12.500000%,50.000000%,45.833333%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gld_efficiency","Global Memory Load Efficiency",16.326900%,16.326900%,16.326900%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gld_efficiency","Global Memory Load Efficiency",3.125000%,3.125000%,3.125000%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gld_efficiency","Global Memory Load Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gld_efficiency","Global Memory Load Efficiency",49.999991%,50.000000%,49.999999%

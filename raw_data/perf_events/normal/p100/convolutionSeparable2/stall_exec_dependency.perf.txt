@@ -1,0 +1,8 @@
+==8851== NVPROF is profiling process 8851, command: ./convolutionSeparable 4096 2>&1 > /dev/null
+==8851== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8851== Profiling application: ./convolutionSeparable 4096 2>&1 > /dev/null
+==8851== Profiling result:
+==8851== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",20.091852%,20.587564%,20.349274%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",20.208403%,20.947505%,20.549463%

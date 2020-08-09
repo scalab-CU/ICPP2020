@@ -1,0 +1,11 @@
+==2880== NVPROF is profiling process 2880, command: ./shfl_scan 800000 2>&1 > /dev/null
+==2880== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2880== Profiling application: ./shfl_scan 800000 2>&1 > /dev/null
+==2880== Profiling result:
+==2880== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"stall_sync","Issue Stall Reasons (Synchronization)",7.797009%,7.797009%,7.797009%
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"stall_sync","Issue Stall Reasons (Synchronization)",13.700082%,13.700082%,13.700082%
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"stall_sync","Issue Stall Reasons (Synchronization)",32.458810%,32.458810%,32.458810%
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"stall_sync","Issue Stall Reasons (Synchronization)",16.675598%,16.714902%,16.695250%
+======== Error: Application returned non-zero code 1

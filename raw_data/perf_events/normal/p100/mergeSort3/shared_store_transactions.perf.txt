@@ -1,0 +1,9 @@
+==27792== NVPROF is profiling process 27792, command: ./mergeSort 3 2>&1 > /dev/null
+==27792== Profiling application: ./mergeSort 3 2>&1 > /dev/null
+==27792== Profiling result:
+==27792== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"shared_store_transactions","Shared Store Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"shared_store_transactions","Shared Store Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"shared_store_transactions","Shared Store Transactions",4286272,4286272,4286272
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"shared_store_transactions","Shared Store Transactions",577746,858282,826828

@@ -1,0 +1,8 @@
+==30350== NVPROF is profiling process 30350, command: ./threadFenceReduction -n=50000000 2>&1 > /dev/null
+==30350== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30350== Profiling application: ./threadFenceReduction -n=50000000 2>&1 > /dev/null
+==30350== Profiling result:
+==30350== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",49.999744%,49.999744%,49.999744%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"tex_cache_hit_rate","Unified Cache Hit Rate",49.999992%,49.999992%,49.999992%

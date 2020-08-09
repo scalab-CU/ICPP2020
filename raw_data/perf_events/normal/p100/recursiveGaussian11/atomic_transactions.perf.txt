@@ -1,0 +1,8 @@
+==2281== NVPROF is profiling process 2281, command: ./recursiveGaussian -image=./data/sample5.ppm 2>&1 > /dev/null
+==2281== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2281== Profiling application: ./recursiveGaussian -image=./data/sample5.ppm 2>&1 > /dev/null
+==2281== Profiling result:
+==2281== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"atomic_transactions","Atomic Transactions",0,0,0

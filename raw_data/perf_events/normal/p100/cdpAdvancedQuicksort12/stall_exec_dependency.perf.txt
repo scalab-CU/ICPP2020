@@ -1,0 +1,8 @@
+==18450== NVPROF is profiling process 18450, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==18450== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==18450== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==18450== Profiling result:
+==18450== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",10.573899%,10.573899%,10.573899%
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",1999,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.826800%,17.719080%,10.166103%

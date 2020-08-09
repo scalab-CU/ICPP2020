@@ -1,0 +1,250 @@
+==7381== NVPROF is profiling process 7381, command: ./bin/CoMD-cuda -x 32 -y 32 -z 32 2>&1 > /dev/null
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [56,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [57,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [58,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [59,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [60,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [61,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [62,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [545,0,0], thread: [63,0,0] Assertion `jAtom < 64` failed.
+==7381== Error: Internal profiling error 4168:999.
+*** Error in `./bin/CoMD-cuda': malloc(): memory corruption: 0x0000000004e9c0e0 ***
+======= Backtrace: =========
+/lib64/libc.so.6(+0x82d56)[0x14a797d97d56]
+/lib64/libc.so.6(__libc_malloc+0x4c)[0x14a797d9a26c]
+/software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0(+0x21f66)[0x14a798103f66]
+/software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0(+0x11697)[0x14a7980f3697]
+/software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0(cudaSetupArgument+0x199)[0x14a7981246c9]
+./bin/CoMD-cuda[0x41aa5a]
+./bin/CoMD-cuda[0x409a1b]
+./bin/CoMD-cuda[0x40f05b]
+./bin/CoMD-cuda[0x402725]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x14a797d37495]
+./bin/CoMD-cuda[0x40337f]
+======= Memory map: ========
+00400000-00e0e000 r-xp 00000000 00:34 506813124629                       /scratch3/pzou/Power_Signature/monitor_peng/mybench/CoMD/bin/CoMD-cuda
+0100d000-0100e000 r--p 00a0d000 00:34 506813124629                       /scratch3/pzou/Power_Signature/monitor_peng/mybench/CoMD/bin/CoMD-cuda
+0100e000-0100f000 rw-p 00a0e000 00:34 506813124629                       /scratch3/pzou/Power_Signature/monitor_peng/mybench/CoMD/bin/CoMD-cuda
+01a7a000-064b3000 rw-p 00000000 00:00 0                                  [heap]
+200000000-200200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+200200000-200400000 ---p 00000000 00:00 0 
+200400000-200404000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+200404000-200600000 ---p 00000000 00:00 0 
+200600000-200a00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+200a00000-201600000 ---p 00000000 00:00 0 
+201600000-201800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+201800000-201804000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+201804000-201a00000 ---p 00000000 00:00 0 
+201a00000-201e00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+201e00000-201e04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+201e04000-202000000 ---p 00000000 00:00 0 
+202000000-202400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+202400000-202404000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+202404000-202600000 ---p 00000000 00:00 0 
+202600000-202a00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+202a00000-202a04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+202a04000-202c00000 ---p 00000000 00:00 0 
+202c00000-203000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203000000-203004000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203004000-203200000 ---p 00000000 00:00 0 
+203200000-203600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203600000-203604000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203604000-203800000 ---p 00000000 00:00 0 
+203800000-203c00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203c00000-203c04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+203c04000-203e00000 ---p 00000000 00:00 0 
+203e00000-204200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204200000-204204000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204204000-204400000 ---p 00000000 00:00 0 
+204400000-204800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204800000-204804000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204804000-204a00000 ---p 00000000 00:00 0 
+204a00000-204e00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204e00000-204e04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+204e04000-205000000 ---p 00000000 00:00 0 
+205000000-205400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+205400000-205404000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+205404000-205600000 ---p 00000000 00:00 0 
+205600000-205a00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+205a00000-205a04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+205a04000-205c00000 ---p 00000000 00:00 0 
+205c00000-206000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206000000-206004000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206004000-206200000 ---p 00000000 00:00 0 
+206200000-206600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206600000-206604000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206604000-206800000 ---p 00000000 00:00 0 
+206800000-206c00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206c00000-206c04000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+206c04000-206e00000 ---p 00000000 00:00 0 
+206e00000-207200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+207200000-207400000 ---p 00000000 00:00 0 
+207400000-207600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+207600000-207e00000 ---p 00000000 00:00 0 
+207e00000-208000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208000000-208200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208200000-208400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208400000-208600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208600000-208800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208800000-208a00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208a00000-208c00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208c00000-208e00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+208e00000-209000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209000000-209200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209200000-209400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209400000-209600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209600000-209800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209800000-209a00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209a00000-209c00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209c00000-209e00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+209e00000-20a000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20a000000-20a200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20a200000-20a400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20a400000-20a600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20a600000-20a800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20a800000-20aa00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20aa00000-20ac00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20ac00000-20ae00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20ae00000-20b000000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20b000000-20b200000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20b200000-20b400000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20b400000-20b600000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20b600000-20b800000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20b800000-20ba00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20ba00000-20bc00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20bc00000-20be00000 rw-s 00000000 00:06 64325                            /dev/nvidiactl
+20be00000-20c000000 rw-s 00000000 00:05 422214                           /dev/zero (deleted)
+20c000000-300200000 ---p 00000000 00:00 0 
+10000000000-10204000000 ---p 00000000 00:00 0 
+14a7489bf000-14a754000000 rw-p 00000000 00:00 0 
+14a754000000-14a762a00000 ---p 00000000 00:00 0 
+14a762a00000-14a762c00000 rw-s 00000000 00:05 422215                     /dev/zero (deleted)
+14a762c00000-14a768000000 ---p 00000000 00:00 0 
+14a768000000-14a768021000 rw-p 00000000 00:00 0 
+14a768021000-14a76c000000 ---p 00000000 00:00 0 
+14a76c000000-14a76c021000 rw-p 00000000 00:00 0 
+14a76c021000-14a770000000 ---p 00000000 00:00 0 
+14a770000000-14a770001000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770001000-14a770002000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770002000-14a770003000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770003000-14a770004000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770004000-14a770005000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770005000-14a770006000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770006000-14a770007000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770007000-14a770008000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770008000-14a770009000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770009000-14a77000a000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000a000-14a77000b000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000b000-14a77000c000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000c000-14a77000d000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000d000-14a77000e000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000e000-14a77000f000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a77000f000-14a770010000 rw-s 00000000 00:06 65890                      /dev/nvidia0
+14a770010000-14a780000000 ---p 00000000 00:00 0 
+14a7817ff000-14a782000000 rw-p 00000000 00:00 0 
+14a782000000-14a782200000 ---p 00000000 00:00 0 
+14a782200000-14a782400000 rw-s 00000000 00:05 422211                     /dev/zero (deleted)
+14a782400000-14a782600000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a782600000-14a782800000 rw-s 00000000 00:05 422212                     /dev/zero (deleted)
+14a782800000-14a782a00000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a782a00000-14a782c00000 ---p 00000000 00:00 0 
+14a782c00000-14a782ed6000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a782ed6000-14a784000000 ---p 00000000 00:00 0 
+14a784000000-14a784021000 rw-p 00000000 00:00 0 
+14a784021000-14a788000000 ---p 00000000 00:00 0 
+14a7884ce000-14a7886ba000 rw-p 00000000 00:00 0 
+14a7886ba000-14a7886bb000 ---p 00000000 00:00 0 
+14a7886bb000-14a7888bb000 rwxp 00000000 00:00 0 
+14a7888bb000-14a7888bc000 ---p 00000000 00:00 0 
+14a7888bc000-14a788abc000 rwxp 00000000 00:00 0 
+14a788abc000-14a78eabc000 ---p 00000000 00:00 0 
+14a78eabc000-14a78eabd000 ---p 00000000 00:00 0 
+14a78eabd000-14a78ecbd000 rwxp 00000000 00:00 0 
+14a78ecbd000-14a78ecc5000 r-xp 00000000 00:38 114039235                  /software/cuda-toolkit/8.0.44/lib64/libnvToolsExt.so.1.0.0
+14a78ecc5000-14a78eec5000 ---p 00008000 00:38 114039235                  /software/cuda-toolkit/8.0.44/lib64/libnvToolsExt.so.1.0.0
+14a78eec5000-14a78eec6000 rw-p 00008000 00:38 114039235                  /software/cuda-toolkit/8.0.44/lib64/libnvToolsExt.so.1.0.0
+14a78eec6000-14a790021000 rw-p 00000000 00:00 0 
+14a790021000-14a794000000 ---p 00000000 00:00 0 
+14a794011000-14a794224000 rw-p 00000000 00:00 0 
+14a794224000-14a794225000 ---p 00000000 00:00 0 
+14a794225000-14a794425000 rwxp 00000000 00:00 0 
+14a794425000-14a794426000 ---p 00000000 00:00 0 
+14a794426000-14a794626000 rwxp 00000000 00:00 0 
+14a794626000-14a795855000 rw-p 00000000 00:00 0 
+14a795855000-14a795e01000 r-xp 00000000 00:38 113647067                  /software/cuda-toolkit/9.0.176/lib64/libcuinj64.so.9.0.176
+14a795e01000-14a796001000 ---p 005ac000 00:38 113647067                  /software/cuda-toolkit/9.0.176/lib64/libcuinj64.so.9.0.176
+14a796001000-14a796132000 rw-p 005ac000 00:38 113647067                  /software/cuda-toolkit/9.0.176/lib64/libcuinj64.so.9.0.176
+14a796132000-14a796188000 rw-p 00000000 00:00 0 
+14a796188000-14a7961c5000 r-xp 00000000 08:01 1793851                    /usr/lib64/libnvidia-fatbinaryloader.so.410.104
+14a7961c5000-14a7963c5000 ---p 0003d000 08:01 1793851                    /usr/lib64/libnvidia-fatbinaryloader.so.410.104
+14a7963c5000-14a7963d0000 rw-p 0003d000 08:01 1793851                    /usr/lib64/libnvidia-fatbinaryloader.so.410.104
+14a7963d0000-14a7963d5000 rw-p 00000000 00:00 0 
+14a7963d5000-14a79715a000 r-xp 00000000 08:01 1793836                    /usr/lib64/libcuda.so.410.104
+14a79715a000-14a797359000 ---p 00d85000 08:01 1793836                    /usr/lib64/libcuda.so.410.104
+14a797359000-14a7974c7000 rw-p 00d84000 08:01 1793836                    /usr/lib64/libcuda.so.410.104
+14a7974c7000-14a7974d7000 rw-p 00000000 00:00 0 
+14a7974d7000-14a7974de000 r-xp 00000000 08:01 1820321                    /usr/lib64/librt-2.17.so
+14a7974de000-14a7976dd000 ---p 00007000 08:01 1820321                    /usr/lib64/librt-2.17.so
+14a7976dd000-14a7976de000 r--p 00006000 08:01 1820321                    /usr/lib64/librt-2.17.so
+14a7976de000-14a7976df000 rw-p 00007000 08:01 1820321                    /usr/lib64/librt-2.17.so
+14a7976df000-14a7976f6000 r-xp 00000000 08:01 1795531                    /usr/lib64/libpthread-2.17.so
+14a7976f6000-14a7978f5000 ---p 00017000 08:01 1795531                    /usr/lib64/libpthread-2.17.so
+14a7978f5000-14a7978f6000 r--p 00016000 08:01 1795531                    /usr/lib64/libpthread-2.17.so
+14a7978f6000-14a7978f7000 rw-p 00017000 08:01 1795531                    /usr/lib64/libpthread-2.17.so
+14a7978f7000-14a7978fb000 rw-p 00000000 00:00 0 
+14a7978fb000-14a7978fd000 r-xp 00000000 08:01 1709335                    /usr/lib64/libdl-2.17.so
+14a7978fd000-14a797afd000 ---p 00002000 08:01 1709335                    /usr/lib64/libdl-2.17.so
+14a797afd000-14a797afe000 r--p 00002000 08:01 1709335                    /usr/lib64/libdl-2.17.so
+14a797afe000-14a797aff000 rw-p 00003000 08:01 1709335                    /usr/lib64/libdl-2.17.so
+14a797aff000-14a797b15000 r-xp 00000000 00:38 81269606                   /software/gcc/5.3.0/lib64/libgcc_s.so.1
+14a797b15000-14a797d14000 ---p 00016000 00:38 81269606                   /software/gcc/5.3.0/lib64/libgcc_s.so.1
+14a797d14000-14a797d15000 rw-p 00015000 00:38 81269606                   /software/gcc/5.3.0/lib64/libgcc_s.so.1
+14a797d15000-14a797ed7000 r-xp 00000000 08:01 1709329                    /usr/lib64/libc-2.17.so
+14a797ed7000-14a7980d7000 ---p 001c2000 08:01 1709329                    /usr/lib64/libc-2.17.so
+14a7980d7000-14a7980db000 r--p 001c2000 08:01 1709329                    /usr/lib64/libc-2.17.so
+14a7980db000-14a7980dd000 rw-p 001c6000 08:01 1709329                    /usr/lib64/libc-2.17.so
+14a7980dd000-14a7980e2000 rw-p 00000000 00:00 0 
+14a7980e2000-14a79814b000 r-xp 00000000 00:38 113646996                  /software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0.176
+14a79814b000-14a79834a000 ---p 00069000 00:38 113646996                  /software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0.176
+14a79834a000-14a79834e000 rw-p 00068000 00:38 113646996                  /software/cuda-toolkit/9.0.176/lib64/libcudart.so.9.0.176
+14a79834e000-14a79834f000 rw-p 00000000 00:00 0 
+14a79834f000-14a7984cd000 r-xp 00000000 00:38 81269635                   /software/gcc/5.3.0/lib64/libstdc++.so.6.0.21
+14a7984cd000-14a7986cd000 ---p 0017e000 00:38 81269635                   /software/gcc/5.3.0/lib64/libstdc++.so.6.0.21
+14a7986cd000-14a7986d7000 r--p 0017e000 00:38 81269635                   /software/gcc/5.3.0/lib64/libstdc++.so.6.0.21
+14a7986d7000-14a7986d9000 rw-p 00188000 00:38 81269635                   /software/gcc/5.3.0/lib64/libstdc++.so.6.0.21
+14a7986d9000-14a7986dd000 rw-p 00000000 00:00 0 
+14a7986dd000-14a7987de000 r-xp 00000000 08:01 1709337                    /usr/lib64/libm-2.17.so
+14a7987de000-14a7989dd000 ---p 00101000 08:01 1709337                    /usr/lib64/libm-2.17.so
+14a7989dd000-14a7989de000 r--p 00100000 08:01 1709337                    /usr/lib64/libm-2.17.so
+14a7989de000-14a7989df000 rw-p 00101000 08:01 1709337                    /usr/lib64/libm-2.17.so
+14a7989df000-14a798a01000 r-xp 00000000 08:01 565966                     /usr/lib64/ld-2.17.so
+14a798a11000-14a798bdf000 rw-p 00000000 00:00 0 
+14a798be8000-14a798be9000 rw-p 00000000 00:00 0 
+14a798be9000-14a798bea000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bea000-14a798beb000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798beb000-14a798bec000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bec000-14a798bed000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bed000-14a798bee000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bee000-14a798bef000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bef000-14a798bf0000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf0000-14a798bf1000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf1000-14a798bf2000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf2000-14a798bf3000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf3000-14a798bf4000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf4000-14a798bf5000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf5000-14a798bf6000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf6000-14a798bf7000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf7000-14a798bf8000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf8000-14a798bf9000 rw-s 00000000 00:06 64325                      /dev/nvidiactl
+14a798bf9000-14a798bfa000 r--s 00000000 00:06 65890                      /dev/nvidia0
+14a798bfa000-14a798bfb000 r--s 00000000 00:06 65890                      /dev/nvidia0
+14a798bfb000-14a798c00000 rw-p 00000000 00:00 0 
+14a798c00000-14a798c01000 r--p 00021000 08:01 565966                     /usr/lib64/ld-2.17.so
+14a798c01000-14a798c02000 rw-p 00022000 08:01 565966                     /usr/lib64/ld-2.17.so
+14a798c02000-14a798c03000 rw-p 00000000 00:00 0 
+7ffebfba9000-7ffebfbc8000 rwxp 00000000 00:00 0                          [stack]
+7ffebfbc8000-7ffebfbcb000 rw-p 00000000 00:00 0 
+7ffebfbf6000-7ffebfbf9000 r--p 00000000 00:00 0                          [vvar]
+7ffebfbf9000-7ffebfbfb000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+======== Error: CUDA profiling error.

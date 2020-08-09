@@ -1,0 +1,7 @@
+==27563== NVPROF is profiling process 27563, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==27563== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27563== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==27563== Profiling result:
+==27563== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.000000,1.000000,1.000000

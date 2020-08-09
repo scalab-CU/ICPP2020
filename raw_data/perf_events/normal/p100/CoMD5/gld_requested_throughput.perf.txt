@@ -1,0 +1,32 @@
+==2799== NVPROF is profiling process 2799, command: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==2799== Profiling application: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==2799== Profiling result:
+==2799== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"gld_requested_throughput","Requested Global Load Throughput",24.938544GB/s,25.225050GB/s,25.073052GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"gld_requested_throughput","Requested Global Load Throughput",3.105501GB/s,4.706352GB/s,4.564235GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"gld_requested_throughput","Requested Global Load Throughput",2.512428GB/s,4.990279GB/s,4.799286GB/s
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",9.054337GB/s,12.483434GB/s,9.602815GB/s
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"gld_requested_throughput","Requested Global Load Throughput",16.075894GB/s,16.075894GB/s,16.075894GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",507.318779MB/s,558.176855MB/s,555.076110MB/s
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"gld_requested_throughput","Requested Global Load Throughput",571.262586MB/s,593.142430MB/s,587.320579MB/s
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"gld_requested_throughput","Requested Global Load Throughput",2.439538GB/s,2.766345GB/s,2.600881GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"gld_requested_throughput","Requested Global Load Throughput",820.365003MB/s,11.693161GB/s,2.608805GB/s
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",8.425173GB/s,8.521569GB/s,8.475317GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",532.367432MB/s,541.099378MB/s,537.058480MB/s
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",583.784967MB/s,586.207155MB/s,584.994060MB/s
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"gld_requested_throughput","Requested Global Load Throughput",2.134323GB/s,2.362161GB/s,2.258240GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"gld_requested_throughput","Requested Global Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",5.934573GB/s,6.819520GB/s,6.366237GB/s
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"gld_requested_throughput","Requested Global Load Throughput",6.325568GB/s,7.243042GB/s,6.764168GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"gld_requested_throughput","Requested Global Load Throughput",2.118999GB/s,2.359172GB/s,2.262231GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"gld_requested_throughput","Requested Global Load Throughput",10.290857GB/s,10.956736GB/s,10.681888GB/s
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"gld_requested_throughput","Requested Global Load Throughput",13.582295GB/s,19.545301GB/s,18.071787GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"gld_requested_throughput","Requested Global Load Throughput",587.260009MB/s,589.103578MB/s,588.171853MB/s
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"gld_requested_throughput","Requested Global Load Throughput",4.149258GB/s,5.236255GB/s,4.587237GB/s
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"gld_requested_throughput","Requested Global Load Throughput",23.651009GB/s,23.876959GB/s,23.780441GB/s
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"gld_requested_throughput","Requested Global Load Throughput",19.076082GB/s,21.709379GB/s,20.441529GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"gld_requested_throughput","Requested Global Load Throughput",90.675858MB/s,2.964962GB/s,571.694007MB/s
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"gld_requested_throughput","Requested Global Load Throughput",29.313538GB/s,29.685205GB/s,29.536916GB/s
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"gld_requested_throughput","Requested Global Load Throughput",21.763893GB/s,23.207757GB/s,22.298860GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"gld_requested_throughput","Requested Global Load Throughput",19.192559GB/s,21.787190GB/s,20.499227GB/s

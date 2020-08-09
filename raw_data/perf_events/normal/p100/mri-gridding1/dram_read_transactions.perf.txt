@@ -1,0 +1,15 @@
+==11492== NVPROF is profiling process 11492, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11492== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11492== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11492== Profiling result:
+==11492== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"dram_read_transactions","Device Memory Read Transactions",2324087,2324087,2324087
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"dram_read_transactions","Device Memory Read Transactions",671777,672678,672402
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"dram_read_transactions","Device Memory Read Transactions",5202,2099230,266965
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"dram_read_transactions","Device Memory Read Transactions",24,8232,973
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"dram_read_transactions","Device Memory Read Transactions",24,8236,973
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"dram_read_transactions","Device Memory Read Transactions",2994561,2994561,2994561
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"dram_read_transactions","Device Memory Read Transactions",3622379,3622379,3622379
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"dram_read_transactions","Device Memory Read Transactions",668602,673071,670570
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"dram_read_transactions","Device Memory Read Transactions",5196,2097189,266711

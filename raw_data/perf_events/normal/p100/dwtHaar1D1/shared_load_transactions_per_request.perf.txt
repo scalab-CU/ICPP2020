@@ -1,0 +1,8 @@
+==8772== NVPROF is profiling process 8772, command: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==8772== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8772== Profiling application: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==8772== Profiling result:
+==8772== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","initValue(float*, float)",1,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.000000,1.771930,1.385965

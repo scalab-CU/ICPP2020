@@ -1,0 +1,14 @@
+==895== NVPROF is profiling process 895, command: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==895== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==895== Profiling application: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==895== Profiling result:
+==895== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"dram_read_throughput","Device Memory Read Throughput",76.503469GB/s,76.503469GB/s,76.503469GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"dram_read_throughput","Device Memory Read Throughput",82.880890GB/s,85.272433GB/s,84.059643GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"dram_read_throughput","Device Memory Read Throughput",162.714014GB/s,162.714014GB/s,162.714014GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"dram_read_throughput","Device Memory Read Throughput",162.606183GB/s,168.537437GB/s,165.525709GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"dram_read_throughput","Device Memory Read Throughput",42.560863GB/s,42.741362GB/s,42.671264GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"dram_read_throughput","Device Memory Read Throughput",87.875437GB/s,87.875437GB/s,87.875437GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"dram_read_throughput","Device Memory Read Throughput",26.547657GB/s,26.547657GB/s,26.547657GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"dram_read_throughput","Device Memory Read Throughput",87.437857GB/s,87.437857GB/s,87.437857GB/s

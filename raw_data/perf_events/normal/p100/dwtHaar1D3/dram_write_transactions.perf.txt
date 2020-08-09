@@ -1,0 +1,8 @@
+==14927== NVPROF is profiling process 14927, command: ./dwtHaar1D --signal=./data/signal_2_18.dat --result=tmp.dat --gold=regression_2_18.gold.dat 2>&1 > /dev/null
+==14927== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14927== Profiling application: ./dwtHaar1D --signal=./data/signal_2_18.dat --result=tmp.dat --gold=regression_2_18.gold.dat 2>&1 > /dev/null
+==14927== Profiling result:
+==14927== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","initValue(float*, float)",1,"dram_write_transactions","Device Memory Write Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"dram_write_transactions","Device Memory Write Transactions",0,4,2

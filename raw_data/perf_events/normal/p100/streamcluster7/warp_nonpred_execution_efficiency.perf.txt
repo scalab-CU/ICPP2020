@@ -1,0 +1,8 @@
+read 65536 points
+==29791== NVPROF is profiling process 29791, command: ./streamcluster 20 50 256 65536 262144 1000 none output.txt 1 2>&1 > /dev/null
+finish local search
+==29791== Profiling application: ./streamcluster 20 50 256 65536 262144 1000 none output.txt 1 2>&1 > /dev/null
+==29791== Profiling result:
+==29791== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",4688,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",99.128886%,99.756838%,99.359601%

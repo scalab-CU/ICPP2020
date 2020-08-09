@@ -1,0 +1,14 @@
+==5162== NVPROF is profiling process 5162, command: ./dct8x8 sample8.bmp 2>&1 > /dev/null
+==5162== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5162== Profiling application: ./dct8x8 sample8.bmp 2>&1 > /dev/null
+==5162== Profiling result:
+==5162== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_other","Issue Stall Reasons (Other)",45.693920%,45.693920%,45.693920%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_other","Issue Stall Reasons (Other)",2.268715%,10.713925%,6.491320%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_other","Issue Stall Reasons (Other)",46.006581%,46.006581%,46.006581%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_other","Issue Stall Reasons (Other)",44.846580%,47.447845%,46.073999%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_other","Issue Stall Reasons (Other)",62.532798%,62.668316%,62.590314%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_other","Issue Stall Reasons (Other)",48.983678%,48.983678%,48.983678%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_other","Issue Stall Reasons (Other)",6.384466%,6.384466%,6.384466%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_other","Issue Stall Reasons (Other)",47.747527%,47.747527%,47.747527%

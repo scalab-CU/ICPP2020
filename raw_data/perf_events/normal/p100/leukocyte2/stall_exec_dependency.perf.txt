@@ -1,0 +1,10 @@
+==14689== NVPROF is profiling process 14689, command: ./leukocyte testfile.avi 300
+==14689== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+HIRREG time: 0.180364
+==14689== Profiling application: ./leukocyte testfile.avi 300
+==14689== Profiling result:
+==14689== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","dilate_kernel(int, int, int, int, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.357261%,12.357261%,12.357261%
+"Tesla P100-PCIE-12GB (0)","IMGVF_kernel(float**, float**, int*, int*, float, float, float, int, float)",300,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",52.216492%,52.459827%,52.363316%
+"Tesla P100-PCIE-12GB (0)","GICOV_kernel(int, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.836574%,12.836574%,12.836574%

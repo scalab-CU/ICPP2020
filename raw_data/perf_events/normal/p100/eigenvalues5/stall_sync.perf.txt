@@ -1,0 +1,9 @@
+==1327== NVPROF is profiling process 1327, command: ./eigenvalues --matrix-size=5120 2>&1 > /dev/null
+==1327== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1327== Profiling application: ./eigenvalues --matrix-size=5120 2>&1 > /dev/null
+==1327== Profiling result:
+==1327== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"stall_sync","Issue Stall Reasons (Synchronization)",35.004647%,35.015908%,35.007016%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"stall_sync","Issue Stall Reasons (Synchronization)",75.759486%,75.802894%,75.772905%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"stall_sync","Issue Stall Reasons (Synchronization)",87.565616%,87.598992%,87.567913%

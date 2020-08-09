@@ -1,0 +1,17 @@
+==8345== NVPROF is profiling process 8345, command: ././crc_gpu input7.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XEF200000  
+value in hostpartialcrc = 0X5C6D27B8  
+
+==8345== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 1058.057251 ms
+After cuda, hostpartialcrc[0] = 0XDEDDA639  
+After cuda, hostpartialcrc[0] = 3739067961  
+Program Ended Successfully!
+==8345== Profiling application: ././crc_gpu input7.in 2>&1 > /dev/null
+==8345== Profiling result:
+==8345== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_other","Issue Stall Reasons (Other)",0.915444%,0.915444%,0.915444%

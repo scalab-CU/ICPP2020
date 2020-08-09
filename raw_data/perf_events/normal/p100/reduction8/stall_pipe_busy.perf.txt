@@ -1,0 +1,8 @@
+==7654== NVPROF is profiling process 7654, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==7654== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7654== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==7654== Profiling result:
+==7654== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.174956%,0.209018%,0.205247%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.547450%,0.757623%,0.686755%

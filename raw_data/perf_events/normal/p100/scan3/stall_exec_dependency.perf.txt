@@ -1,0 +1,9 @@
+==4039== NVPROF is profiling process 4039, command: ./scan 80 2>&1 > /dev/null
+==4039== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4039== Profiling application: ./scan 80 2>&1 > /dev/null
+==4039== Profiling result:
+==4039== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",9.551523%,14.901700%,12.343895%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.374435%,12.408836%,10.143349%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",0.995988%,1.224765%,1.088400%

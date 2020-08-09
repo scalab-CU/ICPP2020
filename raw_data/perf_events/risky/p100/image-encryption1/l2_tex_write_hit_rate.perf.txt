@@ -1,0 +1,9 @@
+==6671== NVPROF is profiling process 6671, command: ././enc 1.ppm 2>&1 > /dev/null
+==6671== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6671== Profiling application: ././enc 1.ppm 2>&1 > /dev/null
+==6671== Profiling result:
+==6671== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",75.000000%,100.000000%,98.750000%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",99.994968%,100.000000%,99.999748%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",99.999488%,100.000452%,100.000010%

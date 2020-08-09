@@ -1,0 +1,12 @@
+==9589== NVPROF is profiling process 9589, command: ./sad reference.bin frame.bin
+==9589== Profiling application: ./sad reference.bin frame.bin
+==9589== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,KB,MB,GB/s,,,,,,
+0.319675,0.000010,,,,,,,,,,0.048340,4.949867,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.319708,0.000009,,,,,,,,,,0.048340,5.158094,"Pageable","Array","Tesla K40m (0)","1","7","[CUDA memcpy HtoA]"
+0.319930,0.000001,,,,,,,,,,8.485153,8092.072676,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.320039,0.000372,44,36,1,61,1,1,47,0,2.140625,,,,,"Tesla K40m (0)","1","7","mb_sad_calc(unsigned short*, unsigned short*, int, int) [123]"
+0.320439,0.000081,11,9,1,32,4,1,32,0,0.000000,,,,,"Tesla K40m (0)","1","7","larger_sad_calc_8(unsigned short*, int, int) [129]"
+0.320523,0.000026,11,9,1,32,1,1,30,0,0.000000,,,,,"Tesla K40m (0)","1","7","larger_sad_calc_16(unsigned short*, int, int) [135]"
+0.320555,0.002784,,,,,,,,,,8.485153,2.976496,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

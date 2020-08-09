@@ -1,0 +1,8 @@
+==4050== NVPROF is profiling process 4050, command: ./convolutionSeparable 8192 2>&1 > /dev/null
+==4050== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4050== Profiling application: ./convolutionSeparable 8192 2>&1 > /dev/null
+==4050== Profiling result:
+==4050== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"dram_write_transactions","Device Memory Write Transactions",9560928,9580703,9575724
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"dram_write_transactions","Device Memory Write Transactions",8389961,9388533,9322887

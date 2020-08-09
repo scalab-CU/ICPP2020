@@ -1,0 +1,9 @@
+==2124== NVPROF is profiling process 2124, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==2124== Execution timeout, stopping the application...
+==2124== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==2124== Warning: Found 1 invalid records in the result.
+==2124== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==2124== Profiling result:
+==2124== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",22,"flop_count_sp","Floating Point Operations(Single Precision)",1565515579392,1565515579392,1565515579392

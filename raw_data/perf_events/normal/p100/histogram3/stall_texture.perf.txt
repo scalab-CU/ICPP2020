@@ -1,0 +1,10 @@
+==21699== NVPROF is profiling process 21699, command: ./histogram 96 2>&1 > /dev/null
+==21699== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21699== Profiling application: ./histogram 96 2>&1 > /dev/null
+==21699== Profiling result:
+==21699== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_texture","Issue Stall Reasons (Texture)",0.231720%,0.901662%,0.475413%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%

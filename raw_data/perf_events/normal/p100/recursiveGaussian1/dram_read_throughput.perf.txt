@@ -1,0 +1,8 @@
+==28360== NVPROF is profiling process 28360, command: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==28360== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28360== Profiling application: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==28360== Profiling result:
+==28360== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_read_throughput","Device Memory Read Throughput",362.343657MB/s,671.889818MB/s,528.170087MB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_read_throughput","Device Memory Read Throughput",1.571669GB/s,9.644274GB/s,4.136806GB/s

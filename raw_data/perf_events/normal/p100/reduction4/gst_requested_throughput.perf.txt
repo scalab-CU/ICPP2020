@@ -1,0 +1,7 @@
+==9058== NVPROF is profiling process 9058, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==9058== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==9058== Profiling result:
+==9058== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"gst_requested_throughput","Requested Global Store Throughput",21.736166MB/s,295.416785MB/s,287.121408MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"gst_requested_throughput","Requested Global Store Throughput",377.925781KB/s,396.372070KB/s,390.508789KB/s

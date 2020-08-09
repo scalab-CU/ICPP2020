@@ -1,0 +1,9 @@
+==26705== NVPROF is profiling process 26705, command: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==26705== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==26705== Profiling result:
+==26705== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",87.500000%,87.500000%,87.500000%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",52.254896%,53.213343%,52.732344%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",66.489362%,66.489362%,66.489362%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"global_hit_rate","Global Hit Rate in unified l1/tex",99.694529%,99.787206%,99.775014%

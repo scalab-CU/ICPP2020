@@ -1,0 +1,15 @@
+==331100== NVPROF is profiling process 331100, command: ./FDTD3d -dimx=360 -dimy=360 -dimz=360 2>&1 > /dev/null
+==331100== Profiling application: ./FDTD3d -dimx=360 -dimy=360 -dimz=360 2>&1 > /dev/null
+==331100== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.326900,0.048850,,,,,,,,,,190.109375,3.800501,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.375889,0.024521,,,,,,,,,,190.109375,7.571076,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.400425,0.000002,,,,,,,,,,0.000019,0.011879,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.400475,0.002312,12,23,1,32,16,1,91,3.750000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [130]"
+1.402788,0.002308,12,23,1,32,16,1,91,3.750000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [137]"
+1.405098,0.002307,12,23,1,32,16,1,91,3.750000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [144]"
+1.407407,0.002306,12,23,1,32,16,1,91,3.750000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [151]"
+1.409714,0.002309,12,23,1,32,16,1,91,3.750000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","FiniteDifferencesKernel(float*, float const *, int, int, int) [158]"
+1.412046,0.075076,,,,,,,,,,190.109375,2.472868,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

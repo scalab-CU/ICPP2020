@@ -1,0 +1,13 @@
+==31083== NVPROF is profiling process 31083, command: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==31083== Profiling application: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==31083== Profiling result:
+==31083== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"sysmem_write_throughput","System Memory Write Throughput",1.419171MB/s,1.419171MB/s,1.419162MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"sysmem_write_throughput","System Memory Write Throughput",1.563400MB/s,1.588943MB/s,1.576058MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",3.362744MB/s,3.362744MB/s,3.362723MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"sysmem_write_throughput","System Memory Write Throughput",3.315974MB/s,3.555832MB/s,3.481650MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"sysmem_write_throughput","System Memory Write Throughput",786.542969KB/s,794.606445KB/s,793.207031KB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",5.564027MB/s,5.564027MB/s,5.563993MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",1.751166MB/s,1.751166MB/s,1.751155MB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",5.269100MB/s,5.269100MB/s,5.269068MB/s

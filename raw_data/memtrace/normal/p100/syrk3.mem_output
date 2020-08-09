@@ -1,0 +1,9 @@
+==32582== NVPROF is profiling process 32582, command: ./syrk1024
+==32582== Profiling application: ./syrk1024
+==32582== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.329784,0.000546,,,,,,,,,,4.000000,7.149577,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.330483,0.000531,,,,,,,,,,4.000000,7.354159,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.331060,0.034217,32,128,1,32,8,1,22,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","syrk_kernel(float, float, float*, float*) [114]"
+0.365298,0.000954,,,,,,,,,,4.000000,4.095954,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

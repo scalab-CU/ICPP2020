@@ -1,0 +1,12 @@
+==4365== NVPROF is profiling process 4365, command: ./newdelete 2>&1 > /dev/null
+==4365== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4365== Profiling application: ./newdelete 2>&1 > /dev/null
+==4365== Profiling result:
+==4365== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","complexVector(int*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",10.240330%,10.240330%,10.240330%
+"Tesla P100-PCIE-12GB (0)","placementNew(int*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",8.042810%,8.042810%,8.042810%
+"Tesla P100-PCIE-12GB (0)","containerFill(Container<int>**)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",53.729883%,53.729883%,53.729883%
+"Tesla P100-PCIE-12GB (0)","vectorCreate(Container<int>**, int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",64.635011%,64.635011%,64.635011%
+"Tesla P100-PCIE-12GB (0)","containerDelete(Container<int>**)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",67.386618%,67.386618%,67.386618%
+"Tesla P100-PCIE-12GB (0)","containerConsume(Container<int>**, int*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",86.736376%,86.736376%,86.736376%

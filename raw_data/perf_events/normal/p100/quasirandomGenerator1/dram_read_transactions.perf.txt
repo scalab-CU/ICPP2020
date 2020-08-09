@@ -1,0 +1,8 @@
+==31073== NVPROF is profiling process 31073, command: ./quasirandomGenerator 48 2>&1 > /dev/null
+==31073== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==31073== Profiling application: ./quasirandomGenerator 48 2>&1 > /dev/null
+==31073== Profiling result:
+==31073== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",12,356,56
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",28,588,73

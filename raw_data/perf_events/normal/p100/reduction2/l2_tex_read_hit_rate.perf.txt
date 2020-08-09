@@ -1,0 +1,8 @@
+==10567== NVPROF is profiling process 10567, command: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==10567== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10567== Profiling application: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==10567== Profiling result:
+==10567== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%

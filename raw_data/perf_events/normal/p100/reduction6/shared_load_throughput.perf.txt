@@ -1,0 +1,7 @@
+==25413== NVPROF is profiling process 25413, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==25413== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==25413== Profiling result:
+==25413== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"shared_load_throughput","Shared Memory Load Throughput",21.959606GB/s,180.483820GB/s,175.907565GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s

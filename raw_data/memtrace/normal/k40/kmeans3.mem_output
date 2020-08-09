@@ -1,0 +1,15 @@
+==10854== NVPROF is profiling process 10854, command: ./kmeans -i ./data/1024000_100.txt
+==10854== Profiling application: ./kmeans -i ./data/1024000_100.txt
+==10854== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+7.520806,0.053665,,,,,,,,,,390.625000,7.108320,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+7.575396,0.060774,4096,1,1,256,1,1,18,0,0,,,,,"Tesla K40m (0)","1","7","invert_mapping(float*, float*, int, int) [112]"
+7.639643,0.000428,,,,,,,,,,3.906250,8.907454,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+7.640086,0.000001,,,,,,,,,,0.001907,1.573180,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+7.640147,0.011911,64,64,1,256,1,1,16,0,0,,,,,"Tesla K40m (0)","1","7","kmeansPoint(float*, int, int, int, int*, float*, float*, int*) [135]"
+7.652078,0.000504,,,,,,,,,,3.906250,7.574540,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+7.692619,0.000445,,,,,,,,,,3.906250,8.567521,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+7.693078,0.000001,,,,,,,,,,0.001907,1.531781,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+7.693144,0.011911,64,64,1,256,1,1,16,0,0,,,,,"Tesla K40m (0)","1","7","kmeansPoint(float*, int, int, int, int*, float*, float*, int*) [157]"
+7.705073,0.000544,,,,,,,,,,3.906250,7.013897,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

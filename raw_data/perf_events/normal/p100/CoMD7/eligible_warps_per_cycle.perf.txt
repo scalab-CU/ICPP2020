@@ -1,0 +1,32 @@
+==16482== NVPROF is profiling process 16482, command: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==16482== Profiling application: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==16482== Profiling result:
+==16482== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.099377,0.106331,0.104236
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.189973,0.195378,0.193955
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.174354,0.180266,0.178692
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.043298,0.048249,0.044367
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.656702,0.656702,0.656702
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.273043,0.276538,0.274210
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.102708,1.207468,1.164050
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.519668,0.664450,0.601734
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.022779,0.346799,0.060535
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.225223,0.236265,0.232262
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.494339,0.521789,0.509958
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.201263,1.220823,1.210923
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.594118,0.729339,0.678616
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.040525,0.106332,0.079418
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.013410,0.016486,0.015682
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.693709,0.743731,0.730394
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.630595,0.772773,0.705557
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.384660,0.458788,0.420377
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.211722,0.225585,0.220557
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.733772,0.738405,0.735129
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.311351,0.431375,0.388026
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.396878,0.410531,0.406902
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.439690,0.674097,0.586459
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.095373,0.301625,0.234303
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.057990,0.062793,0.061089
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.416869,0.444143,0.435104
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.065446,0.077054,0.072261

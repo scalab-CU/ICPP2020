@@ -1,0 +1,13 @@
+==30721== NVPROF is profiling process 30721, command: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==30721== Profiling application: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==30721== Profiling result:
+==30721== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.887940,0.890837,0.889535
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.885561,0.888762,0.887279
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.905378,0.907786,0.906608
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.904340,0.907535,0.906325
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.937396,0.938929,0.938313
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.848734,0.853770,0.851835
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.719963,0.736772,0.728099
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"achieved_occupancy","Achieved Occupancy",0.905816,0.908075,0.906920

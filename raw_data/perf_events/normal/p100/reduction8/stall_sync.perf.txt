@@ -1,0 +1,8 @@
+==5724== NVPROF is profiling process 5724, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==5724== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5724== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==5724== Profiling result:
+==5724== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"stall_sync","Issue Stall Reasons (Synchronization)",1.224301%,1.698451%,1.572688%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_sync","Issue Stall Reasons (Synchronization)",4.183006%,11.796983%,9.550046%

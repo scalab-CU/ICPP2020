@@ -1,0 +1,10 @@
+==16865== NVPROF is profiling process 16865, command: ./MonteCarloMultiGPU -size=200
+==16865== Profiling application: ./MonteCarloMultiGPU -size=200
+==16865== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.328565,0.000001,,,,,,,,,,96.000000,68132.267442,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.333354,0.020981,8192,1,1,256,1,1,40,0.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","rngSetupStates(curandStateXORWOW*, int) [119]"
+0.354396,0.000014,,,,,,,,,,0.125000,8.933717,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy HtoD]"
+0.354414,0.024359,8192,1,1,256,1,1,30,2.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","14","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int) [131]"
+0.378776,0.000007,,,,,,,,,,0.062500,9.214245,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy DtoH]"

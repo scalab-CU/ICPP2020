@@ -1,0 +1,17 @@
+==28865== NVPROF is profiling process 28865, command: ././crc_gpu input2.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X16C00000  
+value in hostpartialcrc = 0X887297B8  
+
+==28865== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 426.613892 ms
+After cuda, hostpartialcrc[0] = 0X7D69D5EC  
+After cuda, hostpartialcrc[0] = 2104088044  
+Program Ended Successfully!
+==28865== Profiling application: ././crc_gpu input2.in 2>&1 > /dev/null
+==28865== Profiling result:
+==28865== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_sync","Issue Stall Reasons (Synchronization)",0.000199%,0.000199%,0.000199%

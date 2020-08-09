@@ -1,0 +1,9 @@
+==15925== NVPROF is profiling process 15925, command: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==15925== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15925== Profiling application: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==15925== Profiling result:
+==15925== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",32,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011179%,0.016986%,0.012881%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",22.922135%,22.922135%,22.922135%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",32,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011607%,0.014078%,0.012766%

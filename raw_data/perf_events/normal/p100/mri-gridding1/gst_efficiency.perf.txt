@@ -1,0 +1,15 @@
+==29064== NVPROF is profiling process 29064, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29064== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29064== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29064== Profiling result:
+==29064== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gst_efficiency","Global Memory Store Efficiency",99.999975%,99.999975%,99.999975%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gst_efficiency","Global Memory Store Efficiency",25.000000%,25.000000%,25.000000%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gst_efficiency","Global Memory Store Efficiency",12.500000%,50.000000%,45.833333%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gst_efficiency","Global Memory Store Efficiency",99.999958%,100.000000%,99.999995%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gst_efficiency","Global Memory Store Efficiency",12.500000%,50.000000%,45.833333%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gst_efficiency","Global Memory Store Efficiency",99.999925%,99.999925%,99.999925%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gst_efficiency","Global Memory Store Efficiency",75.000000%,75.000000%,75.000000%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gst_efficiency","Global Memory Store Efficiency",24.807668%,24.807668%,24.807668%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gst_efficiency","Global Memory Store Efficiency",99.313922%,99.321623%,99.314885%

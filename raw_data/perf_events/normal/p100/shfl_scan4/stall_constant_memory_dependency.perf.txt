@@ -1,0 +1,11 @@
+==30245== NVPROF is profiling process 30245, command: ./shfl_scan 524288 2>&1 > /dev/null
+==30245== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30245== Profiling application: ./shfl_scan 524288 2>&1 > /dev/null
+==30245== Profiling result:
+==30245== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.428065%,0.428065%,0.428065%
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.433292%,0.433292%,0.433292%
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",2.570034%,2.570034%,2.570034%
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.994930%,30.005377%,15.500154%
+======== Error: Application returned non-zero code 1

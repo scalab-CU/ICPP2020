@@ -1,0 +1,7 @@
+==17730== NVPROF is profiling process 17730, command: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==17730== Profiling application: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==17730== Profiling result:
+==17730== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",0,0,0
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"flop_count_sp_mul","Floating Point Operation(Single Precision Mul)",8589934506,8589934506,8589934506

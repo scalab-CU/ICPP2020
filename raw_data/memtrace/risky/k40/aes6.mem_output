@@ -1,0 +1,10 @@
+==8312== NVPROF is profiling process 8312, command: ././aes e 256 ./data/barbara_gray.bmp ./data/key256.txt
+==8312== Profiling application: ././aes e 256 ./data/barbara_gray.bmp ./data/key256.txt
+==8312== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.319922,0.000029,,,,,,,,,,258.000000,8.505530,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.319963,0.000001,,,,,,,,,,0.234375,0.194026,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.320013,0.000001,,,,,,,,,,258.000000,307.559967,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.320061,0.000073,258,1,1,256,1,1,32,6.000000,0,,,,,"Tesla K40m (0)","1","7","aesEncrypt256(unsigned int*, unsigned int*, int) [119]"
+0.320159,0.000027,,,,,,,,,,258.000000,9.186379,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

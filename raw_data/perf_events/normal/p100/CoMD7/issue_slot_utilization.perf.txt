@@ -1,0 +1,32 @@
+==3599== NVPROF is profiling process 3599, command: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==3599== Profiling application: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==3599== Profiling result:
+==3599== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"issue_slot_utilization","Issue Slot Utilization",4.400011%,4.680936%,4.591833%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"issue_slot_utilization","Issue Slot Utilization",9.262256%,9.518265%,9.448969%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"issue_slot_utilization","Issue Slot Utilization",2.269330%,2.475137%,2.336355%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"issue_slot_utilization","Issue Slot Utilization",8.493392%,8.769932%,8.696745%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"issue_slot_utilization","Issue Slot Utilization",27.052335%,27.052335%,27.052335%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"issue_slot_utilization","Issue Slot Utilization",14.407409%,14.548995%,14.493883%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"issue_slot_utilization","Issue Slot Utilization",21.713378%,27.754361%,25.331494%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"issue_slot_utilization","Issue Slot Utilization",42.154571%,44.659345%,43.489739%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"issue_slot_utilization","Issue Slot Utilization",1.209443%,16.862871%,3.048241%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"issue_slot_utilization","Issue Slot Utilization",9.369551%,9.909528%,9.727431%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"issue_slot_utilization","Issue Slot Utilization",22.370229%,23.321585%,23.020688%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"issue_slot_utilization","Issue Slot Utilization",47.666750%,48.357410%,48.018462%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slot_utilization","Issue Slot Utilization",23.750045%,30.945418%,28.325813%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"issue_slot_utilization","Issue Slot Utilization",2.159161%,5.375000%,4.083365%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"issue_slot_utilization","Issue Slot Utilization",0.717492%,0.886133%,0.841394%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slot_utilization","Issue Slot Utilization",28.384818%,31.663586%,30.912678%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"issue_slot_utilization","Issue Slot Utilization",27.106810%,33.178610%,30.339693%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"issue_slot_utilization","Issue Slot Utilization",18.139834%,21.251726%,19.794675%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"issue_slot_utilization","Issue Slot Utilization",9.308342%,9.838790%,9.651799%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"issue_slot_utilization","Issue Slot Utilization",33.065049%,33.245700%,33.173841%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"issue_slot_utilization","Issue Slot Utilization",14.006480%,18.217183%,16.794111%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"issue_slot_utilization","Issue Slot Utilization",17.682402%,18.339172%,18.132154%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"issue_slot_utilization","Issue Slot Utilization",17.473352%,24.736868%,22.965140%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"issue_slot_utilization","Issue Slot Utilization",4.573582%,13.763036%,10.798908%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"issue_slot_utilization","Issue Slot Utilization",2.855536%,3.072565%,3.007624%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"issue_slot_utilization","Issue Slot Utilization",16.613076%,17.650196%,17.335678%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"issue_slot_utilization","Issue Slot Utilization",3.314165%,3.812098%,3.567301%

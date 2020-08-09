@@ -1,0 +1,10 @@
+==30561== NVPROF is profiling process 30561, command: ./corr3072 2>&1 > /dev/null
+==30561== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30561== Profiling application: ./corr3072 2>&1 > /dev/null
+==30561== Profiling result:
+==30561== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.854666%,96.854666%,96.854666%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",82.431537%,82.431537%,82.431537%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.848856%,97.848856%,97.848856%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.380977%,97.380977%,97.380977%

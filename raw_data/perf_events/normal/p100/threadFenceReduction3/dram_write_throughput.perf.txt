@@ -1,0 +1,8 @@
+==21680== NVPROF is profiling process 21680, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==21680== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21680== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==21680== Profiling result:
+==21680== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"dram_write_throughput","Device Memory Write Throughput",1.927515GB/s,1.927515GB/s,1.927515GB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"dram_write_throughput","Device Memory Write Throughput",2.041984GB/s,5.952610GB/s,4.093243GB/s

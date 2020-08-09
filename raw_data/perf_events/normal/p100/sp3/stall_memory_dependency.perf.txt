@@ -1,0 +1,9 @@
+==6828== NVPROF is profiling process 6828, command: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==6828== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6828== Profiling application: ./nsp input/archive/random-42000-10000-5.cnf 5 2>&1 > /dev/null
+==6828== Profiling result:
+==6828== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",80.004045%,80.004045%,80.004045%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",5,"stall_memory_dependency","Issue Stall Reasons (Data Request)",91.926077%,94.969325%,94.235527%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",5,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.711165%,96.750802%,96.723866%

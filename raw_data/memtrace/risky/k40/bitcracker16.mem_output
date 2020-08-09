@@ -1,0 +1,17 @@
+==12898== NVPROF is profiling process 12898, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+Cuda error in file 'cuda_attack.cu' in line 210 : the launch timed out and was terminated.
+==12898== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==12898== Warning: Found 2 invalid records in the result.
+==12898== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==12898== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.309949,0.000011,,,,,,,,,,0.000015,0.001350,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.309971,0.000004,,,,,,,,,,0.000038,0.008623,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.493172,0.000023,,,,,,,,,,0.000042,0.001747,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.493210,0.000005,,,,,,,,,,0.000015,0.003097,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.493735,0.000018,,,,,,,,,,0.000004,0.000208,"Pinned","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.493796,0.000020,,,,,,,,,,0.000015,0.000757,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.498258,0.000028,,,,,,,,,,256.000000,9056.986559,"Pinned","Device","Tesla K40m (0)","1","14","[CUDA memcpy HtoD]"
+0.498408,0.000008,,,,,,,,,,0.000004,0.000462,"Device","Pinned","Tesla K40m (0)","1","14","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

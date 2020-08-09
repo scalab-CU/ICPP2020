@@ -1,0 +1,16 @@
+==8361== NVPROF is profiling process 8361, command: ././crc_gpu input4.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X4EE00000  
+value in hostpartialcrc = 0XBB6DC7B8  
+
+Execution time: 122.760254 ms
+After cuda, hostpartialcrc[0] = 0X692C6C22  
+After cuda, hostpartialcrc[0] = 1764518946  
+Program Ended Successfully!
+==8361== Profiling application: ././crc_gpu input4.in 2>&1 > /dev/null
+==8361== Profiling result:
+==8361== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0

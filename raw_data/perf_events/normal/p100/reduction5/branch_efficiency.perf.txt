@@ -1,0 +1,7 @@
+==6015== NVPROF is profiling process 6015, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==6015== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==6015== Profiling result:
+==6015== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"branch_efficiency","Branch Efficiency",100.000000%,100.000000%,100.000000%

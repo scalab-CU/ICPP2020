@@ -1,0 +1,7 @@
+==9913== NVPROF is profiling process 9913, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==9913== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9913== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==9913== Profiling result:
+==9913== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%

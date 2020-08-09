@@ -1,0 +1,8 @@
+==10212== NVPROF is profiling process 10212, command: ./quasirandomGenerator 6 2>&1 > /dev/null
+==10212== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10212== Profiling application: ./quasirandomGenerator 6 2>&1 > /dev/null
+==10212== Profiling result:
+==10212== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",62.069346%,62.196550%,62.174059%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",16.057661%,16.381554%,16.240796%

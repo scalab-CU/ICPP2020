@@ -1,0 +1,8 @@
+read 131072 points
+==8888== NVPROF is profiling process 8888, command: ./streamcluster 10 20 256 131072 131072 1000 none output.txt 1 2>&1 > /dev/null
+finish local search
+==8888== Profiling application: ./streamcluster 10 20 256 131072 131072 1000 none output.txt 1 2>&1 > /dev/null
+==8888== Profiling result:
+==8888== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",1611,"tex_cache_throughput","Unified Cache Throughput",528.591326GB/s,642.240424GB/s,560.631388GB/s

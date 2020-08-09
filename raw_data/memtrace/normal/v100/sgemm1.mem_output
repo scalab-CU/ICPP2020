@@ -1,0 +1,9 @@
+==200824== NVPROF is profiling process 200824, command: ./sgemm matrix1.txt matrix1t.txt out.txt
+==200824== Profiling application: ./sgemm matrix1.txt matrix1t.txt out.txt
+==200824== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.461195,0.000727,,,,,,,,,,3.875000,5.202015,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.462154,0.000722,,,,,,,,,,3.875000,5.242836,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.462881,0.000242,8,62,1,16,8,1,44,512,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","mysgemmNT(float const *, int, float const *, int, float*, int, int, float, float) [117]"
+0.463130,0.000585,,,,,,,,,,3.875000,6.468860,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

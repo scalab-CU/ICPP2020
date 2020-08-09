@@ -1,0 +1,10 @@
+==11102== NVPROF is profiling process 11102, command: ./shfl_scan 131072 2>&1 > /dev/null
+==11102== Profiling application: ./shfl_scan 131072 2>&1 > /dev/null
+==11102== Profiling result:
+==11102== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"cf_issued","Issued Control-Flow Instructions",95040,95040,95040
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"cf_issued","Issued Control-Flow Instructions",480,480,480
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"cf_issued","Issued Control-Flow Instructions",16863,16863,16863
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"cf_issued","Issued Control-Flow Instructions",174,45056,22615
+======== Error: Application returned non-zero code 1

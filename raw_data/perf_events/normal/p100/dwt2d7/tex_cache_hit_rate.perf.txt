@@ -1,0 +1,9 @@
+==20890== NVPROF is profiling process 20890, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==20890== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20890== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==20890== Profiling result:
+==20890== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex_cache_hit_rate","Unified Cache Hit Rate",52.030812%,52.030812%,52.030812%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"tex_cache_hit_rate","Unified Cache Hit Rate",49.238505%,49.772938%,49.485180%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%

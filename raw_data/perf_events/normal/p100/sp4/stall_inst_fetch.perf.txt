@@ -1,0 +1,9 @@
+==900== NVPROF is profiling process 900, command: ./nsp input/archive/random-42-10-3.cnf 3 2>&1 > /dev/null
+==900== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==900== Profiling application: ./nsp input/archive/random-42-10-3.cnf 3 2>&1 > /dev/null
+==900== Profiling result:
+==900== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",7.943641%,7.943641%,7.943641%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",6,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",13.241382%,44.449592%,18.578283%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",6,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",9.198784%,9.247666%,9.227436%

@@ -1,0 +1,9 @@
+==24910== NVPROF is profiling process 24910, command: ./scan 80 2>&1 > /dev/null
+==24910== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24910== Profiling application: ./scan 80 2>&1 > /dev/null
+==24910== Profiling result:
+==24910== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",1.373900%,3.104565%,1.627058%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.021083%,0.064736%,0.024756%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.006098%,0.027818%,0.006989%

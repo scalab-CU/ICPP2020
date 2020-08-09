@@ -1,0 +1,8 @@
+==17747== NVPROF is profiling process 17747, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==17747== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17747== Execution timeout, stopping the application...
+==17747== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==17747== Profiling result:
+==17747== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",16,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",23.711290%,23.727582%,23.719682%

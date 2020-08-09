@@ -1,0 +1,8 @@
+==18390== NVPROF is profiling process 18390, command: ./recursiveGaussian -image=./data/sample6.ppm 2>&1 > /dev/null
+==18390== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==18390== Profiling application: ./recursiveGaussian -image=./data/sample6.ppm 2>&1 > /dev/null
+==18390== Profiling result:
+==18390== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_write_throughput","Device Memory Write Throughput",2.303850GB/s,2.343186GB/s,2.336326GB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_write_throughput","Device Memory Write Throughput",150.897911GB/s,159.841530GB/s,154.979615GB/s

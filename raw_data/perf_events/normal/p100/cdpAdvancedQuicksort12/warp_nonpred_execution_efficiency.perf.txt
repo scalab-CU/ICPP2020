@@ -1,0 +1,7 @@
+==13444== NVPROF is profiling process 13444, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==13444== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==13444== Profiling result:
+==13444== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",96.020061%,96.020061%,96.020061%
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",1999,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",60.627182%,82.391025%,66.307737%

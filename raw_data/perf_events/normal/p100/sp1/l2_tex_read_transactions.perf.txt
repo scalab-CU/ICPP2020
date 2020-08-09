@@ -1,0 +1,14 @@
+==8805== NVPROF is profiling process 8805, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==8805== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==8805== Profiling result:
+==8805== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",2560,4608,3730
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",566,1036,792
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",97423,225650,155940
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",48845,68823,61838
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",275,500,387
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",558,1018,783
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",661585,3021033,1627892
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",275,500,387
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",1521,2246,1872

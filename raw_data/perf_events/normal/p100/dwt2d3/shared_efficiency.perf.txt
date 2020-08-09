@@ -1,0 +1,9 @@
+==9315== NVPROF is profiling process 9315, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9315== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9315== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9315== Profiling result:
+==9315== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_efficiency","Shared Memory Efficiency",92.717760%,92.717760%,92.717760%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"shared_efficiency","Shared Memory Efficiency",95.601801%,95.625000%,95.613400%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_efficiency","Shared Memory Efficiency",40.000000%,40.000000%,40.000000%

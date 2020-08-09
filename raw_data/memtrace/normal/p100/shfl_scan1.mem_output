@@ -1,0 +1,19 @@
+==13797== NVPROF is profiling process 13797, command: ./shfl_scan 65536 2>&1 > /dev/null
+==13797== Profiling application: ./shfl_scan 65536 2>&1 > /dev/null
+==13797== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.334344,0.000002,,,,,,,,,,0.000977,0.451550,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.335370,0.000025,,,,,,,,,,0.250000,9.768751,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.335441,0.000005,256,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.335451,0.000002,1,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.335459,0.000003,255,1,1,256,1,1,8,0.015625,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.335486,0.000021,,,,,,,,,,0.250000,11.438373,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.335518,0.000002,,,,,,,,,,0.000977,0.608211,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.340100,0.000002,,,,,,,,,,7.910156,5029.141903,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.340127,0.000001,,,,,,,,,,7.910156,8324.096943,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.340154,0.000034,1080,1,1,120,1,1,32,0.500000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.340211,0.000633,,,,,,,,,,7.910156,12.198116,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.341824,0.000140,60,1,1,32,8,1,21,1.125000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.341982,0.000633,,,,,,,,,,7.910156,12.195035,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

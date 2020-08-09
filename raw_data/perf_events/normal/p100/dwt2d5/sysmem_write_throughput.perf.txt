@@ -1,0 +1,8 @@
+==28619== NVPROF is profiling process 28619, command: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==28619== Profiling application: ./dwt2d sample3.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==28619== Profiling result:
+==28619== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",7.766472MB/s,14.994879MB/s,11.426047MB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"sysmem_write_throughput","System Memory Write Throughput",2.425417MB/s,7.568843MB/s,3.899437MB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",1.856842MB/s,1.856842MB/s,1.856831MB/s

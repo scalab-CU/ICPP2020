@@ -1,0 +1,7 @@
+==3147== NVPROF is profiling process 3147, command: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==3147== Profiling application: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==3147== Profiling result:
+==3147== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",93.238002%,93.238002%,93.238002%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",92.749511%,92.749584%,92.749547%

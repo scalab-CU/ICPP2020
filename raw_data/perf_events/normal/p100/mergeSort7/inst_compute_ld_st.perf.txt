@@ -1,0 +1,9 @@
+==11870== NVPROF is profiling process 11870, command: ./mergeSort 7 2>&1 > /dev/null
+==11870== Profiling application: ./mergeSort 7 2>&1 > /dev/null
+==11870== Profiling result:
+==11870== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"inst_compute_ld_st","Load/Store Instructions",344064,1032192,676785
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"inst_compute_ld_st","Load/Store Instructions",802816,1490944,1130496
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"inst_compute_ld_st","Load/Store Instructions",756023296,756023296,756023296
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"inst_compute_ld_st","Load/Store Instructions",189058986,220593840,218144797

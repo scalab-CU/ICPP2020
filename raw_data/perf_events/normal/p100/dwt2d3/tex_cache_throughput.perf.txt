@@ -1,0 +1,8 @@
+==31567== NVPROF is profiling process 31567, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==31567== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==31567== Profiling result:
+==31567== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"tex_cache_throughput","Unified Cache Throughput",35.316521GB/s,69.792173GB/s,52.657568GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"tex_cache_throughput","Unified Cache Throughput",105.709392GB/s,159.813590GB/s,140.092581GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"tex_cache_throughput","Unified Cache Throughput",68.866969GB/s,68.866969GB/s,68.866969GB/s

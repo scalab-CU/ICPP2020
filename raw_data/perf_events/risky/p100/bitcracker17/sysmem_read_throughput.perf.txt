@@ -1,0 +1,9 @@
+==31714== NVPROF is profiling process 31714, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+Cuda error in file 'cuda_attack.cu' in line 234 : invalid argument.
+==31714== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==31714== Profiling result:
+==31714== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"sysmem_read_throughput","System Memory Read Throughput",1.429688KB/s,1.429688KB/s,1.428711KB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"sysmem_read_throughput","System Memory Read Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+======== Error: Application returned non-zero code 1

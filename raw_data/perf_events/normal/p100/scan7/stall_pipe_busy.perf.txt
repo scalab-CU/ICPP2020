@@ -1,0 +1,9 @@
+==15536== NVPROF is profiling process 15536, command: ./scan 96 2>&1 > /dev/null
+==15536== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15536== Profiling application: ./scan 96 2>&1 > /dev/null
+==15536== Profiling result:
+==15536== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.020155%,0.033426%,0.027259%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.049667%,0.356626%,0.221192%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.020700%,0.022858%,0.022082%

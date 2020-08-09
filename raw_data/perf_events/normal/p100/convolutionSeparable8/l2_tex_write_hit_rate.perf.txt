@@ -1,0 +1,8 @@
+==14492== NVPROF is profiling process 14492, command: ./convolutionSeparable 10240 2>&1 > /dev/null
+==14492== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14492== Profiling application: ./convolutionSeparable 10240 2>&1 > /dev/null
+==14492== Profiling result:
+==14492== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",48.332336%,48.507919%,48.405285%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",49.999969%,50.000000%,49.999987%

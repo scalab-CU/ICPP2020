@@ -1,0 +1,12 @@
+==3130== NVPROF is profiling process 3130, command: ./cdpLUDecomposition -matrix-size=8192
+==3130== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3130== Profiling application: ./cdpLUDecomposition -matrix-size=8192
+==3130== Profiling result:
+==3130== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"stall_other","Issue Stall Reasons (Other)",5.112849%,5.112849%,5.112849%
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"stall_other","Issue Stall Reasons (Other)",3.645720%,3.897642%,3.727412%
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"stall_other","Issue Stall Reasons (Other)",3.502464%,3.502464%,3.502464%
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"stall_other","Issue Stall Reasons (Other)",16.827768%,16.827768%,16.827768%
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"stall_other","Issue Stall Reasons (Other)",4.039419%,4.517039%,4.237820%
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"stall_other","Issue Stall Reasons (Other)",12.505247%,12.505247%,12.505247%

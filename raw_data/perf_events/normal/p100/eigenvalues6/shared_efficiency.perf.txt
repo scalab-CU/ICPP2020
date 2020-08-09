@@ -1,0 +1,9 @@
+==29905== NVPROF is profiling process 29905, command: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==29905== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29905== Profiling application: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==29905== Profiling result:
+==29905== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"shared_efficiency","Shared Memory Efficiency",86.941835%,86.941835%,86.941835%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"shared_efficiency","Shared Memory Efficiency",67.844771%,67.844771%,67.844771%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"shared_efficiency","Shared Memory Efficiency",49.515694%,49.515694%,49.515694%

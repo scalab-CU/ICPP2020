@@ -1,0 +1,32 @@
+==5853== NVPROF is profiling process 5853, command: ./bin/CoMD-cuda -e -x 64 -y 64 -z 64 2>&1 > /dev/null
+==5853== Profiling application: ./bin/CoMD-cuda -e -x 64 -y 64 -z 64 2>&1 > /dev/null
+==5853== Profiling result:
+==5853== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"l2_write_throughput","L2 Throughput (Writes)",97.620943GB/s,103.962267GB/s,100.328457GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"l2_write_throughput","L2 Throughput (Writes)",67.988599GB/s,69.891179GB/s,68.487735GB/s
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",578.360616MB/s,5.576608GB/s,2.452528GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"l2_write_throughput","L2 Throughput (Writes)",126.816817GB/s,128.964152GB/s,127.557824GB/s
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"l2_write_throughput","L2 Throughput (Writes)",135.434127GB/s,135.434127GB/s,135.434126GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",30.554075GB/s,31.447820GB/s,31.013357GB/s
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"l2_write_throughput","L2 Throughput (Writes)",7.184006GB/s,8.877543GB/s,8.093303GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"l2_write_throughput","L2 Throughput (Writes)",155.875574GB/s,174.556307GB/s,165.863704GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"l2_write_throughput","L2 Throughput (Writes)",1.903137GB/s,52.993969GB/s,6.867925GB/s
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",101.470897GB/s,108.442055GB/s,105.622525GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",43.705638GB/s,46.020597GB/s,45.016369GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",191.182928GB/s,194.364960GB/s,192.918698GB/s
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"l2_write_throughput","L2 Throughput (Writes)",30.856187GB/s,38.767043GB/s,34.969498GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"l2_write_throughput","L2 Throughput (Writes)",185.671105MB/s,350.329340MB/s,253.838571MB/s
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",60.246060GB/s,63.571481GB/s,62.568159GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"l2_write_throughput","L2 Throughput (Writes)",29.290858GB/s,40.630500GB/s,36.368773GB/s
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"l2_write_throughput","L2 Throughput (Writes)",7.251470GB/s,15.886459GB/s,14.190898GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"l2_write_throughput","L2 Throughput (Writes)",55.513955GB/s,63.826989GB/s,60.501763GB/s
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"l2_write_throughput","L2 Throughput (Writes)",134.819266GB/s,143.233918GB/s,138.304767GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"l2_write_throughput","L2 Throughput (Writes)",92.841417GB/s,102.412932GB/s,101.760228GB/s
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"l2_write_throughput","L2 Throughput (Writes)",62.907215GB/s,86.638322GB/s,78.933503GB/s
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"l2_write_throughput","L2 Throughput (Writes)",4.033679GB/s,4.206256GB/s,4.104352GB/s
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"l2_write_throughput","L2 Throughput (Writes)",15.700165GB/s,21.735142GB/s,19.736853GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"l2_write_throughput","L2 Throughput (Writes)",685.679761MB/s,45.600674GB/s,8.838168GB/s
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"l2_write_throughput","L2 Throughput (Writes)",99.606374GB/s,106.396158GB/s,102.233545GB/s
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"l2_write_throughput","L2 Throughput (Writes)",85.714343GB/s,92.353052GB/s,90.111767GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"l2_write_throughput","L2 Throughput (Writes)",142.169311GB/s,171.502292GB/s,158.305591GB/s

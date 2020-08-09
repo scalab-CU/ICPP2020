@@ -1,0 +1,10 @@
+==19966== NVPROF is profiling process 19966, command: ./dwt2d sample0.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==19966== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19966== Profiling application: ./dwt2d sample0.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==19966== Profiling result:
+==19966== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"dram_write_transactions","Device Memory Write Transactions",32437,32693,32578
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"dram_write_transactions","Device Memory Write Transactions",126405,131543,129705
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"dram_write_transactions","Device Memory Write Transactions",9241,9945,9535
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"dram_write_transactions","Device Memory Write Transactions",386132,386132,386132

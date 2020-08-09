@@ -1,0 +1,8 @@
+==20359== NVPROF is profiling process 20359, command: ./quasirandomGenerator 48 2>&1 > /dev/null
+==20359== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20359== Profiling application: ./quasirandomGenerator 48 2>&1 > /dev/null
+==20359== Profiling result:
+==20359== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",22.306125%,22.313815%,22.310398%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.554917%,2.666199%,2.575956%

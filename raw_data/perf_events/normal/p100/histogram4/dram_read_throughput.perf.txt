@@ -1,0 +1,10 @@
+==9717== NVPROF is profiling process 9717, command: ./histogram 80 2>&1 > /dev/null
+==9717== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9717== Profiling application: ./histogram 80 2>&1 > /dev/null
+==9717== Profiling result:
+==9717== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",219.013993GB/s,224.787536GB/s,222.873007GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",25.421087GB/s,26.651187GB/s,26.002520GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",38.813979GB/s,40.270720GB/s,39.637429GB/s
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",345.970681GB/s,354.945868GB/s,351.372559GB/s

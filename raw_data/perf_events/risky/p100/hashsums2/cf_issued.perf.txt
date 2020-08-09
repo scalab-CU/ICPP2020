@@ -1,0 +1,16 @@
+==9327== NVPROF is profiling process 9327, command: ././crc_gpu input1.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X3EC00000  
+value in hostpartialcrc = 0XAD90A7B8  
+
+Execution time: 49.048191 ms
+After cuda, hostpartialcrc[0] = 0X85D45906  
+After cuda, hostpartialcrc[0] = 2245286150  
+Program Ended Successfully!
+==9327== Profiling application: ././crc_gpu input1.in 2>&1 > /dev/null
+==9327== Profiling result:
+==9327== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"cf_issued","Issued Control-Flow Instructions",156576,156576,156576

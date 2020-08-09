@@ -1,0 +1,14 @@
+==13832== NVPROF is profiling process 13832, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==13832== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==13832== Profiling result:
+==13832== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gst_requested_throughput","Requested Global Store Throughput",49.726644GB/s,49.726644GB/s,49.726644GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gst_requested_throughput","Requested Global Store Throughput",8.767926GB/s,8.922909GB/s,8.838752GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gst_requested_throughput","Requested Global Store Throughput",35.158500MB/s,9.806814GB/s,1.837557GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gst_requested_throughput","Requested Global Store Throughput",7.105443GB/s,16.931609GB/s,16.547446GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gst_requested_throughput","Requested Global Store Throughput",34.758061MB/s,9.694275GB/s,1.811390GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gst_requested_throughput","Requested Global Store Throughput",15.081429GB/s,15.081429GB/s,15.081429GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gst_requested_throughput","Requested Global Store Throughput",16.596624GB/s,16.596624GB/s,16.596624GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gst_requested_throughput","Requested Global Store Throughput",13.349958GB/s,13.581837GB/s,13.444254GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gst_requested_throughput","Requested Global Store Throughput",5.043248GB/s,13.385643GB/s,13.024174GB/s

@@ -1,0 +1,10 @@
+==16484== NVPROF is profiling process 16484, command: ./MonteCarloMultiGPU -size=60
+==16484== Profiling application: ./MonteCarloMultiGPU -size=60
+==16484== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.315904,0.000002,,,,,,,,,,10.546875,6848.193230,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.322434,0.006828,900,1,1,256,1,1,48,0.000000,0,,,,,"Tesla K40m (0)","1","7","rngSetupStates(curandStateXORWOW*, int) [119]"
+0.329336,0.000016,,,,,,,,,,0.125000,7.660035,"Pinned","Device","Tesla K40m (0)","1","14","[CUDA memcpy HtoD]"
+0.329358,0.064222,900,1,1,256,1,1,30,2.000000,0,,,,,"Tesla K40m (0)","1","14","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int) [131]"
+0.393582,0.000009,,,,,,,,,,0.062500,6.910683,"Device","Pinned","Tesla K40m (0)","1","14","[CUDA memcpy DtoH]"

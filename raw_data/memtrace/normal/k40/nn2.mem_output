@@ -1,0 +1,8 @@
+==402== NVPROF is profiling process 402, command: ./nn list64k.txt -r 5 -lat 30 -lng 60
+==402== Profiling application: ./nn list64k.txt -r 5 -lat 30 -lng 60
+==402== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,KB,GB/s,,,,,,
+0.316086,0.000088,,,,,,,,,,512.000000,5.534500,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.316229,0.000006,256,1,1,256,1,1,9,0,0,,,,,"Tesla K40m (0)","1","7","euclid(latLong*, float*, int, float, float) [116]"
+0.316302,0.000049,,,,,,,,,,256.000000,4.954152,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

@@ -1,0 +1,9 @@
+==16047== NVPROF is profiling process 16047, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==16047== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==16047== Profiling result:
+==16047== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",88.990755%,88.991188%,88.990969%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",92.709084%,92.709099%,92.709091%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",79.517977%,79.518799%,79.518267%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",96.354247%,96.354247%,96.354247%

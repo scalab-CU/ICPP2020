@@ -1,0 +1,16 @@
+==4700== NVPROF is profiling process 4700, command: ././crc_gpu input4.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X32E00000  
+value in hostpartialcrc = 0XA4F537B8  
+
+Execution time: 112.019165 ms
+After cuda, hostpartialcrc[0] = 0X692C6C22  
+After cuda, hostpartialcrc[0] = 1764518946  
+Program Ended Successfully!
+==4700== Profiling application: ././crc_gpu input4.in 2>&1 > /dev/null
+==4700== Profiling result:
+==4700== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000005,0.000005,0.000005

@@ -1,0 +1,14 @@
+==19635== NVPROF is profiling process 19635, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==19635== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==19635== Profiling result:
+==19635== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"inst_compute_ld_st","Load/Store Instructions",23903190,23903190,23903190
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"inst_compute_ld_st","Load/Store Instructions",348657526,348657526,348657526
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"inst_compute_ld_st","Load/Store Instructions",893,457984,51780
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"inst_compute_ld_st","Load/Store Instructions",124594,50364421,6404572
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"inst_compute_ld_st","Load/Store Instructions",1147,588544,66541
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"inst_compute_ld_st","Load/Store Instructions",15935460,15935460,15935460
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"inst_compute_ld_st","Load/Store Instructions",1181368320,1181368320,1181368320
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"inst_compute_ld_st","Load/Store Instructions",118275164,118275164,118275164
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"inst_compute_ld_st","Load/Store Instructions",502163,201253886,25596128

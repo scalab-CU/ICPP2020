@@ -1,0 +1,13 @@
+==5169== NVPROF is profiling process 5169, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==5169== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==5169== Profiling result:
+==5169== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",191.095851GB/s,191.757055GB/s,191.425636GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",190.988549GB/s,191.893792GB/s,191.386174GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",138.349020GB/s,139.487756GB/s,139.008790GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",138.621503GB/s,139.597345GB/s,139.154895GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",97.297201GB/s,98.200997GB/s,97.890258GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",190.825128GB/s,191.813551GB/s,191.295142GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",32.786524GB/s,32.825919GB/s,32.808204GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"tex_cache_throughput","Unified Cache Throughput",138.784184GB/s,139.699768GB/s,139.172327GB/s

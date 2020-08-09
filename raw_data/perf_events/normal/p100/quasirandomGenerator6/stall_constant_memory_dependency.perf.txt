@@ -1,0 +1,8 @@
+==32601== NVPROF is profiling process 32601, command: ./quasirandomGenerator 6 2>&1 > /dev/null
+==32601== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32601== Profiling application: ./quasirandomGenerator 6 2>&1 > /dev/null
+==32601== Profiling result:
+==32601== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.360353%,0.552937%,0.413691%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.277094%,0.448699%,0.312254%

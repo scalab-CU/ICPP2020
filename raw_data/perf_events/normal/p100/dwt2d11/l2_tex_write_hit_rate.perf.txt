@@ -1,0 +1,9 @@
+==7940== NVPROF is profiling process 7940, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==7940== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7940== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==7940== Profiling result:
+==7940== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,1.879883%,0.655111%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,22.753906%,6.819661%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%

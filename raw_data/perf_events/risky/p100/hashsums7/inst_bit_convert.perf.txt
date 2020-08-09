@@ -1,0 +1,16 @@
+==3656== NVPROF is profiling process 3656, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XB3000000  
+value in hostpartialcrc = 0X2584E7B8  
+
+Execution time: 156.262329 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==3656== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==3656== Profiling result:
+==3656== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"inst_bit_convert","Bit-Convert Instructions",128,128,128

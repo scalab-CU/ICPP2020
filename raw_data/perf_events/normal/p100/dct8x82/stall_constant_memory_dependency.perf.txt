@@ -1,0 +1,14 @@
+==12225== NVPROF is profiling process 12225, command: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==12225== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12225== Profiling application: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==12225== Profiling result:
+==12225== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.053565%,0.053565%,0.053565%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.129797%,0.284755%,0.207276%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.165633%,0.165633%,0.165633%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.150116%,0.316196%,0.166328%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.025437%,0.042517%,0.028598%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.497976%,0.497976%,0.497976%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.163540%,0.163540%,0.163540%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.487186%,0.487186%,0.487186%

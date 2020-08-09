@@ -1,0 +1,10 @@
+==26395== NVPROF is profiling process 26395, command: ./mergeSort 3 2>&1 > /dev/null
+==26395== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26395== Profiling application: ./mergeSort 3 2>&1 > /dev/null
+==26395== Profiling result:
+==26395== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"gst_efficiency","Global Memory Store Efficiency",36.043647%,50.000000%,45.830194%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"gst_efficiency","Global Memory Store Efficiency",80.785635%,82.735810%,82.430028%

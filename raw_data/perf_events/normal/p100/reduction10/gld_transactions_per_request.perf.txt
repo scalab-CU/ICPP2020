@@ -1,0 +1,8 @@
+==4626== NVPROF is profiling process 4626, command: ./reduction -n=33554432 -type=int 2>&1 > /dev/null
+==4626== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4626== Profiling application: ./reduction -n=33554432 -type=int 2>&1 > /dev/null
+==4626== Profiling result:
+==4626== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=256, bool=1>(int*, int*, unsigned int)",101,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=32, bool=1>(int*, int*, unsigned int)",100,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000

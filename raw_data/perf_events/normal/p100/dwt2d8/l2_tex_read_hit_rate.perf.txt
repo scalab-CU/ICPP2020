@@ -1,0 +1,10 @@
+==17186== NVPROF is profiling process 17186, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==17186== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17186== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==17186== Profiling result:
+==17186== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",25.326120%,25.502793%,25.413420%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",6.886717%,6.895937%,6.891839%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",34.306517%,34.306517%,34.306517%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%

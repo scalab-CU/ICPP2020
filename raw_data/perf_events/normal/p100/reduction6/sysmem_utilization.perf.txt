@@ -1,0 +1,8 @@
+==19306== NVPROF is profiling process 19306, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==19306== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19306== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==19306== Profiling result:
+==19306== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"

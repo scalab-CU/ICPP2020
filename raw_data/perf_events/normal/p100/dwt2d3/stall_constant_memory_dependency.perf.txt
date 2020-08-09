@@ -1,0 +1,9 @@
+==9831== NVPROF is profiling process 9831, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9831== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9831== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9831== Profiling result:
+==9831== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",7.844494%,8.695316%,8.129784%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",1.068456%,3.867949%,2.531278%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.183105%,0.183105%,0.183105%

@@ -1,0 +1,8 @@
+==16091== NVPROF is profiling process 16091, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==16091== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==16091== Profiling result:
+==16091== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",89.889942%,89.890420%,89.890184%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",81.938931%,81.954596%,81.946514%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",96.354167%,96.354167%,96.354167%

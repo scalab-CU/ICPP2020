@@ -1,0 +1,32 @@
+==4741== NVPROF is profiling process 4741, command: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==4741== Profiling application: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==4741== Profiling result:
+==4741== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"issue_slots","Issue Slots",4232536,4236345,4234462
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",1459325262,1536461322,1516507774
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"issue_slots","Issue Slots",5014942,5714598,5356453
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",1980914971,2089642155,2061488806
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"issue_slots","Issue Slots",1613078,1613078,1613078
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"issue_slots","Issue Slots",1046855,1047970,1047261
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"issue_slots","Issue Slots",196970,214851,205108
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"issue_slots","Issue Slots",1699243,7092675,4396686
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"issue_slots","Issue Slots",2578,109564,10108
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"issue_slots","Issue Slots",3638790,3642614,3640563
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"issue_slots","Issue Slots",801776,804268,803196
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"issue_slots","Issue Slots",8200617,8203582,8202118
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slots","Issue Slots",220347,239215,228595
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"issue_slots","Issue Slots",70,98,72
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"issue_slots","Issue Slots",2054162,2423072,2324949
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slots","Issue Slots",216354,231860,224481
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"issue_slots","Issue Slots",191696,209273,199619
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"issue_slots","Issue Slots",118435,119312,118562
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",4229372,4232401,4230636
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"issue_slots","Issue Slots",11125741,11127756,11126274
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"issue_slots","Issue Slots",610275,627521,618391
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"issue_slots","Issue Slots",5896203,5900000,5898362
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"issue_slots","Issue Slots",75469,82973,79516
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"issue_slots","Issue Slots",1610,85364,13147
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"issue_slots","Issue Slots",2755352,2759335,2757218
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"issue_slots","Issue Slots",5957222,6258440,6109976
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"issue_slots","Issue Slots",87005,94936,90530

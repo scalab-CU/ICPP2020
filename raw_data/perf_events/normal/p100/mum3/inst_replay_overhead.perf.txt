@@ -1,0 +1,29 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.01019s]
+Opening ./data/sample1.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.30183s]
+  Renumbering tree... [0.10778s]
+  Flattening Tree... [0.23464s]
+==5158== NVPROF is profiling process 5158, command: ./mum ./data/NC_003997.20k.fna ./data/sample1.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+50 queries (10000000 bp), need 89992900 bytes on the GPU [0.05801s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 10000500 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 50 queries (79992400 bytes) ...done
+Using blocks of 50 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 10000500
+	ref: 80084992
+	results: 79992400
+kernel time= 1895.842041
+==5158== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample1.fna
+==5158== Profiling result:
+==5158== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000062,0.000062,0.000062

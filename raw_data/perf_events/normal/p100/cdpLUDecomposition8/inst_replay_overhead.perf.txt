@@ -1,0 +1,11 @@
+==28654== NVPROF is profiling process 28654, command: ./cdpLUDecomposition -matrix-size=7168
+==28654== Profiling application: ./cdpLUDecomposition -matrix-size=7168
+==28654== Profiling result:
+==28654== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000798,0.000798,0.000798
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"inst_replay_overhead","Instruction Replay Overhead",0.000236,0.000236,0.000236
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"inst_replay_overhead","Instruction Replay Overhead",0.000949,0.001005,0.000956
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.018753,0.018753,0.018753
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"inst_replay_overhead","Instruction Replay Overhead",0.000615,0.001708,0.001321
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000118,0.000118,0.000118

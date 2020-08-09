@@ -1,0 +1,18 @@
+==19073== NVPROF is profiling process 19073, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==19073== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19073== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==19073== Profiling result:
+==19073== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.132489%,0.132489%,0.132489%
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.113975%,0.158019%,0.136046%
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.142853%,0.152794%,0.147824%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.928566%,1.009576%,0.979543%
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.024355%,0.024848%,0.024602%
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.738484%,0.789873%,0.771779%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.360329%,0.360329%,0.360329%
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.102439%,0.102439%,0.102439%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.377107%,0.396730%,0.386918%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.561188%,0.718276%,0.669077%
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.759904%,1.821466%,1.792903%
+======== Error: Application returned non-zero code 1

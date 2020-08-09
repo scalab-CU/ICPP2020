@@ -1,0 +1,15 @@
+==7233== NVPROF is profiling process 7233, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==7233== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7233== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==7233== Profiling result:
+==7233== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"tex_cache_hit_rate","Unified Cache Hit Rate",60.000000%,60.000000%,60.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"tex_cache_hit_rate","Unified Cache Hit Rate",49.979976%,79.793859%,73.468056%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"tex_cache_hit_rate","Unified Cache Hit Rate",5.147463%,6.945967%,5.922164%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"tex_cache_hit_rate","Unified Cache Hit Rate",47.747141%,66.048273%,59.084028%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"tex_cache_hit_rate","Unified Cache Hit Rate",48.538246%,49.171843%,48.847388%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"tex_cache_hit_rate","Unified Cache Hit Rate",76.411999%,77.333606%,76.903106%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"tex_cache_hit_rate","Unified Cache Hit Rate",9.773319%,12.314330%,11.418464%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"tex_cache_hit_rate","Unified Cache Hit Rate",47.177890%,48.370672%,47.759992%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"tex_cache_hit_rate","Unified Cache Hit Rate",64.127348%,71.518070%,68.246736%

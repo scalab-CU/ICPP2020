@@ -1,0 +1,15 @@
+==12523== NVPROF is profiling process 12523, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==12523== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12523== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==12523== Profiling result:
+==12523== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",0.718300%,0.718300%,0.718300%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",19.048203%,19.292991%,19.140433%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",17.171970%,27.686735%,24.583555%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",3.576093%,6.148331%,5.477189%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",20.010638%,30.575423%,26.610294%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",0.909811%,0.909811%,0.909811%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",9.793479%,9.793479%,9.793479%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",21.486413%,22.864941%,22.275601%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",9.200752%,18.236548%,16.603187%

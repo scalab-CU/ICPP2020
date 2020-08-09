@@ -1,0 +1,9 @@
+==11281== NVPROF is profiling process 11281, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+Cuda error in file 'cuda_attack.cu' in line 234 : invalid argument.
+==11281== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==11281== Profiling result:
+==11281== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",99.966755%,99.966755%,99.966755%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",49.996744%,49.996744%,49.996744%
+======== Error: Application returned non-zero code 1

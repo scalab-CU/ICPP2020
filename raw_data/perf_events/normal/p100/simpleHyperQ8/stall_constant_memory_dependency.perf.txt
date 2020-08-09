@@ -1,0 +1,9 @@
+==10005== NVPROF is profiling process 10005, command: ./simpleHyperQ -nstreams=90 2>&1 > /dev/null
+==10005== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10005== Profiling application: ./simpleHyperQ -nstreams=90 2>&1 > /dev/null
+==10005== Profiling result:
+==10005== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",90,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011205%,0.015840%,0.013139%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",14.479513%,14.479513%,14.479513%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",90,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011196%,0.014078%,0.012771%

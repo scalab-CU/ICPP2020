@@ -1,0 +1,9 @@
+==8462== NVPROF is profiling process 8462, command: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==8462== Profiling application: ./dwt2d sample2.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==8462== Profiling result:
+==8462== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"issue_slot_utilization","Issue Slot Utilization",10.416059%,19.044442%,16.145267%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"issue_slot_utilization","Issue Slot Utilization",17.748322%,23.190489%,21.250088%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"issue_slot_utilization","Issue Slot Utilization",4.987828%,11.777398%,9.499714%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"issue_slot_utilization","Issue Slot Utilization",23.654879%,23.654879%,23.654879%

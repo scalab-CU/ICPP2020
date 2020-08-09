@@ -1,0 +1,32 @@
+==12366== NVPROF is profiling process 12366, command: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==12366== Profiling application: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==12366== Profiling result:
+==12366== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"issue_slots","Issue Slots",277107,284731,279551
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",93970305,99627411,98154069
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"issue_slots","Issue Slots",315775,365797,337865
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",127474533,135450579,133371416
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"issue_slots","Issue Slots",113889,113889,113889
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"issue_slots","Issue Slots",175546,176526,175815
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"issue_slots","Issue Slots",31675,38821,35073
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"issue_slots","Issue Slots",247017,313847,280291
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"issue_slots","Issue Slots",444,5211,1032
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"issue_slots","Issue Slots",576746,580200,578233
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"issue_slots","Issue Slots",121609,124415,122953
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"issue_slots","Issue Slots",517249,519294,517559
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slots","Issue Slots",38874,45565,42295
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"issue_slots","Issue Slots",70,74,70
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"issue_slots","Issue Slots",341094,395427,380110
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issue_slots","Issue Slots",37801,44916,41130
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"issue_slots","Issue Slots",30912,37799,34199
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"issue_slots","Issue Slots",8047,8047,8047
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"issue_slots","Issue Slots",274886,277685,275797
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"issue_slots","Issue Slots",698020,699262,698204
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"issue_slots","Issue Slots",104929,112260,107965
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"issue_slots","Issue Slots",385906,389717,387394
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"issue_slots","Issue Slots",12434,14939,13840
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"issue_slots","Issue Slots",793,5617,1413
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"issue_slots","Issue Slots",178100,182627,180570
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"issue_slots","Issue Slots",385688,406156,395971
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"issue_slots","Issue Slots",14324,17259,15739

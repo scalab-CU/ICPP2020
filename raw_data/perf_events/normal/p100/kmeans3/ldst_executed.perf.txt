@@ -1,0 +1,7 @@
+==8899== NVPROF is profiling process 8899, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==8899== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==8899== Profiling result:
+==8899== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"ldst_executed","Executed Load/Store Instructions",6465536,6465536,6465536
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"ldst_executed","Executed Load/Store Instructions",32162304,32162304,32162304

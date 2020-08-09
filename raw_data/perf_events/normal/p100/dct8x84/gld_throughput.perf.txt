@@ -1,0 +1,14 @@
+==27080== NVPROF is profiling process 27080, command: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==27080== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27080== Profiling application: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==27080== Profiling result:
+==27080== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"gld_throughput","Global Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"gld_throughput","Global Load Throughput",170.074019GB/s,175.371458GB/s,172.682120GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"gld_throughput","Global Load Throughput",345.758545GB/s,345.758545GB/s,345.758545GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"gld_throughput","Global Load Throughput",347.450675GB/s,358.883291GB/s,354.646089GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"gld_throughput","Global Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"gld_throughput","Global Load Throughput",286.189019GB/s,286.189019GB/s,286.189019GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"gld_throughput","Global Load Throughput",175.642609GB/s,175.642609GB/s,175.642609GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"gld_throughput","Global Load Throughput",286.623428GB/s,286.623428GB/s,286.623428GB/s

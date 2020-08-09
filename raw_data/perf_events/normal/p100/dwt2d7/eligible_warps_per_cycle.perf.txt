@@ -1,0 +1,8 @@
+==6786== NVPROF is profiling process 6786, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==6786== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==6786== Profiling result:
+==6786== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.190753,0.444200,0.359206
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.770183,0.909698,0.823148
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.855092,0.855092,0.855092

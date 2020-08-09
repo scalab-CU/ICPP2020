@@ -1,0 +1,10 @@
+==17599== NVPROF is profiling process 17599, command: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==17599== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17599== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==17599== Profiling result:
+==17599== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"gld_throughput","Global Load Throughput",145.321800MB/s,149.230210MB/s,146.944514MB/s
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"gld_throughput","Global Load Throughput",205.287368GB/s,220.090425GB/s,213.080057GB/s
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"gld_throughput","Global Load Throughput",402.420192MB/s,402.764050MB/s,402.685525MB/s
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"gld_throughput","Global Load Throughput",204.409764GB/s,210.476624GB/s,210.336118GB/s

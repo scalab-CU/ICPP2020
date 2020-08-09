@@ -1,0 +1,9 @@
+==18671== NVPROF is profiling process 18671, command: ./hotspot 8192 2 2 ./inputGen/temp_8192 ./inputGen/power_8192 output.out
+==18671== Profiling application: ./hotspot 8192 2 2 ./inputGen/temp_8192 ./inputGen/power_8192 output.out
+==18671== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+24.770603,0.077146,,,,,,,,,,256.000000,3.240619,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+24.848560,0.056717,,,,,,,,,,256.000000,4.407838,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+24.905388,0.008725,683,683,1,16,16,1,30,3.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","calculate_temp(int, float*, float*, float*, int, int, int, int, float, float, float, float, float, float) [123]"
+24.914120,0.169774,,,,,,,,,,256.000000,1.472545,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

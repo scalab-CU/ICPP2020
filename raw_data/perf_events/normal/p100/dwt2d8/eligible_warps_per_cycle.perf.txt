@@ -1,0 +1,9 @@
+==5871== NVPROF is profiling process 5871, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==5871== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==5871== Profiling result:
+==5871== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.280583,0.522754,0.439971
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.562026,0.717748,0.658660
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.105019,0.253092,0.203207
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.764399,0.764399,0.764399

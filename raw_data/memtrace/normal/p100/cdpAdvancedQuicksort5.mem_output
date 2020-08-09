@@ -1,0 +1,27 @@
+==15217== NVPROF is profiling process 15217, command: ./cdpAdvancedQuicksort --seed=2000
+==15217== Profiling application: ./cdpAdvancedQuicksort --seed=2000
+==15217== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","ID","Parent ID","Parent Block X","Parent Block Y","Parent Block Z","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,,,,,,
+0.346266,0.000004,,,,,,,,,,19.531250,4.443333,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7",,,,,,"[CUDA memcpy HtoD]"
+0.346550,0.000002,,,,,,,,,,0.125000,0.057312,"Device",,"Tesla P100-PCIE-12GB (0)","1","7",,,,,,"[CUDA memset]"
+0.346749,0.000001,,,,,,,,,,0.031250,0.021659,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7",,,,,,"[CUDA memcpy HtoD]"
+0.346813,0.000120,10,1,1,512,1,1,32,0.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7",36,,,,,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int) [128]"
+0.346898,0.000087,6,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-5,36,9,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.346932,0.000092,5,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-6,36,9,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.346955,0.000077,4,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-7,-5,5,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.346984,0.000043,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-9,-5,5,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.346992,0.000086,4,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-8,-6,4,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.347001,0.000046,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-10,-7,3,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347022,0.000043,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-11,-6,4,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347032,0.000041,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-12,-7,3,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347048,0.000089,4,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-13,-8,3,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.347076,0.000015,1,1,1,128,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-14,-8,3,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347108,0.000070,4,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-15,-13,3,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.347135,0.000007,1,1,1,2,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-16,-13,3,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347149,0.000022,1,1,1,512,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-17,-15,3,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347177,0.000065,3,1,1,512,1,1,32,0.000000,256,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-18,-15,3,0,0,"qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)"
+0.347215,0.000043,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","4",-19,-18,2,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347240,0.000040,1,1,1,1024,1,1,12,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","5",-20,-18,2,0,0,"bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)"
+0.347385,0.000002,,,,,,,,,,0.031250,0.016339,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7",,,,,,"[CUDA memcpy DtoH]"
+0.347856,0.000005,,,,,,,,,,19.531250,3.829451,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7",,,,,,"[CUDA memcpy DtoH]"

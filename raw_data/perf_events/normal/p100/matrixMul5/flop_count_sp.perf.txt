@@ -1,0 +1,9 @@
+==8181== NVPROF is profiling process 8181, command: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==8181== Execution timeout, stopping the application...
+==8181== Profiling application: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==8181== Warning: Found 1 invalid records in the result.
+==8181== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==8181== Profiling result:
+==8181== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",252,"flop_count_sp","Floating Point Operations(Single Precision)",137438953472,137438953472,137438953472

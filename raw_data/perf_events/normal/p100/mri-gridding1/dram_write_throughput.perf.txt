@@ -1,0 +1,15 @@
+==11590== NVPROF is profiling process 11590, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11590== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11590== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11590== Profiling result:
+==11590== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"dram_write_throughput","Device Memory Write Throughput",172.922537GB/s,172.922537GB/s,172.922537GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"dram_write_throughput","Device Memory Write Throughput",22.074530GB/s,22.228082GB/s,22.191193GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"dram_write_throughput","Device Memory Write Throughput",9.636933GB/s,187.068198GB/s,169.946921GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"dram_write_throughput","Device Memory Write Throughput",243.491314MB/s,55.275719GB/s,9.506198GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"dram_write_throughput","Device Memory Write Throughput",282.927399MB/s,53.059430GB/s,8.989315GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"dram_write_throughput","Device Memory Write Throughput",54.791445GB/s,54.791445GB/s,54.791445GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"dram_write_throughput","Device Memory Write Throughput",35.031291GB/s,35.031291GB/s,35.031291GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"dram_write_throughput","Device Memory Write Throughput",45.280783GB/s,46.288801GB/s,45.834570GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"dram_write_throughput","Device Memory Write Throughput",12.313048GB/s,66.604361GB/s,63.180429GB/s

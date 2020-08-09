@@ -1,0 +1,11 @@
+==12113== NVPROF is profiling process 12113, command: ./myocyte 1000 10 1
+==12113== Profiling application: ./myocyte 1000 10 1
+==12113== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.323799,0.000008,,,,,,,,,,0.038185,4.815361,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.324081,0.000443,,,,,,,,,,3.474846,7.651522,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.324535,0.000001,,,,,,,,,,0.000687,0.511092,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.324575,0.054287,1,1,1,32,1,1,121,0,0,,,,,"Tesla K40m (0)","1","7","solver_2(int, int, float*, float*, float*, float*, float*, float*, float*, float*, float*) [127]"
+0.378865,0.000006,,,,,,,,,,0.038185,6.231644,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.378893,0.001480,,,,,,,,,,3.474846,2.293557,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

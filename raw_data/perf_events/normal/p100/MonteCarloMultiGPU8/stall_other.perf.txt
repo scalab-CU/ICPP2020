@@ -1,0 +1,8 @@
+==21104== NVPROF is profiling process 21104, command: ./MonteCarloMultiGPU -size=160 2>&1 > /dev/null
+==21104== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21104== Profiling application: ./MonteCarloMultiGPU -size=160 2>&1 > /dev/null
+==21104== Profiling result:
+==21104== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"stall_other","Issue Stall Reasons (Other)",10.030785%,10.030785%,10.030785%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"stall_other","Issue Stall Reasons (Other)",77.655751%,77.655751%,77.655751%

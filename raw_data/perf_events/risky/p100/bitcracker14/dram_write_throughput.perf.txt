@@ -1,0 +1,10 @@
+==30184== NVPROF is profiling process 30184, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==30184== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==30184== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==30184== Profiling result:
+==30184== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"dram_write_throughput","Device Memory Write Throughput",180.957031KB/s,180.957031KB/s,180.956055KB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_write_throughput","Device Memory Write Throughput",82.352810GB/s,82.352810GB/s,82.352810GB/s

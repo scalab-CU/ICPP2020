@@ -1,0 +1,7 @@
+==30572== NVPROF is profiling process 30572, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==30572== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30572== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==30572== Profiling result:
+==30572== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"local_memory_overhead","Local Memory Overhead",0.000000%,0.006499%,0.001464%

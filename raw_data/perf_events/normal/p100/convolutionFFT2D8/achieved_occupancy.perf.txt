@@ -1,0 +1,17 @@
+==8749== NVPROF is profiling process 8749, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==8749== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==8749== Profiling result:
+==8749== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"achieved_occupancy","Achieved Occupancy",0.842271,0.842271,0.842271
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"achieved_occupancy","Achieved Occupancy",0.113299,0.115840,0.114865
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"achieved_occupancy","Achieved Occupancy",0.840799,0.845132,0.842965
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"achieved_occupancy","Achieved Occupancy",0.236039,0.237752,0.236551
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"achieved_occupancy","Achieved Occupancy",0.904969,0.907356,0.906162
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"achieved_occupancy","Achieved Occupancy",0.848075,0.849184,0.848449
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"achieved_occupancy","Achieved Occupancy",0.831620,0.831620,0.831620
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"achieved_occupancy","Achieved Occupancy",0.813571,0.813571,0.813571
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"achieved_occupancy","Achieved Occupancy",0.834744,0.836504,0.835624
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"achieved_occupancy","Achieved Occupancy",0.584369,0.586760,0.585592
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"achieved_occupancy","Achieved Occupancy",0.239909,0.240657,0.240163
+======== Error: Application returned non-zero code 1

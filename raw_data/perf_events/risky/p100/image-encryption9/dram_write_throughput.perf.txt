@@ -1,0 +1,9 @@
+==20195== NVPROF is profiling process 20195, command: ././enc 9.ppm 2>&1 > /dev/null
+==20195== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20195== Profiling application: ././enc 9.ppm 2>&1 > /dev/null
+==20195== Profiling result:
+==20195== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"dram_write_throughput","Device Memory Write Throughput",2.557554GB/s,3.338697GB/s,2.909748GB/s
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"dram_write_throughput","Device Memory Write Throughput",61.144178GB/s,64.614136GB/s,62.627048GB/s
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"dram_write_throughput","Device Memory Write Throughput",257.507959MB/s,679.304444MB/s,549.301892MB/s

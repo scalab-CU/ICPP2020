@@ -1,0 +1,7 @@
+==20849== NVPROF is profiling process 20849, command: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==20849== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20849== Profiling application: ./matrixMul -wA=1024 -hA=1024 -wB=1024 -hB=1024 2>&1 > /dev/null
+==20849== Profiling result:
+==20849== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.017179%,1.076745%,1.050107%

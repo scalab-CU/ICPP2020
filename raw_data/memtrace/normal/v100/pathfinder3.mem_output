@@ -1,0 +1,13 @@
+==200001== NVPROF is profiling process 200001, command: ./pathfinder 300000 100 20
+==200001== Profiling application: ./pathfinder 300000 100 20
+==200001== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.980777,0.000103,,,,,,,,,,1.144409,10.819373,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.981275,0.020222,,,,,,,,,,113.296509,5.471200,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+1.001509,0.000054,1389,1,1,256,1,1,16,2.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [117]"
+1.001564,0.000047,1389,1,1,256,1,1,16,2.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [127]"
+1.001612,0.000047,1389,1,1,256,1,1,16,2.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [137]"
+1.001660,0.000049,1389,1,1,256,1,1,16,2.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [147]"
+1.001709,0.000045,1389,1,1,256,1,1,16,2.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [157]"
+1.001755,0.000094,,,,,,,,,,1.144409,11.855172,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

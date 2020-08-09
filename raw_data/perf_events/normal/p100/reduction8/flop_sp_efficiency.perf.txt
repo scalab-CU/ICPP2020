@@ -1,0 +1,8 @@
+==16506== NVPROF is profiling process 16506, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==16506== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16506== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==16506== Profiling result:
+==16506== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000350%,0.000457%,0.000403%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.110121%,1.343457%,0.686758%

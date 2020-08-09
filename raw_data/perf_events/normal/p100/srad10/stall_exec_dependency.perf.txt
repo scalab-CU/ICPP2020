@@ -1,0 +1,12 @@
+==22211== NVPROF is profiling process 22211, command: ./srad 200 0.5 1024 1024
+==22211== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22211== Profiling application: ./srad 200 0.5 1024 1024
+==22211== Profiling result:
+==22211== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","compress(long, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.678451%,7.678451%,7.678451%
+"Tesla P100-PCIE-12GB (0)","reduce(long, int, int, float*, float*)",600,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",10.715474%,27.328425%,16.474657%
+"Tesla P100-PCIE-12GB (0)","srad2(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float*, float*)",200,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.774588%,6.026807%,5.900980%
+"Tesla P100-PCIE-12GB (0)","extract(long, float*)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",8.326484%,8.326484%,8.326484%
+"Tesla P100-PCIE-12GB (0)","prepare(long, float*, float*, float*)",200,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.760008%,2.913558%,2.836262%
+"Tesla P100-PCIE-12GB (0)","srad(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float, float*, float*)",200,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.734595%,7.910395%,6.846406%

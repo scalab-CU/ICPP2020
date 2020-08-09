@@ -1,0 +1,16 @@
+==17020== NVPROF is profiling process 17020, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X47000000  
+value in hostpartialcrc = 0XBA5097B8  
+
+Execution time: 153.308960 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==17020== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==17020== Profiling result:
+==17020== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"ldst_issued","Issued Load/Store Instructions",1310579,1310579,1310579

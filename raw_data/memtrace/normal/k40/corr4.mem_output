@@ -1,0 +1,15 @@
+==12838== NVPROF is profiling process 12838, command: ./corr2048
+==12838== Profiling application: ./corr2048
+==12838== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.323150,0.002151,,,,,,,,,,16.015629,7.272258,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.325498,0.002042,,,,,,,,,,16.015629,7.659639,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.327556,0.000002,,,,,,,,,,0.007816,3.359648,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.327569,0.000002,,,,,,,,,,0.007816,3.359648,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.327608,0.001130,8,1,1,256,1,1,14,0,0,,,,,"Tesla K40m (0)","1","7","mean_kernel(float*, float*) [115]"
+0.328757,0.001165,8,1,1,256,1,1,14,0,0,,,,,"Tesla K40m (0)","1","7","std_kernel(float*, float*, float*) [121]"
+0.329938,0.000320,64,256,1,32,8,1,13,0,0,,,,,"Tesla K40m (0)","1","7","reduce_kernel(float*, float*, float*) [127]"
+0.330273,4.810863,8,1,1,256,1,1,26,0,0,,,,,"Tesla K40m (0)","1","7","corr_kernel(float*, float*) [132]"
+5.141224,0.000001,,,,,,,,,,0.000004,0.004014,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+5.141234,0.006472,,,,,,,,,,16.015629,2.416440,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

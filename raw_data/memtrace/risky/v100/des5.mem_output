@@ -1,0 +1,9 @@
+==102729== NVPROF is profiling process 102729, command: ././des --cipher 0x66177657274626E6 --key-alphabet abes --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==102729== Profiling application: ././des --cipher 0x66177657274626E6 --key-alphabet abes --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==102729== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,B,MB/s,,,,,,
+0.468843,0.000001,,,,,,,,,,4,2.838316,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.468852,0.000001,,,,,,,,,,7,5.960464,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.468885,29.313054,1024,2,1,256,1,1,35,4.531250,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","kernel(char const *, char const *, unsigned int, unsigned int, unsigned int, unsigned long) [119]"
+29.782027,0.000002,,,,,,,,,,16,6.910683,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

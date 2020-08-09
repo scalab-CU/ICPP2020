@@ -1,0 +1,8 @@
+==4184== NVPROF is profiling process 4184, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==4184== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4184== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==4184== Profiling result:
+==4184== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.045600%,0.055710%,0.054236%
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.246999%,1.599761%,1.349575%

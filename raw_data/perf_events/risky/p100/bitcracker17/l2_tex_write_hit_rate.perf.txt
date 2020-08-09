@@ -1,0 +1,10 @@
+==2345== NVPROF is profiling process 2345, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==2345== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Cuda error in file 'cuda_attack.cu' in line 234 : invalid argument.
+==2345== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==2345== Profiling result:
+==2345== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",27.343384%,27.343384%,27.343384%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",93.902871%,93.902871%,93.902871%
+======== Error: Application returned non-zero code 1

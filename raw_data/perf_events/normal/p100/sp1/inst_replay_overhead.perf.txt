@@ -1,0 +1,14 @@
+==24087== NVPROF is profiling process 24087, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==24087== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==24087== Profiling result:
+==24087== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"inst_replay_overhead","Instruction Replay Overhead",0.006737,0.019443,0.008992
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"inst_replay_overhead","Instruction Replay Overhead",0.004118,0.013483,0.005307
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"inst_replay_overhead","Instruction Replay Overhead",0.022216,0.033368,0.023671
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"inst_replay_overhead","Instruction Replay Overhead",0.008131,0.018722,0.010252
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"inst_replay_overhead","Instruction Replay Overhead",0.008885,0.012719,0.011043
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"inst_replay_overhead","Instruction Replay Overhead",0.003760,0.006171,0.004164
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"inst_replay_overhead","Instruction Replay Overhead",0.003425,0.007052,0.003835
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"inst_replay_overhead","Instruction Replay Overhead",0.007690,0.010619,0.009144
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"inst_replay_overhead","Instruction Replay Overhead",0.219609,0.341724,0.229306

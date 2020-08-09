@@ -1,0 +1,9 @@
+==18846== NVPROF is profiling process 18846, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==18846== Execution timeout, stopping the application...
+==18846== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==18846== Warning: Found 1 invalid records in the result.
+==18846== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==18846== Profiling result:
+==18846== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",22,"inst_fp_32","FP Instructions(Single)",782757789696,782757789696,782757789696

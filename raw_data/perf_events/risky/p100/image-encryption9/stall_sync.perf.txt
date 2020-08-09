@@ -1,0 +1,9 @@
+==30103== NVPROF is profiling process 30103, command: ././enc 9.ppm 2>&1 > /dev/null
+==30103== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30103== Profiling application: ././enc 9.ppm 2>&1 > /dev/null
+==30103== Profiling result:
+==30103== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"stall_sync","Issue Stall Reasons (Synchronization)",3.501200%,10.737735%,6.893663%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"stall_sync","Issue Stall Reasons (Synchronization)",18.526701%,24.614935%,20.844310%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"stall_sync","Issue Stall Reasons (Synchronization)",0.316505%,4.176875%,1.221773%

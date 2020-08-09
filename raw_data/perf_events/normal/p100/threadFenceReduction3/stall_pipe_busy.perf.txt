@@ -1,0 +1,8 @@
+==32606== NVPROF is profiling process 32606, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==32606== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32606== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==32606== Profiling result:
+==32606== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.175815%,0.175815%,0.175815%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.163090%,0.164416%,0.163689%

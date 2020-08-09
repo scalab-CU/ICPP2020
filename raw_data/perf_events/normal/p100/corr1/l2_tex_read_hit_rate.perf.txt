@@ -1,0 +1,10 @@
+==17201== NVPROF is profiling process 17201, command: ./corr1024 2>&1 > /dev/null
+==17201== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17201== Profiling application: ./corr1024 2>&1 > /dev/null
+==17201== Profiling result:
+==17201== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",4.409992%,4.409992%,4.409992%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",30.361414%,30.361414%,30.361414%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",42.296347%,42.296347%,42.296347%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",2.565797%,2.565797%,2.565797%

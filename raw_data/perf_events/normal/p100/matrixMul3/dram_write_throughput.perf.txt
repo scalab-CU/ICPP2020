@@ -1,0 +1,7 @@
+==9977== NVPROF is profiling process 9977, command: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==9977== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9977== Profiling application: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==9977== Profiling result:
+==9977== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"dram_write_throughput","Device Memory Write Throughput",2.176791GB/s,2.192625GB/s,2.188548GB/s

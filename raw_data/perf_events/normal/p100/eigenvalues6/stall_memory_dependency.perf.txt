@@ -1,0 +1,9 @@
+==14403== NVPROF is profiling process 14403, command: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==14403== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14403== Profiling application: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==14403== Profiling result:
+==14403== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.736264%,0.739073%,0.737450%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.636615%,0.672008%,0.670981%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.632031%,0.667082%,0.666124%

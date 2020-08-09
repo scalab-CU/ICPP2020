@@ -1,0 +1,8 @@
+==16189== NVPROF is profiling process 16189, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==16189== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16189== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==16189== Profiling result:
+==16189== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.006583%,0.156947%,0.075829%
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.038300%,0.044484%,0.043568%

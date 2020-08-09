@@ -1,0 +1,9 @@
+==16390== NVPROF is profiling process 16390, command: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==16390== Profiling application: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==16390== Profiling result:
+==16390== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"l2_write_throughput","L2 Throughput (Writes)",53.831929GB/s,85.791475GB/s,71.407959GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"l2_write_throughput","L2 Throughput (Writes)",107.890340GB/s,135.919334GB/s,124.479884GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"l2_write_throughput","L2 Throughput (Writes)",17.681275GB/s,32.813408GB/s,25.449257GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"l2_write_throughput","L2 Throughput (Writes)",268.572066GB/s,268.572066GB/s,268.572066GB/s

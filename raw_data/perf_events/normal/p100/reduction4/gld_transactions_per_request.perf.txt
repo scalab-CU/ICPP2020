@@ -1,0 +1,8 @@
+==30356== NVPROF is profiling process 30356, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==30356== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30356== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==30356== Profiling result:
+==30356== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000

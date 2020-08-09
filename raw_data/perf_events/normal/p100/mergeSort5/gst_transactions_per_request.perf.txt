@@ -1,0 +1,10 @@
+==10967== NVPROF is profiling process 10967, command: ./mergeSort 5 2>&1 > /dev/null
+==10967== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10967== Profiling application: ./mergeSort 5 2>&1 > /dev/null
+==10967== Profiling result:
+==10967== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,10.236328,8.706115
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"gst_transactions_per_request","Global Store Transactions Per Request",3.896879,4.255106,3.938449

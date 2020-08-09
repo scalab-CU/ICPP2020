@@ -1,0 +1,14 @@
+==13672== NVPROF is profiling process 13672, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==13672== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==13672== Profiling result:
+==13672== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"issue_slots","Issue Slots",3244382,3244382,3244382
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"issue_slots","Issue Slots",85576261,85579604,85576780
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"issue_slots","Issue Slots",354,167672,18978
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"issue_slots","Issue Slots",21554,8245291,1049521
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"issue_slots","Issue Slots",380,177809,20129
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"issue_slots","Issue Slots",4325357,4325357,4325357
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"issue_slots","Issue Slots",525820719,525820719,525820719
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"issue_slots","Issue Slots",29935047,29936576,29935436
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"issue_slots","Issue Slots",193593,76658786,9751744

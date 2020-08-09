@@ -1,0 +1,17 @@
+==25393== NVPROF is profiling process 25393, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XBF000000  
+value in hostpartialcrc = 0X2DAEC7B8  
+
+==25393== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 481.736328 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==25393== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==25393== Profiling result:
+==25393== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",99.198377%,99.198377%,99.198377%

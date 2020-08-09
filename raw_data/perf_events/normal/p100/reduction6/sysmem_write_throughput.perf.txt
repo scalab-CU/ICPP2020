@@ -1,0 +1,7 @@
+==19924== NVPROF is profiling process 19924, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==19924== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==19924== Profiling result:
+==19924== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"sysmem_write_throughput","System Memory Write Throughput",496.881836KB/s,35.061555MB/s,998.209961KB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"sysmem_write_throughput","System Memory Write Throughput",30.566484MB/s,43.361151MB/s,42.781104MB/s

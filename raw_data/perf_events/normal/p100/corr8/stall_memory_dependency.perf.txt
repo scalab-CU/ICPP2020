@@ -1,0 +1,10 @@
+==24080== NVPROF is profiling process 24080, command: ./corr3600 2>&1 > /dev/null
+==24080== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24080== Profiling application: ./corr3600 2>&1 > /dev/null
+==24080== Profiling result:
+==24080== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.530029%,96.530029%,96.530029%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",80.461874%,80.461874%,80.461874%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.867517%,97.867517%,97.867517%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.158969%,97.158969%,97.158969%

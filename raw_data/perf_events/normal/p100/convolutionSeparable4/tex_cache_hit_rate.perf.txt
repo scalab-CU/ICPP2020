@@ -1,0 +1,8 @@
+==17210== NVPROF is profiling process 17210, command: ./convolutionSeparable 6144 2>&1 > /dev/null
+==17210== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17210== Profiling application: ./convolutionSeparable 6144 2>&1 > /dev/null
+==17210== Profiling result:
+==17210== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"tex_cache_hit_rate","Unified Cache Hit Rate",50.002669%,50.003989%,50.003360%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"tex_cache_hit_rate","Unified Cache Hit Rate",50.069003%,50.091765%,50.077664%

@@ -1,0 +1,7 @@
+==15157== NVPROF is profiling process 15157, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==15157== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15157== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==15157== Profiling result:
+==15157== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_sync","Issue Stall Reasons (Synchronization)",16.834341%,16.999107%,16.903800%

@@ -1,0 +1,15 @@
+==20369== NVPROF is profiling process 20369, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==20369== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==20369== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.336382,0.000002,,,,,,,,,,0.000015,0.009701,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.336406,0.000001,,,,,,,,,,0.000038,0.034240,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.336453,0.009376,1024,1,1,16,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*) [118]"
+0.369646,0.000002,,,,,,,,,,0.000042,0.020654,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.369664,0.000001,,,,,,,,,,0.000015,0.013305,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.369900,0.000001,,,,,,,,,,0.000004,0.003424,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.369951,0.000003,,,,,,,,,,0.000015,0.004704,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.426313,0.002948,,,,,,,,,,32.000000,10.602004,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy HtoD]"
+0.429271,42.127188,256,1,1,1024,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","14","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int) [160]"
+42.556467,0.000002,,,,,,,,,,0.000004,0.001512,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy DtoH]"

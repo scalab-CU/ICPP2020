@@ -1,0 +1,8 @@
+==18318== NVPROF is profiling process 18318, command: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==18318== Profiling application: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==18318== Profiling result:
+==18318== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"issue_slot_utilization","Issue Slot Utilization",8.105573%,19.159892%,15.456078%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"issue_slot_utilization","Issue Slot Utilization",22.825994%,26.398027%,25.074818%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"issue_slot_utilization","Issue Slot Utilization",26.018271%,26.018271%,26.018271%

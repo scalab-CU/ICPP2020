@@ -1,0 +1,14 @@
+==544== NVPROF is profiling process 544, command: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==544== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==544== Profiling application: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==544== Profiling result:
+==544== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",177.572016GB/s,189.338642GB/s,178.974176GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",177.573046GB/s,189.502389GB/s,179.100467GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",102.799069GB/s,110.850564GB/s,103.473469GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",102.820454GB/s,110.915449GB/s,103.514833GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",75.506006GB/s,81.073841GB/s,75.730623GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",177.408319GB/s,189.400680GB/s,178.871928GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",53.330266GB/s,54.519237GB/s,53.387427GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"dram_read_throughput","Device Memory Read Throughput",102.853851GB/s,110.922298GB/s,103.523983GB/s

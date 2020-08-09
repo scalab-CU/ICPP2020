@@ -1,0 +1,10 @@
+==21456== NVPROF is profiling process 21456, command: ./sortingNetworks 10 2>&1 > /dev/null
+==21456== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21456== Profiling application: ./sortingNetworks 10 2>&1 > /dev/null
+==21456== Profiling result:
+==21456== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"dram_write_throughput","Device Memory Write Throughput",30.124263GB/s,70.464664GB/s,43.307131GB/s
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"dram_write_throughput","Device Memory Write Throughput",157.746797GB/s,162.035025GB/s,159.720217GB/s
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"dram_write_throughput","Device Memory Write Throughput",42.496560GB/s,43.126252GB/s,42.995330GB/s
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"dram_write_throughput","Device Memory Write Throughput",168.891761GB/s,174.451898GB/s,172.516343GB/s

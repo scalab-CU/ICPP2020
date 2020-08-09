@@ -1,0 +1,15 @@
+==24323== NVPROF is profiling process 24323, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==24323== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10Compat_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==24323== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.343932,0.000002,,,,,,,,,,0.000015,0.008169,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.343949,0.000001,,,,,,,,,,0.000038,0.034240,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.343998,0.009820,1024,1,1,16,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*) [118]"
+0.376676,0.000002,,,,,,,,,,0.000042,0.024626,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.376696,0.000001,,,,,,,,,,0.000015,0.013696,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.376932,0.000001,,,,,,,,,,0.000004,0.002985,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.376987,0.000003,,,,,,,,,,0.000015,0.004851,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.382510,0.002852,,,,,,,,,,32.000000,10.958675,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy HtoD]"
+0.385372,42.122306,256,1,1,1024,1,1,64,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","14","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int) [160]"
+42.507687,0.000002,,,,,,,,,,0.000004,0.001512,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","14","[CUDA memcpy DtoH]"

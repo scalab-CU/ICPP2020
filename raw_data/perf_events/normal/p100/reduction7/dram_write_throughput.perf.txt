@@ -1,0 +1,8 @@
+==435== NVPROF is profiling process 435, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==435== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==435== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==435== Profiling result:
+==435== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"dram_write_throughput","Device Memory Write Throughput",7.773873GB/s,20.306241GB/s,8.727516GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"dram_write_throughput","Device Memory Write Throughput",127.156575MB/s,584.510064MB/s,321.971267MB/s

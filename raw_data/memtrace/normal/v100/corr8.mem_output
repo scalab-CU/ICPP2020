@@ -1,0 +1,15 @@
+==179123== NVPROF is profiling process 179123, command: ./corr3600
+==179123== Profiling application: ./corr3600
+==179123== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.462227,0.011023,,,,,,,,,,49.465946,4.382218,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.473474,0.009760,,,,,,,,,,49.465946,4.949456,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.483250,0.000003,,,,,,,,,,0.013737,5.306476,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.483267,0.000003,,,,,,,,,,0.013737,5.240145,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.483299,0.001283,14,1,1,256,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","mean_kernel(float*, float*) [115]"
+0.484595,0.001284,14,1,1,256,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","std_kernel(float*, float*, float*) [121]"
+0.485890,0.000154,112,450,1,32,8,1,19,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","reduce_kernel(float*, float*, float*) [127]"
+0.486055,6.160000,14,1,1,256,1,1,23,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","corr_kernel(float*, float*) [132]"
+6.646136,0.000001,,,,,,,,,,0.000004,0.003528,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+6.646152,0.017725,,,,,,,,,,49.465946,2.725345,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

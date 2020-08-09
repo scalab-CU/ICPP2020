@@ -1,0 +1,13 @@
+==29257== NVPROF is profiling process 29257, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==29257== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==29257== Profiling result:
+==29257== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",6291456,6291456,6291456
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",4194304,4194304,4194304
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"cf_executed","Executed Control-Flow Instructions",2097152,2097152,2097152

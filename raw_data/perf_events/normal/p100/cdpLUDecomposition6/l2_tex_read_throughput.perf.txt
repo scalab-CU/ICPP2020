@@ -1,0 +1,11 @@
+==20328== NVPROF is profiling process 20328, command: ./cdpLUDecomposition -matrix-size=5120
+==20328== Profiling application: ./cdpLUDecomposition -matrix-size=5120
+==20328== Profiling result:
+==20328== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",155.320989GB/s,155.320989GB/s,155.320989GB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",99.647343GB/s,105.007139GB/s,103.000404GB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",320.099875GB/s,320.099875GB/s,320.099875GB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",933.551036MB/s,933.551036MB/s,933.551035MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",237.496656GB/s,413.132784GB/s,343.753735GB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",452.950505GB/s,452.950505GB/s,452.950505GB/s

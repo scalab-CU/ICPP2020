@@ -1,0 +1,9 @@
+==8143== NVPROF is profiling process 8143, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==8143== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==8143== Profiling result:
+==8143== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"inst_bit_convert","Bit-Convert Instructions",0,0,0
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"inst_bit_convert","Bit-Convert Instructions",0,0,0

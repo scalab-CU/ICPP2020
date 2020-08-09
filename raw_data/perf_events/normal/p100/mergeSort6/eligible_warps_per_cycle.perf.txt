@@ -1,0 +1,9 @@
+==31107== NVPROF is profiling process 31107, command: ./mergeSort 6 2>&1 > /dev/null
+==31107== Profiling application: ./mergeSort 6 2>&1 > /dev/null
+==31107== Profiling result:
+==31107== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.427851,1.331088,0.897605
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.084453,0.161102,0.121528
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",2.341781,2.341781,2.341781
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.992558,2.033370,2.022446

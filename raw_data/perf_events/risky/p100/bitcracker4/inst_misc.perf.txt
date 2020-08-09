@@ -1,0 +1,12 @@
+==4097== NVPROF is profiling process 4097, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==4097== Execution timeout, stopping the application...
+==4097== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompat_user_password.txt -d ./Dictionary/10-million-password-list-top-1000000.txt -t 1 -b 256 -g 0 -u
+==4097== Warning: Found 1 invalid records in the result.
+==4097== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==4097== Profiling result:
+==4097== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"inst_misc","Misc Instructions",14431104795668,14431104795668,14431104795668
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"inst_misc","Misc Instructions",4521984,4521984,4521984

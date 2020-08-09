@@ -1,0 +1,34 @@
+==21303== NVPROF is profiling process 21303, command: ./s3d -s 2 -n 1000 -q
+==21303== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21303== Execution timeout, stopping the application...
+==21303== Profiling application: ./s3d -s 2 -n 1000 -q
+==21303== Profiling result:
+==21303== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void rdsmh_kernel<float>(float const *, float*, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.445584%,18.016793%,14.409724%
+"Tesla P100-PCIE-12GB (0)","void rdwdot10_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",21.098247%,24.028673%,23.073649%
+"Tesla P100-PCIE-12GB (0)","void qssab_kernel<float>(float*, float*, float*)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.430079%,2.500696%,2.466233%
+"Tesla P100-PCIE-12GB (0)","void ratt_kernel<float>(float const *, float*, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.030074%,46.812226%,34.743927%
+"Tesla P100-PCIE-12GB (0)","void rdwdot2_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",43.025981%,64.909902%,53.547125%
+"Tesla P100-PCIE-12GB (0)","void rdwdot3_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",48.216296%,61.768025%,55.672417%
+"Tesla P100-PCIE-12GB (0)","void rdwdot6_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",46.432781%,63.317479%,58.182489%
+"Tesla P100-PCIE-12GB (0)","void rdwdot7_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",45.326536%,65.402527%,59.018094%
+"Tesla P100-PCIE-12GB (0)","void rdwdot8_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",38.570390%,60.154887%,53.186774%
+"Tesla P100-PCIE-12GB (0)","void rdwdot9_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",56.850743%,64.057686%,62.024227%
+"Tesla P100-PCIE-12GB (0)","void qssa2_kernel<float>(float*, float*, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.830840%,3.545285%,3.149924%
+"Tesla P100-PCIE-12GB (0)","void ratx2_kernel<float>(float const *, float*, float*)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.372519%,2.421925%,2.403418%
+"Tesla P100-PCIE-12GB (0)","void rdwdot_kernel<float>(float const *, float const *, float*, float, float const *)",362,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",50.841834%,66.885146%,61.055191%
+"Tesla P100-PCIE-12GB (0)","void ratx4_kernel<float>(float const *, float*, float*)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.828015%,2.880512%,2.854316%
+"Tesla P100-PCIE-12GB (0)","void ratt2_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.146763%,6.939475%,6.005147%
+"Tesla P100-PCIE-12GB (0)","void ratt10_kernel<float>(float const *, float*, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.744111%,18.175575%,14.590902%
+"Tesla P100-PCIE-12GB (0)","void ratxb_kernel<float>(float const *, float const *, float*, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",10.302670%,19.926588%,16.721386%
+"Tesla P100-PCIE-12GB (0)","void ratt3_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.123220%,7.149171%,6.624966%
+"Tesla P100-PCIE-12GB (0)","void ratt4_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.024607%,7.364839%,6.719807%
+"Tesla P100-PCIE-12GB (0)","void ratt5_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.167208%,7.207572%,6.900630%
+"Tesla P100-PCIE-12GB (0)","void gr_base<float>(float const *, float const *, float const *, float*, float, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",2.259942%,2.405260%,2.344720%
+"Tesla P100-PCIE-12GB (0)","void ratt6_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",5.834135%,7.121384%,6.666755%
+"Tesla P100-PCIE-12GB (0)","void ratt7_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.701720%,7.438815%,7.191079%
+"Tesla P100-PCIE-12GB (0)","void ratx_kernel<float>(float const *, float const *, float*, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",11.367960%,25.054113%,20.913637%
+"Tesla P100-PCIE-12GB (0)","void ratt8_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.581260%,7.761796%,7.355103%
+"Tesla P100-PCIE-12GB (0)","void ratt9_kernel<float>(float const *, float const *, float*, float const *, float)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",6.663628%,8.014617%,7.427476%
+"Tesla P100-PCIE-12GB (0)","void qssa_kernel<float>(float*, float*, float*)",363,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",26.920276%,35.485643%,31.175775%

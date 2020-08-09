@@ -1,0 +1,7 @@
+==26646== NVPROF is profiling process 26646, command: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==26646== Profiling application: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==26646== Profiling result:
+==26646== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.152502,0.156427,0.154482
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.655291,1.832188,1.748533

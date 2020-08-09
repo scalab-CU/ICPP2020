@@ -1,0 +1,9 @@
+==21818== NVPROF is profiling process 21818, command: ./mergeSort 32 2>&1 > /dev/null
+==21818== Profiling application: ./mergeSort 32 2>&1 > /dev/null
+==21818== Profiling result:
+==21818== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",30,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",72.173440GB/s,168.605404GB/s,92.271106GB/s
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",15,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",3.970581GB/s,5.588836GB/s,4.304173GB/s
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",34.110549GB/s,34.110549GB/s,34.110549GB/s
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",15,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",173.163985GB/s,205.361273GB/s,176.066168GB/s

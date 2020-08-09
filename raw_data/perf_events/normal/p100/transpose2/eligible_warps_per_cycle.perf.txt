@@ -1,0 +1,13 @@
+==21343== NVPROF is profiling process 21343, command: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==21343== Profiling application: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==21343== Profiling result:
+==21343== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.453781,1.490663,1.476068
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.378504,1.421262,1.399363
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.489424,1.544619,1.507778
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.671789,1.752376,1.695426
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",2.067016,2.162559,2.100393
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.756061,0.773505,0.765102
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.143110,0.144448,0.143766
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.372585,1.420747,1.390790

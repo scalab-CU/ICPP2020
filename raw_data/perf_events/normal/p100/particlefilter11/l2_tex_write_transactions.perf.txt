@@ -1,0 +1,9 @@
+==8016== NVPROF is profiling process 8016, command: ./particlefilter -x 512 -y 512 -z 10 -np 6000
+==8016== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 6000
+==8016== Profiling result:
+==8016== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",1,1,1
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",420762,420762,420762
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",7502,7502,7502
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"l2_tex_write_transactions","L2 Transactions (Texture Writes)",1500,1500,1500

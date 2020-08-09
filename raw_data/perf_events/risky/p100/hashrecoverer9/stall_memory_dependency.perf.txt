@@ -1,0 +1,8 @@
+==5113== NVPROF is profiling process 5113, command: ././cuda_md5 cabc8cbe484e6ff178d9051d69250ae5 2>&1 > /dev/null
+==5113== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5113== Profiling application: ././cuda_md5 cabc8cbe484e6ff178d9051d69250ae5 2>&1 > /dev/null
+==5113== Profiling result:
+==5113== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","BruteKernel(password_t*, unsigned int, unsigned long, unsigned long, bool volatile *)",5,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.084535%,44.186989%,14.914454%
+"Tesla P100-PCIE-12GB (0)","DictKernel(password_t*, password_t*, bool volatile *, unsigned int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",73.838878%,73.838878%,73.838878%

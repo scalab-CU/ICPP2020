@@ -1,0 +1,18 @@
+==17384== NVPROF is profiling process 17384, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==17384== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17384== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==17384== Profiling result:
+==17384== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",35.846146%,35.846146%,35.846146%
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.874578%,0.934703%,0.908214%
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",34.319878%,35.429479%,34.874678%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",7.871108%,11.526433%,9.861966%
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",18.917950%,20.123117%,19.520534%
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.860535%,0.925931%,0.902999%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",7.974528%,7.974528%,7.974528%
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",27.453112%,27.453112%,27.453112%
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",9.180934%,9.190261%,9.185597%
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",11.764499%,15.115198%,12.966121%
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",10.611648%,13.364715%,11.803799%
+======== Error: Application returned non-zero code 1

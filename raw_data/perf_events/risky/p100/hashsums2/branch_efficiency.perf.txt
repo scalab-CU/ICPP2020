@@ -1,0 +1,16 @@
+==22069== NVPROF is profiling process 22069, command: ././crc_gpu input1.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X5EC00000  
+value in hostpartialcrc = 0XCDD407B8  
+
+Execution time: 45.151455 ms
+After cuda, hostpartialcrc[0] = 0X85D45906  
+After cuda, hostpartialcrc[0] = 2245286150  
+Program Ended Successfully!
+==22069== Profiling application: ././crc_gpu input1.in 2>&1 > /dev/null
+==22069== Profiling result:
+==22069== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"branch_efficiency","Branch Efficiency",99.980828%,99.980828%,99.980828%

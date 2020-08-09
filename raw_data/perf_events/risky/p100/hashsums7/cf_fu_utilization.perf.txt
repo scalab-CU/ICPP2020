@@ -1,0 +1,16 @@
+==10598== NVPROF is profiling process 10598, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XCF000000  
+value in hostpartialcrc = 0X3E9777B8  
+
+Execution time: 158.596924 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==10598== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==10598== Profiling result:
+==10598== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"

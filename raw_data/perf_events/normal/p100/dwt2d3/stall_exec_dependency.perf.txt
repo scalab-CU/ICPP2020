@@ -1,0 +1,9 @@
+==26207== NVPROF is profiling process 26207, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==26207== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26207== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==26207== Profiling result:
+==26207== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",19.854659%,21.763275%,21.055905%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",11.782881%,17.252743%,14.551884%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",4.152140%,4.152140%,4.152140%

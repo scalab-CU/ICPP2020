@@ -1,0 +1,7 @@
+==3600== NVPROF is profiling process 3600, command: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==3600== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3600== Profiling application: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==3600== Profiling result:
+==3600== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.855143%,0.863017%,0.859681%

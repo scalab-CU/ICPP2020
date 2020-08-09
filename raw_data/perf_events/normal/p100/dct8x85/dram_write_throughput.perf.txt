@@ -1,0 +1,14 @@
+==16578== NVPROF is profiling process 16578, command: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==16578== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16578== Profiling application: ./dct8x8 sample4.bmp 2>&1 > /dev/null
+==16578== Profiling result:
+==16578== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"dram_write_throughput","Device Memory Write Throughput",78.879047GB/s,78.879047GB/s,78.879047GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"dram_write_throughput","Device Memory Write Throughput",81.725597GB/s,88.926151GB/s,85.176582GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"dram_write_throughput","Device Memory Write Throughput",160.686883GB/s,160.686883GB/s,160.686883GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"dram_write_throughput","Device Memory Write Throughput",157.819986GB/s,162.395566GB/s,159.740852GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"dram_write_throughput","Device Memory Write Throughput",42.628365GB/s,43.983390GB/s,43.812864GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"dram_write_throughput","Device Memory Write Throughput",139.888861GB/s,139.888861GB/s,139.888861GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"dram_write_throughput","Device Memory Write Throughput",45.346759GB/s,45.346759GB/s,45.346759GB/s
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"dram_write_throughput","Device Memory Write Throughput",136.955996GB/s,136.955996GB/s,136.955996GB/s

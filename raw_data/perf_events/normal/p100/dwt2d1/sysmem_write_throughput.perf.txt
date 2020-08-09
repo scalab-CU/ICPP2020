@@ -1,0 +1,9 @@
+==25682== NVPROF is profiling process 25682, command: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==25682== Profiling application: ./dwt2d rgb.bmp -d 1024x1024 -f -5 -l 3 2>&1 > /dev/null
+==25682== Profiling result:
+==25682== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",6.725489MB/s,11.063507MB/s,9.088326MB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",3.506155MB/s,4.528502MB/s,4.074381MB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",8.638354MB/s,15.947731MB/s,12.439152MB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"sysmem_write_throughput","System Memory Write Throughput",3.524295MB/s,3.524295MB/s,3.524273MB/s

@@ -1,0 +1,8 @@
+==14112== NVPROF is profiling process 14112, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==14112== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14112== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==14112== Profiling result:
+==14112== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"dram_read_throughput","Device Memory Read Throughput",133.072120GB/s,133.072120GB/s,133.072120GB/s
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"dram_read_throughput","Device Memory Read Throughput",383.337807GB/s,388.855421GB/s,386.076991GB/s

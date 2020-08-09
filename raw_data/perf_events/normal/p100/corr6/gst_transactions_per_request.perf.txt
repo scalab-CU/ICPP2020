@@ -1,0 +1,10 @@
+==23416== NVPROF is profiling process 23416, command: ./corr3072 2>&1 > /dev/null
+==23416== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23416== Profiling application: ./corr3072 2>&1 > /dev/null
+==23416== Profiling result:
+==23416== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"gst_transactions_per_request","Global Store Transactions Per Request",5.000000,5.000000,5.000000
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"gst_transactions_per_request","Global Store Transactions Per Request",4.875000,4.875000,4.875000
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"gst_transactions_per_request","Global Store Transactions Per Request",31.680206,31.680206,31.680206
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"gst_transactions_per_request","Global Store Transactions Per Request",5.000000,5.000000,5.000000

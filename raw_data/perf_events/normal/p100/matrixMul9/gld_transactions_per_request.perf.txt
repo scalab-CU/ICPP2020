@@ -1,0 +1,7 @@
+==9083== NVPROF is profiling process 9083, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==9083== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9083== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==9083== Profiling result:
+==9083== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000586,8.000017

@@ -1,0 +1,13 @@
+==17011== NVPROF is profiling process 17011, command: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==17011== Profiling application: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==17011== Profiling result:
+==17011== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",26214400,26214400,26214400
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"gst_transactions","Global Store Transactions",3276800,3276800,3276800

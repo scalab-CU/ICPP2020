@@ -1,0 +1,9 @@
+==23519== NVPROF is profiling process 23519, command: ./mergeSort 6 2>&1 > /dev/null
+==23519== Profiling application: ./mergeSort 6 2>&1 > /dev/null
+==23519== Profiling result:
+==23519== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",5494,14187,7217
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",294144,441928,427247
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",1572864,1572864,1572864
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"l2_tex_read_transactions","L2 Transactions (Texture Reads)",1175294,1763348,1715828

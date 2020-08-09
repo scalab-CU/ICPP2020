@@ -1,0 +1,10 @@
+==12627== NVPROF is profiling process 12627, command: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==12627== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12627== Profiling application: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==12627== Profiling result:
+==12627== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",5.352969%,6.183622%,5.656153%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.853749%,5.179232%,1.089996%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.483982%,1.881252%,0.588467%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.267656%,1.045802%,0.330953%

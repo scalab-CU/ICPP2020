@@ -1,0 +1,8 @@
+==8466== NVPROF is profiling process 8466, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==8466== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8466== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==8466== Profiling result:
+==8466== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"stall_other","Issue Stall Reasons (Other)",0.771208%,2.880658%,1.665961%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_other","Issue Stall Reasons (Other)",6.607248%,36.235269%,21.998580%

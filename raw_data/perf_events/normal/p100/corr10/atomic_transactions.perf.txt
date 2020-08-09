@@ -1,0 +1,10 @@
+==7412== NVPROF is profiling process 7412, command: ./corr4096 2>&1 > /dev/null
+==7412== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7412== Profiling application: ./corr4096 2>&1 > /dev/null
+==7412== Profiling result:
+==7412== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"atomic_transactions","Atomic Transactions",256,256,256
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"atomic_transactions","Atomic Transactions",0,0,0

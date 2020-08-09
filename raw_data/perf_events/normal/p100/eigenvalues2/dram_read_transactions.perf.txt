@@ -1,0 +1,9 @@
+==20789== NVPROF is profiling process 20789, command: ./eigenvalues --matrix-size=2048 2>&1 > /dev/null
+==20789== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20789== Profiling application: ./eigenvalues --matrix-size=2048 2>&1 > /dev/null
+==20789== Profiling result:
+==20789== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"dram_read_transactions","Device Memory Read Transactions",0,216,10
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"dram_read_transactions","Device Memory Read Transactions",0,56,2
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"dram_read_transactions","Device Memory Read Transactions",0,200,9

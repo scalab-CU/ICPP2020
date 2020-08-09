@@ -1,0 +1,9 @@
+==7554== NVPROF is profiling process 7554, command: ./scan 64 2>&1 > /dev/null
+==7554== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7554== Profiling application: ./scan 64 2>&1 > /dev/null
+==7554== Profiling result:
+==7554== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.085079%,0.193676%,0.135744%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.099560%,1.166895%,0.879282%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.044251%,0.050571%,0.046365%

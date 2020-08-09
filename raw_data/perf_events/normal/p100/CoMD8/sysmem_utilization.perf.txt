@@ -1,0 +1,12 @@
+==31967== NVPROF is profiling process 31967, command: ./bin/CoMD-cuda -x 32 -y 32 -z 32 2>&1 > /dev/null
+==31967== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [643,0,0], thread: [0,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [643,0,0], thread: [1,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [643,0,0], thread: [2,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [755,0,0], thread: [0,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [755,0,0], thread: [1,0,0] Assertion `jAtom < 64` failed.
+==31967== Error: Application encountered error: device-side assert triggered (710).
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [867,0,0], thread: [0,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [867,0,0], thread: [1,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [867,0,0], thread: [2,0,0] Assertion `jAtom < 64` failed.
+======== Error: CUDA device error.

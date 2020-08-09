@@ -1,0 +1,8 @@
+==12264== NVPROF is profiling process 12264, command: ./nn list128k.txt -r 5 -lat 50 -lng 90 2>&1 > /dev/null
+==12264== Profiling application: ./nn list128k.txt -r 5 -lat 50 -lng 90 2>&1 > /dev/null
+==12264== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.337206,0.000092,,,,,,,,,,1.000000,10.585470,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.337342,0.000005,512,1,1,256,1,1,8,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","euclid(latLong*, float*, int, float, float) [116]"
+0.337378,0.000041,,,,,,,,,,0.500000,11.774041,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

@@ -1,0 +1,8 @@
+==2569== NVPROF is profiling process 2569, command: ./kmeans -i ./data/2048000_50.txt 2>&1 > /dev/null
+==2569== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2569== Profiling application: ./kmeans -i ./data/2048000_50.txt 2>&1 > /dev/null
+==2569== Profiling result:
+==2569== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.001447%,0.001447%,0.001447%
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.081042%,0.081254%,0.081148%

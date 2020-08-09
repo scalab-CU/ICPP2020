@@ -1,0 +1,7 @@
+==14503== NVPROF is profiling process 14503, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==14503== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14503== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==14503== Profiling result:
+==14503== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"tex_cache_hit_rate","Unified Cache Hit Rate",50.128569%,50.153315%,50.142077%

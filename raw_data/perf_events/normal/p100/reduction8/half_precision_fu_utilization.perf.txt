@@ -1,0 +1,8 @@
+==9291== NVPROF is profiling process 9291, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==9291== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9291== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==9291== Profiling result:
+==9291== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"

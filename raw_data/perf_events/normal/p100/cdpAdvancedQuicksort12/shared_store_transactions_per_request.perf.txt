@@ -1,0 +1,8 @@
+==22647== NVPROF is profiling process 22647, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==22647== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22647== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==22647== Profiling result:
+==22647== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",0.933036,0.933036,0.933036
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",1999,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",0.650042,0.844184,0.728152

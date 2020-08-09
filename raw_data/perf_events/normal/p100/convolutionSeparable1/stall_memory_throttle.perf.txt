@@ -1,0 +1,8 @@
+==5190== NVPROF is profiling process 5190, command: ./convolutionSeparable 3072 2>&1 > /dev/null
+==5190== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5190== Profiling application: ./convolutionSeparable 3072 2>&1 > /dev/null
+==5190== Profiling result:
+==5190== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",11.133403%,11.433535%,11.313011%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",5.158657%,5.871874%,5.563792%

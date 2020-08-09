@@ -1,0 +1,9 @@
+==30256== NVPROF is profiling process 30256, command: ././enc npark.ppm 2>&1 > /dev/null
+==30256== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30256== Profiling application: ././enc npark.ppm 2>&1 > /dev/null
+==30256== Profiling result:
+==30256== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"stall_sync","Issue Stall Reasons (Synchronization)",9.576623%,18.441888%,14.010244%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"stall_sync","Issue Stall Reasons (Synchronization)",14.131536%,22.258003%,17.694139%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"stall_sync","Issue Stall Reasons (Synchronization)",0.316618%,4.112597%,1.206514%

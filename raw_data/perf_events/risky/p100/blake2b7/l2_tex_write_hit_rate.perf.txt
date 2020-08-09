@@ -1,0 +1,7 @@
+==4612== NVPROF is profiling process 4612, command: ././blake2b "nvcc -arch=sm_30 blake2b.c blake2b-gpu.cu -o gpu_b2b_sum" 2>&1 > /dev/null
+==4612== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4612== Profiling application: ././blake2b "nvcc -arch=sm_30 blake2b.c blake2b-gpu.cu -o gpu_b2b_sum" 2>&1 > /dev/null
+==4612== Profiling result:
+==4612== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","iter_compressor(unsigned long const *, unsigned long, unsigned char*, short)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%

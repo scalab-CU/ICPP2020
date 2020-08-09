@@ -1,0 +1,9 @@
+==8049== NVPROF is profiling process 8049, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==8049== Execution timeout, stopping the application...
+==8049== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==8049== Warning: Found 1 invalid records in the result.
+==8049== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==8049== Profiling result:
+==8049== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",165,"inst_misc","Misc Instructions",74317824000,74317824000,74317824000

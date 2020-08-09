@@ -1,0 +1,14 @@
+==22427== NVPROF is profiling process 22427, command: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==22427== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22427== Profiling application: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==22427== Profiling result:
+==22427== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"dram_write_transactions","Device Memory Write Transactions",264670,264670,264670
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"dram_write_transactions","Device Memory Write Transactions",263525,264051,263788
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"dram_write_transactions","Device Memory Write Transactions",250563,250563,250563
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"dram_write_transactions","Device Memory Write Transactions",250427,252163,251034
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"dram_write_transactions","Device Memory Write Transactions",260274,264762,263873
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"dram_write_transactions","Device Memory Write Transactions",131035,131035,131035
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"dram_write_transactions","Device Memory Write Transactions",133687,133687,133687
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"dram_write_transactions","Device Memory Write Transactions",130949,130949,130949

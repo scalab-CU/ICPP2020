@@ -1,0 +1,10 @@
+==752== NVPROF is profiling process 752, command: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==752== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==752== Profiling application: ./dwt2d sample4.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==752== Profiling result:
+==752== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.124134%,0.260866%,0.207652%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.039631%,0.044782%,0.041460%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.011309%,0.011499%,0.011426%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",19.674790%,19.674790%,19.674790%

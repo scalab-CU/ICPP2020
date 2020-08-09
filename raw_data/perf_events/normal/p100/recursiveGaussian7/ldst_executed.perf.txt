@@ -1,0 +1,7 @@
+==16400== NVPROF is profiling process 16400, command: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==16400== Profiling application: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==16400== Profiling result:
+==16400== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"ldst_executed","Executed Load/Store Instructions",324240,326536,325388
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"ldst_executed","Executed Load/Store Instructions",586560,586560,586560

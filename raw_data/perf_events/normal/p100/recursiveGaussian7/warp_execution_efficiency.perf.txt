@@ -1,0 +1,7 @@
+==32433== NVPROF is profiling process 32433, command: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==32433== Profiling application: ./recursiveGaussian -image=./data/sample1.ppm 2>&1 > /dev/null
+==32433== Profiling result:
+==32433== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"warp_execution_efficiency","Warp Execution Efficiency",83.618245%,93.920858%,88.769552%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"warp_execution_efficiency","Warp Execution Efficiency",99.780530%,99.796174%,99.788352%

@@ -1,0 +1,8 @@
+==27175== NVPROF is profiling process 27175, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==27175== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27175== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==27175== Profiling result:
+==27175== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.400472%,0.400472%,0.400472%
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.067084%,0.068358%,0.067721%

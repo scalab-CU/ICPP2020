@@ -1,0 +1,14 @@
+==2209== NVPROF is profiling process 2209, command: ./transpose -dimX=6000 -dimY=6000 2>&1 > /dev/null
+==2209== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2209== Profiling application: ./transpose -dimX=6000 -dimY=6000 2>&1 > /dev/null
+==2209== Profiling result:
+==2209== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.287131%,5.732552%,5.400163%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.273111%,5.654399%,5.357953%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.782902%,6.279581%,5.908572%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.343088%,5.717761%,5.473678%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.236711%,5.511986%,5.362582%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_sync","Issue Stall Reasons (Synchronization)",5.409094%,5.646613%,5.490638%

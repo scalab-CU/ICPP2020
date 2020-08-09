@@ -1,0 +1,7 @@
+==8085== NVPROF is profiling process 8085, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==8085== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==8085== Profiling result:
+==8085== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"issue_slot_utilization","Issue Slot Utilization",1.782334%,3.645161%,3.592349%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"issue_slot_utilization","Issue Slot Utilization",25.671605%,68.722809%,47.269559%

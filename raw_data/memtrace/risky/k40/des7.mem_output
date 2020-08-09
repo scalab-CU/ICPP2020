@@ -1,0 +1,9 @@
+==13953== NVPROF is profiling process 13953, command: ././des --cipher 0x3334786376626464 --key-alphabet abes --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==13953== Profiling application: ././des --cipher 0x3334786376626464 --key-alphabet abes --key-length 7 --text-alphabet abcdefg --text-length 7 --gpu
+==13953== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,B,MB/s,,,,,,
+0.308649,0.000002,,,,,,,,,,4,2.432842,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.308658,0.000001,,,,,,,,,,7,7.726527,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.308702,164.441069,1024,2,1,256,1,1,33,4.531250,0,,,,,"Tesla K40m (0)","1","7","kernel(char const *, char const *, unsigned int, unsigned int, unsigned int, unsigned long) [119]"
+164.749972,0.000002,,,,,,,,,,16,8.081985,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

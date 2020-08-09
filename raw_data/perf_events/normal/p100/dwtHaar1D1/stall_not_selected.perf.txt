@@ -1,0 +1,8 @@
+==21902== NVPROF is profiling process 21902, command: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==21902== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21902== Profiling application: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==21902== Profiling result:
+==21902== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","initValue(float*, float)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.723050%,0.723050%,0.723050%
+"Tesla P100-PCIE-12GB (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.000000%,2.124288%,1.062144%

@@ -1,0 +1,9 @@
+==23616== NVPROF is profiling process 23616, command: ./mergeSort 32 2>&1 > /dev/null
+==23616== Profiling application: ./mergeSort 32 2>&1 > /dev/null
+==23616== Profiling result:
+==23616== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",30,"tex_cache_transactions","Unified Cache Transactions",163840,622592,393216
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",15,"tex_cache_transactions","Unified Cache Transactions",393216,851968,622592
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"tex_cache_transactions","Unified Cache Transactions",8388608,8388608,8388608
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",15,"tex_cache_transactions","Unified Cache Transactions",9797894,10144842,10105181

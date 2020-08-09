@@ -1,0 +1,10 @@
+==25001== NVPROF is profiling process 25001, command: ./histogram 200 2>&1 > /dev/null
+==25001== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25001== Profiling application: ./histogram 200 2>&1 > /dev/null
+==25001== Profiling result:
+==25001== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",460.382095GB/s,463.646550GB/s,461.909158GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",203.157072GB/s,211.145605GB/s,207.802142GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",343.058438GB/s,359.049512GB/s,350.356109GB/s
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"gld_throughput","Global Load Throughput",365.006644GB/s,374.977921GB/s,371.733753GB/s

@@ -1,0 +1,30 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.01041s]
+Opening ./data/sample3.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.37438s]
+  Renumbering tree... [0.12940s]
+  Flattening Tree... [0.27431s]
+==18290== NVPROF is profiling process 18290, command: ./mum ./data/NC_003997.20k.fna ./data/sample3.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+30 queries (15000000 bp), need 134995740 bytes on the GPU [0.07643s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 15000300 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 30 queries (119995440 bytes) ...done
+Using blocks of 30 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 15000300
+	ref: 80084992
+	results: 119995440
+==18290== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+kernel time= 25345.732422
+==18290== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample3.fna
+==18290== Profiling result:
+==18290== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",13.826792%,13.826792%,13.826792%

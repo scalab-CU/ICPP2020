@@ -1,0 +1,9 @@
+==2550== NVPROF is profiling process 2550, command: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==2550== Profiling application: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==2550== Profiling result:
+==2550== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"inst_per_warp","Instructions per warp",11.187500,11.187500,11.187500
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"inst_per_warp","Instructions per warp",17339.656250,17450.375000,17376.878472
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"inst_per_warp","Instructions per warp",273.562500,294.375000,277.166667
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"inst_per_warp","Instructions per warp",330.000000,9047.000000,5788.340278

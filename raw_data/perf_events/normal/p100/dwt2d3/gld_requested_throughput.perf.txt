@@ -1,0 +1,8 @@
+==29441== NVPROF is profiling process 29441, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==29441== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==29441== Profiling result:
+==29441== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_requested_throughput","Requested Global Load Throughput",2.504395GB/s,2.508527GB/s,2.507148GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"gld_requested_throughput","Requested Global Load Throughput",5.058143GB/s,9.277395GB/s,7.888397GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_requested_throughput","Requested Global Load Throughput",15.812279GB/s,15.812279GB/s,15.812279GB/s

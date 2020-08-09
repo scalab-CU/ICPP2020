@@ -1,0 +1,7 @@
+==9184== NVPROF is profiling process 9184, command: ./threadFenceReduction -n=35000000 2>&1 > /dev/null
+==9184== Profiling application: ./threadFenceReduction -n=35000000 2>&1 > /dev/null
+==9184== Profiling result:
+==9184== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"warp_execution_efficiency","Warp Execution Efficiency",99.969838%,99.969838%,99.969838%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"warp_execution_efficiency","Warp Execution Efficiency",99.963126%,99.963176%,99.963152%

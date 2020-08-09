@@ -1,0 +1,14 @@
+==32315== NVPROF is profiling process 32315, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==32315== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==32315== Profiling result:
+==32315== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"global_hit_rate","Global Hit Rate in unified l1/tex",75.000000%,75.000000%,75.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"global_hit_rate","Global Hit Rate in unified l1/tex",49.980537%,87.186848%,83.132302%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"global_hit_rate","Global Hit Rate in unified l1/tex",5.484692%,6.082266%,5.739886%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"global_hit_rate","Global Hit Rate in unified l1/tex",48.151007%,65.824396%,56.651077%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"global_hit_rate","Global Hit Rate in unified l1/tex",49.966102%,50.000000%,49.987031%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"global_hit_rate","Global Hit Rate in unified l1/tex",87.218584%,87.342767%,87.293592%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"global_hit_rate","Global Hit Rate in unified l1/tex",9.366533%,11.884178%,10.945704%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"global_hit_rate","Global Hit Rate in unified l1/tex",49.966102%,50.000000%,49.987031%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"global_hit_rate","Global Hit Rate in unified l1/tex",67.520170%,73.841379%,70.809389%

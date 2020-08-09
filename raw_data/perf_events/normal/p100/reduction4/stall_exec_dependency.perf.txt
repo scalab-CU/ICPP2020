@@ -1,0 +1,8 @@
+==15111== NVPROF is profiling process 15111, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==15111== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15111== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==15111== Profiling result:
+==15111== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.192628%,16.648158%,14.745272%
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",25.103563%,29.076997%,28.414200%

@@ -1,0 +1,10 @@
+==30019== NVPROF is profiling process 30019, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==30019== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==30019== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==30019== Profiling result:
+==30019== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"dram_read_transactions","Device Memory Read Transactions",7246364094,7246364094,7246364094
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_read_transactions","Device Memory Read Transactions",10318682,10318682,10318682

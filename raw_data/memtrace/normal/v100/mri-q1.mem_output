@@ -1,0 +1,18 @@
+==194791== NVPROF is profiling process 194791, command: ./mri-q 64_64_64_dataset.bin out.bin
+==194791== Profiling application: ./mri-q 64_64_64_dataset.bin out.bin
+==194791== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.464761,0.000001,,,,,,,,,,0.000244,0.181721,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.464776,0.000001,,,,,,,,,,0.000244,0.219135,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.464817,0.000002,1,1,1,512,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","ComputePhiMag_GPU(float*, float*, float*, int) [118]"
+0.464829,0.000002,,,,,,,,,,0.000244,0.158523,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.465390,0.000088,,,,,,,,,,1.000000,11.146065,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.465707,0.000088,,,,,,,,,,1.000000,11.053214,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.466127,0.000088,,,,,,,,,,1.000000,11.117641,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.466222,0.000001,,,,,,,,,,1.000000,1017.252604,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.466348,0.000001,,,,,,,,,,1.000000,1052.330280,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.466373,0.000001,,,,,,,,,,0.000977,0.827842,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.466385,0.000117,1024,1,1,256,1,1,28,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","ComputeQ_GPU(int, int, float*, float*, float*, float*, float*) [155]"
+0.466649,0.000081,,,,,,,,,,1.000000,12.057667,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.467472,0.000081,,,,,,,,,,1.000000,12.071976,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

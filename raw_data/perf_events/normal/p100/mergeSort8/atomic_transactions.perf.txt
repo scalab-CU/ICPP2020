@@ -1,0 +1,10 @@
+==32052== NVPROF is profiling process 32052, command: ./mergeSort 8 2>&1 > /dev/null
+==32052== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32052== Profiling application: ./mergeSort 8 2>&1 > /dev/null
+==32052== Profiling result:
+==32052== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"atomic_transactions","Atomic Transactions",0,0,0

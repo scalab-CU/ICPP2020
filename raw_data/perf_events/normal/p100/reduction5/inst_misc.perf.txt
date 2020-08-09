@@ -1,0 +1,7 @@
+==27074== NVPROF is profiling process 27074, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==27074== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==27074== Profiling result:
+==27074== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"inst_misc","Misc Instructions",368832,188841984,95074246
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"inst_misc","Misc Instructions",931,931,931

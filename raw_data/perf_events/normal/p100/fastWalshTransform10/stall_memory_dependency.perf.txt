@@ -1,0 +1,9 @@
+==24047== NVPROF is profiling process 24047, command: ./fastWalshTransform229 2>&1 > /dev/null
+==24047== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24047== Profiling application: ./fastWalshTransform229 2>&1 > /dev/null
+==24047== Profiling result:
+==24047== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","fwtBatch1Kernel(float*, float*, int)",3,"stall_memory_dependency","Issue Stall Reasons (Data Request)",50.809149%,51.255153%,50.957896%
+"Tesla P100-PCIE-12GB (0)","fwtBatch2Kernel(float*, float*, int)",18,"stall_memory_dependency","Issue Stall Reasons (Data Request)",32.499399%,34.841502%,34.046946%
+"Tesla P100-PCIE-12GB (0)","modulateKernel(float*, float*, int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",92.500852%,92.500852%,92.500852%

@@ -1,0 +1,8 @@
+==8776== NVPROF is profiling process 8776, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==8776== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8776== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==8776== Profiling result:
+==8776== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.120282%,40.078728%,15.306930%
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",32.786885%,47.120658%,38.518598%

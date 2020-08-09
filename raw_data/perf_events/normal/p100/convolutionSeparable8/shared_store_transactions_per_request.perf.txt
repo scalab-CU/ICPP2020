@@ -1,0 +1,8 @@
+==32349== NVPROF is profiling process 32349, command: ./convolutionSeparable 10240 2>&1 > /dev/null
+==32349== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32349== Profiling application: ./convolutionSeparable 10240 2>&1 > /dev/null
+==32349== Profiling result:
+==32349== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.000000,2.000000,2.000000
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",2.000000,2.000000,2.000000

@@ -1,0 +1,10 @@
+==13096== NVPROF is profiling process 13096, command: ./corr2048 2>&1 > /dev/null
+==13096== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13096== Profiling application: ./corr2048 2>&1 > /dev/null
+==13096== Profiling result:
+==13096== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",0.651175%,0.651175%,0.651175%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",7.516810%,7.516810%,7.516810%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",0.541263%,0.541263%,0.541263%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",0.647054%,0.647054%,0.647054%

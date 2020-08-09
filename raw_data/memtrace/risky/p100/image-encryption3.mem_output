@@ -1,0 +1,12 @@
+==32060== NVPROF is profiling process 32060, command: ././enc 3.ppm 2>&1 > /dev/null
+cudaMalloc failed for device arrays!==32060== Profiling application: ././enc 3.ppm 2>&1 > /dev/null
+==32060== Warning: Found 1 invalid records in the result.
+==32060== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==32060== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,KB,GB/s,,,,,,
+0.328034,0.000033,,,,,,,,,,147.205078,4.298794,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328070,0.000041,,,,,,,,,,147.205078,3.464774,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328114,0.000020,,,,,,,,,,0.757812,0.036648,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328136,0.000013,,,,,,,,,,24.281250,1.827368,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+======== Error: Application returned non-zero code 1

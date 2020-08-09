@@ -1,0 +1,9 @@
+==14194== NVPROF is profiling process 14194, command: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==14194== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14194== Profiling application: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==14194== Profiling result:
+==14194== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",72.695107%,72.700836%,72.699708%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",35.086957%,35.086957%,35.086957%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",32,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",72.699153%,72.700884%,72.699984%

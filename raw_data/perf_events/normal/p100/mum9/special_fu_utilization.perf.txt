@@ -1,0 +1,28 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.01125s]
+Opening ./data/sample7.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.38262s]
+  Renumbering tree... [0.14509s]
+  Flattening Tree... [0.33030s]
+==27029== NVPROF is profiling process 27029, command: ./mum ./data/NC_003997.20k.fna ./data/sample7.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+45 queries (45000000 bp), need 404993610 bytes on the GPU [0.21281s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 45000450 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 45 queries (359993160 bytes) ...done
+Using blocks of 45 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 45000450
+	ref: 80084992
+	results: 359993160
+kernel time= 9581.932617
+==27029== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample7.fna
+==27029== Profiling result:
+No events/metrics were profiled.
+==27029== Warning: One or more events or metrics overflowed. Rerun with "--print-gpu-trace" for detail.

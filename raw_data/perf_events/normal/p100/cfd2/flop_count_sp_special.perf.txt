@@ -1,0 +1,10 @@
+==26836== NVPROF is profiling process 26836, command: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==26836== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26836== Profiling application: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==26836== Profiling result:
+==26836== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",1161216,1548164,1547851
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",193536,193536,193536
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",4567748,6472212,6471281

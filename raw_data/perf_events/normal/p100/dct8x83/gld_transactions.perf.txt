@@ -1,0 +1,13 @@
+==4008== NVPROF is profiling process 4008, command: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==4008== Profiling application: ./dct8x8 sample2.bmp 2>&1 > /dev/null
+==4008== Profiling result:
+==4008== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"gld_transactions","Global Load Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"gld_transactions","Global Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"gld_transactions","Global Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"gld_transactions","Global Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"gld_transactions","Global Load Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"gld_transactions","Global Load Transactions",131072,131072,131072
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"gld_transactions","Global Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"gld_transactions","Global Load Transactions",131072,131072,131072

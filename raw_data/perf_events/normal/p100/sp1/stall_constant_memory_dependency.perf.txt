@@ -1,0 +1,15 @@
+==25874== NVPROF is profiling process 25874, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25874== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25874== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==25874== Profiling result:
+==25874== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",1.533406%,4.244527%,2.273232%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",2.569614%,23.466588%,10.169540%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",5.609329%,17.902613%,8.954980%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",1.135308%,11.031969%,3.561301%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",10.185900%,31.635678%,21.861511%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",3.500509%,14.588541%,9.104834%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.287625%,2.512554%,0.773391%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",9.276641%,29.808269%,21.583113%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",17.876559%,44.156845%,28.921645%

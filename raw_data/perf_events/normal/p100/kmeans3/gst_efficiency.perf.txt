@@ -1,0 +1,8 @@
+==25012== NVPROF is profiling process 25012, command: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==25012== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25012== Profiling application: ./kmeans -i ./data/1024000_100.txt 2>&1 > /dev/null
+==25012== Profiling result:
+==25012== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%

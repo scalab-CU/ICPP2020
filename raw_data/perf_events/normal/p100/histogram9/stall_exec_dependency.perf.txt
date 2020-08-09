@@ -1,0 +1,10 @@
+==5024== NVPROF is profiling process 5024, command: ./histogram 180 2>&1 > /dev/null
+==5024== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5024== Profiling application: ./histogram 180 2>&1 > /dev/null
+==5024== Profiling result:
+==5024== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.110176%,12.147186%,12.133516%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",8.725976%,11.576549%,11.061137%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.687192%,1.755505%,1.724600%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",32.840531%,33.044881%,32.960548%

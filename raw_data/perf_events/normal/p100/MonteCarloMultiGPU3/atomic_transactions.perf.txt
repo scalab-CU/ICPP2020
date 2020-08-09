@@ -1,0 +1,8 @@
+==25890== NVPROF is profiling process 25890, command: ./MonteCarloMultiGPU -size=60 2>&1 > /dev/null
+==25890== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25890== Profiling application: ./MonteCarloMultiGPU -size=60 2>&1 > /dev/null
+==25890== Profiling result:
+==25890== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"atomic_transactions","Atomic Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"atomic_transactions","Atomic Transactions",0,0,0

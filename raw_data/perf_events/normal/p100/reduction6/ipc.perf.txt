@@ -1,0 +1,7 @@
+==11784== NVPROF is profiling process 11784, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==11784== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==11784== Profiling result:
+==11784== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"ipc","Executed IPC",0.238296,0.795811,0.510494
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"ipc","Executed IPC",0.026500,0.055525,0.054880

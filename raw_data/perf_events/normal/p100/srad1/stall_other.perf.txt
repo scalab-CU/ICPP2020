@@ -1,0 +1,12 @@
+==15602== NVPROF is profiling process 15602, command: ./srad 100 0.5 502 458
+==15602== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15602== Profiling application: ./srad 100 0.5 502 458
+==15602== Profiling result:
+==15602== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","compress(long, float*)",1,"stall_other","Issue Stall Reasons (Other)",19.537816%,19.537816%,19.537816%
+"Tesla P100-PCIE-12GB (0)","reduce(long, int, int, float*, float*)",200,"stall_other","Issue Stall Reasons (Other)",8.782036%,40.954434%,24.149281%
+"Tesla P100-PCIE-12GB (0)","srad2(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float*, float*)",100,"stall_other","Issue Stall Reasons (Other)",27.295743%,32.322018%,29.767594%
+"Tesla P100-PCIE-12GB (0)","extract(long, float*)",1,"stall_other","Issue Stall Reasons (Other)",37.732615%,37.732615%,37.732615%
+"Tesla P100-PCIE-12GB (0)","prepare(long, float*, float*, float*)",100,"stall_other","Issue Stall Reasons (Other)",7.133947%,12.607568%,10.381998%
+"Tesla P100-PCIE-12GB (0)","srad(float, int, int, long, int*, int*, int*, int*, float*, float*, float*, float*, float, float*, float*)",100,"stall_other","Issue Stall Reasons (Other)",53.681277%,62.240624%,58.176400%

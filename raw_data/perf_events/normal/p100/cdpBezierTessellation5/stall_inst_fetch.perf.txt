@@ -1,0 +1,8 @@
+==4070== NVPROF is profiling process 4070, command: ./cdpBezierTessellation 2048 2>&1 > /dev/null
+==4070== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4070== Profiling application: ./cdpBezierTessellation 2048 2>&1 > /dev/null
+==4070== Profiling result:
+==4070== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","freeVertexMem(BezierLine*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",5.257721%,5.257721%,5.257721%
+"Tesla P100-PCIE-12GB (0)","computeBezierLinesCDP(BezierLine*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",8.658604%,8.658604%,8.658604%

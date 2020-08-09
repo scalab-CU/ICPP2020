@@ -1,0 +1,9 @@
+==11803== NVPROF is profiling process 11803, command: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==11803== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11803== Profiling application: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==11803== Profiling result:
+==11803== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",34.168456%,34.183956%,34.173507%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",15.061817%,15.073287%,15.066818%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",7.567145%,7.570897%,7.567606%

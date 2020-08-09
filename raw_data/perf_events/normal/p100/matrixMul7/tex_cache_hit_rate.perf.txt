@@ -1,0 +1,7 @@
+==22745== NVPROF is profiling process 22745, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==22745== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22745== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==22745== Profiling result:
+==22745== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"tex_cache_hit_rate","Unified Cache Hit Rate",50.142324%,50.192622%,50.171472%

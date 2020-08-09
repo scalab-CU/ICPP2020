@@ -1,0 +1,8 @@
+==8241== NVPROF is profiling process 8241, command: ./quasirandomGenerator 16 2>&1 > /dev/null
+==8241== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8241== Profiling application: ./quasirandomGenerator 16 2>&1 > /dev/null
+==8241== Profiling result:
+==8241== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",62.212972%,62.263550%,62.255596%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",15.909902%,16.097530%,16.027003%

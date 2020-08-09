@@ -1,0 +1,13 @@
+==2228== NVPROF is profiling process 2228, command: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==2228== Profiling application: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==2228== Profiling result:
+==2228== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",131072,131072,131072
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",1048576,1048576,1048576
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",262144,262144,262144
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"shared_load_transactions","Shared Load Transactions",262144,262144,262144

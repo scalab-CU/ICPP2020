@@ -1,0 +1,33 @@
+==16435== NVPROF is profiling process 16435, command: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==16435== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16435== Profiling application: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==16435== Profiling result:
+==16435== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",1.519884%,1.725748%,1.639749%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",20.926479%,25.706407%,24.338678%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",73.677192%,85.299379%,81.013390%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",19.609883%,24.783578%,23.545506%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",87.391556%,100.000000%,90.550823%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",40.382318%,45.454545%,41.744092%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",54.471279%,100.000000%,70.715805%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,99.966997%,50.717519%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",2.223270%,3.980642%,2.916418%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",72.504621%,100.000000%,79.088980%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",49.802761%,100.000000%,60.367069%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",13.446520%,36.812804%,26.384389%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",80.420111%,90.012393%,84.469588%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",40.057430%,45.299145%,41.434422%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",36.968408%,45.048266%,39.452301%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,100.000000%,27.722772%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",1.319448%,1.865662%,1.659528%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",74.704142%,100.000000%,80.403335%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",12.631904%,19.024911%,14.908780%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",1.750001%,1.906529%,1.836488%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,2.043355%,0.681118%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,100.000000%,24.808362%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",1.341979%,1.551206%,1.433880%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",1.910505%,2.946865%,2.255132%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.000000%,1.655487%,0.551829%

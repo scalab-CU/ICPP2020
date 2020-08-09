@@ -1,0 +1,8 @@
+==10353== NVPROF is profiling process 10353, command: ./bin/CoMD-cuda -x 48 -y 48 -z 48 2>&1 > /dev/null
+==10353== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [418,0,0], thread: [96,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [418,0,0], thread: [97,0,0] Assertion `jAtom < 64` failed.
+gpu_redistribute.h:152: void UpdateLinkCells(SimGpuSt, LinkCellGpuSt, int *) [with usePairlist = 0]: block: [384,0,0], thread: [64,0,0] Assertion `jAtom < 64` failed.
+==10353== Error: Application encountered error: device-side assert triggered (710).
+*** Error in `./bin/CoMD-cuda': malloc(): memory corruption: 0x0000000005e190f0 ***
+======== Error: CUDA device error.

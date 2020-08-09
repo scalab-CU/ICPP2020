@@ -1,0 +1,11 @@
+==5659== NVPROF is profiling process 5659, command: ././build/bitcracker_cuda -f ./test_hash/imgWin7_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==5659== Execution timeout, stopping the application...
+==5659== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin7_user_password.txt -d ./Dictionary/darkweb2017-top10000.txt -t 1 -b 256 -g 0 -u
+==5659== Warning: Found 1 invalid records in the result.
+==5659== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==5659== Profiling result:
+==5659== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"inst_integer","Integer Instructions",429621248,429621248,429621248

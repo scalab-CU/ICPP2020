@@ -1,0 +1,8 @@
+==955== NVPROF is profiling process 955, command: ./convolutionSeparable 7168 2>&1 > /dev/null
+==955== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==955== Profiling application: ./convolutionSeparable 7168 2>&1 > /dev/null
+==955== Profiling result:
+==955== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",8.585203%,9.504839%,9.028945%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",16.531817%,19.546368%,17.023009%

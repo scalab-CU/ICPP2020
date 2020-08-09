@@ -1,0 +1,10 @@
+==9848== NVPROF is profiling process 9848, command: ./corr1536 2>&1 > /dev/null
+==9848== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9848== Profiling application: ./corr1536 2>&1 > /dev/null
+==9848== Profiling result:
+==9848== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.087150%,0.087150%,0.087150%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.200653%,0.200653%,0.200653%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.001492%,0.001492%,0.001492%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.087314%,0.087314%,0.087314%

@@ -1,0 +1,11 @@
+==20513== NVPROF is profiling process 20513, command: ./shfl_scan 65536 2>&1 > /dev/null
+==20513== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20513== Profiling application: ./shfl_scan 65536 2>&1 > /dev/null
+==20513== Profiling result:
+==20513== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"gst_transactions_per_request","Global Store Transactions Per Request",15.000000,15.000000,15.000000
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"gst_transactions_per_request","Global Store Transactions Per Request",3.666667,4.000000,3.833333
+======== Error: Application returned non-zero code 1

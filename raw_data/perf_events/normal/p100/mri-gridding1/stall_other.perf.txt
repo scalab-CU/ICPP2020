@@ -1,0 +1,15 @@
+==2729== NVPROF is profiling process 2729, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==2729== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2729== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==2729== Profiling result:
+==2729== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"stall_other","Issue Stall Reasons (Other)",14.554080%,14.554080%,14.554080%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"stall_other","Issue Stall Reasons (Other)",62.624167%,63.223157%,63.008283%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"stall_other","Issue Stall Reasons (Other)",3.479591%,4.241724%,3.801453%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"stall_other","Issue Stall Reasons (Other)",3.101519%,8.392169%,4.000262%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"stall_other","Issue Stall Reasons (Other)",2.804161%,7.404482%,3.593438%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_other","Issue Stall Reasons (Other)",0.866663%,0.866663%,0.866663%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"stall_other","Issue Stall Reasons (Other)",13.079578%,13.079578%,13.079578%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"stall_other","Issue Stall Reasons (Other)",18.193084%,18.911967%,18.664092%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"stall_other","Issue Stall Reasons (Other)",13.146938%,42.414785%,17.314258%

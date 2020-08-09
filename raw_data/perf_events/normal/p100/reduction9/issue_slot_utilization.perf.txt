@@ -1,0 +1,7 @@
+==18626== NVPROF is profiling process 18626, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18626== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18626== Profiling result:
+==18626== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"issue_slot_utilization","Issue Slot Utilization",2.013311%,3.614098%,3.584961%
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"issue_slot_utilization","Issue Slot Utilization",21.546164%,38.519615%,30.038160%

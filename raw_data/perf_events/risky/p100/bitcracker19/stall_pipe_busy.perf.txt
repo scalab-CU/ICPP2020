@@ -1,0 +1,8 @@
+==5938== NVPROF is profiling process 5938, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==5938== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5938== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==5938== Profiling result:
+==5938== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",15.024008%,15.024008%,15.024008%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.511414%,0.511414%,0.511414%

@@ -1,0 +1,9 @@
+==16651== NVPROF is profiling process 16651, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==16651== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16651== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==16651== Profiling result:
+==16651== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"shared_efficiency","Shared Memory Efficiency",93.609771%,93.609771%,93.609771%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"shared_efficiency","Shared Memory Efficiency",88.201691%,88.248967%,88.225329%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"shared_efficiency","Shared Memory Efficiency",40.000000%,40.000000%,40.000000%

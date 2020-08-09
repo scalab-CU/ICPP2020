@@ -1,0 +1,15 @@
+==23022== NVPROF is profiling process 23022, command: ./kmeans -i ./data/1024000_34.txt
+==23022== Profiling application: ./kmeans -i ./data/1024000_34.txt
+==23022== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+3.330344,0.016449,,,,,,,,,,132.812500,7.884941,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+3.347313,0.004306,4096,1,1,256,1,1,17,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","invert_mapping(float*, float*, int, int) [112]"
+3.355625,0.000428,,,,,,,,,,3.906250,8.922288,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+3.356064,0.000001,,,,,,,,,,0.000648,0.549739,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+3.356138,0.001677,64,64,1,256,1,1,18,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","kmeansPoint(float*, int, int, int, int*, float*, float*, int*) [135]"
+3.357832,0.000426,,,,,,,,,,3.906250,8.948408,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+3.376201,0.000412,,,,,,,,,,3.906250,9.258367,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+3.376625,0.000001,,,,,,,,,,0.000648,0.549739,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+3.376691,0.001676,64,64,1,256,1,1,18,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","kmeansPoint(float*, int, int, int, int*, float*, float*, int*) [157]"
+3.378383,0.000409,,,,,,,,,,3.906250,9.315523,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

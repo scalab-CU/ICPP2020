@@ -1,0 +1,13 @@
+Opening file:matrix1.txt
+Matrix dimension: 1024x992
+Opening file:matrix1t.txt
+Matrix dimension: 992x1024
+==3843== NVPROF is profiling process 3843, command: ./sgemm matrix1.txt matrix1t.txt out.txt 2>&1 > /dev/null
+==3843== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Opening file:out.txt for write.
+Matrix dimension: 1024x992
+==3843== Profiling application: ./sgemm matrix1.txt matrix1t.txt out.txt 2>&1 > /dev/null
+==3843== Profiling result:
+==3843== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mysgemmNT(float const *, int, float const *, int, float*, int, int, float, float)",1,"local_load_transactions_per_request","Local Memory Load Transactions Per Request",0.000000,0.000000,0.000000

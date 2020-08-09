@@ -1,0 +1,10 @@
+==3388== NVPROF is profiling process 3388, command: ./histogram 160 2>&1 > /dev/null
+==3388== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3388== Profiling application: ./histogram 160 2>&1 > /dev/null
+==3388== Profiling result:
+==3388== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_write_throughput","Device Memory Write Throughput",8.354184GB/s,15.888864GB/s,12.992406GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_write_throughput","Device Memory Write Throughput",36.680039GB/s,39.921867GB/s,38.222276GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_write_throughput","Device Memory Write Throughput",26.399106GB/s,32.336921GB/s,31.214561GB/s
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_write_throughput","Device Memory Write Throughput",8.779434GB/s,30.382583GB/s,23.077623GB/s

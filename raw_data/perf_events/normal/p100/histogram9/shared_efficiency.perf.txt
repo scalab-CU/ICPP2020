@@ -1,0 +1,10 @@
+==20440== NVPROF is profiling process 20440, command: ./histogram 180 2>&1 > /dev/null
+==20440== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20440== Profiling application: ./histogram 180 2>&1 > /dev/null
+==20440== Profiling result:
+==20440== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",0.055252%,0.055252%,0.055252%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",70.972222%,70.972222%,70.972222%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",70.972222%,70.972222%,70.972222%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"shared_efficiency","Shared Memory Efficiency",13.768273%,13.768273%,13.768273%

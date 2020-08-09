@@ -1,0 +1,7 @@
+==24002== NVPROF is profiling process 24002, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==24002== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24002== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==24002== Profiling result:
+==24002== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",24.289267%,24.406690%,24.344753%

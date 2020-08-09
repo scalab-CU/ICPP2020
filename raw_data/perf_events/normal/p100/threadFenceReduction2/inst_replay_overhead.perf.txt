@@ -1,0 +1,7 @@
+==30638== NVPROF is profiling process 30638, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==30638== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==30638== Profiling result:
+==30638== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000175,0.000175,0.000175
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"inst_replay_overhead","Instruction Replay Overhead",0.000170,0.000233,0.000194

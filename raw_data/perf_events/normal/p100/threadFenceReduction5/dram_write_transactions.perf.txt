@@ -1,0 +1,8 @@
+==8900== NVPROF is profiling process 8900, command: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==8900== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8900== Profiling application: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==8900== Profiling result:
+==8900== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"dram_write_transactions","Device Memory Write Transactions",44356,44356,44356
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"dram_write_transactions","Device Memory Write Transactions",551673,556878,553950

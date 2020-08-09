@@ -1,0 +1,8 @@
+==10035== NVPROF is profiling process 10035, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==10035== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==10035== Profiling result:
+==10035== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.006060,0.006066,0.006062
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"inst_replay_overhead","Instruction Replay Overhead",0.001992,0.004016,0.003037
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.002377,0.002377,0.002377

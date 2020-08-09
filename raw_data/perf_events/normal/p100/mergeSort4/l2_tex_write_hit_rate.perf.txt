@@ -1,0 +1,10 @@
+==20737== NVPROF is profiling process 20737, command: ./mergeSort 4 2>&1 > /dev/null
+==20737== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20737== Profiling application: ./mergeSort 4 2>&1 > /dev/null
+==20737== Profiling result:
+==20737== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,68.284295%,56.639898%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,25.000000%,4.166667%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",45.001767%,47.858523%,45.733274%

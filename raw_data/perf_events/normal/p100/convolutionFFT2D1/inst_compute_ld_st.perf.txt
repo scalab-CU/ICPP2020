@@ -1,0 +1,16 @@
+==32722== NVPROF is profiling process 32722, command: ./convolutionFFT2D 1000 2>&1 > /dev/null
+==32722== Profiling application: ./convolutionFFT2D 1000 2>&1 > /dev/null
+==32722== Profiling result:
+==32722== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=8, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"inst_compute_ld_st","Load/Store Instructions",5308416,5308416,5308416
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_compute_ld_st","Load/Store Instructions",1048584,1048584,1048584
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_compute_ld_st","Load/Store Instructions",84,84,84
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_compute_ld_st","Load/Store Instructions",1048584,1048584,1048584
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_compute_ld_st","Load/Store Instructions",1575936,1622016,1598976
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_compute_ld_st","Load/Store Instructions",2097152,2097152,2097152
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"inst_compute_ld_st","Load/Store Instructions",1052672,1052672,1052672
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=512, unsigned int=1, unsigned int=8, unsigned int=16, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"inst_compute_ld_st","Load/Store Instructions",4587520,4587520,4587520
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_compute_ld_st","Load/Store Instructions",1572876,1572876,1572876
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"inst_compute_ld_st","Load/Store Instructions",1051648,1051648,1051648
+======== Error: Application returned non-zero code 1

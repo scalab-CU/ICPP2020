@@ -1,0 +1,8 @@
+==7790== NVPROF is profiling process 7790, command: ./recursiveGaussian -image=./data/ref_10.ppm 2>&1 > /dev/null
+==7790== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7790== Profiling application: ./recursiveGaussian -image=./data/ref_10.ppm 2>&1 > /dev/null
+==7790== Profiling result:
+==7790== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",16.403036%,17.966245%,17.261427%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.446481%,7.671639%,4.725660%

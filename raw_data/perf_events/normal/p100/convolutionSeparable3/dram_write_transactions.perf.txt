@@ -1,0 +1,8 @@
+==30973== NVPROF is profiling process 30973, command: ./convolutionSeparable 5120 2>&1 > /dev/null
+==30973== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30973== Profiling application: ./convolutionSeparable 5120 2>&1 > /dev/null
+==30973== Profiling result:
+==30973== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"dram_write_transactions","Device Memory Write Transactions",3711982,3715031,3713266
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"dram_write_transactions","Device Memory Write Transactions",3277684,3671328,3647376

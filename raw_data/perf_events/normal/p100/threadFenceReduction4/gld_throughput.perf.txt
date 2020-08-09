@@ -1,0 +1,8 @@
+==7245== NVPROF is profiling process 7245, command: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==7245== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7245== Profiling application: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==7245== Profiling result:
+==7245== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"gld_throughput","Global Load Throughput",216.958965GB/s,216.958965GB/s,216.958965GB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"gld_throughput","Global Load Throughput",211.163560GB/s,213.033250GB/s,212.120543GB/s

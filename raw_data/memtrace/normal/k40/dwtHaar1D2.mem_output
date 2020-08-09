@@ -1,0 +1,12 @@
+==12310== NVPROF is profiling process 12310, command: ./dwtHaar1D --signal=./data/signal_2_14.dat --result=tmp.dat --gold=regression_2_14.gold.dat
+==12310== Profiling application: ./dwtHaar1D --signal=./data/signal_2_14.dat --result=tmp.dat --gold=regression_2_14.gold.dat
+==12310== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,KB,KB,GB/s,,,,,,
+0.338036,0.000012,,,,,,,,,,64.000000,5.072736,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.338075,0.000003,16,1,1,512,1,1,8,0,0.000000,,,,,"Tesla K40m (0)","1","7","initValue(float*, float) [115]"
+0.338088,0.000007,16,1,1,512,1,1,17,0,4.250000,,,,,"Tesla K40m (0)","1","7","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int) [123]"
+0.338104,0.000002,,,,,,,,,,0.062500,0.028222,"Device","Device","Tesla K40m (0)","1","7","[CUDA memcpy DtoD]"
+0.338114,0.000004,1,1,1,8,1,1,17,0,0.066406,,,,,"Tesla K40m (0)","1","7","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int) [132]"
+0.338125,0.000002,,,,,,,,,,0.003906,0.002117,"Device","Device","Tesla K40m (0)","1","7","[CUDA memcpy DtoD]"
+0.338134,0.000008,,,,,,,,,,64.000000,7.660035,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

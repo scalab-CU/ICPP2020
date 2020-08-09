@@ -1,0 +1,10 @@
+==1733== NVPROF is profiling process 1733, command: ./corr3600 2>&1 > /dev/null
+==1733== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1733== Profiling application: ./corr3600 2>&1 > /dev/null
+==1733== Profiling result:
+==1733== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.049161%,0.049161%,0.049161%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.081623%,0.081623%,0.081623%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.001276%,0.001276%,0.001276%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.035959%,0.035959%,0.035959%

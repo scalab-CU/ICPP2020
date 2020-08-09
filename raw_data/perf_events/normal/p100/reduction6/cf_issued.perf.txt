@@ -1,0 +1,7 @@
+==5661== NVPROF is profiling process 5661, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==5661== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==5661== Profiling result:
+==5661== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"cf_issued","Issued Control-Flow Instructions",3328,1703936,857862
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"cf_issued","Issued Control-Flow Instructions",17,17,17

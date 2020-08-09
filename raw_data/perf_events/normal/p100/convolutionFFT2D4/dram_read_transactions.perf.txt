@@ -1,0 +1,17 @@
+==32756== NVPROF is profiling process 32756, command: ./convolutionFFT2D 4000 2>&1 > /dev/null
+==32756== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32756== Profiling application: ./convolutionFFT2D 4000 2>&1 > /dev/null
+==32756== Profiling result:
+==32756== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"dram_read_transactions","Device Memory Read Transactions",2120988,2120988,2120988
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"dram_read_transactions","Device Memory Read Transactions",26,40,35
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"dram_read_transactions","Device Memory Read Transactions",2122419,2122960,2122689
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"dram_read_transactions","Device Memory Read Transactions",4196389,4227101,4211745
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"dram_read_transactions","Device Memory Read Transactions",2000540,2000637,2000604
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"dram_read_transactions","Device Memory Read Transactions",2142107,2142107,2142107
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"dram_read_transactions","Device Memory Read Transactions",4200034,4200034,4200034
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"dram_read_transactions","Device Memory Read Transactions",2148192,2149566,2148879
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",18,"dram_read_transactions","Device Memory Read Transactions",2097165,2199032,2111766
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=2048, unsigned int=1, unsigned int=16, unsigned int=2, unsigned int=0, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"dram_read_transactions","Device Memory Read Transactions",2097237,2097433,2097306
+======== Error: Application returned non-zero code 1

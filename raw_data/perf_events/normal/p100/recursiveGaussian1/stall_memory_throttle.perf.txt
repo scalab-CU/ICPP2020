@@ -1,0 +1,8 @@
+==2272== NVPROF is profiling process 2272, command: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==2272== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2272== Profiling application: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==2272== Profiling result:
+==2272== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000062%,0.000066%,0.000064%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.373903%,0.572458%,0.499759%

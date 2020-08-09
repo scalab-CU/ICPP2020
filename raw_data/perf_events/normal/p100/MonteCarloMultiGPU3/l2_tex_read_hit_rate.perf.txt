@@ -1,0 +1,8 @@
+==24926== NVPROF is profiling process 24926, command: ./MonteCarloMultiGPU -size=60 2>&1 > /dev/null
+==24926== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24926== Profiling application: ./MonteCarloMultiGPU -size=60 2>&1 > /dev/null
+==24926== Profiling result:
+==24926== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",97.944603%,97.944603%,97.944603%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",0.331629%,0.331629%,0.331629%

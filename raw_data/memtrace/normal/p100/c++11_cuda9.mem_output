@@ -1,0 +1,10 @@
+==9754== NVPROF is profiling process 9754, command: ./c++11_cuda sample8.txt
+==9754== Profiling application: ./c++11_cuda sample8.txt
+==9754== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.401085,0.000279,,,,,,,,,,3.074172,10.758902,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.401475,0.000002,,,,,,,,,,0.000004,0.002328,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.401511,0.000868,8,1,1,256,1,1,8,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","xyzw_frequency(int*, char*, int) [116]"
+0.402380,0.136966,1,1,1,1,1,1,12,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","xyzw_frequency_thrust_device(int*, char*, int) [121]"
+0.539352,0.000002,,,,,,,,,,0.000004,0.002328,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

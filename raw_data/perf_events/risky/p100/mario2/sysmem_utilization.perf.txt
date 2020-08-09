@@ -1,0 +1,11 @@
+Loading words from stdin ...
+Loaded 500 words.
+
+==28524== NVPROF is profiling process 28524, command: ././cuda_md5 500 "I am so stupid" 2>&1 > /dev/null
+==28524== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+GPU MD5 time : 1962.99ms
+==28524== Profiling application: ././cuda_md5 500 "I am so stupid" 2>&1 > /dev/null
+==28524== Profiling result:
+==28524== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","md5_calc(unsigned int*, unsigned int*, int)",1000,"sysmem_utilization","System Memory Utilization","Low (1)","Low (1)","Low (1)"

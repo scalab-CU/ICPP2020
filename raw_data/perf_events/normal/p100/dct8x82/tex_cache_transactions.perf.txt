@@ -1,0 +1,13 @@
+==32275== NVPROF is profiling process 32275, command: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==32275== Profiling application: ./dct8x8 sample1.bmp 2>&1 > /dev/null
+==32275== Profiling result:
+==32275== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"tex_cache_transactions","Unified Cache Transactions",518400,518400,518400
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"tex_cache_transactions","Unified Cache Transactions",259200,259200,259200
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"tex_cache_transactions","Unified Cache Transactions",257280,257280,257280
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"tex_cache_transactions","Unified Cache Transactions",257280,257280,257280
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"tex_cache_transactions","Unified Cache Transactions",518400,518400,518400
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"tex_cache_transactions","Unified Cache Transactions",126720,126720,126720
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"tex_cache_transactions","Unified Cache Transactions",259200,259200,259200
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"tex_cache_transactions","Unified Cache Transactions",126720,126720,126720

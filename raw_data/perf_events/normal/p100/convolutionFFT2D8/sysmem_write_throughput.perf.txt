@@ -1,0 +1,17 @@
+==11256== NVPROF is profiling process 11256, command: ./convolutionFFT2D 8000
+==11256== Profiling application: ./convolutionFFT2D 8000
+==11256== Profiling result:
+==11256== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"sysmem_write_throughput","System Memory Write Throughput",111.621094KB/s,111.621094KB/s,111.620117KB/s
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",31.165827MB/s,42.197978MB/s,36.492411MB/s
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"sysmem_write_throughput","System Memory Write Throughput",109.884766KB/s,110.259766KB/s,110.071289KB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"sysmem_write_throughput","System Memory Write Throughput",109.449219KB/s,115.841797KB/s,114.183594KB/s
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"sysmem_write_throughput","System Memory Write Throughput",82.091797KB/s,82.306641KB/s,82.198242KB/s
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"sysmem_write_throughput","System Memory Write Throughput",121.117188KB/s,121.352539KB/s,121.256836KB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"sysmem_write_throughput","System Memory Write Throughput",111.922852KB/s,111.922852KB/s,111.921875KB/s
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"sysmem_write_throughput","System Memory Write Throughput",77.687500KB/s,77.687500KB/s,77.686523KB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"sysmem_write_throughput","System Memory Write Throughput",111.256836KB/s,111.488281KB/s,111.372070KB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"sysmem_write_throughput","System Memory Write Throughput",99.505859KB/s,116.460938KB/s,111.901367KB/s
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"sysmem_write_throughput","System Memory Write Throughput",115.970703KB/s,117.127930KB/s,116.759766KB/s
+======== Error: Application returned non-zero code 1

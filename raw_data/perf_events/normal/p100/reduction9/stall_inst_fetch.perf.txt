@@ -1,0 +1,8 @@
+==18459== NVPROF is profiling process 18459, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18459== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==18459== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18459== Profiling result:
+==18459== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",5.417143%,53.101093%,6.761930%
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.962862%,3.883631%,2.696786%

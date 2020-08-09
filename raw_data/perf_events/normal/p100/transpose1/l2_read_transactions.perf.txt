@@ -1,0 +1,13 @@
+==25972== NVPROF is profiling process 25972, command: ./transpose -dimX=1024 -dimY=1024 2>&1 > /dev/null
+==25972== Profiling application: ./transpose -dimX=1024 -dimY=1024 2>&1 > /dev/null
+==25972== Profiling result:
+==25972== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131360,131170
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131360,131169
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131360,131171
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131360,131171
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131552,131171
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131368,131169
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131472,131172
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"l2_read_transactions","L2 Read Transactions",131168,131360,131169

@@ -1,0 +1,19 @@
+==330784== NVPROF is profiling process 330784, command: ./shfl_scan 200000 2>&1 > /dev/null
+==330784== Profiling application: ./shfl_scan 200000 2>&1 > /dev/null
+==330784== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.481752,0.000002,,,,,,,,,,0.002979,1.683710,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.482604,0.000068,,,,,,,,,,0.762939,10.998303,"Pinned","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.482717,0.000006,781,1,1,256,1,1,19,0.000000,32,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.482727,0.000002,4,1,1,256,1,1,19,0.000000,32,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.482735,0.000003,780,1,1,256,1,1,16,0.015625,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.482754,0.000062,,,,,,,,,,0.762939,12.089015,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.482827,0.000002,,,,,,,,,,0.002979,1.748469,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.486727,0.000001,,,,,,,,,,7.910156,6189.713111,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.486742,0.000001,,,,,,,,,,7.910156,7315.115495,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.486758,0.000021,1080,1,1,120,1,1,37,0.500000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.486800,0.000631,,,,,,,,,,7.910156,12.234611,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.488488,0.000101,60,1,1,32,8,1,29,1.125000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.488607,0.000644,,,,,,,,,,7.910156,12.002837,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

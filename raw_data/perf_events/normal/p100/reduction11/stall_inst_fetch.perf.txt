@@ -1,0 +1,8 @@
+==19193== NVPROF is profiling process 19193, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==19193== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19193== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==19193== Profiling result:
+==19193== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.179572%,2.377760%,2.350505%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",6.199021%,7.552448%,6.901725%

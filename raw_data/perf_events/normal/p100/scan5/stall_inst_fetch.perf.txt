@@ -1,0 +1,9 @@
+==5733== NVPROF is profiling process 5733, command: ./scan 32 2>&1 > /dev/null
+==5733== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5733== Profiling application: ./scan 32 2>&1 > /dev/null
+==5733== Profiling result:
+==5733== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.409513%,7.702288%,1.029069%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.241505%,1.908202%,1.320616%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.373999%,0.539218%,0.383475%

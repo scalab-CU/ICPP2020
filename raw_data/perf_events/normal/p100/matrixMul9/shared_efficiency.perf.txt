@@ -1,0 +1,8 @@
+==21182== NVPROF is profiling process 21182, command: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==21182== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21182== Execution timeout, stopping the application...
+==21182== Profiling application: ./matrixMul -wA=8192 -hA=8192 -wB=8192 -hB=8192 2>&1 > /dev/null
+==21182== Profiling result:
+==21182== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",23,"shared_efficiency","Shared Memory Efficiency",132.000000%,132.000000%,132.000000%

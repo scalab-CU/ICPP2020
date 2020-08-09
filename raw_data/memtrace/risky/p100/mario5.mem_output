@@ -1,0 +1,23 @@
+Loading words from stdin ...
+Loaded 2 words.
+
+==32156== NVPROF is profiling process 32156, command: ././cuda_md5 2>&1 > /dev/null
+GPU MD5 time : 0.0148128ms
+==32156== Profiling application: ././cuda_md5 2>&1 > /dev/null
+==32156== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,KB,B,MB/s,,,,,,
+0.326701,0.000002,,,,,,,,,,256,162.327542,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326711,0.000001,,,,,,,,,,64,57.798443,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326932,0.000001,,,,,,,,,,128,88.713889,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326994,0.000005,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [114]"
+0.327026,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [127]"
+0.327051,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [140]"
+0.327074,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [153]"
+0.327097,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [166]"
+0.327119,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [179]"
+0.327142,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [192]"
+0.327164,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [205]"
+0.327186,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [218]"
+0.327208,0.000003,1,1,1,100,1,1,29,0,6.250000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","md5_calc(unsigned int*, unsigned int*, int) [231]"
+0.327229,0.000001,,,,,,,,,,32,23.260348,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

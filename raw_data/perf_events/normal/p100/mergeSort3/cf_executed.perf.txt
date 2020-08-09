@@ -1,0 +1,9 @@
+==6200== NVPROF is profiling process 6200, command: ./mergeSort 3 2>&1 > /dev/null
+==6200== Profiling application: ./mergeSort 3 2>&1 > /dev/null
+==6200== Profiling result:
+==6200== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"cf_executed","Executed Control-Flow Instructions",6912,15616,10752
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"cf_executed","Executed Control-Flow Instructions",12288,20992,15978
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"cf_executed","Executed Control-Flow Instructions",6979584,6979584,6979584
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"cf_executed","Executed Control-Flow Instructions",1209760,1815212,1762601

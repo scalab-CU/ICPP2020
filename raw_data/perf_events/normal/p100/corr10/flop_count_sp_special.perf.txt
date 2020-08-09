@@ -1,0 +1,10 @@
+==13007== NVPROF is profiling process 13007, command: ./corr4096 2>&1 > /dev/null
+==13007== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13007== Profiling application: ./corr4096 2>&1 > /dev/null
+==13007== Profiling result:
+==13007== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",4096,4096,4096
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",16777216,16777216,16777216
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"flop_count_sp_special","Floating Point Operations(Single Precision Special)",0,0,0

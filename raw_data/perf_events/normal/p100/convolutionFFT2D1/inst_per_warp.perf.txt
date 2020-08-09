@@ -1,0 +1,16 @@
+==27097== NVPROF is profiling process 27097, command: ./convolutionFFT2D 1000
+==27097== Profiling application: ./convolutionFFT2D 1000
+==27097== Profiling result:
+==27097== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=8, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"inst_per_warp","Instructions per warp",1102.000000,1102.000000,1102.000000
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_per_warp","Instructions per warp",91.317017,91.317017,91.317017
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_per_warp","Instructions per warp",31.500000,31.500000,31.500000
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_per_warp","Instructions per warp",93.442261,93.442261,93.442261
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_per_warp","Instructions per warp",26.000000,26.000000,26.000000
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_per_warp","Instructions per warp",41.000000,41.000000,41.000000
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"inst_per_warp","Instructions per warp",159.750000,159.750000,159.750000
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=512, unsigned int=1, unsigned int=8, unsigned int=16, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"inst_per_warp","Instructions per warp",441.000000,441.000000,441.000000
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_per_warp","Instructions per warp",120.008057,120.008057,120.008057
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"inst_per_warp","Instructions per warp",157.375000,157.375000,157.375000
+======== Error: Application returned non-zero code 1

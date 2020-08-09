@@ -1,0 +1,14 @@
+==28794== NVPROF is profiling process 28794, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==28794== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==28794== Profiling result:
+==28794== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"sm_efficiency","Multiprocessor Activity",97.841101%,97.841101%,97.841101%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"sm_efficiency","Multiprocessor Activity",97.185752%,98.340281%,98.041829%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"sm_efficiency","Multiprocessor Activity",21.302654%,98.521192%,32.238829%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"sm_efficiency","Multiprocessor Activity",0.658169%,50.002854%,6.181245%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"sm_efficiency","Multiprocessor Activity",0.697127%,48.420698%,6.037212%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"sm_efficiency","Multiprocessor Activity",98.364788%,98.364788%,98.364788%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"sm_efficiency","Multiprocessor Activity",99.891519%,99.891519%,99.891519%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"sm_efficiency","Multiprocessor Activity",97.423855%,97.822529%,97.708879%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"sm_efficiency","Multiprocessor Activity",46.222328%,99.352787%,53.685560%

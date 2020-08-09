@@ -1,0 +1,7 @@
+==10869== NVPROF is profiling process 10869, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==10869== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10869== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==10869== Profiling result:
+==10869== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"dram_read_throughput","Device Memory Read Throughput",140.581539GB/s,141.870484GB/s,141.505746GB/s

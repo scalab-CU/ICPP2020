@@ -1,0 +1,8 @@
+==6560== NVPROF is profiling process 6560, command: ./quasirandomGenerator 5 2>&1 > /dev/null
+==6560== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6560== Profiling application: ./quasirandomGenerator 5 2>&1 > /dev/null
+==6560== Profiling result:
+==6560== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",12,60,16
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",16,50,18

@@ -1,0 +1,19 @@
+==64671== NVPROF is profiling process 64671, command: ./shfl_scan 800000
+==64671== Profiling application: ./shfl_scan 800000
+==64671== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.321755,0.000004,,,,,,,,,,0.011921,2.694799,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.322429,0.000536,,,,,,,,,,3.051758,5.560415,"Pinned","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.323029,0.000085,3125,1,1,256,1,1,15,0.000000,32,,,,,"Tesla K40m (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.323118,0.000004,13,1,1,256,1,1,15,0.000000,32,,,,,"Tesla K40m (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.323126,0.000050,3124,1,1,256,1,1,8,0.015625,0,,,,,"Tesla K40m (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.323201,0.000491,,,,,,,,,,3.051758,6.068372,"Device","Pinned","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.323710,0.000003,,,,,,,,,,0.011921,3.368499,"Device","Pinned","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.329090,0.000001,,,,,,,,,,7.910156,5364.418030,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.329137,0.000001,,,,,,,,,,7.910156,9284.569667,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.329184,0.000060,1080,1,1,120,1,1,32,0.500000,0,,,,,"Tesla K40m (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.329268,0.001248,,,,,,,,,,7.910156,6.190298,"Device","Pinned","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.331241,0.000191,60,1,1,32,8,1,21,1.125000,0,,,,,"Tesla K40m (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.331455,0.001275,,,,,,,,,,7.910156,6.058247,"Device","Pinned","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

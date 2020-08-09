@@ -1,0 +1,8 @@
+==12702== NVPROF is profiling process 12702, command: ./convolutionSeparable 8192 2>&1 > /dev/null
+==12702== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12702== Profiling application: ./convolutionSeparable 8192 2>&1 > /dev/null
+==12702== Profiling result:
+==12702== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",8.823080%,10.124080%,9.356150%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_sync","Issue Stall Reasons (Synchronization)",16.214141%,19.328541%,16.878777%

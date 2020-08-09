@@ -1,0 +1,14 @@
+==395== NVPROF is profiling process 395, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==395== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==395== Profiling result:
+==395== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"issue_slot_utilization","Issue Slot Utilization",7.138459%,7.138459%,7.138459%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"issue_slot_utilization","Issue Slot Utilization",52.292221%,52.386966%,52.345687%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"issue_slot_utilization","Issue Slot Utilization",10.329442%,18.611351%,13.157966%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"issue_slot_utilization","Issue Slot Utilization",4.888152%,27.337209%,9.257382%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"issue_slot_utilization","Issue Slot Utilization",4.415524%,32.584521%,9.610835%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"issue_slot_utilization","Issue Slot Utilization",8.728640%,8.728640%,8.728640%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"issue_slot_utilization","Issue Slot Utilization",68.722325%,68.722325%,68.722325%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"issue_slot_utilization","Issue Slot Utilization",46.492938%,47.338655%,47.017776%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"issue_slot_utilization","Issue Slot Utilization",25.319974%,55.260768%,30.870264%

@@ -1,0 +1,15 @@
+==27413== NVPROF is profiling process 27413, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==27413== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27413== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==27413== Profiling result:
+==27413== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,71.634615%,47.336056%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",5.723077%,44.214286%,39.542945%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,66.666667%,51.449275%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",47.739602%,63.362069%,57.611956%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",52.740741%,81.481481%,66.665578%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",50.000000%,83.333333%,53.034420%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",87.046632%,94.763092%,91.024651%

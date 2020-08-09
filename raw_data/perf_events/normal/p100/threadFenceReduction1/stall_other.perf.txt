@@ -1,0 +1,8 @@
+==7913== NVPROF is profiling process 7913, command: ./threadFenceReduction -n=16777216 2>&1 > /dev/null
+==7913== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7913== Profiling application: ./threadFenceReduction -n=16777216 2>&1 > /dev/null
+==7913== Profiling result:
+==7913== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"stall_other","Issue Stall Reasons (Other)",1.505325%,1.505325%,1.505325%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"stall_other","Issue Stall Reasons (Other)",1.498924%,1.523067%,1.509090%

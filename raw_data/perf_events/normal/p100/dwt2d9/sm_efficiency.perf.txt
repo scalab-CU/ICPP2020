@@ -1,0 +1,9 @@
+==11115== NVPROF is profiling process 11115, command: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==11115== Profiling application: ./dwt2d sample7.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==11115== Profiling result:
+==11115== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",58.463195%,67.540922%,61.537985%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",75.821397%,78.831550%,76.892387%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",47.838917%,69.255280%,55.222726%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"sm_efficiency","Multiprocessor Activity",90.136986%,90.136986%,90.136986%

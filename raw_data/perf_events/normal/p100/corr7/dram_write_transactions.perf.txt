@@ -1,0 +1,10 @@
+==21821== NVPROF is profiling process 21821, command: ./corr3200 2>&1 > /dev/null
+==21821== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21821== Profiling application: ./corr3200 2>&1 > /dev/null
+==21821== Profiling result:
+==21821== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",155204,155204,155204
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",1378236,1378236,1378236
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",7264301,7264301,7264301
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",43987,43987,43987

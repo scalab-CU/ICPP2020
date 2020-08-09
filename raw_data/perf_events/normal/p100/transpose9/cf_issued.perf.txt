@@ -1,0 +1,13 @@
+==29324== NVPROF is profiling process 29324, command: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==29324== Profiling application: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==29324== Profiling result:
+==29324== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",6000000,6000000,6000000
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",4000000,4000000,4000000
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"cf_issued","Issued Control-Flow Instructions",2000000,2000000,2000000

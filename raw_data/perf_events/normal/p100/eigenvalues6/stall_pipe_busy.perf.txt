@@ -1,0 +1,9 @@
+==8623== NVPROF is profiling process 8623, command: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==8623== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8623== Profiling application: ./eigenvalues --matrix-size=6400 2>&1 > /dev/null
+==8623== Profiling result:
+==8623== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.120769%,0.120961%,0.120863%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.067070%,0.068629%,0.067968%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.022967%,0.022989%,0.022981%

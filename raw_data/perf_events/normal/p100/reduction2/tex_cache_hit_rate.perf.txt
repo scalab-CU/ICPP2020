@@ -1,0 +1,8 @@
+==27083== NVPROF is profiling process 27083, command: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==27083== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27083== Profiling application: ./reduction -n=16777216 -type=float 2>&1 > /dev/null
+==27083== Profiling result:
+==27083== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"tex_cache_hit_rate","Unified Cache Hit Rate",49.999237%,49.999237%,49.999237%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"tex_cache_hit_rate","Unified Cache Hit Rate",47.058824%,47.058824%,47.058824%

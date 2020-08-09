@@ -1,0 +1,14 @@
+==7287== NVPROF is profiling process 7287, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==7287== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==7287== Profiling result:
+==7287== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"issue_slot_utilization","Issue Slot Utilization",16.103763%,17.622260%,17.321690%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"issue_slot_utilization","Issue Slot Utilization",6.450266%,22.840194%,19.573167%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"issue_slot_utilization","Issue Slot Utilization",13.242610%,16.188947%,15.169278%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"issue_slot_utilization","Issue Slot Utilization",6.393010%,34.402636%,13.169795%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"issue_slot_utilization","Issue Slot Utilization",6.815846%,18.235294%,15.071851%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"issue_slot_utilization","Issue Slot Utilization",6.008099%,21.875985%,19.919169%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"issue_slot_utilization","Issue Slot Utilization",4.521358%,13.169053%,8.566296%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"issue_slot_utilization","Issue Slot Utilization",7.051795%,20.413654%,17.008109%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"issue_slot_utilization","Issue Slot Utilization",19.231142%,23.874539%,22.559797%

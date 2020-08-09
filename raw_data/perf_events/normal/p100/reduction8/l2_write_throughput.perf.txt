@@ -1,0 +1,7 @@
+==1893== NVPROF is profiling process 1893, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==1893== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==1893== Profiling result:
+==1893== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"l2_write_throughput","L2 Throughput (Writes)",86.697664MB/s,124.779817MB/s,122.166726MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"l2_write_throughput","L2 Throughput (Writes)",867.535991MB/s,5.447957GB/s,5.372596GB/s

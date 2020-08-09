@@ -1,0 +1,15 @@
+==11895== NVPROF is profiling process 11895, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11895== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11895== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==11895== Profiling result:
+==11895== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gst_transactions_per_request","Global Store Transactions Per Request",11.999886,11.999886,11.999886
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gst_transactions_per_request","Global Store Transactions Per Request",15.999470,15.999470,15.999470
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,32.000000,10.666667
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gst_transactions_per_request","Global Store Transactions Per Request",3.999994,4.000000,3.999999
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,32.000000,10.666667
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gst_transactions_per_request","Global Store Transactions Per Request",3.999964,3.999964,3.999964
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gst_transactions_per_request","Global Store Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gst_transactions_per_request","Global Store Transactions Per Request",15.999478,15.999478,15.999478
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gst_transactions_per_request","Global Store Transactions Per Request",3.908072,3.908972,3.908184

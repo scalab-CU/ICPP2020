@@ -1,0 +1,9 @@
+==24231== NVPROF is profiling process 24231, command: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+Cuda error in file 'cuda_attack.cu' in line 234 : invalid argument.
+==24231== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin10NotCompatLong_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==24231== Profiling result:
+==24231== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000024,0.000024,0.000024
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000140,0.000140,0.000140
+======== Error: Application returned non-zero code 1

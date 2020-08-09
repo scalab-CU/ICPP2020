@@ -1,0 +1,13 @@
+==26017== NVPROF is profiling process 26017, command: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==26017== Profiling application: ./dct8x8 sample3.bmp 2>&1 > /dev/null
+==26017== Profiling result:
+==26017== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",33177600,33177600,33177600
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",14368592,14514542,14441567
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",7203840,7203840,7203840
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",7203840,7203840,7203840
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",33177600,33177600,33177600
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"flop_count_sp_fma","Floating Point Operations(Single Precision FMA)",0,0,0

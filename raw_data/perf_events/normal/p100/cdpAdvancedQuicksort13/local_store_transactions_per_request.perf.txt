@@ -1,0 +1,7 @@
+==5811== NVPROF is profiling process 5811, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=3000 2>&1 > /dev/null
+==5811== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5811== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=3000 2>&1 > /dev/null
+==5811== Profiling result:
+==5811== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",666,"local_store_transactions_per_request","Local Memory Store Transactions Per Request",3.376884,3.887102,3.805257

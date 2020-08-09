@@ -1,0 +1,9 @@
+==20113== NVPROF is profiling process 20113, command: ./mergeSort 1 2>&1 > /dev/null
+==20113== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==20113== Profiling result:
+==20113== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"l2_write_transactions","L2 Write Transactions",2061,2363,2169
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"l2_write_transactions","L2 Write Transactions",2064,2080,2073
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"l2_write_transactions","L2 Write Transactions",262216,262216,262216
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"l2_write_transactions","L2 Write Transactions",316691,319605,317675

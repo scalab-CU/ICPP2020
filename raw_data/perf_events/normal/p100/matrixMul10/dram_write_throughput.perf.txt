@@ -1,0 +1,7 @@
+==21297== NVPROF is profiling process 21297, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==21297== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21297== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==21297== Profiling result:
+==21297== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"dram_write_throughput","Device Memory Write Throughput",469.521303MB/s,0.994069GB/s,977.384997MB/s

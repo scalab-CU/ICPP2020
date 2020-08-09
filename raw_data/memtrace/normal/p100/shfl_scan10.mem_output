@@ -1,0 +1,19 @@
+==13302== NVPROF is profiling process 13302, command: ./shfl_scan 600000 2>&1 > /dev/null
+==13302== Profiling application: ./shfl_scan 600000 2>&1 > /dev/null
+==13302== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.333884,0.000002,,,,,,,,,,0.008938,3.588962,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.334928,0.000208,,,,,,,,,,2.288818,10.761033,"Pinned","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.335185,0.000026,2343,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.335212,0.000002,10,1,1,256,1,1,16,0.000000,32,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.335216,0.000010,2342,1,1,256,1,1,8,0.015625,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.335246,0.000196,,,,,,,,,,2.288818,11.417115,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.335456,0.000002,,,,,,,,,,0.008938,4.546018,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.341290,0.000001,,,,,,,,,,7.910156,5613.925845,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.341316,0.000001,,,,,,,,,,7.910156,8324.096943,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.341343,0.000033,1080,1,1,120,1,1,32,0.500000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.341414,0.000634,,,,,,,,,,7.910156,12.179672,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.343174,0.000137,60,1,1,32,8,1,21,1.125000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.343330,0.000634,,,,,,,,,,7.910156,12.185205,"Device","Pinned","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

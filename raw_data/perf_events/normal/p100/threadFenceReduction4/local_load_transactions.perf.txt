@@ -1,0 +1,7 @@
+==13914== NVPROF is profiling process 13914, command: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==13914== Profiling application: ./threadFenceReduction -n=30000000 2>&1 > /dev/null
+==13914== Profiling result:
+==13914== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"local_load_transactions","Local Load Transactions",0,0,0
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"local_load_transactions","Local Load Transactions",0,0,0

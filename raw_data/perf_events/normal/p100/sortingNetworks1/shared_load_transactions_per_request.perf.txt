@@ -1,0 +1,10 @@
+==5910== NVPROF is profiling process 5910, command: ./sortingNetworks 1 2>&1 > /dev/null
+==5910== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5910== Profiling application: ./sortingNetworks 1 2>&1 > /dev/null
+==5910== Profiling result:
+==5910== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.704967,1.880882,1.790482
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.390950,1.456079,1.433251
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.675713,1.675713,1.675713
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000

@@ -1,0 +1,33 @@
+==16703== NVPROF is profiling process 16703, command: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==16703== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16703== Profiling application: ./bin/CoMD-cuda -e -x 40 -y 40 -z 40 2>&1 > /dev/null
+==16703== Profiling result:
+==16703== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.190970%,1.164082%,0.323881%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.528513%,0.562010%,0.547103%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.667446%,2.851804%,1.877462%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.422185%,0.478432%,0.450499%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.498774%,4.498774%,4.498774%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.430918%,26.386293%,5.666466%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.706651%,26.726503%,6.436078%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.025262%,16.890597%,3.462730%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.708267%,59.568310%,4.574809%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.276036%,0.540897%,0.341649%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.909729%,19.359923%,4.905583%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.226217%,8.102304%,5.176571%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.476980%,43.674236%,3.454080%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",4.679803%,72.627570%,9.234719%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.906137%,4.408477%,2.907281%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.685493%,47.662891%,3.532804%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",10.552605%,42.542218%,14.032298%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.311300%,65.547099%,10.640366%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.570873%,0.836933%,0.625790%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.940862%,5.501115%,3.284884%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.777503%,4.996429%,2.138524%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.963968%,3.091311%,1.275455%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.186443%,50.181242%,7.933065%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.325560%,70.216777%,10.368940%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.103474%,0.326497%,0.142092%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.612402%,2.049414%,0.873104%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.170453%,18.661076%,2.131361%

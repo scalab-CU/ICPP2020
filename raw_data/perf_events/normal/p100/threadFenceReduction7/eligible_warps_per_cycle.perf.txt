@@ -1,0 +1,7 @@
+==24888== NVPROF is profiling process 24888, command: ./threadFenceReduction -n=35000000 2>&1 > /dev/null
+==24888== Profiling application: ./threadFenceReduction -n=35000000 2>&1 > /dev/null
+==24888== Profiling result:
+==24888== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.101809,0.101809,0.101809
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.092809,0.093419,0.093109

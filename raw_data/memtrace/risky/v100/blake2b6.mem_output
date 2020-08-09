@@ -1,0 +1,12 @@
+==218035== NVPROF is profiling process 218035, command: ././blake2b "for example: ./gpu_b2b_sum The quick brown fox jumps over the lazy dog 25"
+==218035== Profiling application: ././blake2b "for example: ./gpu_b2b_sum The quick brown fox jumps over the lazy dog 25"
+==218035== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,
+0.474253,0.000001,,,,,,,,,,64,56.098489,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.474263,0.000001,,,,,,,,,,192,163.487025,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.474271,0.000001,,,,,,,,,,104,86.095597,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.474457,0.000001,,,,,,,,,,64,45.413062,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.474468,0.000001,,,,,,,,,,128,108.991350,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.474501,0.000008,1,1,1,4,1,1,32,128,128,,,,,"Tesla V100-PCIE-16GB (0)","1","7","iter_compressor(unsigned long const *, unsigned long, unsigned char*, short) [115]"
+0.474512,0.000002,,,,,,,,,,64,35.987710,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

@@ -1,0 +1,10 @@
+==23017== NVPROF is profiling process 23017, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==23017== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+WARNING: During USER PASSWORD attack, only passwords between 8 and 55 character are considered. Passwords like 123456
+ will be ignored.
+==23017== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_user_password.txt -d ./Dictionary/10-million-password-list-top-100000.txt -t 1 -b 256 -g 0 -u
+==23017== Profiling result:
+==23017== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"dram_read_throughput","Device Memory Read Throughput",5.936205GB/s,5.936205GB/s,5.936205GB/s
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_read_throughput","Device Memory Read Throughput",32.116041GB/s,32.116041GB/s,32.116041GB/s

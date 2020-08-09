@@ -1,0 +1,14 @@
+==19415== NVPROF is profiling process 19415, command: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==19415== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19415== Profiling application: ./transpose -dimX=4000 -dimY=4000 2>&1 > /dev/null
+==19415== Profiling result:
+==19415== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (8)","High (8)","High (8)"
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (8)","High (8)","High (8)"
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (7)","High (7)","High (7)"
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (7)","High (7)","High (7)"
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","Mid (5)","Mid (5)","Mid (5)"
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (8)","High (8)","High (8)"
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"dram_utilization","Device Memory Utilization","High (7)","High (7)","High (7)"

@@ -1,0 +1,33 @@
+==28085== NVPROF is profiling process 28085, command: ./bin/CoMD-cuda -e -x 48 -y 48 -z 48 2>&1 > /dev/null
+==28085== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==28085== Profiling application: ./bin/CoMD-cuda -e -x 48 -y 48 -z 48 2>&1 > /dev/null
+==28085== Profiling result:
+==28085== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"dram_read_throughput","Device Memory Read Throughput",188.271660GB/s,210.711546GB/s,192.505585GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"dram_read_throughput","Device Memory Read Throughput",223.742079GB/s,233.173932GB/s,226.344600GB/s
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"dram_read_throughput","Device Memory Read Throughput",229.405808GB/s,253.849906GB/s,235.882342GB/s
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"dram_read_throughput","Device Memory Read Throughput",180.180376GB/s,242.397227GB/s,203.199702GB/s
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"dram_read_throughput","Device Memory Read Throughput",131.742354GB/s,131.742354GB/s,131.742354GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"dram_read_throughput","Device Memory Read Throughput",4.003355GB/s,6.394060GB/s,5.900002GB/s
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"dram_read_throughput","Device Memory Read Throughput",6.665165GB/s,7.989968GB/s,7.304179GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"dram_read_throughput","Device Memory Read Throughput",6.135508GB/s,13.038097GB/s,12.414536GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"dram_read_throughput","Device Memory Read Throughput",55.951557MB/s,47.855942GB/s,8.422876GB/s
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"dram_read_throughput","Device Memory Read Throughput",105.372843GB/s,117.266609GB/s,108.249824GB/s
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"dram_read_throughput","Device Memory Read Throughput",6.575418GB/s,13.707246GB/s,12.728981GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"dram_read_throughput","Device Memory Read Throughput",6.651150GB/s,10.103242GB/s,9.921732GB/s
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"dram_read_throughput","Device Memory Read Throughput",18.952587GB/s,26.291077GB/s,22.792635GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"dram_read_throughput","Device Memory Read Throughput",78.125000MB/s,474.259660MB/s,181.386707MB/s
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"dram_read_throughput","Device Memory Read Throughput",86.412284GB/s,95.440061GB/s,88.007793GB/s
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"dram_read_throughput","Device Memory Read Throughput",7.990610GB/s,10.030029GB/s,9.052864GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"dram_read_throughput","Device Memory Read Throughput",15.456858GB/s,18.605686GB/s,17.167029GB/s
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"dram_read_throughput","Device Memory Read Throughput",113.028067MB/s,36.100475GB/s,31.056355GB/s
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"dram_read_throughput","Device Memory Read Throughput",149.468841GB/s,156.446978GB/s,152.313747GB/s
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"dram_read_throughput","Device Memory Read Throughput",2.397102GB/s,5.489875GB/s,5.386276GB/s
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"dram_read_throughput","Device Memory Read Throughput",52.564318GB/s,66.924188GB/s,58.974914GB/s
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"dram_read_throughput","Device Memory Read Throughput",316.007665GB/s,319.896997GB/s,317.936743GB/s
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"dram_read_throughput","Device Memory Read Throughput",56.184795GB/s,68.234997GB/s,62.147791GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"dram_read_throughput","Device Memory Read Throughput",50.323450MB/s,25.506741GB/s,5.523417GB/s
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"dram_read_throughput","Device Memory Read Throughput",178.492342GB/s,184.753199GB/s,181.571180GB/s
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"dram_read_throughput","Device Memory Read Throughput",235.990636GB/s,281.571047GB/s,243.232570GB/s
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"dram_read_throughput","Device Memory Read Throughput",73.720924GB/s,89.003714GB/s,81.168450GB/s

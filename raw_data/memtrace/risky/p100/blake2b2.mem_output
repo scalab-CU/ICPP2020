@@ -1,0 +1,12 @@
+==27048== NVPROF is profiling process 27048, command: ././blake2b "The quick brown fox jumps over the lazy dog gpu project"
+==27048== Profiling application: ././blake2b "The quick brown fox jumps over the lazy dog gpu project"
+==27048== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,B,MB/s,,,,,,
+0.344139,0.000002,,,,,,,,,,64,40.581885,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.344152,0.000001,,,,,,,,,,192,163.487025,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.344162,0.000001,,,,,,,,,,104,88.555471,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.344377,0.000001,,,,,,,,,,64,43.348832,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.344397,0.000001,,,,,,,,,,128,108.991350,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.344439,0.000013,1,1,1,4,1,1,32,128,128,,,,,"Tesla P100-PCIE-12GB (0)","1","7","iter_compressor(unsigned long const *, unsigned long, unsigned char*, short) [115]"
+0.344459,0.000001,,,,,,,,,,64,45.413062,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

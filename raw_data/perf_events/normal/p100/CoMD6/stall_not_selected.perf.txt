@@ -1,0 +1,34 @@
+==18270== NVPROF is profiling process 18270, command: ./bin/CoMD-cuda -e -x 72 -y 72 -z 72 2>&1 > /dev/null
+==18270== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==18270== Execution timeout, stopping the application...
+==18270== Profiling application: ./bin/CoMD-cuda -e -x 72 -y 72 -z 72 2>&1 > /dev/null
+==18270== Profiling result:
+==18270== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.033257%,0.033257%,0.033257%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.037485%,0.037485%,0.037485%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.003592%,0.004735%,0.004163%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.034785%,0.034785%,0.034785%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.309922%,0.309922%,0.309922%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.118945%,0.118945%,0.118945%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",4,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.617036%,0.693477%,0.651139%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",7,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.577872%,0.731294%,0.659033%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",24,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.008074%,0.172026%,0.053413%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.090453%,0.090453%,0.090453%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.530472%,0.530472%,0.530472%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.758872%,0.826752%,0.792812%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",6,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.393236%,0.576990%,0.479395%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",27,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.015893%,0.049044%,0.024972%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.002382%,0.002382%,0.002382%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",6,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.336778%,0.515189%,0.395696%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",8,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.554327%,0.661781%,0.615523%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.198913%,0.206346%,0.203224%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.085217%,0.085217%,0.085217%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.538080%,0.538080%,0.538080%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",8,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.246315%,0.347816%,0.304402%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.123233%,0.123233%,0.123233%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",8,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.427451%,0.942067%,0.623799%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",27,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.275286%,0.868978%,0.500182%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.011592%,0.011592%,0.011592%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.208206%,0.210912%,0.209559%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",7,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.037593%,0.055306%,0.046322%

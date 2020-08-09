@@ -1,0 +1,14 @@
+==17231== NVPROF is profiling process 17231, command: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==17231== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17231== Profiling application: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==17231== Profiling result:
+==17231== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.900482%,0.980489%,0.947152%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.944629%,1.030889%,0.989266%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.597857%,0.662227%,0.636350%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.698697%,0.779657%,0.749973%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.808104%,0.899851%,0.860177%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.468833%,0.574202%,0.491955%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.092239%,0.094927%,0.094154%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.508800%,0.567476%,0.542200%

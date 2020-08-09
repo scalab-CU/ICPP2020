@@ -1,0 +1,9 @@
+==5094== NVPROF is profiling process 5094, command: ./simpleHyperQ -nstreams=70 2>&1 > /dev/null
+==5094== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5094== Profiling application: ./simpleHyperQ -nstreams=70 2>&1 > /dev/null
+==5094== Profiling result:
+==5094== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",70,"dram_read_transactions","Device Memory Read Transactions",0,608,26
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"dram_read_transactions","Device Memory Read Transactions",14,14,14
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",70,"dram_read_transactions","Device Memory Read Transactions",0,120,10

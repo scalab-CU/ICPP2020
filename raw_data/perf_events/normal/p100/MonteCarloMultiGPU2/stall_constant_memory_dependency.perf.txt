@@ -1,0 +1,8 @@
+==14045== NVPROF is profiling process 14045, command: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==14045== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14045== Profiling application: ./MonteCarloMultiGPU -size=40 2>&1 > /dev/null
+==14045== Profiling result:
+==14045== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.005525%,0.005525%,0.005525%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.001730%,0.001730%,0.001730%

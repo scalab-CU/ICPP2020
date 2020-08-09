@@ -1,0 +1,8 @@
+==25450== NVPROF is profiling process 25450, command: ./gaussian ./data/matrix4000.txt -q 2>&1 > /dev/null
+==25450== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==25450== Profiling application: ./gaussian ./data/matrix4000.txt -q 2>&1 > /dev/null
+==25450== Profiling result:
+==25450== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","Fan2(float*, float*, float*, int, int, int)",3999,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.000877%,70.114841%,38.026917%
+"Tesla P100-PCIE-12GB (0)","Fan1(float*, float*, int, int)",3999,"stall_memory_dependency","Issue Stall Reasons (Data Request)",0.339416%,60.067161%,36.653272%

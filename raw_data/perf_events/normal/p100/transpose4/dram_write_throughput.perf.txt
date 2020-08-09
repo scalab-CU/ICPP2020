@@ -1,0 +1,14 @@
+==1319== NVPROF is profiling process 1319, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==1319== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1319== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==1319== Profiling result:
+==1319== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",191.405746GB/s,200.356190GB/s,200.060542GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",191.636803GB/s,200.337985GB/s,199.943722GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",139.132741GB/s,160.805981GB/s,149.716326GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",139.339127GB/s,149.827680GB/s,149.457540GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",110.537081GB/s,110.904152GB/s,110.709723GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",191.332794GB/s,200.230211GB/s,199.850709GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",55.354860GB/s,66.333587GB/s,65.551076GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"dram_write_throughput","Device Memory Write Throughput",139.289075GB/s,150.016862GB/s,149.479526GB/s

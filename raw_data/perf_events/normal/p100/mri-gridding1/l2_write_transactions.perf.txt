@@ -1,0 +1,14 @@
+==28517== NVPROF is profiling process 28517, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==28517== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==28517== Profiling result:
+==28517== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"l2_write_transactions","L2 Write Transactions",1991957,1991957,1991957
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"l2_write_transactions","L2 Write Transactions",2822038,2822242,2822158
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"l2_write_transactions","L2 Write Transactions",5201,2097172,266697
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"l2_write_transactions","L2 Write Transactions",45,16397,1886
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"l2_write_transactions","L2 Write Transactions",45,16397,1886
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"l2_write_transactions","L2 Write Transactions",664047,664047,664047
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"l2_write_transactions","L2 Write Transactions",8388625,8388625,8388625
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"l2_write_transactions","L2 Write Transactions",2699610,2705268,2702642
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"l2_write_transactions","L2 Write Transactions",5242,2113555,268781

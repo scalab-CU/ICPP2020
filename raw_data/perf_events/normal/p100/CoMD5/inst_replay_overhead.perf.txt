@@ -1,0 +1,32 @@
+==32510== NVPROF is profiling process 32510, command: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==32510== Profiling application: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==32510== Profiling result:
+==32510== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"inst_replay_overhead","Instruction Replay Overhead",0.005494,0.009614,0.007290
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000179,0.000202,0.000184
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.002438,0.003184,0.002655
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"inst_replay_overhead","Instruction Replay Overhead",0.000174,0.000199,0.000180
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.019232,0.019232,0.019232
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.005198,0.006872,0.005519
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"inst_replay_overhead","Instruction Replay Overhead",0.008511,0.013110,0.009331
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"inst_replay_overhead","Instruction Replay Overhead",0.001833,0.012814,0.006412
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"inst_replay_overhead","Instruction Replay Overhead",0.033516,0.106383,0.088656
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.003550,0.006179,0.004753
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.006329,0.013880,0.010768
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.002272,0.003031,0.002440
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"inst_replay_overhead","Instruction Replay Overhead",0.043599,0.111439,0.054492
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"inst_replay_overhead","Instruction Replay Overhead",0.108108,0.121212,0.120021
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.001519,0.002165,0.001791
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"inst_replay_overhead","Instruction Replay Overhead",0.009533,0.014467,0.010367
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"inst_replay_overhead","Instruction Replay Overhead",0.038575,0.094587,0.048568
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"inst_replay_overhead","Instruction Replay Overhead",0.067546,0.090254,0.071782
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"inst_replay_overhead","Instruction Replay Overhead",0.003118,0.004675,0.003908
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"inst_replay_overhead","Instruction Replay Overhead",0.001176,0.001607,0.001274
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"inst_replay_overhead","Instruction Replay Overhead",0.007940,0.015490,0.010752
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"inst_replay_overhead","Instruction Replay Overhead",0.003992,0.005824,0.005057
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"inst_replay_overhead","Instruction Replay Overhead",0.056335,0.066961,0.060112
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"inst_replay_overhead","Instruction Replay Overhead",0.007968,0.013441,0.008813
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"inst_replay_overhead","Instruction Replay Overhead",0.002626,0.006857,0.004668
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"inst_replay_overhead","Instruction Replay Overhead",0.002858,0.006230,0.004465
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"inst_replay_overhead","Instruction Replay Overhead",0.054236,0.062757,0.056632

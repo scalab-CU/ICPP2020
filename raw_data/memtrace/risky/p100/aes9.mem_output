@@ -1,0 +1,10 @@
+==21397== NVPROF is profiling process 21397, command: ././aes e 128 ./data/MARBLES.bmp ./data/key128.txt
+==21397== Profiling application: ././aes e 128 ./data/MARBLES.bmp ./data/key128.txt
+==21397== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.341882,0.000558,,,,,,,,,,4.067383,7.115774,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.342450,0.000001,,,,,,,,,,0.000168,0.142285,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.342688,0.000001,,,,,,,,,,4.067383,4004.086218,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.342739,0.000258,4165,1,1,256,1,1,28,6.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","aesEncrypt128(unsigned int*, unsigned int*, int) [119]"
+0.343021,0.001880,,,,,,,,,,4.067383,2.112809,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

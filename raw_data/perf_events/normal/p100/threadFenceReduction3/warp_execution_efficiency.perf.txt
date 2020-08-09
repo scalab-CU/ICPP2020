@@ -1,0 +1,7 @@
+==9118== NVPROF is profiling process 9118, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==9118== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==9118== Profiling result:
+==9118== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"warp_execution_efficiency","Warp Execution Efficiency",99.947309%,99.947309%,99.947309%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"warp_execution_efficiency","Warp Execution Efficiency",99.935616%,99.935705%,99.935660%

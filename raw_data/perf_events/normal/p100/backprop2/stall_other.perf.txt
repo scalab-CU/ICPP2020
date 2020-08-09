@@ -1,0 +1,8 @@
+==10549== NVPROF is profiling process 10549, command: ./backprop 131072
+==10549== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10549== Profiling application: ./backprop 131072
+==10549== Profiling result:
+==10549== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"stall_other","Issue Stall Reasons (Other)",54.120041%,54.120041%,54.120041%
+"Tesla P100-PCIE-12GB (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",15.187197%,15.187197%,15.187197%

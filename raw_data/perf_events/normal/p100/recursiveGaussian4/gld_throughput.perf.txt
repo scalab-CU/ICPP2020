@@ -1,0 +1,8 @@
+==12841== NVPROF is profiling process 12841, command: ./recursiveGaussian -image=./data/ref_18.ppm 2>&1 > /dev/null
+==12841== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12841== Profiling application: ./recursiveGaussian -image=./data/ref_18.ppm 2>&1 > /dev/null
+==12841== Profiling result:
+==12841== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"gld_throughput","Global Load Throughput",3.859493GB/s,4.062364GB/s,3.965817GB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"gld_throughput","Global Load Throughput",245.121109GB/s,263.366370GB/s,256.599015GB/s

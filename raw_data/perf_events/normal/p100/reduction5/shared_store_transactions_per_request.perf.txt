@@ -1,0 +1,8 @@
+==22299== NVPROF is profiling process 22299, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==22299== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22299== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==22299== Profiling result:
+==22299== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",0.583333,0.583333,0.583333
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"shared_store_transactions_per_request","Shared Memory Store Transactions Per Request",1.000000,1.000000,1.000000

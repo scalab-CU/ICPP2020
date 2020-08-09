@@ -1,0 +1,14 @@
+==2814== NVPROF is profiling process 2814, command: ./dct8x8 sample9.bmp 2>&1 > /dev/null
+==2814== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2814== Profiling application: ./dct8x8 sample9.bmp 2>&1 > /dev/null
+==2814== Profiling result:
+==2814== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",94.453430%,94.453430%,94.453430%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",63.110352%,63.110352%,63.110352%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",35.546875%,100.000000%,69.465743%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",89.721680%,94.496155%,90.730591%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",100.000000%,100.000000%,100.000000%

@@ -1,0 +1,8 @@
+==6505== NVPROF is profiling process 6505, command: ./quasirandomGenerator 3 2>&1 > /dev/null
+==6505== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6505== Profiling application: ./quasirandomGenerator 3 2>&1 > /dev/null
+==6505== Profiling result:
+==6505== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_other","Issue Stall Reasons (Other)",6.076919%,6.110262%,6.100611%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_other","Issue Stall Reasons (Other)",49.757902%,55.377064%,52.844447%

@@ -1,0 +1,14 @@
+==2100== NVPROF is profiling process 2100, command: ./mum ./data/NC_003997.20k.fna ./data/NC_003997_q25bp.50k.fna
+==2100== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/NC_003997_q25bp.50k.fna
+==2100== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.387186,0.000136,,,,,,,,,,1.287460,9.268667,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.387449,0.000023,,,,,,,,,,0.190735,8.233050,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.387512,0.000022,,,,,,,,,,0.190735,8.363170,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.387845,0.000172,,,,,,,,,,1.625000,9.222706,"Pageable","Array","Tesla K40m (0)","1","7","[CUDA memcpy HtoA]"
+0.388281,0.004574,,,,,,,,,,37.375000,7.979669,"Pageable","Array","Tesla K40m (0)","1","7","[CUDA memcpy HtoA]"
+0.393224,0.004589,,,,,,,,,,37.375000,7.954238,"Pageable","Array","Tesla K40m (0)","1","7","[CUDA memcpy HtoA]"
+0.398406,0.000001,,,,,,,,,,2.288818,1886.222936,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.398468,0.001371,196,1,1,256,1,1,26,0,0,,,,,"Tesla K40m (0)","1","7","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int) [131]"
+0.399874,0.000241,,,,,,,,,,2.288818,9.284675,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

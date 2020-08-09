@@ -1,0 +1,18 @@
+==7543== NVPROF is profiling process 7543, command: ./mri-q 64_64_64_dataset.bin out.bin
+==7543== Profiling application: ./mri-q 64_64_64_dataset.bin out.bin
+==7543== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.327911,0.000002,,,,,,,,,,0.000244,0.128458,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.327926,0.000001,,,,,,,,,,0.000244,0.219135,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.327970,0.000003,1,1,1,512,1,1,8,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","ComputePhiMag_GPU(float*, float*, float*, int) [118]"
+0.327985,0.000001,,,,,,,,,,0.000244,0.181721,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.328458,0.000092,,,,,,,,,,1.000000,10.651976,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328694,0.000092,,,,,,,,,,1.000000,10.633418,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.328998,0.000092,,,,,,,,,,1.000000,10.663025,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.329101,0.000001,,,,,,,,,,1.000000,1052.330280,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.329213,0.000001,,,,,,,,,,1.000000,1089.913504,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.329238,0.000001,,,,,,,,,,0.000977,0.805468,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.329253,0.000241,1024,1,1,256,1,1,28,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","ComputeQ_GPU(int, int, float*, float*, float*, float*, float*) [155]"
+0.329663,0.000082,,,,,,,,,,1.000000,11.977218,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"
+0.330522,0.000082,,,,,,,,,,1.000000,11.916274,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

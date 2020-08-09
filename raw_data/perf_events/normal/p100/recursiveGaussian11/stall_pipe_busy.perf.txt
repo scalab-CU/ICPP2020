@@ -1,0 +1,8 @@
+==10570== NVPROF is profiling process 10570, command: ./recursiveGaussian -image=./data/sample5.ppm 2>&1 > /dev/null
+==10570== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10570== Profiling application: ./recursiveGaussian -image=./data/sample5.ppm 2>&1 > /dev/null
+==10570== Profiling result:
+==10570== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.182324%,0.189416%,0.187165%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.515626%,0.594592%,0.559745%

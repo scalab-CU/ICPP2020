@@ -1,0 +1,14 @@
+==10065== NVPROF is profiling process 10065, command: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==10065== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10065== Profiling application: ./transpose -dimX=8192 -dimY=8192 2>&1 > /dev/null
+==10065== Profiling result:
+==10065== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.768221%,0.844133%,0.818350%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.464814%,0.511577%,0.496634%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.599018%,0.657359%,0.644936%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.344939%,0.378520%,0.369795%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.312213%,0.343562%,0.335787%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.118237%,0.128881%,0.125778%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.039719%,0.040878%,0.040472%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.300267%,0.330029%,0.324080%

@@ -1,0 +1,9 @@
+==15403== NVPROF is profiling process 15403, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==15403== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==15403== Profiling result:
+==15403== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",57.992004%,68.951609%,61.830841%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",74.659811%,76.370132%,75.732527%
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"sm_efficiency","Multiprocessor Activity",48.022828%,66.830608%,54.570360%
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"sm_efficiency","Multiprocessor Activity",89.965292%,89.965292%,89.965292%

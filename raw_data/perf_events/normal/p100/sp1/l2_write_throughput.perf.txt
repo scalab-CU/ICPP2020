@@ -1,0 +1,14 @@
+==16712== NVPROF is profiling process 16712, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==16712== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==16712== Profiling result:
+==16712== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"l2_write_throughput","L2 Throughput (Writes)",3.443104GB/s,4.146215GB/s,4.049769GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"l2_write_throughput","L2 Throughput (Writes)",1.926526GB/s,5.661312GB/s,3.639948GB/s
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"l2_write_throughput","L2 Throughput (Writes)",1.460239GB/s,1.691666GB/s,1.633837GB/s
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"l2_write_throughput","L2 Throughput (Writes)",14.787333GB/s,23.200369GB/s,22.159346GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"l2_write_throughput","L2 Throughput (Writes)",97.219226MB/s,206.740585MB/s,127.718705MB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"l2_write_throughput","L2 Throughput (Writes)",1.562088GB/s,5.077925GB/s,3.498277GB/s
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"l2_write_throughput","L2 Throughput (Writes)",2.574420GB/s,6.812321GB/s,4.276327GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"l2_write_throughput","L2 Throughput (Writes)",125.142783MB/s,396.830923MB/s,181.354201MB/s
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"l2_write_throughput","L2 Throughput (Writes)",237.338376MB/s,489.063751MB/s,338.815655MB/s

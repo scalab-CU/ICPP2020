@@ -1,0 +1,11 @@
+==12588== NVPROF is profiling process 12588, command: ./shfl_scan 300000 2>&1 > /dev/null
+==12588== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12588== Profiling application: ./shfl_scan 300000 2>&1 > /dev/null
+==12588== Profiling result:
+==12588== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",27.783859%,27.783859%,27.783859%
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000593%,0.000593%,0.000593%
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.096365%,0.096365%,0.096365%
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000000%,0.018651%,0.009325%
+======== Error: Application returned non-zero code 1

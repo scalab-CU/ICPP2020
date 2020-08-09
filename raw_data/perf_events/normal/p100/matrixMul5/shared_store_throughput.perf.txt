@@ -1,0 +1,6 @@
+==1502== NVPROF is profiling process 1502, command: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==1502== Profiling application: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==1502== Profiling result:
+==1502== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"shared_store_throughput","Shared Memory Store Throughput",259.865138GB/s,262.872134GB/s,262.625230GB/s

@@ -1,0 +1,6 @@
+==6291== NVPROF is profiling process 6291, command: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==6291== Profiling application: ./matrixMul -wA=2048 -hA=2048 -wB=2048 -hB=2048 2>&1 > /dev/null
+==6291== Profiling result:
+==6291== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"shared_store_throughput","Shared Memory Store Throughput",236.069815GB/s,260.199529GB/s,258.803626GB/s

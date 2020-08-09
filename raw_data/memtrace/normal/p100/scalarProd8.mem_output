@@ -1,0 +1,9 @@
+==709== NVPROF is profiling process 709, command: ./scalarProd 6000
+==709== Profiling application: ./scalarProd 6000
+==709== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.187573,0.010773,,,,,,,,,,93.750000,8.498083,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+1.198463,0.010529,,,,,,,,,,93.750000,8.695406,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+1.209059,0.000508,128,1,1,256,1,1,25,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","scalarProdGPU(float*, float*, float*, int, int) [120]"
+1.209596,0.000004,,,,,,,,,,0.022888,5.971611,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

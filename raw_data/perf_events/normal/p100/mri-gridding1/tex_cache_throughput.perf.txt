@@ -1,0 +1,14 @@
+==9783== NVPROF is profiling process 9783, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==9783== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==9783== Profiling result:
+==9783== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"tex_cache_throughput","Unified Cache Throughput",202.407879GB/s,202.407879GB/s,202.407879GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"tex_cache_throughput","Unified Cache Throughput",20.083001GB/s,20.153233GB/s,20.118981GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"tex_cache_throughput","Unified Cache Throughput",34.294970GB/s,188.996963GB/s,176.570973GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"tex_cache_throughput","Unified Cache Throughput",91.920416MB/s,33.171281GB/s,5.712791GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"tex_cache_throughput","Unified Cache Throughput",90.826125MB/s,33.758383GB/s,5.521819GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"tex_cache_throughput","Unified Cache Throughput",106.379875GB/s,106.379875GB/s,106.379875GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"tex_cache_throughput","Unified Cache Throughput",749.561702GB/s,749.561702GB/s,749.561702GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"tex_cache_throughput","Unified Cache Throughput",40.131631GB/s,41.636715GB/s,41.046499GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"tex_cache_throughput","Unified Cache Throughput",14.958828GB/s,60.220909GB/s,57.501543GB/s

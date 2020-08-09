@@ -1,0 +1,10 @@
+==20653== NVPROF is profiling process 20653, command: ./sortingNetworks 10 2>&1 > /dev/null
+==20653== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20653== Profiling application: ./sortingNetworks 10 2>&1 > /dev/null
+==20653== Profiling result:
+==20653== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",33.631897%,41.397095%,36.879134%
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",90.986633%,95.161438%,94.123376%

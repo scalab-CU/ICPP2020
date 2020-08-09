@@ -1,0 +1,8 @@
+==22962== NVPROF is profiling process 22962, command: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==22962== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==22962== Profiling application: ./reduction -n=16777216 -type=double -kernel=5 2>&1 > /dev/null
+==22962== Profiling result:
+==22962== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=256>(double*, double*, unsigned int)",201,"dram_write_transactions","Device Memory Write Transactions",6916,171809,88979
+"Tesla P100-PCIE-12GB (0)","void reduce5<double, unsigned int=32>(double*, double*, unsigned int)",100,"dram_write_transactions","Device Memory Write Transactions",1772,2658,1921

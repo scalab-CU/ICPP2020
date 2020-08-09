@@ -1,0 +1,10 @@
+==32502== NVPROF is profiling process 32502, command: ./corr4096 2>&1 > /dev/null
+==32502== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32502== Profiling application: ./corr4096 2>&1 > /dev/null
+==32502== Profiling result:
+==32502== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",4.643536%,4.643536%,4.643536%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",33.250742%,33.250742%,33.250742%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",12.786874%,12.786874%,12.786874%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",2.637786%,2.637786%,2.637786%

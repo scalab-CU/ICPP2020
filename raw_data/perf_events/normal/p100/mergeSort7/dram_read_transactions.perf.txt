@@ -1,0 +1,10 @@
+==11034== NVPROF is profiling process 11034, command: ./mergeSort 7 2>&1 > /dev/null
+==11034== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11034== Profiling application: ./mergeSort 7 2>&1 > /dev/null
+==11034== Profiling result:
+==11034== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",26,"dram_read_transactions","Device Memory Read Transactions",6152,7235,7109
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",13,"dram_read_transactions","Device Memory Read Transactions",329079,463670,439627
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"dram_read_transactions","Device Memory Read Transactions",1835063,1835063,1835063
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",13,"dram_read_transactions","Device Memory Read Transactions",1585709,1850511,1829700

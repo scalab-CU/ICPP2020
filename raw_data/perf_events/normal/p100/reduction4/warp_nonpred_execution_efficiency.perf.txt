@@ -1,0 +1,7 @@
+==26553== NVPROF is profiling process 26553, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==26553== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==26553== Profiling result:
+==26553== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",85.572574%,85.576643%,85.574303%
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",87.695312%,87.760417%,87.734375%

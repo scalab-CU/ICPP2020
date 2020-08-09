@@ -1,0 +1,10 @@
+==8339== NVPROF is profiling process 8339, command: ././aes e 128 ./data/barbara_gray.bmp ./data/key128.txt
+==8339== Profiling application: ././aes e 128 ./data/barbara_gray.bmp ./data/key128.txt
+==8339== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.324158,0.000029,,,,,,,,,,258.000000,8.533850,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.324198,0.000001,,,,,,,,,,0.171875,0.165235,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.324256,0.000001,,,,,,,,,,258.000000,240.281224,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.324305,0.000061,258,1,1,256,1,1,27,6.000000,0,,,,,"Tesla K40m (0)","1","7","aesEncrypt128(unsigned int*, unsigned int*, int) [119]"
+0.324390,0.000027,,,,,,,,,,258.000000,9.186379,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

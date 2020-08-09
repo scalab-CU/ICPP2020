@@ -1,0 +1,32 @@
+==31369== NVPROF is profiling process 31369, command: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==31369== Profiling application: ./bin/CoMD-cuda -e -x 56 -y 56 -z 56 2>&1 > /dev/null
+==31369== Profiling result:
+==31369== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"issued_ipc","Issued IPC",0.099788,0.105282,0.102569
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"issued_ipc","Issued IPC",0.228508,0.231471,0.230156
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"issued_ipc","Issued IPC",0.193113,0.196547,0.195042
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"issued_ipc","Issued IPC",0.056566,0.062191,0.058346
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"issued_ipc","Issued IPC",0.535141,0.535141,0.535141
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"issued_ipc","Issued IPC",0.295406,0.301753,0.298852
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"issued_ipc","Issued IPC",0.975301,1.054409,1.022553
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"issued_ipc","Issued IPC",0.333806,0.433345,0.390500
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"issued_ipc","Issued IPC",0.028241,0.295448,0.059574
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"issued_ipc","Issued IPC",0.239073,0.253997,0.248006
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"issued_ipc","Issued IPC",0.439327,0.480595,0.464934
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"issued_ipc","Issued IPC",1.034677,1.061983,1.049155
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issued_ipc","Issued IPC",0.377730,0.564534,0.486516
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"issued_ipc","Issued IPC",0.045877,0.092965,0.084267
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"issued_ipc","Issued IPC",0.025756,0.028428,0.027285
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"issued_ipc","Issued IPC",0.339584,0.445869,0.401941
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"issued_ipc","Issued IPC",0.509596,0.543758,0.529150
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"issued_ipc","Issued IPC",0.237084,0.336971,0.288443
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"issued_ipc","Issued IPC",0.205257,0.214712,0.210624
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"issued_ipc","Issued IPC",0.667983,0.675258,0.671729
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"issued_ipc","Issued IPC",0.257864,0.412078,0.316690
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"issued_ipc","Issued IPC",0.374730,0.380539,0.377843
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"issued_ipc","Issued IPC",0.231558,0.402318,0.356520
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"issued_ipc","Issued IPC",0.104313,0.407692,0.288810
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"issued_ipc","Issued IPC",0.072159,0.077444,0.074326
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"issued_ipc","Issued IPC",0.346967,0.363335,0.354059
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"issued_ipc","Issued IPC",0.076459,0.108967,0.093639

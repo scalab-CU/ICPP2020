@@ -1,0 +1,9 @@
+==3107== NVPROF is profiling process 3107, command: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==3107== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3107== Profiling application: ./dwt2d sample9.bmp -d 512x512 -f -5 -l 3 2>&1 > /dev/null
+==3107== Profiling result:
+==3107== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_throughput","Global Load Throughput",137.131810GB/s,137.748769GB/s,137.425703GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",6,"gld_throughput","Global Load Throughput",19.158636GB/s,58.349465GB/s,41.264754GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_throughput","Global Load Throughput",113.685972GB/s,113.685972GB/s,113.685972GB/s

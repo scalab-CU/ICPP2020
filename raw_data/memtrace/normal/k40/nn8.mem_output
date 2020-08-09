@@ -1,0 +1,8 @@
+==65509== NVPROF is profiling process 65509, command: ./nn list8192k.txt -r 5 -lat 30 -lng 50
+==65509== Profiling application: ./nn list8192k.txt -r 5 -lat 30 -lng 50
+==65509== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.323952,0.021192,,,,,,,,,,64.000000,2.949237,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.345230,0.000562,32768,1,1,256,1,1,9,0,0,,,,,"Tesla K40m (0)","1","7","euclid(latLong*, float*, int, float, float) [116]"
+0.345912,0.014494,,,,,,,,,,32.000000,2.156054,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

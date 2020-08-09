@@ -1,0 +1,16 @@
+==20062== NVPROF is profiling process 20062, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XAF000000  
+value in hostpartialcrc = 0X1E2657B8  
+
+Execution time: 153.416672 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==20062== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==20062== Profiling result:
+==20062== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"local_hit_rate","Local Hit Rate",94.150830%,94.150830%,94.150830%

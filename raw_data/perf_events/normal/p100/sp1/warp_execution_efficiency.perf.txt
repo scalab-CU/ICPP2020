@@ -1,0 +1,14 @@
+==2526== NVPROF is profiling process 2526, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==2526== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==2526== Profiling result:
+==2526== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"warp_execution_efficiency","Warp Execution Efficiency",99.473420%,100.000000%,99.654602%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"warp_execution_efficiency","Warp Execution Efficiency",62.937412%,80.126553%,70.848679%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"warp_execution_efficiency","Warp Execution Efficiency",28.512737%,84.108539%,54.790783%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"warp_execution_efficiency","Warp Execution Efficiency",93.954918%,97.541314%,96.584180%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"warp_execution_efficiency","Warp Execution Efficiency",99.096476%,99.395799%,99.252647%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"warp_execution_efficiency","Warp Execution Efficiency",20.254033%,62.586071%,37.493086%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"warp_execution_efficiency","Warp Execution Efficiency",97.443060%,100.000000%,99.507850%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"warp_execution_efficiency","Warp Execution Efficiency",98.175867%,98.804411%,98.562028%

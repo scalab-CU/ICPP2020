@@ -1,0 +1,10 @@
+==658== NVPROF is profiling process 658, command: ./histogram 64 2>&1 > /dev/null
+==658== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==658== Profiling application: ./histogram 64 2>&1 > /dev/null
+==658== Profiling result:
+==658== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",221.890253GB/s,225.025888GB/s,223.265195GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",25.819276GB/s,26.593798GB/s,26.198876GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",37.417366GB/s,38.894066GB/s,38.151500GB/s
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_read_throughput","Device Memory Read Throughput",346.485041GB/s,355.827323GB/s,351.993082GB/s

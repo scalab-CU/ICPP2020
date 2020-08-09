@@ -1,0 +1,17 @@
+==5062== NVPROF is profiling process 5062, command: ././crc_gpu input8.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X67200000  
+value in hostpartialcrc = 0XD77267B8  
+
+==5062== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 697.216370 ms
+After cuda, hostpartialcrc[0] = 0X6F6BBA04  
+After cuda, hostpartialcrc[0] = 1869330948  
+Program Ended Successfully!
+==5062== Profiling application: ././crc_gpu input8.in 2>&1 > /dev/null
+==5062== Profiling result:
+==5062== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"gld_transactions_per_request","Global Load Transactions Per Request",8.000008,8.000008,8.000008

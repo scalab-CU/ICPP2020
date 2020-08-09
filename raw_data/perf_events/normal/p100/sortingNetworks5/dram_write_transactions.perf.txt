@@ -1,0 +1,10 @@
+==26432== NVPROF is profiling process 26432, command: ./sortingNetworks 5 2>&1 > /dev/null
+==26432== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26432== Profiling application: ./sortingNetworks 5 2>&1 > /dev/null
+==26432== Profiling result:
+==26432== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"dram_write_transactions","Device Memory Write Transactions",256888,260264,259438
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"dram_write_transactions","Device Memory Write Transactions",257340,258593,257844
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"dram_write_transactions","Device Memory Write Transactions",260115,260791,260408
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"dram_write_transactions","Device Memory Write Transactions",258688,260400,259724

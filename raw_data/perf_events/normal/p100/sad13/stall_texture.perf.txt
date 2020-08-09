@@ -1,0 +1,9 @@
+==19426== NVPROF is profiling process 19426, command: ./sad reference.bin frame.bin 2>&1 > /dev/null
+==19426== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19426== Profiling application: ./sad reference.bin frame.bin 2>&1 > /dev/null
+==19426== Profiling result:
+==19426== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","larger_sad_calc_16(unsigned short*, int, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.042518%,0.042518%,0.042518%
+"Tesla P100-PCIE-12GB (0)","mb_sad_calc(unsigned short*, unsigned short*, int, int)",1,"stall_texture","Issue Stall Reasons (Texture)",26.739919%,26.739919%,26.739919%
+"Tesla P100-PCIE-12GB (0)","larger_sad_calc_8(unsigned short*, int, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.080587%,0.080587%,0.080587%

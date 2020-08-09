@@ -1,0 +1,9 @@
+==839== NVPROF is profiling process 839, command: ./scalarProd 6000
+==839== Profiling application: ./scalarProd 6000
+==839== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.191681,0.012033,,,,,,,,,,93.750000,7.608648,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.203851,0.012177,,,,,,,,,,93.750000,7.518530,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.216112,0.001423,128,1,1,256,1,1,24,4.000000,0,,,,,"Tesla K40m (0)","1","7","scalarProdGPU(float*, float*, float*, int, int) [120]"
+1.217574,0.000004,,,,,,,,,,0.022888,5.098481,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

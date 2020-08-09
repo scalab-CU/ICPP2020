@@ -1,0 +1,18 @@
+==21842== NVPROF is profiling process 21842, command: ./alignedTypes 8 2>&1 > /dev/null
+==21842== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21842== Profiling application: ./alignedTypes 8 2>&1 > /dev/null
+==21842== Profiling result:
+==21842== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_misaligned>(RGBA32_misaligned*, RGBA32_misaligned*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.025086%,0.031978%,0.029020%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8>(RGBA8*, RGBA8*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000099%,0.000108%,0.000102%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA8_misaligned>(RGBA8_misaligned*, RGBA8_misaligned*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000559%,0.000726%,0.000626%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32>(LA32*, LA32*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000431%,0.000496%,0.000464%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32_misaligned>(RGB32_misaligned*, RGB32_misaligned*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.008653%,0.011718%,0.009868%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32_2>(RGBA32_2*, RGBA32_2*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.048257%,0.067124%,0.055439%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned short>(unsigned short*, unsigned short*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000060%,0.000063%,0.000061%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned int>(unsigned int*, unsigned int*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000097%,0.000108%,0.000102%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGBA32>(RGBA32*, RGBA32*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.002591%,0.003198%,0.002833%
+"Tesla P100-PCIE-12GB (0)","void testKernel<unsigned char>(unsigned char*, unsigned char*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000032%,0.000034%,0.000033%
+"Tesla P100-PCIE-12GB (0)","void testKernel<RGB32>(RGB32*, RGB32*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.014479%,0.024829%,0.019430%
+"Tesla P100-PCIE-12GB (0)","void testKernel<LA32_misaligned>(LA32_misaligned*, LA32_misaligned*, int)",32,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000440%,0.000909%,0.000641%

@@ -1,0 +1,10 @@
+==16990== NVPROF is profiling process 16990, command: ./sortingNetworks 10 2>&1 > /dev/null
+==16990== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==16990== Profiling application: ./sortingNetworks 10 2>&1 > /dev/null
+==16990== Profiling result:
+==16990== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",5,"stall_memory_dependency","Issue Stall Reasons (Data Request)",2.257781%,6.591794%,3.962456%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeShared(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",55,"stall_memory_dependency","Issue Stall Reasons (Data Request)",15.997274%,22.012828%,18.160160%
+"Tesla P100-PCIE-12GB (0)","bitonicSortShared1(unsigned int*, unsigned int*, unsigned int*, unsigned int*)",10,"stall_memory_dependency","Issue Stall Reasons (Data Request)",1.559241%,2.268098%,1.796889%
+"Tesla P100-PCIE-12GB (0)","bitonicMergeGlobal(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int, unsigned int)",220,"stall_memory_dependency","Issue Stall Reasons (Data Request)",28.127700%,31.018275%,29.749251%

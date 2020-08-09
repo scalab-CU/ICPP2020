@@ -1,0 +1,17 @@
+==5130== NVPROF is profiling process 5130, command: ././crc_gpu input0.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XA2C00000  
+value in hostpartialcrc = 0X16A887B8  
+
+==5130== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 343.123047 ms
+After cuda, hostpartialcrc[0] = 0X59E6C6A9  
+After cuda, hostpartialcrc[0] = 1508296361  
+Program Ended Successfully!
+==5130== Profiling application: ././crc_gpu input0.in 2>&1 > /dev/null
+==5130== Profiling result:
+==5130== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",21.472172%,21.472172%,21.472172%

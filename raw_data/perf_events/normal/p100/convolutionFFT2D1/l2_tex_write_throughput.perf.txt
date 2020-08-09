@@ -1,0 +1,16 @@
+==9401== NVPROF is profiling process 9401, command: ./convolutionFFT2D 1000 2>&1 > /dev/null
+==9401== Profiling application: ./convolutionFFT2D 1000 2>&1 > /dev/null
+==9401== Profiling result:
+==9401== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=8, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",71.302753GB/s,96.727664GB/s,87.806331GB/s
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",160.255641GB/s,160.255641GB/s,160.255641GB/s
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",107.672906MB/s,122.490278MB/s,116.776186MB/s
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",165.539446GB/s,169.066813GB/s,167.284164GB/s
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",127.404928GB/s,128.196554GB/s,127.805219GB/s
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",162.543692GB/s,172.172514GB/s,166.157413GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",154.860666GB/s,154.860666GB/s,154.860666GB/s
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=512, unsigned int=1, unsigned int=8, unsigned int=16, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",106.148098GB/s,115.819670GB/s,113.261480GB/s
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",131.717482GB/s,131.717482GB/s,131.717482GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",163.297153GB/s,173.595172GB/s,168.288769GB/s
+======== Error: Application returned non-zero code 1

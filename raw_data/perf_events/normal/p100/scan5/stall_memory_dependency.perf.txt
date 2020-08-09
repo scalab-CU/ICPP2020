@@ -1,0 +1,9 @@
+==12114== NVPROF is profiling process 12114, command: ./scan 32 2>&1 > /dev/null
+==12114== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12114== Profiling application: ./scan 32 2>&1 > /dev/null
+==12114== Profiling result:
+==12114== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",59.838093%,71.140630%,66.751367%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_memory_dependency","Issue Stall Reasons (Data Request)",35.090094%,64.966984%,42.045348%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_memory_dependency","Issue Stall Reasons (Data Request)",50.622038%,53.400586%,51.800647%

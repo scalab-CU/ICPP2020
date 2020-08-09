@@ -1,0 +1,11 @@
+==6197== NVPROF is profiling process 6197, command: ./gramschm7168 2>&1 > /dev/null
+==6197== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6197== Execution timeout, stopping the application...
+==6197== Profiling application: ./gramschm7168 2>&1 > /dev/null
+==6197== Profiling result:
+==6197== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","gramschmidt_kernel3(float*, float*, float*, int)",4913,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.009778%,0.013571%,0.011269%
+"Tesla P100-PCIE-12GB (0)","gramschmidt_kernel1(float*, float*, float*, int)",4913,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.001572%,0.005765%,0.004578%
+"Tesla P100-PCIE-12GB (0)","gramschmidt_kernel2(float*, float*, float*, int)",4913,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.108705%,0.210491%,0.177701%
+==6197== Warning: Some profiling data are not recorded. Make sure cudaProfilerStop() or cuProfilerStop() is called before application exit to flush profile data.

@@ -1,0 +1,10 @@
+==184512== NVPROF is profiling process 184512, command: ./c++11_cuda sample7.txt
+==184512== Profiling application: ./c++11_cuda sample7.txt
+==184512== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.468637,0.000109,,,,,,,,,,1.217080,10.905073,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.468921,0.000001,,,,,,,,,,0.000004,0.002839,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.468952,0.000154,8,1,1,256,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","xyzw_frequency(int*, char*, int) [116]"
+0.469108,0.029672,1,1,1,1,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","xyzw_frequency_thrust_device(int*, char*, int) [121]"
+0.498783,0.000001,,,,,,,,,,0.000004,0.002839,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

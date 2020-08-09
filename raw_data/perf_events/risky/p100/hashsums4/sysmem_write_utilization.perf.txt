@@ -1,0 +1,16 @@
+==2734== NVPROF is profiling process 2734, command: ././crc_gpu input3.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XE2E00000  
+value in hostpartialcrc = 0X54EB87B8  
+
+Execution time: 90.204124 ms
+After cuda, hostpartialcrc[0] = 0X58175018  
+After cuda, hostpartialcrc[0] = 1477922840  
+Program Ended Successfully!
+==2734== Profiling application: ././crc_gpu input3.in 2>&1 > /dev/null
+==2734== Profiling result:
+==2734== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"sysmem_write_utilization","System Memory Write Utilization","Low (1)","Low (1)","Low (1)"

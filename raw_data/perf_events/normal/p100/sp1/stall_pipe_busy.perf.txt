@@ -1,0 +1,15 @@
+==23072== NVPROF is profiling process 23072, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==23072== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23072== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==23072== Profiling result:
+==23072== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.184605%,0.273190%,0.220214%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.437209%,2.042689%,1.619605%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.081651%,0.155997%,0.133216%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.085732%,0.416952%,0.163373%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.719641%,2.096461%,1.609712%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.612206%,2.194105%,1.793422%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.020691%,0.139948%,0.067490%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.199136%,3.629977%,2.610376%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.054368%,0.275100%,0.127317%

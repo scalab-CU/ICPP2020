@@ -1,0 +1,10 @@
+==5500== NVPROF is profiling process 5500, command: ./corr1024 2>&1 > /dev/null
+==5500== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5500== Profiling application: ./corr1024 2>&1 > /dev/null
+==5500== Profiling result:
+==5500== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.544204%,0.544204%,0.544204%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.935394%,1.935394%,1.935394%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.619353%,0.619353%,0.619353%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.845366%,0.845366%,0.845366%

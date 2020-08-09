@@ -1,0 +1,10 @@
+==14757== NVPROF is profiling process 14757, command: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==14757== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14757== Profiling application: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==14757== Profiling result:
+==14757== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",19.195023%,27.402172%,23.442499%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",2.299754%,12.033374%,2.956141%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",1.334056%,7.896672%,1.650927%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.631819%,2.462195%,0.804802%

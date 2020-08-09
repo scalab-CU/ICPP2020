@@ -1,0 +1,10 @@
+==13076== NVPROF is profiling process 13076, command: ./shfl_scan 500000 2>&1 > /dev/null
+==13076== Profiling application: ./shfl_scan 500000 2>&1 > /dev/null
+==13076== Profiling result:
+==13076== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"shared_store_transactions","Shared Store Transactions",4320,4320,4320
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"shared_store_transactions","Shared Store Transactions",194880,194880,194880
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"shared_store_transactions","Shared Store Transactions",1952,1952,1952
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"shared_store_transactions","Shared Store Transactions",72,17577,8824
+======== Error: Application returned non-zero code 1

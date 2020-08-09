@@ -1,0 +1,14 @@
+==1066== NVPROF is profiling process 1066, command: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==1066== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1066== Profiling application: ./dct8x8 sample0.bmp 2>&1 > /dev/null
+==1066== Profiling result:
+==1066== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"shared_efficiency","Shared Memory Efficiency",125.000000%,125.000000%,125.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"shared_efficiency","Shared Memory Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"shared_efficiency","Shared Memory Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"shared_efficiency","Shared Memory Efficiency",125.000000%,125.000000%,125.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"shared_efficiency","Shared Memory Efficiency",60.000000%,60.000000%,60.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"shared_efficiency","Shared Memory Efficiency",60.000000%,60.000000%,60.000000%

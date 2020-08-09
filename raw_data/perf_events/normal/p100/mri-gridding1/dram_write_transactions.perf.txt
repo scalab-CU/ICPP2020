@@ -1,0 +1,15 @@
+==26901== NVPROF is profiling process 26901, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==26901== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26901== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==26901== Profiling result:
+==26901== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"dram_write_transactions","Device Memory Write Transactions",1989731,1989731,1989731
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"dram_write_transactions","Device Memory Write Transactions",832147,835266,834439
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"dram_write_transactions","Device Memory Write Transactions",3896,2095317,265686
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"dram_write_transactions","Device Memory Write Transactions",28,12736,1552
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"dram_write_transactions","Device Memory Write Transactions",48,12765,1552
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"dram_write_transactions","Device Memory Write Transactions",681566,681566,681566
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"dram_write_transactions","Device Memory Write Transactions",6294641,6294641,6294641
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"dram_write_transactions","Device Memory Write Transactions",675571,681061,678000
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"dram_write_transactions","Device Memory Write Transactions",3912,2097057,265742

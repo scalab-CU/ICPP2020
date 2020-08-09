@@ -1,0 +1,8 @@
+==21148== NVPROF is profiling process 21148, command: ./convolutionSeparable 9216 2>&1 > /dev/null
+==21148== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21148== Profiling application: ./convolutionSeparable 9216 2>&1 > /dev/null
+==21148== Profiling result:
+==21148== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.434933%,0.511449%,0.445660%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.454560%,0.534284%,0.470433%

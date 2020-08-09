@@ -1,0 +1,10 @@
+==12441== NVPROF is profiling process 12441, command: ./corr2000 2>&1 > /dev/null
+==12441== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12441== Profiling application: ./corr2000 2>&1 > /dev/null
+==12441== Profiling result:
+==12441== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.665872%,96.665872%,96.665872%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",80.342179%,80.342179%,80.342179%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",98.188485%,98.188485%,98.188485%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.355057%,97.355057%,97.355057%

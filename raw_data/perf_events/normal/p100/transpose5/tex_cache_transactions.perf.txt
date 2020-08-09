@@ -1,0 +1,13 @@
+==30939== NVPROF is profiling process 30939, command: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==30939== Profiling application: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==30939== Profiling result:
+==30939== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"tex_cache_transactions","Unified Cache Transactions",33554432,33554432,33554432

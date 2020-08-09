@@ -1,0 +1,10 @@
+==32484== NVPROF is profiling process 32484, command: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==32484== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32484== Profiling application: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==32484== Profiling result:
+==32484== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"dram_read_transactions","Device Memory Read Transactions",18,34,24
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"dram_read_transactions","Device Memory Read Transactions",167828,174548,169287
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"dram_read_transactions","Device Memory Read Transactions",319979,320133,319983
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"dram_read_transactions","Device Memory Read Transactions",618374,625222,621781

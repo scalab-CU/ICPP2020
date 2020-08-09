@@ -1,0 +1,16 @@
+==4030== NVPROF is profiling process 4030, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X73000000  
+value in hostpartialcrc = 0XE0B697B8  
+
+Execution time: 155.715393 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==4030== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==4030== Profiling result:
+==4030== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"flop_count_hp_add","Floating Point Operations(Half Precision Add)",0,0,0

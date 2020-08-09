@@ -1,0 +1,9 @@
+==8711== NVPROF is profiling process 8711, command: ././enc 9.ppm 2>&1 > /dev/null
+==8711== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8711== Profiling application: ././enc 9.ppm 2>&1 > /dev/null
+==8711== Profiling result:
+==8711== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.082017%,0.120173%,0.100425%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",1.748453%,2.655862%,2.249778%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000007%,0.021382%,0.002747%

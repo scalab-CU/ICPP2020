@@ -1,0 +1,8 @@
+==19293== NVPROF is profiling process 19293, command: ./convolutionSeparable 20480 2>&1 > /dev/null
+==19293== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19293== Profiling application: ./convolutionSeparable 20480 2>&1 > /dev/null
+==19293== Profiling result:
+==19293== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"stall_texture","Issue Stall Reasons (Texture)",4.435817%,5.195557%,5.008346%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"stall_texture","Issue Stall Reasons (Texture)",3.309531%,3.365437%,3.333352%

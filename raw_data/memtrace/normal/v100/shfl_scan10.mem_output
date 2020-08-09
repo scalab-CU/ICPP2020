@@ -1,0 +1,19 @@
+==330170== NVPROF is profiling process 330170, command: ./shfl_scan 600000 2>&1 > /dev/null
+==330170== Profiling application: ./shfl_scan 600000 2>&1 > /dev/null
+==330170== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.492489,0.000001,,,,,,,,,,0.008938,7.177924,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.493362,0.000198,,,,,,,,,,2.288818,11.298916,"Pinned","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.493592,0.000012,2343,1,1,256,1,1,19,0.000000,32,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_scan_test(int*, int, int*) [132]"
+0.493604,0.000003,10,1,1,256,1,1,19,0.000000,32,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_scan_test(int*, int, int*) [137]"
+0.493612,0.000006,2342,1,1,256,1,1,16,0.015625,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","uniform_add(int*, int*, int) [142]"
+0.493636,0.000183,,,,,,,,,,2.288818,12.200866,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.493831,0.000002,,,,,,,,,,0.008938,4.623069,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.498190,0.000002,,,,,,,,,,7.910156,4926.506354,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.498206,0.000001,,,,,,,,,,7.910156,7543.712854,"Device",,"Tesla V100-PCIE-16GB (0)","1","7","[CUDA memset]"
+0.498221,0.000022,1080,1,1,120,1,1,37,0.500000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_intimage_rows(uint4*, uint4*) [164]"
+0.498263,0.000631,,,,,,,,,,7.910156,12.240815,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.499947,0.000100,60,1,1,32,8,1,29,1.125000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","shfl_vertical_shfl(unsigned int*, int, int) [174]"
+0.500065,0.000631,,,,,,,,,,7.910156,12.243900,"Device","Pinned","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+======== Error: Application returned non-zero code 1

@@ -1,0 +1,10 @@
+==10555== NVPROF is profiling process 10555, command: ./mergeSort 1 2>&1 > /dev/null
+==10555== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10555== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==10555== Profiling result:
+==10555== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"tex_cache_hit_rate","Unified Cache Hit Rate",75.000000%,84.755233%,80.910905%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"tex_cache_hit_rate","Unified Cache Hit Rate",6.526456%,17.380394%,12.192719%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"tex_cache_hit_rate","Unified Cache Hit Rate",50.002867%,50.290887%,50.089972%

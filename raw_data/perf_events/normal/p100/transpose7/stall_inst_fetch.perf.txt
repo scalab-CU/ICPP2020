@@ -1,0 +1,14 @@
+==21287== NVPROF is profiling process 21287, command: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==21287== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21287== Profiling application: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==21287== Profiling result:
+==21287== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.972160%,2.090994%,1.988476%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.664064%,1.680519%,1.671122%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.334380%,1.348129%,1.340913%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.330533%,1.344505%,1.337760%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.391617%,1.424688%,1.408261%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.443279%,1.555526%,1.452156%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.195461%,0.197472%,0.196601%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",1.100892%,1.111777%,1.106230%

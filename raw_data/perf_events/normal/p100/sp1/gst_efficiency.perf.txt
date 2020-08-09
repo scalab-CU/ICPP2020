@@ -1,0 +1,15 @@
+==17886== NVPROF is profiling process 17886, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==17886== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17886== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==17886== Profiling result:
+==17886== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"gst_efficiency","Global Memory Store Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"gst_efficiency","Global Memory Store Efficiency",56.634304%,100.000000%,74.187589%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"gst_efficiency","Global Memory Store Efficiency",63.220461%,100.000000%,77.204154%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"gst_efficiency","Global Memory Store Efficiency",37.276885%,100.000000%,62.604416%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"gst_efficiency","Global Memory Store Efficiency",33.333333%,50.000000%,48.550725%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"gst_efficiency","Global Memory Store Efficiency",65.217391%,77.435470%,70.864897%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"gst_efficiency","Global Memory Store Efficiency",37.276885%,100.000000%,62.604416%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"gst_efficiency","Global Memory Store Efficiency",25.000000%,50.000000%,47.826087%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"gst_efficiency","Global Memory Store Efficiency",3.125000%,3.200605%,3.157372%

@@ -1,0 +1,15 @@
+==6037== NVPROF is profiling process 6037, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==6037== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6037== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==6037== Profiling result:
+==6037== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gld_throughput","Global Load Throughput",1096.925484GB/s,1096.925484GB/s,1096.925484GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gld_throughput","Global Load Throughput",18.611039GB/s,18.769106GB/s,18.702052GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gld_throughput","Global Load Throughput",209.024508MB/s,68.733284GB/s,11.276843GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gld_throughput","Global Load Throughput",55.656291GB/s,375.875650GB/s,342.884798GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gld_throughput","Global Load Throughput",199.910439MB/s,65.000166GB/s,10.814821GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gld_throughput","Global Load Throughput",618.179077GB/s,618.179077GB/s,618.179077GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gld_throughput","Global Load Throughput",796.339606GB/s,796.339606GB/s,796.339606GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gld_throughput","Global Load Throughput",44.026259GB/s,45.082248GB/s,44.600409GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gld_throughput","Global Load Throughput",32.612202GB/s,132.921486GB/s,126.388104GB/s

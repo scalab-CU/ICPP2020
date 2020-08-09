@@ -1,0 +1,15 @@
+==24232== NVPROF is profiling process 24232, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==24232== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24232== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==24232== Profiling result:
+==24232== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"dram_utilization","Device Memory Utilization","High (8)","High (8)","High (8)"
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"dram_utilization","Device Memory Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"dram_utilization","Device Memory Utilization","Low (1)","High (8)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"dram_utilization","Device Memory Utilization","Low (1)","Low (2)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"dram_utilization","Device Memory Utilization","Low (1)","Low (2)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"dram_utilization","Device Memory Utilization","Mid (6)","Mid (6)","Mid (6)"
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"dram_utilization","Device Memory Utilization","Low (2)","Low (2)","Low (2)"
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"dram_utilization","Device Memory Utilization","Low (1)","Low (3)","Low (1)"

@@ -1,0 +1,10 @@
+==30071== NVPROF is profiling process 30071, command: ./histogram 64 2>&1 > /dev/null
+==30071== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30071== Profiling application: ./histogram 64 2>&1 > /dev/null
+==30071== Profiling result:
+==30071== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",12.869287%,12.984442%,12.947386%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",10.997344%,12.144436%,11.657595%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",3.719767%,3.897271%,3.801641%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",36.146717%,36.757165%,36.399289%

@@ -1,0 +1,32 @@
+==31999== NVPROF is profiling process 31999, command: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==31999== Profiling application: ./bin/CoMD-cuda -e -x 32 -y 32 -z 32 2>&1 > /dev/null
+==31999== Profiling result:
+==31999== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"cf_executed","Executed Control-Flow Instructions",16384,16384,16384
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"cf_executed","Executed Control-Flow Instructions",10179711,10797961,10641203
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"cf_executed","Executed Control-Flow Instructions",11773553,12523215,12332087
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"cf_executed","Executed Control-Flow Instructions",78381,79506,79131
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"cf_executed","Executed Control-Flow Instructions",20480,20480,20480
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"cf_executed","Executed Control-Flow Instructions",17290,17290,17290
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"cf_executed","Executed Control-Flow Instructions",6765,8284,7491
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"cf_executed","Executed Control-Flow Instructions",42464,54873,48668
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"cf_executed","Executed Control-Flow Instructions",42,434,88
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"cf_executed","Executed Control-Flow Instructions",70004,70004,70004
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"cf_executed","Executed Control-Flow Instructions",23248,23248,23248
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"cf_executed","Executed Control-Flow Instructions",97337,97337,97337
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"cf_executed","Executed Control-Flow Instructions",2647,3127,2883
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"cf_executed","Executed Control-Flow Instructions",14,14,14
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"cf_executed","Executed Control-Flow Instructions",119226,137749,132675
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"cf_executed","Executed Control-Flow Instructions",8448,10330,9350
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"cf_executed","Executed Control-Flow Instructions",2647,3127,2883
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"cf_executed","Executed Control-Flow Instructions",770,770,770
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"cf_executed","Executed Control-Flow Instructions",32768,32768,32768
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"cf_executed","Executed Control-Flow Instructions",60837,60837,60837
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"cf_executed","Executed Control-Flow Instructions",10529,10625,10576
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"cf_executed","Executed Control-Flow Instructions",54272,54272,54272
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"cf_executed","Executed Control-Flow Instructions",1152,1920,1556
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"cf_executed","Executed Control-Flow Instructions",76,322,106
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"cf_executed","Executed Control-Flow Instructions",8192,8192,8192
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"cf_executed","Executed Control-Flow Instructions",57344,58658,58002
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"cf_executed","Executed Control-Flow Instructions",384,462,422

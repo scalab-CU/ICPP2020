@@ -1,0 +1,8 @@
+==32000== NVPROF is profiling process 32000, command: ./convolutionSeparable 8192 2>&1 > /dev/null
+==32000== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32000== Profiling application: ./convolutionSeparable 8192 2>&1 > /dev/null
+==32000== Profiling result:
+==32000== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","convolutionColumnsKernel(float*, float*, int, int, int)",17,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000159%,50.000403%,50.000278%
+"Tesla P100-PCIE-12GB (0)","convolutionRowsKernel(float*, float*, int, int, int)",17,"tex_cache_hit_rate","Unified Cache Hit Rate",50.069325%,50.086309%,50.076840%

@@ -1,0 +1,9 @@
+==6562== NVPROF is profiling process 6562, command: ././enc npark.ppm 2>&1 > /dev/null
+==6562== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6562== Profiling application: ././enc npark.ppm 2>&1 > /dev/null
+==6562== Profiling result:
+==6562== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","permute_gpu(unsigned char const *, unsigned char*, int const *, int const *, unsigned long, unsigned long, unsigned long, bool)",20,"stall_memory_dependency","Issue Stall Reasons (Data Request)",18.143846%,34.853936%,25.917883%
+"Tesla P100-PCIE-12GB (0)","undo_chen_gpu(unsigned char*, unsigned char*, unsigned long)",20,"stall_memory_dependency","Issue Stall Reasons (Data Request)",36.150539%,48.597204%,40.561465%
+"Tesla P100-PCIE-12GB (0)","apply_chen_gpu(unsigned long, unsigned char*, unsigned long, unsigned long)",20,"stall_memory_dependency","Issue Stall Reasons (Data Request)",78.962993%,84.555090%,83.312025%

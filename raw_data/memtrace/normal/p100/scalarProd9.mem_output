@@ -1,0 +1,9 @@
+==3804== NVPROF is profiling process 3804, command: ./scalarProd 6144
+==3804== Profiling application: ./scalarProd 6144
+==3804== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.217023,0.011438,,,,,,,,,,96.000000,8.196569,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+1.228577,0.011087,,,,,,,,,,96.000000,8.455607,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+1.239727,0.000522,128,1,1,256,1,1,25,4.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","scalarProdGPU(float*, float*, float*, int, int) [120]"
+1.240281,0.000004,,,,,,,,,,0.023438,6.113297,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

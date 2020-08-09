@@ -1,0 +1,8 @@
+==26615== NVPROF is profiling process 26615, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==26615== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==26615== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==26615== Profiling result:
+==26615== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",54.886575%,54.886575%,54.886575%
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"l2_tex_read_hit_rate","L2 Hit Rate (Texture Reads)",98.214286%,98.214286%,98.214286%

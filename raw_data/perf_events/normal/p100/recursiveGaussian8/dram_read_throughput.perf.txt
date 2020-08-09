@@ -1,0 +1,8 @@
+==6542== NVPROF is profiling process 6542, command: ./recursiveGaussian -image=./data/sample2.ppm 2>&1 > /dev/null
+==6542== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6542== Profiling application: ./recursiveGaussian -image=./data/sample2.ppm 2>&1 > /dev/null
+==6542== Profiling result:
+==6542== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_read_throughput","Device Memory Read Throughput",2.032848GB/s,2.227525GB/s,2.125643GB/s
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_read_throughput","Device Memory Read Throughput",155.654141GB/s,160.778979GB/s,158.493304GB/s

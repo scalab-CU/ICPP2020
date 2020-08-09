@@ -1,0 +1,7 @@
+==11505== NVPROF is profiling process 11505, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==11505== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==11505== Profiling result:
+==11505== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"sysmem_write_transactions","System Memory Write Transactions",5,5,5
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"sysmem_write_transactions","System Memory Write Transactions",5,5,5

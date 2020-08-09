@@ -1,0 +1,9 @@
+read 65536 points
+==13025== NVPROF is profiling process 13025, command: ./streamcluster 10 20 256 65536 524288 1000 none output.txt 1 2>&1 > /dev/null
+==13025== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+finish local search
+==13025== Profiling application: ./streamcluster 10 20 256 65536 524288 1000 none output.txt 1 2>&1 > /dev/null
+==13025== Profiling result:
+==13025== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_compute_cost(int, int, long, Point*, int, int, float*, float*, int*, bool*)",1611,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",0.377166%,0.987854%,0.396875%

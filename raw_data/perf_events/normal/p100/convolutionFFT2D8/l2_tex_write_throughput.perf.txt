@@ -1,0 +1,17 @@
+==10542== NVPROF is profiling process 10542, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==10542== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==10542== Profiling result:
+==10542== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",193.092826GB/s,193.092826GB/s,193.092826GB/s
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",86.697664MB/s,120.283247MB/s,103.232556MB/s
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",191.698213GB/s,191.950925GB/s,191.824488GB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",175.551935GB/s,185.439856GB/s,182.771889GB/s
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",131.732265GB/s,131.872215GB/s,131.802331GB/s
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",193.966554GB/s,194.294579GB/s,194.157767GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",192.059802GB/s,192.059802GB/s,192.059802GB/s
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",134.619295GB/s,134.619295GB/s,134.619295GB/s
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",195.957711GB/s,196.036947GB/s,195.997321GB/s
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",178.310934GB/s,186.466834GB/s,183.903066GB/s
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",185.092913GB/s,187.784399GB/s,186.920313GB/s
+======== Error: Application returned non-zero code 1

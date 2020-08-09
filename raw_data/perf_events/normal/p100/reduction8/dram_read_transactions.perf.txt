@@ -1,0 +1,8 @@
+==614== NVPROF is profiling process 614, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==614== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==614== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==614== Profiling result:
+==614== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"dram_read_transactions","Device Memory Read Transactions",24,68,29
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"dram_read_transactions","Device Memory Read Transactions",8200,4194556,2111680

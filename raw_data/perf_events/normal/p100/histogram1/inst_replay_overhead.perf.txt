@@ -1,0 +1,9 @@
+==16380== NVPROF is profiling process 16380, command: ./histogram 64 2>&1 > /dev/null
+==16380== Profiling application: ./histogram 64 2>&1 > /dev/null
+==16380== Profiling result:
+==16380== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.000199,0.000313,0.000216
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.013525,0.019939,0.013967
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.011923,0.012295,0.011961
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"inst_replay_overhead","Instruction Replay Overhead",0.000060,0.000343,0.000084

@@ -1,0 +1,8 @@
+==30103== NVPROF is profiling process 30103, command: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==30103== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30103== Profiling application: ././build/bitcracker_cuda -f ./test_hash/imgWin8_recovery_password.txt -d ./Dictionary/recovery_passwords.txt -b 256 -r
+==30103== Profiling result:
+==30103== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","decrypt_vmk(int, int*, unsigned char*, unsigned char*, int, int, int, int, int, unsigned int, unsigned int, unsigned int, unsigned int, int)",1,"dram_read_transactions","Device Memory Read Transactions",488350927,488350927,488350927
+"Tesla P100-PCIE-12GB (0)","w_block_evaluate(unsigned char*, int, unsigned char*, unsigned int*)",1,"dram_read_transactions","Device Memory Read Transactions",10360248,10360248,10360248

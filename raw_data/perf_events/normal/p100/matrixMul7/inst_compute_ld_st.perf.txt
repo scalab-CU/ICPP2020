@@ -1,0 +1,9 @@
+==1234== NVPROF is profiling process 1234, command: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==1234== Execution timeout, stopping the application...
+==1234== Profiling application: ./matrixMul -wA=6144 -hA=6144 -wB=6144 -hB=6144 2>&1 > /dev/null
+==1234== Warning: Found 1 invalid records in the result.
+==1234== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==1234== Profiling result:
+==1234== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",52,"inst_compute_ld_st","Load/Store Instructions",318939070464,318939070464,318939070464

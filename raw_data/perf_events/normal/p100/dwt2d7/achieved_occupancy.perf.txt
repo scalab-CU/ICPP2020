@@ -1,0 +1,8 @@
+==9953== NVPROF is profiling process 9953, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9953== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==9953== Profiling result:
+==9953== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"achieved_occupancy","Achieved Occupancy",0.062434,0.062473,0.062447
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"achieved_occupancy","Achieved Occupancy",0.117935,0.245670,0.181537
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"achieved_occupancy","Achieved Occupancy",0.884518,0.884518,0.884518

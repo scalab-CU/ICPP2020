@@ -1,0 +1,8 @@
+==3717== NVPROF is profiling process 3717, command: ./MonteCarloMultiGPU -size=180 2>&1 > /dev/null
+==3717== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3717== Profiling application: ./MonteCarloMultiGPU -size=180 2>&1 > /dev/null
+==3717== Profiling result:
+==3717== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",54.265026%,54.265026%,54.265026%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",96.875000%,96.875000%,96.875000%

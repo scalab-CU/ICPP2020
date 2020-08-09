@@ -1,0 +1,7 @@
+==10024== NVPROF is profiling process 10024, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==10024== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==10024== Profiling result:
+==10024== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"issue_slot_utilization","Issue Slot Utilization",7.308874%,7.408519%,7.336783%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"issue_slot_utilization","Issue Slot Utilization",1.444270%,2.533040%,2.514077%

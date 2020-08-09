@@ -1,0 +1,9 @@
+==13486== NVPROF is profiling process 13486, command: ./eigenvalues --matrix-size=5120 2>&1 > /dev/null
+==13486== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13486== Profiling application: ./eigenvalues --matrix-size=5120 2>&1 > /dev/null
+==13486== Profiling result:
+==13486== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"tex_cache_hit_rate","Unified Cache Hit Rate",49.987284%,49.987284%,49.987284%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"tex_cache_hit_rate","Unified Cache Hit Rate",49.974475%,49.974475%,49.974475%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%

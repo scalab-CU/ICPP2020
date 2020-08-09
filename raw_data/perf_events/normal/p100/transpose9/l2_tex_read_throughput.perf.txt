@@ -1,0 +1,13 @@
+==3883== NVPROF is profiling process 3883, command: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==3883== Profiling application: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==3883== Profiling result:
+==3883== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",188.390383GB/s,189.762671GB/s,189.500977GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",188.863303GB/s,190.325131GB/s,190.063533GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",136.264183GB/s,137.364557GB/s,136.794406GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",136.549037GB/s,137.354586GB/s,136.976672GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",86.306312GB/s,97.540876GB/s,97.093830GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",189.854546GB/s,190.544014GB/s,190.216570GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",30.138091GB/s,31.057459GB/s,31.034211GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"l2_tex_read_throughput","L2 Throughput (Texture Reads)",136.626661GB/s,137.521914GB/s,137.045469GB/s

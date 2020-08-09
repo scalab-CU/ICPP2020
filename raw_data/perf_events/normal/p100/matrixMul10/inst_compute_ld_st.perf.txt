@@ -1,0 +1,9 @@
+==9988== NVPROF is profiling process 9988, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==9988== Execution timeout, stopping the application...
+==9988== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==9988== Warning: Found 1 invalid records in the result.
+==9988== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==9988== Profiling result:
+==9988== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",15,"inst_compute_ld_st","Load/Store Instructions",1076376895488,1076376895488,1076376895488

@@ -1,0 +1,13 @@
+==4741== NVPROF is profiling process 4741, command: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==4741== Profiling application: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==4741== Profiling result:
+==4741== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",4915200,4915200,4915200
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",4915200,4915200,4915200
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"ldst_executed","Executed Load/Store Instructions",7372800,7372800,7372800

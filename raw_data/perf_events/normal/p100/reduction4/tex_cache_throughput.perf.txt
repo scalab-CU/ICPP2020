@@ -1,0 +1,7 @@
+==14505== NVPROF is profiling process 14505, command: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==14505== Profiling application: ./reduction -n=16777216 -type=int -kernel=5 2>&1 > /dev/null
+==14505== Profiling result:
+==14505== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=256>(int*, int*, unsigned int)",201,"tex_cache_throughput","Unified Cache Throughput",27.247838GB/s,351.918377GB/s,341.008677GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce5<int, unsigned int=32>(int*, int*, unsigned int)",100,"tex_cache_throughput","Unified Cache Throughput",50.525791MB/s,68.733284MB/s,68.083804MB/s

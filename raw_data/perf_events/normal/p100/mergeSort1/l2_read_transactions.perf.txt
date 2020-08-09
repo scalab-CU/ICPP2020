@@ -1,0 +1,9 @@
+==28978== NVPROF is profiling process 28978, command: ./mergeSort 1 2>&1 > /dev/null
+==28978== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==28978== Profiling result:
+==28978== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"l2_read_transactions","L2 Read Transactions",1120,1456,1213
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"l2_read_transactions","L2 Read Transactions",72857,73763,73286
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"l2_read_transactions","L2 Read Transactions",262584,262584,262584
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"l2_read_transactions","L2 Read Transactions",292732,293916,293557

@@ -1,0 +1,8 @@
+==29057== NVPROF is profiling process 29057, command: ./reduction -n=33554432 -type=int 2>&1 > /dev/null
+==29057== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29057== Profiling application: ./reduction -n=33554432 -type=int 2>&1 > /dev/null
+==29057== Profiling result:
+==29057== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=256, bool=1>(int*, int*, unsigned int)",101,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.093613%,0.143366%,0.098924%
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=32, bool=1>(int*, int*, unsigned int)",100,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",29.922481%,43.619490%,34.865098%

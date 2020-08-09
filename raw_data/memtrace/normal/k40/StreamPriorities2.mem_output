@@ -1,0 +1,13 @@
+==27231== NVPROF is profiling process 27231, command: ./StreamPriorities 512
+==27231== Profiling application: ./StreamPriorities 512
+==27231== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.456201,0.033450,,,,,,,,,,256.000000,7.473746,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.489780,0.033137,,,,,,,,,,256.000000,7.544455,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.523985,0.004903,1024,1,1,512,1,1,10,0,0,,,,,"Tesla K40m (0)","1","14","memcpy_kernel(int*, int*, unsigned long) [128]"
+0.524086,0.001690,1024,1,1,512,1,1,10,0,0,,,,,"Tesla K40m (0)","1","15","memcpy_kernel(int*, int*, unsigned long) [133]"
+0.525787,0.001737,1024,1,1,512,1,1,10,0,0,,,,,"Tesla K40m (0)","1","15","memcpy_kernel(int*, int*, unsigned long) [143]"
+0.528892,0.001632,1024,1,1,512,1,1,10,0,0,,,,,"Tesla K40m (0)","1","14","memcpy_kernel(int*, int*, unsigned long) [138]"
+0.530552,0.102417,,,,,,,,,,256.000000,2.441009,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.634161,0.106251,,,,,,,,,,256.000000,2.352918,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

@@ -1,0 +1,8 @@
+==24537== NVPROF is profiling process 24537, command: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==24537== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24537== Profiling application: ./reduction -n=16777216 -type=int -kernel=4 2>&1 > /dev/null
+==24537== Profiling result:
+==24537== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=256>(int*, int*, unsigned int)",201,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.008261%,0.156498%,0.056227%
+"Tesla P100-PCIE-12GB (0)","void reduce4<int, unsigned int=32>(int*, int*, unsigned int)",100,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.029163%,0.051440%,0.049104%

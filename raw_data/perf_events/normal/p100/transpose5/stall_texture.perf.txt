@@ -1,0 +1,14 @@
+==15571== NVPROF is profiling process 15571, command: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==15571== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15571== Profiling application: ./transpose -dimX=16384 -dimY=16384 2>&1 > /dev/null
+==15571== Profiling result:
+==15571== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000011%,0.000001%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000003%,0.000001%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000001%,0.000000%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000002%,0.000000%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.924257%,0.972614%,0.949185%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000020%,0.000005%

@@ -1,0 +1,10 @@
+==11201== NVPROF is profiling process 11201, command: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==11201== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11201== Profiling application: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==11201== Profiling result:
+==11201== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.645008%,0.679179%,0.666773%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.447168%,0.609595%,0.518694%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.168631%,0.221641%,0.202112%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.399282%,2.108668%,1.908279%

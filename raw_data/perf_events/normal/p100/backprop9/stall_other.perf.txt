@@ -1,0 +1,8 @@
+==27261== NVPROF is profiling process 27261, command: ./backprop 800000
+==27261== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27261== Profiling application: ./backprop 800000
+==27261== Profiling result:
+==27261== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int)",1,"stall_other","Issue Stall Reasons (Other)",51.838741%,51.838741%,51.838741%
+"Tesla P100-PCIE-12GB (0)","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*)",1,"stall_other","Issue Stall Reasons (Other)",14.801002%,14.801002%,14.801002%

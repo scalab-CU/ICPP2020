@@ -1,0 +1,13 @@
+Opening file:matrix2.txt
+Matrix dimension: 992x1056
+Opening file:matrix2t.txt
+Matrix dimension: 1056x992
+==28732== NVPROF is profiling process 28732, command: ./sgemm matrix2.txt matrix2t.txt out.txt 2>&1 > /dev/null
+unsupported size of matrix. m should be multiple of 128; n should be multiple of 16
+Opening file:out.txt for write.
+Matrix dimension: 992x1056
+==28732== Profiling application: ./sgemm matrix2.txt matrix2t.txt out.txt 2>&1 > /dev/null
+==28732== Profiling result:
+==28732== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mysgemmNT(float const *, int, float const *, int, float*, int, int, float, float)",1,"cf_fu_utilization","Control-Flow Function Unit Utilization","Low (1)","Low (1)","Low (1)"

@@ -1,0 +1,14 @@
+==5988== NVPROF is profiling process 5988, command: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==5988== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5988== Profiling application: ./transpose -dimX=5120 -dimY=5120 2>&1 > /dev/null
+==5988== Profiling result:
+==5988== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.042972%,0.043487%,0.043248%
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.064871%,0.074037%,0.069684%
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.070906%,0.099172%,0.082820%
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.092372%,0.128067%,0.110519%
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.048492%,0.090085%,0.064052%
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.914971%,0.993165%,0.948881%
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",43.787648%,44.657231%,44.173336%
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.126797%,0.172492%,0.147512%

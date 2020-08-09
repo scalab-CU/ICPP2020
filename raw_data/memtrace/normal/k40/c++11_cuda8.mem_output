@@ -1,0 +1,10 @@
+==2818== NVPROF is profiling process 2818, command: ./c++11_cuda sample7.txt
+==2818== Profiling application: ./c++11_cuda sample7.txt
+==2818== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.331976,0.000129,,,,,,,,,,1.217080,9.188957,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.332183,0.000003,,,,,,,,,,0.000004,0.001308,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.332218,0.000315,8,1,1,256,1,1,8,0,0,,,,,"Tesla K40m (0)","1","7","xyzw_frequency(int*, char*, int) [116]"
+0.332537,0.138360,1,1,1,1,1,1,11,0,0,,,,,"Tesla K40m (0)","1","7","xyzw_frequency_thrust_device(int*, char*, int) [121]"
+0.470902,0.000002,,,,,,,,,,0.000004,0.001940,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

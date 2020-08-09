@@ -1,0 +1,14 @@
+==18672== NVPROF is profiling process 18672, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==18672== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==18672== Profiling result:
+==18672== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"l2_read_throughput","L2 Throughput (Reads)",202.135094GB/s,202.135094GB/s,202.135094GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"l2_read_throughput","L2 Throughput (Reads)",20.732195GB/s,20.939874GB/s,20.895352GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"l2_read_throughput","L2 Throughput (Reads)",35.681296GB/s,188.960451GB/s,176.372002GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"l2_read_throughput","L2 Throughput (Reads)",226.056134MB/s,32.004316GB/s,6.051260GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"l2_read_throughput","L2 Throughput (Reads)",216.436724MB/s,35.615780GB/s,5.890323GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"l2_read_throughput","L2 Throughput (Reads)",277.195691GB/s,277.195691GB/s,277.195691GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"l2_read_throughput","L2 Throughput (Reads)",91.764109GB/s,91.764109GB/s,91.764109GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"l2_read_throughput","L2 Throughput (Reads)",39.971037GB/s,41.811272GB/s,40.699782GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"l2_read_throughput","L2 Throughput (Reads)",16.134782GB/s,60.249615GB/s,57.544555GB/s

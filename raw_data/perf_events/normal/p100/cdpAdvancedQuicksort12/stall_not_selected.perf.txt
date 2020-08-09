@@ -1,0 +1,8 @@
+==30049== NVPROF is profiling process 30049, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==30049== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30049== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=1000 2>&1 > /dev/null
+==30049== Profiling result:
+==30049== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bitonicsort(unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",4.896313%,4.896313%,4.896313%
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",1999,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.765130%,3.897936%,1.163348%

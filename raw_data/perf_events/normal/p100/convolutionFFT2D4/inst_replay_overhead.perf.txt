@@ -1,0 +1,16 @@
+==5101== NVPROF is profiling process 5101, command: ./convolutionFFT2D 4000
+==5101== Profiling application: ./convolutionFFT2D 4000
+==5101== Profiling result:
+==5101== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000497,0.000497,0.000497
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.091270,0.095238,0.092593
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"inst_replay_overhead","Instruction Replay Overhead",0.000280,0.000477,0.000379
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"inst_replay_overhead","Instruction Replay Overhead",0.000549,0.000879,0.000714
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"inst_replay_overhead","Instruction Replay Overhead",0.000257,0.000476,0.000360
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"inst_replay_overhead","Instruction Replay Overhead",0.000585,0.000585,0.000585
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000364,0.000364,0.000364
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"inst_replay_overhead","Instruction Replay Overhead",0.000299,0.000737,0.000518
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",18,"inst_replay_overhead","Instruction Replay Overhead",0.000200,0.000501,0.000313
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=2048, unsigned int=1, unsigned int=16, unsigned int=2, unsigned int=0, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"inst_replay_overhead","Instruction Replay Overhead",0.000179,0.000286,0.000226
+======== Error: Application returned non-zero code 1

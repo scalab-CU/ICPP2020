@@ -1,0 +1,15 @@
+==29868== NVPROF is profiling process 29868, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29868== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29868== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29868== Profiling result:
+==29868== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"shared_efficiency","Shared Memory Efficiency",24.620984%,24.620984%,24.620984%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"shared_efficiency","Shared Memory Efficiency",23.067197%,23.419118%,23.340913%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"shared_efficiency","Shared Memory Efficiency",97.031484%,97.064046%,97.035554%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"shared_efficiency","Shared Memory Efficiency",20.915262%,21.254771%,21.179325%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"shared_efficiency","Shared Memory Efficiency",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"shared_efficiency","Shared Memory Efficiency",14.045278%,14.045278%,14.045278%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"shared_efficiency","Shared Memory Efficiency",20.045168%,20.063421%,20.047450%

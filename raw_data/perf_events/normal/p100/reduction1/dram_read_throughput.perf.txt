@@ -1,0 +1,8 @@
+==6059== NVPROF is profiling process 6059, command: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==6059== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6059== Profiling application: ./reduction -n=16777216 -type=int 2>&1 > /dev/null
+==6059== Profiling result:
+==6059== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=256, bool=1>(int*, int*, unsigned int)",101,"dram_read_throughput","Device Memory Read Throughput",202.020705GB/s,205.529554GB/s,203.919630GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce6<int, unsigned int=32, bool=1>(int*, int*, unsigned int)",100,"dram_read_throughput","Device Memory Read Throughput",118.918960MB/s,434.193184MB/s,178.038690MB/s

@@ -1,0 +1,10 @@
+==32126== NVPROF is profiling process 32126, command: ./mergeSort 1 2>&1 > /dev/null
+==32126== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32126== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==32126== Profiling result:
+==32126== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.162932%,0.630614%,0.325700%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.046260%,0.069869%,0.057881%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.149234%,0.149234%,0.149234%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.175066%,0.185260%,0.178004%

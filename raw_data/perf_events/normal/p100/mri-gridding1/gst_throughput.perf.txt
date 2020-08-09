@@ -1,0 +1,14 @@
+==29067== NVPROF is profiling process 29067, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29067== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==29067== Profiling result:
+==29067== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"gst_throughput","Global Store Throughput",173.039250GB/s,173.039250GB/s,173.039250GB/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"gst_throughput","Global Store Throughput",66.682965GB/s,67.362151GB/s,67.083132GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"gst_throughput","Global Store Throughput",34.267387GB/s,187.514340GB/s,175.341490GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"gst_throughput","Global Store Throughput",187.224405MB/s,64.383076GB/s,11.668517GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"gst_throughput","Global Store Throughput",183.840832MB/s,68.733284GB/s,11.331763GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"gst_throughput","Global Store Throughput",53.043775GB/s,53.043775GB/s,53.043775GB/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"gst_throughput","Global Store Throughput",45.149532GB/s,45.149532GB/s,45.149532GB/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"gst_throughput","Global Store Throughput",171.468924GB/s,175.358915GB/s,173.613790GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"gst_throughput","Global Store Throughput",15.558740GB/s,63.694200GB/s,60.753489GB/s

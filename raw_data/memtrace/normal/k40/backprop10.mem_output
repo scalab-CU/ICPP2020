@@ -1,0 +1,15 @@
+==9677== NVPROF is profiling process 9677, command: ./backprop 755360
+==9677== Profiling application: ./backprop 755360
+==9677== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.362086,0.000384,,,,,,,,,,2.881474,7.335837,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.362601,0.006314,,,,,,,,,,48.985050,7.575924,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.368923,0.001738,1,47210,1,16,16,1,15,1.062500,0,,,,,"Tesla K40m (0)","1","7","bpnn_layerforward_CUDA(float*, float*, float*, float*, int, int) [116]"
+0.370666,0.001021,,,,,,,,,,2.881470,2.755704,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.374096,0.000002,,,,,,,,,,0.000065,0.039581,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.374234,0.006400,,,,,,,,,,48.985050,7.474968,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.380771,0.006338,,,,,,,,,,48.985050,7.548191,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.387186,0.003949,1,47210,1,16,16,1,21,0.000000,0,,,,,"Tesla K40m (0)","1","7","bpnn_adjust_weights_cuda(float*, int, float*, int, float*, float*) [132]"
+0.391172,0.000293,,,,,,,,,,2.881474,9.608249,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"
+0.391550,0.005133,,,,,,,,,,48.985050,9.320280,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

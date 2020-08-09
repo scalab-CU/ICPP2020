@@ -1,0 +1,10 @@
+==27040== NVPROF is profiling process 27040, command: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==27040== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27040== Profiling application: ./dwt2d sample6.bmp -d 1080x1080 -f -5 -l 3 2>&1 > /dev/null
+==27040== Profiling result:
+==27040== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"gld_throughput","Global Load Throughput",173.547938GB/s,188.058635GB/s,179.811202GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",3,"gld_throughput","Global Load Throughput",271.569361GB/s,273.676364GB/s,272.657815GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=64, int=8>(int const *, int*, int, int, int)",3,"gld_throughput","Global Load Throughput",83.325483GB/s,84.318138GB/s,83.830862GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"gld_throughput","Global Load Throughput",134.909785GB/s,134.909785GB/s,134.909785GB/s

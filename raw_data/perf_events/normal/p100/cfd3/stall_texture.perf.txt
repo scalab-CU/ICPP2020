@@ -1,0 +1,10 @@
+==20114== NVPROF is profiling process 20114, command: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==20114== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20114== Profiling application: ./cfd missile.domn.0.2M 2>&1 > /dev/null
+==20114== Profiling result:
+==20114== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_texture","Issue Stall Reasons (Texture)",17.658507%,18.146792%,17.966178%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_texture","Issue Stall Reasons (Texture)",2.142342%,4.134887%,2.710055%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_texture","Issue Stall Reasons (Texture)",0.057057%,0.144392%,0.084619%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_texture","Issue Stall Reasons (Texture)",0.000176%,0.033994%,0.002276%

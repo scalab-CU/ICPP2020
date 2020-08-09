@@ -1,0 +1,16 @@
+==9875== NVPROF is profiling process 9875, command: ././crc_gpu input8.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X3200000  
+value in hostpartialcrc = 0X73B957B8  
+
+Execution time: 176.078812 ms
+After cuda, hostpartialcrc[0] = 0X6F6BBA04  
+After cuda, hostpartialcrc[0] = 1869330948  
+Program Ended Successfully!
+==9875== Profiling application: ././crc_gpu input8.in 2>&1 > /dev/null
+==9875== Profiling result:
+==9875== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"flop_count_dp_add","Floating Point Operations(Double Precision Add)",0,0,0

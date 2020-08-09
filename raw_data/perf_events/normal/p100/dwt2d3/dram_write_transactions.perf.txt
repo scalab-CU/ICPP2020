@@ -1,0 +1,9 @@
+==23941== NVPROF is profiling process 23941, command: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==23941== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23941== Profiling application: ./dwt2d sample1.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==23941== Profiling result:
+==23941== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"dram_write_transactions","Device Memory Write Transactions",19864,20197,20023
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"dram_write_transactions","Device Memory Write Transactions",65150,259659,162089
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"dram_write_transactions","Device Memory Write Transactions",770558,770558,770558

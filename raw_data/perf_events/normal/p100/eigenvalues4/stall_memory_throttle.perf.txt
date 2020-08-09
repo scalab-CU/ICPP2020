@@ -1,0 +1,9 @@
+==27573== NVPROF is profiling process 27573, command: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==27573== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==27573== Profiling application: ./eigenvalues --matrix-size=4096 2>&1 > /dev/null
+==27573== Profiling result:
+==27573== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000164%,0.000171%,0.000168%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000000%,0.000056%,0.000024%
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000002%,0.000002%,0.000002%

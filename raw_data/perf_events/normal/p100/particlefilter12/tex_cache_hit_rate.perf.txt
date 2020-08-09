@@ -1,0 +1,10 @@
+==7444== NVPROF is profiling process 7444, command: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==7444== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7444== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 8000
+==7444== Profiling result:
+==7444== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",82.352941%,82.352941%,82.352941%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",37.592196%,38.689984%,38.259969%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",41.607722%,41.607722%,41.607722%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",99.762338%,99.762338%,99.762338%

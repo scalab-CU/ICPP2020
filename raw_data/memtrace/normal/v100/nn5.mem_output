@@ -1,0 +1,8 @@
+==331379== NVPROF is profiling process 331379, command: ./nn list1024k.txt -r 5 -lat 30 -lng 20 2>&1 > /dev/null
+==331379== Profiling application: ./nn list1024k.txt -r 5 -lat 30 -lng 20 2>&1 > /dev/null
+==331379== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.489053,0.001066,,,,,,,,,,8.000000,7.331399,"Pageable","Device","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy HtoD]"
+0.490168,0.000021,4096,1,1,256,1,1,16,0,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","euclid(latLong*, float*, int, float, float) [116]"
+0.490218,0.001395,,,,,,,,,,4.000000,2.801089,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

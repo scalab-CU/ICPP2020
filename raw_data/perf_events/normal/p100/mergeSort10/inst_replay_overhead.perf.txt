@@ -1,0 +1,9 @@
+==19626== NVPROF is profiling process 19626, command: ./mergeSort 32 2>&1 > /dev/null
+==19626== Profiling application: ./mergeSort 32 2>&1 > /dev/null
+==19626== Profiling result:
+==19626== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",30,"inst_replay_overhead","Instruction Replay Overhead",0.000988,0.007076,0.001996
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",15,"inst_replay_overhead","Instruction Replay Overhead",0.001013,0.003558,0.001482
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"inst_replay_overhead","Instruction Replay Overhead",0.000037,0.000037,0.000037
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",15,"inst_replay_overhead","Instruction Replay Overhead",0.000017,0.000029,0.000020

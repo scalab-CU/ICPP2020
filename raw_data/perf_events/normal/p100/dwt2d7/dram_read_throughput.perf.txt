@@ -1,0 +1,9 @@
+==29151== NVPROF is profiling process 29151, command: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==29151== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29151== Profiling application: ./dwt2d sample5.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==29151== Profiling result:
+==29151== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"dram_read_throughput","Device Memory Read Throughput",43.608957GB/s,44.692662GB/s,44.096339GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"dram_read_throughput","Device Memory Read Throughput",100.450306GB/s,153.378920GB/s,137.208263GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"dram_read_throughput","Device Memory Read Throughput",71.041711GB/s,71.041711GB/s,71.041711GB/s

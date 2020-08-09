@@ -1,0 +1,8 @@
+==19135== NVPROF is profiling process 19135, command: ./MonteCarloMultiGPU -size=160 2>&1 > /dev/null
+==19135== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19135== Profiling application: ./MonteCarloMultiGPU -size=160 2>&1 > /dev/null
+==19135== Profiling result:
+==19135== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"gld_efficiency","Global Memory Load Efficiency",8.348967%,8.348967%,8.348967%
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"gld_efficiency","Global Memory Load Efficiency",18.465909%,18.465909%,18.465909%

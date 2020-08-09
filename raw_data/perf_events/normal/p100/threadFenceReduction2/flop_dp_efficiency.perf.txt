@@ -1,0 +1,8 @@
+==10618== NVPROF is profiling process 10618, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==10618== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10618== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==10618== Profiling result:
+==10618== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"flop_dp_efficiency","FLOP Efficiency(Peak Double)",0.000000%,0.000000%,0.000000%

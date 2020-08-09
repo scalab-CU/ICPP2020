@@ -1,0 +1,8 @@
+==7062== NVPROF is profiling process 7062, command: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==7062== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7062== Profiling application: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==7062== Profiling result:
+==7062== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","initValue(float*, float)",1,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.124359%,0.124359%,0.124359%
+"Tesla P100-PCIE-12GB (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.017301%,0.066050%,0.041675%

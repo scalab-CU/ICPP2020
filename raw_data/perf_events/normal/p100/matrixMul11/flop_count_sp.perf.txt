@@ -1,0 +1,9 @@
+==13761== NVPROF is profiling process 13761, command: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==13761== Execution timeout, stopping the application...
+==13761== Profiling application: ./matrixMul -wA=10240 -hA=10240 -wB=10240 -hB=10240 2>&1 > /dev/null
+==13761== Warning: Found 1 invalid records in the result.
+==13761== Warning: This can happen if device ran out of memory or if a device kernel was stopped due to an assertion.
+==13761== Profiling result:
+==13761== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",16,"flop_count_sp","Floating Point Operations(Single Precision)",2147483648000,2147483648000,2147483648000

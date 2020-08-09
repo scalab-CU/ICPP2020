@@ -1,0 +1,10 @@
+==15013== NVPROF is profiling process 15013, command: ./histogram 80 2>&1 > /dev/null
+==15013== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==15013== Profiling application: ./histogram 80 2>&1 > /dev/null
+==15013== Profiling result:
+==15013== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",80.428240%,80.538046%,80.490033%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",56.209792%,60.933598%,58.826256%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",88.178715%,89.444466%,88.920641%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"stall_memory_dependency","Issue Stall Reasons (Data Request)",54.322218%,54.883826%,54.620253%

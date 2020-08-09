@@ -1,0 +1,8 @@
+==21030== NVPROF is profiling process 21030, command: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==21030== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21030== Profiling application: ./recursiveGaussian -image=./data/lena.ppm 2>&1 > /dev/null
+==21030== Profiling result:
+==21030== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"dram_read_transactions","Device Memory Read Transactions",17071,32944,25432
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"dram_read_transactions","Device Memory Read Transactions",441,3372,1093

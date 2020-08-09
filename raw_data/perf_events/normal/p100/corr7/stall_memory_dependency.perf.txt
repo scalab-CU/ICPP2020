@@ -1,0 +1,10 @@
+==31076== NVPROF is profiling process 31076, command: ./corr3200 2>&1 > /dev/null
+==31076== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==31076== Profiling application: ./corr3200 2>&1 > /dev/null
+==31076== Profiling result:
+==31076== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.465362%,96.465362%,96.465362%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",79.563462%,79.563462%,79.563462%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",98.224702%,98.224702%,98.224702%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.114395%,97.114395%,97.114395%

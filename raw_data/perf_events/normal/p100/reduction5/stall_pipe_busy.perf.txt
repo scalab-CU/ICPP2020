@@ -1,0 +1,8 @@
+==855== NVPROF is profiling process 855, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==855== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==855== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==855== Profiling result:
+==855== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.274680%,0.361766%,0.333314%
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",0.112782%,0.143678%,0.139864%

@@ -1,0 +1,10 @@
+==9807== NVPROF is profiling process 9807, command: ./histogram 64 2>&1 > /dev/null
+==9807== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9807== Profiling application: ./histogram 64 2>&1 > /dev/null
+==9807== Profiling result:
+==9807== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",441.251743GB/s,448.891060GB/s,446.018347GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",204.907642GB/s,215.114507GB/s,208.131438GB/s
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gld_throughput","Global Load Throughput",302.292588GB/s,313.574114GB/s,306.681406GB/s
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"gld_throughput","Global Load Throughput",352.253577GB/s,354.813255GB/s,353.647983GB/s

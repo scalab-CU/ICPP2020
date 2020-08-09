@@ -1,0 +1,15 @@
+==20842== NVPROF is profiling process 20842, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==20842== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==20842== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==20842== Profiling result:
+==20842== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",70.452487%,70.452487%,70.452487%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"tex_cache_hit_rate","Unified Cache Hit Rate",0.071127%,0.101831%,0.089724%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"tex_cache_hit_rate","Unified Cache Hit Rate",49.901409%,49.916817%,49.903335%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,25.000000%,22.222222%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,25.000000%,22.222222%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",54.296705%,54.296705%,54.296705%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",82.918369%,82.918369%,82.918369%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"tex_cache_hit_rate","Unified Cache Hit Rate",49.901409%,49.902516%,49.901548%

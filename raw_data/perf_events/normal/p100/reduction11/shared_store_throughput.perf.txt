@@ -1,0 +1,7 @@
+==10812== NVPROF is profiling process 10812, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==10812== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==10812== Profiling result:
+==10812== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"shared_store_throughput","Shared Memory Store Throughput",170.830905MB/s,177.992263MB/s,175.569092MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"shared_store_throughput","Shared Memory Store Throughput",28.049244MB/s,34.997222MB/s,34.035504MB/s

@@ -1,0 +1,9 @@
+==6520== NVPROF is profiling process 6520, command: ./scan 120 2>&1 > /dev/null
+==6520== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==6520== Profiling application: ./scan 120 2>&1 > /dev/null
+==6520== Profiling result:
+==6520== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_other","Issue Stall Reasons (Other)",6.783764%,10.070039%,8.704403%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_other","Issue Stall Reasons (Other)",1.523718%,15.799500%,11.094055%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_other","Issue Stall Reasons (Other)",0.453405%,0.547938%,0.492948%

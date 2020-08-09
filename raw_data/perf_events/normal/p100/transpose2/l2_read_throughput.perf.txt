@@ -1,0 +1,13 @@
+==11811== NVPROF is profiling process 11811, command: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==11811== Profiling application: ./transpose -dimX=2048 -dimY=2048 2>&1 > /dev/null
+==11811== Profiling result:
+==11811== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",182.775587GB/s,188.774911GB/s,185.928431GB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",185.131328GB/s,190.991180GB/s,187.074986GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",172.815307GB/s,177.720998GB/s,175.413327GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",173.060264GB/s,181.145521GB/s,175.470908GB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",127.048550GB/s,131.450348GB/s,128.610002GB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",184.366088GB/s,188.927103GB/s,187.469675GB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",32.218939GB/s,32.357681GB/s,32.304601GB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"l2_read_throughput","L2 Throughput (Reads)",173.183003GB/s,179.021426GB/s,175.506936GB/s

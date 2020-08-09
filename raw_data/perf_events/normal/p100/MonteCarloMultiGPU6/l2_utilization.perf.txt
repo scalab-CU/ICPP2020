@@ -1,0 +1,8 @@
+==8340== NVPROF is profiling process 8340, command: ./MonteCarloMultiGPU -size=120 2>&1 > /dev/null
+==8340== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8340== Profiling application: ./MonteCarloMultiGPU -size=120 2>&1 > /dev/null
+==8340== Profiling result:
+==8340== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","rngSetupStates(curandStateXORWOW*, int)",1,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"
+"Tesla P100-PCIE-12GB (0)","MonteCarloOneBlockPerOption(curandStateXORWOW*, __TOptionData const *, __TOptionValue*, int, int)",1,"l2_utilization","L2 Cache Utilization","Low (1)","Low (1)","Low (1)"

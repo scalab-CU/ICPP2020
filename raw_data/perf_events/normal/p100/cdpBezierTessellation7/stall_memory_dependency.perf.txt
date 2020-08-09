@@ -1,0 +1,8 @@
+==32204== NVPROF is profiling process 32204, command: ./cdpBezierTessellation 400 2>&1 > /dev/null
+==32204== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32204== Profiling application: ./cdpBezierTessellation 400 2>&1 > /dev/null
+==32204== Profiling result:
+==32204== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","freeVertexMem(BezierLine*, int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",78.159322%,78.159322%,78.159322%
+"Tesla P100-PCIE-12GB (0)","computeBezierLinesCDP(BezierLine*, int)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",59.341164%,59.341164%,59.341164%

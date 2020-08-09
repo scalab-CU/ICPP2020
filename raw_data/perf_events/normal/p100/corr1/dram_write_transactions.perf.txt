@@ -1,0 +1,10 @@
+==1995== NVPROF is profiling process 1995, command: ./corr1024 2>&1 > /dev/null
+==1995== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1995== Profiling application: ./corr1024 2>&1 > /dev/null
+==1995== Profiling result:
+==1995== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",46372,46372,46372
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",134654,134654,134654
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",571629,571629,571629
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"dram_write_transactions","Device Memory Write Transactions",43453,43453,43453

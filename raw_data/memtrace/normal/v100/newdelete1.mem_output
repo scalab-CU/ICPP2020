@@ -1,0 +1,14 @@
+==417273== NVPROF is profiling process 417273, command: ./newdelete
+==417273== Profiling application: ./newdelete
+==417273== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.470707,0.000031,1,1,1,1,1,1,32,0.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","vectorCreate(Container<int>**, int) [113]"
+0.470874,0.000003,128,1,1,128,1,1,32,0.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","containerFill(Container<int>**) [117]"
+0.470883,0.000015,128,1,1,128,1,1,32,0.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","containerConsume(Container<int>**, int*) [121]"
+0.470900,0.000025,1,1,1,1,1,1,32,0.000000,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","containerDelete(Container<int>**) [124]"
+0.470970,0.000006,,,,,,,,,,64.000000,10.366025,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.471573,0.000004,1,1,1,1024,1,1,32,4.039062,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","placementNew(int*) [132]"
+0.471590,0.000001,,,,,,,,,,4.000000,2.772309,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"
+0.471893,0.000006,1,1,1,1024,1,1,32,16.039062,0,,,,,"Tesla V100-PCIE-16GB (0)","1","7","complexVector(int*) [139]"
+0.471910,0.000001,,,,,,,,,,4.000000,2.709302,"Device","Pageable","Tesla V100-PCIE-16GB (0)","1","7","[CUDA memcpy DtoH]"

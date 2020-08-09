@@ -1,0 +1,10 @@
+==940== NVPROF is profiling process 940, command: ./c++11_cuda sample3.txt
+==940== Profiling application: ./c++11_cuda sample3.txt
+==940== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,KB,GB/s,,,,,,
+0.361996,0.000090,,,,,,,,,,999.399414,10.539545,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.362210,0.000001,,,,,,,,,,0.003906,0.002772,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.362241,0.000182,8,1,1,256,1,1,8,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","xyzw_frequency(int*, char*, int) [116]"
+0.362425,0.040860,1,1,1,1,1,1,12,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","xyzw_frequency_thrust_device(int*, char*, int) [121]"
+0.403286,0.000001,,,,,,,,,,0.003906,0.002646,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

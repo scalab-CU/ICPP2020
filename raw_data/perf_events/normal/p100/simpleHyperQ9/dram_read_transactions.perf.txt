@@ -1,0 +1,9 @@
+==30359== NVPROF is profiling process 30359, command: ./simpleHyperQ -nstreams=100 2>&1 > /dev/null
+==30359== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30359== Profiling application: ./simpleHyperQ -nstreams=100 2>&1 > /dev/null
+==30359== Profiling result:
+==30359== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",100,"dram_read_transactions","Device Memory Read Transactions",0,402,26
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"dram_read_transactions","Device Memory Read Transactions",14,14,14
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",100,"dram_read_transactions","Device Memory Read Transactions",0,92,10

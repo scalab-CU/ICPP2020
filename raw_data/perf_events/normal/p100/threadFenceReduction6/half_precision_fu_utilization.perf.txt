@@ -1,0 +1,8 @@
+==4421== NVPROF is profiling process 4421, command: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==4421== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4421== Profiling application: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==4421== Profiling result:
+==4421== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"half_precision_fu_utilization","Half-Precision Function Unit Utilization","Idle (0)","Idle (0)","Idle (0)"

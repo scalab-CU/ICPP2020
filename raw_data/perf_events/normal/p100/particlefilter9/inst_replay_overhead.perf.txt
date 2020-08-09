@@ -1,0 +1,9 @@
+==5442== NVPROF is profiling process 5442, command: ./particlefilter -x 512 -y 512 -z 10 -np 2000
+==5442== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 2000
+==5442== Profiling result:
+==5442== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"inst_replay_overhead","Instruction Replay Overhead",0.096916,0.096916,0.096916
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"inst_replay_overhead","Instruction Replay Overhead",0.000286,0.000357,0.000318
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"inst_replay_overhead","Instruction Replay Overhead",0.008578,0.009918,0.009229
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"inst_replay_overhead","Instruction Replay Overhead",0.000126,0.000518,0.000194

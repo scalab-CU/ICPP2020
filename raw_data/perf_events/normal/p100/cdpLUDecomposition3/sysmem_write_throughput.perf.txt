@@ -1,0 +1,11 @@
+==24346== NVPROF is profiling process 24346, command: ./cdpLUDecomposition -matrix-size=4096
+==24346== Profiling application: ./cdpLUDecomposition -matrix-size=4096
+==24346== Profiling result:
+==24346== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"sysmem_write_throughput","System Memory Write Throughput",2.102485MB/s,2.102485MB/s,2.102472MB/s
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"sysmem_write_throughput","System Memory Write Throughput",2.439103MB/s,2.587331MB/s,2.540781MB/s
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"sysmem_write_throughput","System Memory Write Throughput",765.938477KB/s,765.938477KB/s,765.933594KB/s
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"sysmem_write_throughput","System Memory Write Throughput",308.000000B/s,308.000000B/s,307.000000B/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"sysmem_write_throughput","System Memory Write Throughput",1.825584MB/s,4.366640MB/s,2.926887MB/s
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"sysmem_write_throughput","System Memory Write Throughput",303.169922KB/s,303.169922KB/s,303.167969KB/s

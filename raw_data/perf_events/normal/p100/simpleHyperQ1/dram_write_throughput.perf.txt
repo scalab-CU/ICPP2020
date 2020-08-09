@@ -1,0 +1,9 @@
+==21333== NVPROF is profiling process 21333, command: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==21333== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21333== Profiling application: ./simpleHyperQ -nstreams=32 2>&1 > /dev/null
+==21333== Profiling result:
+==21333== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",32,"dram_write_throughput","Device Memory Write Throughput",0.000000B/s,100.005859KB/s,17.578125KB/s
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"dram_write_throughput","Device Memory Write Throughput",61.157471MB/s,61.157471MB/s,61.157232MB/s
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",32,"dram_write_throughput","Device Memory Write Throughput",0.000000B/s,200.009766KB/s,23.046875KB/s

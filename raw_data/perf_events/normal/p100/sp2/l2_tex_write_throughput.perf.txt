@@ -1,0 +1,14 @@
+==18413== NVPROF is profiling process 18413, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==18413== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==18413== Profiling result:
+==18413== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",3.386628GB/s,4.142533GB/s,3.984391GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",3.024195GB/s,15.102528GB/s,8.965787GB/s
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",1.914023GB/s,2.313949GB/s,2.261451GB/s
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",3.212437GB/s,8.415565GB/s,4.098764GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",113.448245MB/s,473.548626MB/s,275.122022MB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",2.796414GB/s,12.321545GB/s,8.558756GB/s
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",2.703201GB/s,7.251549GB/s,4.380607GB/s
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",219.550921MB/s,927.899334MB/s,543.767900MB/s
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",461.821860MB/s,1.015906GB/s,714.057838MB/s

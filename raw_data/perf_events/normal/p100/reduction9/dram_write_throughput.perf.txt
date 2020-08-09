@@ -1,0 +1,8 @@
+==12431== NVPROF is profiling process 12431, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==12431== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12431== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==12431== Profiling result:
+==12431== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"dram_write_throughput","Device Memory Write Throughput",26.886050GB/s,60.926273GB/s,28.209302GB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"dram_write_throughput","Device Memory Write Throughput",2.983182GB/s,46.758154GB/s,24.865580GB/s

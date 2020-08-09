@@ -1,0 +1,8 @@
+==12368== NVPROF is profiling process 12368, command: ./quasirandomGenerator 8 2>&1 > /dev/null
+==12368== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==12368== Profiling application: ./quasirandomGenerator 8 2>&1 > /dev/null
+==12368== Profiling result:
+==12368== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",12,76,16
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"dram_read_transactions","Device Memory Read Transactions",16,153,30

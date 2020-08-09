@@ -1,0 +1,10 @@
+==2302== NVPROF is profiling process 2302, command: ./histogram 256 2>&1 > /dev/null
+==2302== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2302== Profiling application: ./histogram 256 2>&1 > /dev/null
+==2302== Profiling result:
+==2302== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gst_transactions_per_request","Global Store Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"gst_transactions_per_request","Global Store Transactions Per Request",1.000000,1.000000,1.000000
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.000000,4.000000

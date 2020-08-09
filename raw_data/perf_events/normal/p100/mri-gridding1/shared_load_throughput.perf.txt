@@ -1,0 +1,14 @@
+==30038== NVPROF is profiling process 30038, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==30038== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==30038== Profiling result:
+==30038== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"shared_load_throughput","Shared Memory Load Throughput",4630.075438GB/s,4647.171272GB/s,4639.222835GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"shared_load_throughput","Shared Memory Load Throughput",34.760443GB/s,187.712285GB/s,175.713884GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"shared_load_throughput","Shared Memory Load Throughput",1.350105GB/s,458.096833GB/s,81.716781GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"shared_load_throughput","Shared Memory Load Throughput",1.749069GB/s,709.606008GB/s,113.167315GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"shared_load_throughput","Shared Memory Load Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"shared_load_throughput","Shared Memory Load Throughput",3689.822446GB/s,3828.049766GB/s,3749.901507GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"shared_load_throughput","Shared Memory Load Throughput",506.201946GB/s,2056.708739GB/s,1959.531426GB/s

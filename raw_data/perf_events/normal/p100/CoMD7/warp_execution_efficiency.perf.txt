@@ -1,0 +1,32 @@
+==11285== NVPROF is profiling process 11285, command: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==11285== Profiling application: ./bin/CoMD-cuda -e -x 80 -y 80 -z 80 2>&1 > /dev/null
+==11285== Profiling result:
+==11285== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","AdvancePosition(SimGpuSt, double)",100,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=3, bool=0>(SimGpuSt, AtomList)",101,"warp_execution_efficiency","Warp Execution Efficiency",46.633258%,48.868375%,47.247990%
+"Tesla P100-PCIE-12GB (0)","void EAM_Force_thread_atom<int=1, bool=0>(SimGpuSt, AtomList)",101,"warp_execution_efficiency","Warp Execution Efficiency",43.541111%,45.694225%,44.138562%
+"Tesla P100-PCIE-12GB (0)","void CompactAtoms<int=0>(SimGpuSt, int, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",87.941277%,98.387725%,92.891815%
+"Tesla P100-PCIE-12GB (0)","emptyNeighborListGpuKernel(SimGpuSt, int)",1,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",90.119741%,90.119741%,90.119741%
+"Tesla P100-PCIE-12GB (0)","updateNAtoms(int*, int*, int)",606,"warp_execution_efficiency","Warp Execution Efficiency",19.374945%,19.600358%,19.516635%
+"Tesla P100-PCIE-12GB (0)","UpdateBoundaryList(SimGpuSt, AtomList, int, int*, int*)",202,"warp_execution_efficiency","Warp Execution Efficiency",64.727354%,66.435083%,65.247540%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*, int*)",2020,"warp_execution_efficiency","Warp Execution Efficiency",99.142676%,99.988227%,99.549001%
+"Tesla P100-PCIE-12GB (0)","ShuffleAtomsData(SimGpuSt, int, int, int*, int, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",58.753478%,58.753506%,58.753490%
+"Tesla P100-PCIE-12GB (0)","SetLinearIndices(SimGpuSt, int, int*, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",70.029332%,70.029332%,70.029332%
+"Tesla P100-PCIE-12GB (0)","UpdateAtomList(SimGpuSt, AtomList, int, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",62.826457%,62.826457%,62.826457%
+"Tesla P100-PCIE-12GB (0)","LoadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"warp_execution_efficiency","Warp Execution Efficiency",84.405290%,84.455808%,84.430537%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanInitKernel<cub::ScanTileState<int, bool=1>>(int, int)",2222,"warp_execution_efficiency","Warp Execution Efficiency",88.636364%,96.036585%,89.865758%
+"Tesla P100-PCIE-12GB (0)","SortAtomsByGlobalId(SimGpuSt, int, int, int*, int, int*, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",67.644241%,80.470036%,70.685589%
+"Tesla P100-PCIE-12GB (0)","void computeOffsetsUpdateReq<int=0>(int*, int, int*, int*, SimGpuSt)",606,"warp_execution_efficiency","Warp Execution Efficiency",55.722020%,56.022722%,55.878141%
+"Tesla P100-PCIE-12GB (0)","UnloadForceBuffer(ForceMsgSt*, int, int*, SimGpuSt, int*)",606,"warp_execution_efficiency","Warp Execution Efficiency",85.154692%,85.203419%,85.179064%
+"Tesla P100-PCIE-12GB (0)","fill(int*, int, int*)",202,"warp_execution_efficiency","Warp Execution Efficiency",99.985763%,99.985763%,99.985763%
+"Tesla P100-PCIE-12GB (0)","EAM_Force_thread_atom2(SimGpuSt, AtomList)",101,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","UpdateCompactIndices(int*, int, SimGpuSt)",101,"warp_execution_efficiency","Warp Execution Efficiency",83.779714%,83.779714%,83.779714%
+"Tesla P100-PCIE-12GB (0)","LoadAtomsBufferPacked(AtomMsgSoASt, int*, SimGpuSt, int*, double, double, double)",606,"warp_execution_efficiency","Warp Execution Efficiency",76.747768%,77.670631%,77.209730%
+"Tesla P100-PCIE-12GB (0)","ReduceEnergy(SimGpuSt, double*, double*)",11,"warp_execution_efficiency","Warp Execution Efficiency",97.665663%,97.665663%,97.665663%
+"Tesla P100-PCIE-12GB (0)","computeBoxIds(LinkCellGpuSt, vec_t, int*, int)",606,"warp_execution_efficiency","Warp Execution Efficiency",99.979111%,100.000000%,99.993045%
+"Tesla P100-PCIE-12GB (0)","void cub::DeviceScanKernel<cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*, int*, cub::ScanTileState<int, bool=1>, cub::Sum, int, int>(int*, cub::Sum, int, int, int, cub::DispatchScan<int*, int*, cub::Sum, int, int>::PtxAgentScanPolicy, int*)",2222,"warp_execution_efficiency","Warp Execution Efficiency",97.643302%,98.435818%,98.175117%
+"Tesla P100-PCIE-12GB (0)","AdvanceVelocity(SimGpuSt, double)",200,"warp_execution_efficiency","Warp Execution Efficiency",100.000000%,100.000000%,100.000000%
+"Tesla P100-PCIE-12GB (0)","void UpdateLinkCells<int=0>(SimGpuSt, LinkCellGpuSt, int*)",101,"warp_execution_efficiency","Warp Execution Efficiency",95.592190%,100.000000%,97.725403%
+"Tesla P100-PCIE-12GB (0)","UnloadAtomsBufferPacked(vec_t, vec_t, int*, int*, int, AtomsGpuSt, int*)",606,"warp_execution_efficiency","Warp Execution Efficiency",99.978879%,100.000000%,99.992960%

@@ -1,0 +1,7 @@
+==9093== NVPROF is profiling process 9093, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==9093== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==9093== Profiling result:
+==9093== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"warp_execution_efficiency","Warp Execution Efficiency",99.961652%,99.961652%,99.961652%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"warp_execution_efficiency","Warp Execution Efficiency",99.955160%,99.955222%,99.955191%

@@ -1,0 +1,15 @@
+==2557== NVPROF is profiling process 2557, command: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==2557== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2557== Profiling application: ./nsp input/archive/random-42000-10000-3.cnf 3 2>&1 > /dev/null
+==2557== Profiling result:
+==2557== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",294,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.299137%,0.536544%,0.400955%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",168,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000000%,0.866126%,0.149755%
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",43,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.008739%,0.012568%,0.010782%
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",636,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.029537%,12.141397%,7.684571%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",126,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.003348%,0.009580%,0.007819%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",126,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.038584%,0.331899%,0.191860%
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",636,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.006368%,0.015773%,0.009777%
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",168,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.005823%,0.009135%,0.007791%
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",42,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000096%,0.049823%,0.010055%

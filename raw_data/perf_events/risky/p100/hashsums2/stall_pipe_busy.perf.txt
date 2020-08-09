@@ -1,0 +1,17 @@
+==31817== NVPROF is profiling process 31817, command: ././crc_gpu input1.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X3EC00000  
+value in hostpartialcrc = 0XAE6D27B8  
+
+==31817== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+Execution time: 297.078888 ms
+After cuda, hostpartialcrc[0] = 0X85D45906  
+After cuda, hostpartialcrc[0] = 2245286150  
+Program Ended Successfully!
+==31817== Profiling application: ././crc_gpu input1.in 2>&1 > /dev/null
+==31817== Profiling result:
+==31817== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",4.554707%,4.554707%,4.554707%

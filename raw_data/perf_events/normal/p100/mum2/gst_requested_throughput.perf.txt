@@ -1,0 +1,29 @@
+Loading ref: ./data/NC_003997.20k.fna... 1399930 bp. [0.01097s]
+Opening ./data/sample0.fna...
+Building reference texture...
+  Creating Suffix Tree... 2316237 nodes [0.34568s]
+  Renumbering tree... [0.11629s]
+  Flattening Tree... [0.25097s]
+==9299== NVPROF is profiling process 9299, command: ./mum ./data/NC_003997.20k.fna ./data/sample0.fna
+Running under CUDA 6.0
+CUDA device has -93978624 bytes of memory
+There are -174063616 bytes left on the board
+50 queries (5000000 bp), need 44992900 bytes on the GPU [0.02459s]
+loadQueries on GPU: Allocating device memory for queries...
+loadQueries on GPU: allocated 5000500 bytes done
+allocating reference texture
+done
+done
+Allocating result array for 50 queries (39992400 bytes) ...done
+Using blocks of 50 x 1 x 1 threads
+Using a grid of 1 x 1 x 1 blocks
+Memory footprint is:
+	queries: 5000500
+	ref: 80084992
+	results: 39992400
+kernel time= 4151.194824
+==9299== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample0.fna
+==9299== Profiling result:
+==9299== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int)",1,"gst_requested_throughput","Requested Global Store Throughput",6.938161MB/s,6.938161MB/s,6.938160MB/s

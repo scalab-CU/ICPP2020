@@ -1,0 +1,15 @@
+==29035== NVPROF is profiling process 29035, command: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==29035== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==29035== Profiling application: ./nsp input/random-16800-4000-3.cnf 3 2>&1 > /dev/null
+==29035== Profiling result:
+==29035== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortScanKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxScanPolicy, int>(float*, int)",322,"gld_transactions_per_request","Global Load Transactions Per Request",16.000000,16.000000,16.000000
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",184,"gld_transactions_per_request","Global Load Transactions Per Request",7.939394,31.606557,26.792803
+"Tesla P100-PCIE-12GB (0)","update_bias(GPUCSRGraph, GPUCSRGraph, Edge, float*, int*, int*, float*)",47,"gld_transactions_per_request","Global Load Transactions Per Request",8.489016,18.041233,12.913555
+"Tesla P100-PCIE-12GB (0)","update_eta(GPUCSRGraph, GPUCSRGraph, Edge, float*)",670,"gld_transactions_per_request","Global Load Transactions Per Request",4.188940,10.103949,7.037960
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",138,"gld_transactions_per_request","Global Load Transactions Per Request",7.631579,8.000000,7.935117
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortDownsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy, bool=0, float, int, int>(int*, int, int*, int, cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxAltDownsweepPolicy*, int*, int, bool, bool, cub::GridEvenShare<int*>)",138,"gld_transactions_per_request","Global Load Transactions Per Request",26.608696,31.540984,29.405259
+"Tesla P100-PCIE-12GB (0)","calc_pi_values(GPUCSRGraph, GPUCSRGraph, Edge)",670,"gld_transactions_per_request","Global Load Transactions Per Request",4.472513,16.028241,9.323442
+"Tesla P100-PCIE-12GB (0)","void cub::RadixSortUpsweepKernel<cub::DeviceRadixSortDispatch<bool=0, float, int, int>::PtxUpsweepPolicy, bool=0, float, int>(int*, int*, int*, int, bool, cub::GridEvenShare<int*>)",184,"gld_transactions_per_request","Global Load Transactions Per Request",7.631579,8.000000,7.935117
+"Tesla P100-PCIE-12GB (0)","decimate_2(GPUCSRGraph, GPUCSRGraph, Edge, int*, int const *, int)",46,"gld_transactions_per_request","Global Load Transactions Per Request",4.350594,4.577697,4.440610

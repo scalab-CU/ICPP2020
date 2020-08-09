@@ -1,0 +1,14 @@
+==30809== NVPROF is profiling process 30809, command: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==30809== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==30809== Profiling application: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==30809== Profiling result:
+==30809== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"stall_texture","Issue Stall Reasons (Texture)",0.135698%,0.364622%,0.250160%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.476500%,0.476500%,0.476500%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"stall_texture","Issue Stall Reasons (Texture)",1.591982%,1.879304%,1.756396%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.950262%,0.950262%,0.950262%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"stall_texture","Issue Stall Reasons (Texture)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"stall_texture","Issue Stall Reasons (Texture)",1.036431%,1.036431%,1.036431%

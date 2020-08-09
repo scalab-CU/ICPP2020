@@ -1,0 +1,8 @@
+==4032== NVPROF is profiling process 4032, command: ./quasirandomGenerator 16 2>&1 > /dev/null
+==4032== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4032== Profiling application: ./quasirandomGenerator 16 2>&1 > /dev/null
+==4032== Profiling result:
+==4032== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","inverseCNDKernel(float*, unsigned int*, unsigned int)",21,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",1.954823%,1.959729%,1.957378%
+"Tesla P100-PCIE-12GB (0)","quasirandomGeneratorKernel(float*, unsigned int, unsigned int)",21,"stall_pipe_busy","Issue Stall Reasons (Pipe Busy)",7.903394%,8.122830%,8.019542%

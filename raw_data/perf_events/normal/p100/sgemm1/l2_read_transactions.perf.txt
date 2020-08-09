@@ -1,0 +1,12 @@
+Opening file:matrix1.txt
+Matrix dimension: 1024x992
+Opening file:matrix1t.txt
+Matrix dimension: 992x1024
+==4180== NVPROF is profiling process 4180, command: ./sgemm matrix1.txt matrix1t.txt out.txt 2>&1 > /dev/null
+Opening file:out.txt for write.
+Matrix dimension: 1024x992
+==4180== Profiling application: ./sgemm matrix1.txt matrix1t.txt out.txt 2>&1 > /dev/null
+==4180== Profiling result:
+==4180== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mysgemmNT(float const *, int, float const *, int, float*, int, int, float, float)",1,"l2_read_transactions","L2 Read Transactions",8148760,8148760,8148760

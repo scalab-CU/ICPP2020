@@ -1,0 +1,16 @@
+==22248== NVPROF is profiling process 22248, command: ././crc_gpu input6.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0X93000000  
+value in hostpartialcrc = 0X62E37B8  
+
+Execution time: 154.215485 ms
+After cuda, hostpartialcrc[0] = 0X83C94846  
+After cuda, hostpartialcrc[0] = 2211006534  
+Program Ended Successfully!
+==22248== Profiling application: ././crc_gpu input6.in 2>&1 > /dev/null
+==22248== Profiling result:
+==22248== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"ldst_executed","Executed Load/Store Instructions",897523,897523,897523

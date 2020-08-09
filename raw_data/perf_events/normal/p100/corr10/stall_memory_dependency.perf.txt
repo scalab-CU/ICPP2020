@@ -1,0 +1,10 @@
+==4101== NVPROF is profiling process 4101, command: ./corr4096 2>&1 > /dev/null
+==4101== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4101== Profiling application: ./corr4096 2>&1 > /dev/null
+==4101== Profiling result:
+==4101== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","std_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",96.938591%,96.938591%,96.938591%
+"Tesla P100-PCIE-12GB (0)","reduce_kernel(float*, float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",80.765062%,80.765062%,80.765062%
+"Tesla P100-PCIE-12GB (0)","corr_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",98.195410%,98.195410%,98.195410%
+"Tesla P100-PCIE-12GB (0)","mean_kernel(float*, float*)",1,"stall_memory_dependency","Issue Stall Reasons (Data Request)",97.159041%,97.159041%,97.159041%

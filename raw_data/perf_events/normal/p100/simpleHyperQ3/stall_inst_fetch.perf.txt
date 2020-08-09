@@ -1,0 +1,9 @@
+==10210== NVPROF is profiling process 10210, command: ./simpleHyperQ -nstreams=128 2>&1 > /dev/null
+==10210== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==10210== Profiling application: ./simpleHyperQ -nstreams=128 2>&1 > /dev/null
+==10210== Profiling result:
+==10210== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",128,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",27.271462%,27.894038%,27.277134%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",6.519208%,6.519208%,6.519208%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",128,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",27.272015%,27.273880%,27.272348%

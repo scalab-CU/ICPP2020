@@ -1,0 +1,8 @@
+==14060== NVPROF is profiling process 14060, command: ./recursiveGaussian -image=./data/sample3.ppm 2>&1 > /dev/null
+==14060== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==14060== Profiling application: ./recursiveGaussian -image=./data/sample3.ppm 2>&1 > /dev/null
+==14060== Profiling result:
+==14060== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","d_recursiveGaussian_rgba(unsigned int*, unsigned int*, int, int, float, float, float, float, float, float, float, float)",202,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.000015%,0.000024%,0.000019%
+"Tesla P100-PCIE-12GB (0)","d_transpose(unsigned int*, unsigned int*, int, int)",202,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.311107%,1.701380%,0.848325%

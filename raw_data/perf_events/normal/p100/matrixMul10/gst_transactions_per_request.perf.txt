@@ -1,0 +1,7 @@
+==21046== NVPROF is profiling process 21046, command: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==21046== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21046== Profiling application: ./matrixMul -wA=9216 -hA=9216 -wB=9216 -hB=9216 2>&1 > /dev/null
+==21046== Profiling result:
+==21046== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"gst_transactions_per_request","Global Store Transactions Per Request",4.000000,4.167691,4.013346

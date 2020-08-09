@@ -1,0 +1,7 @@
+==8141== NVPROF is profiling process 8141, command: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==8141== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8141== Profiling application: ./matrixMul -wA=4096 -hA=4096 -wB=4096 -hB=4096 2>&1 > /dev/null
+==8141== Profiling result:
+==8141== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void matrixMulCUDA<int=32>(float*, float*, float*, int, int)",301,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",2.286212%,2.306935%,2.302600%

@@ -1,0 +1,11 @@
+==2020== NVPROF is profiling process 2020, command: ./shfl_scan 100000 2>&1 > /dev/null
+==2020== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==2020== Profiling application: ./shfl_scan 100000 2>&1 > /dev/null
+==2020== Profiling result:
+==2020== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.674262%,1.674262%,1.674262%
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.068343%,1.068343%,1.068343%
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.387694%,0.387694%,0.387694%
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"stall_not_selected","Issue Stall Reasons (Not Selected)",3.223159%,3.241592%,3.232376%
+======== Error: Application returned non-zero code 1

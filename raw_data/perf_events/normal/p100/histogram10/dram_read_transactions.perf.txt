@@ -1,0 +1,10 @@
+==19998== NVPROF is profiling process 19998, command: ./histogram 256 2>&1 > /dev/null
+==19998== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19998== Profiling application: ./histogram 256 2>&1 > /dev/null
+==19998== Profiling result:
+==19998== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",8388620,8388692,8388631
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",7688,7728,7695
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",139828,139868,139835
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"dram_read_transactions","Device Memory Read Transactions",8388620,8388768,8388640

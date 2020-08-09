@@ -1,0 +1,7 @@
+==22905== NVPROF is profiling process 22905, command: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==22905== Profiling application: ./threadFenceReduction -n=33554432 2>&1 > /dev/null
+==22905== Profiling result:
+==22905== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",1,"tex_cache_transactions","Unified Cache Transactions",4194304,4194304,4194304
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=1>(float const *, float*, unsigned int)",100,"tex_cache_transactions","Unified Cache Transactions",4194376,4194376,4194376

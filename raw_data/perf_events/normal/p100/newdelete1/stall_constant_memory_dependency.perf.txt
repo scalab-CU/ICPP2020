@@ -1,0 +1,12 @@
+==3041== NVPROF is profiling process 3041, command: ./newdelete 2>&1 > /dev/null
+==3041== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3041== Profiling application: ./newdelete 2>&1 > /dev/null
+==3041== Profiling result:
+==3041== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","complexVector(int*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",8.939872%,8.939872%,8.939872%
+"Tesla P100-PCIE-12GB (0)","placementNew(int*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",11.387613%,11.387613%,11.387613%
+"Tesla P100-PCIE-12GB (0)","containerFill(Container<int>**)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",25.130499%,25.130499%,25.130499%
+"Tesla P100-PCIE-12GB (0)","vectorCreate(Container<int>**, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",3.165952%,3.165952%,3.165952%
+"Tesla P100-PCIE-12GB (0)","containerDelete(Container<int>**)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",2.917896%,2.917896%,2.917896%
+"Tesla P100-PCIE-12GB (0)","containerConsume(Container<int>**, int*)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",3.750493%,3.750493%,3.750493%

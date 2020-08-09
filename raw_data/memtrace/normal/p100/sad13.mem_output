@@ -1,0 +1,12 @@
+==27633== NVPROF is profiling process 27633, command: ./sad reference.bin frame.bin
+==27633== Profiling application: ./sad reference.bin frame.bin
+==27633== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,KB,MB,GB/s,,,,,,
+0.326172,0.000009,,,,,,,,,,0.048340,5.525150,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.326202,0.000007,,,,,,,,,,0.048340,6.556511,"Pageable","Array","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoA]"
+0.326415,0.000001,,,,,,,,,,8.485153,8929.183642,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.326501,0.000327,44,36,1,61,1,1,48,0,2.140625,,,,,"Tesla P100-PCIE-12GB (0)","1","7","mb_sad_calc(unsigned short*, unsigned short*, int, int) [123]"
+0.326855,0.000032,11,9,1,32,4,1,32,0,0.000000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","larger_sad_calc_8(unsigned short*, int, int) [129]"
+0.326889,0.000020,11,9,1,32,1,1,30,0,0.000000,,,,,"Tesla P100-PCIE-12GB (0)","1","7","larger_sad_calc_16(unsigned short*, int, int) [135]"
+0.326911,0.003224,,,,,,,,,,8.485153,2.570416,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

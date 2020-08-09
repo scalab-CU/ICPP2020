@@ -1,0 +1,8 @@
+==17219== NVPROF is profiling process 17219, command: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==17219== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==17219== Profiling application: ./threadFenceReduction -n=40000000 2>&1 > /dev/null
+==17219== Profiling result:
+==17219== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"gld_throughput","Global Load Throughput",218.011324GB/s,218.011324GB/s,218.011324GB/s
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"gld_throughput","Global Load Throughput",211.820266GB/s,213.662027GB/s,212.734684GB/s

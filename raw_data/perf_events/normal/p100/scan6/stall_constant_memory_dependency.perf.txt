@@ -1,0 +1,9 @@
+==3020== NVPROF is profiling process 3020, command: ./scan 48 2>&1 > /dev/null
+==3020== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==3020== Profiling application: ./scan 48 2>&1 > /dev/null
+==3020== Profiling result:
+==3020== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",2.594914%,4.394816%,2.934433%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.036872%,0.110612%,0.042240%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.009435%,0.047662%,0.011399%

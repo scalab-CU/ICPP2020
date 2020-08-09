@@ -1,0 +1,17 @@
+==6240== NVPROF is profiling process 6240, command: ./convolutionFFT2D 2000
+==6240== Profiling application: ./convolutionFFT2D 2000
+==6240== Profiling result:
+==6240== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.908596,0.908596,0.908596
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.148902,0.206081,0.183221
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.881495,0.888655,0.885075
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.269941,0.270147,0.270044
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",2.126615,2.156846,2.139764
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.967969,1.967969,1.967969
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.823875,0.823875,0.823875
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",2.106998,2.147007,2.127002
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=32, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.459777,1.766159,1.693642
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.304196,1.431493,1.395404
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=1024, unsigned int=1, unsigned int=16, unsigned int=2, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.412591,1.616300,1.580525
+======== Error: Application returned non-zero code 1

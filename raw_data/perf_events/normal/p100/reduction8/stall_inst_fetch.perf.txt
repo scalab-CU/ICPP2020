@@ -1,0 +1,8 @@
+==23259== NVPROF is profiling process 23259, command: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==23259== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23259== Profiling application: ./reduction -n=33554432 -type=float -kernel=4 2>&1 > /dev/null
+==23259== Profiling result:
+==23259== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=64>(float*, float*, unsigned int)",100,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",5.709992%,6.850534%,6.647622%
+"Tesla P100-PCIE-12GB (0)","void reduce4<float, unsigned int=256>(float*, float*, unsigned int)",201,"stall_inst_fetch","Issue Stall Reasons (Instructions Fetch)",3.947242%,5.505305%,4.387586%

@@ -1,0 +1,9 @@
+==24534== NVPROF is profiling process 24534, command: ./mergeSort 1 2>&1 > /dev/null
+==24534== Profiling application: ./mergeSort 1 2>&1 > /dev/null
+==24534== Profiling result:
+==24534== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",20,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",96.174863%,98.321343%,97.503778%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",10,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",98.153034%,98.858075%,98.555365%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",97.227723%,97.227723%,97.227723%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",10,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",77.997311%,79.064266%,78.234419%

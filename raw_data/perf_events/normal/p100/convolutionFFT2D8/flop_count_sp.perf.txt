@@ -1,0 +1,17 @@
+==4566== NVPROF is profiling process 4566, command: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==4566== Profiling application: ./convolutionFFT2D 8000 2>&1 > /dev/null
+==4566== Profiling result:
+==4566== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","spPreprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",1,"flop_count_sp","Floating Point Operations(Single Precision)",251654173,251654173,251654173
+"Tesla P100-PCIE-12GB (0)","padKernel_kernel(float*, float*, int, int, int, int, int, int)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-PCIE-12GB (0)","spPostprocess2D_kernel(float2*, float2*, unsigned int, unsigned int, unsigned int, unsigned int, float)",2,"flop_count_sp","Floating Point Operations(Single Precision)",352317481,352317481,352317481
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=128, unsigned int=1, unsigned int=16, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"flop_count_sp","Floating Point Operations(Single Precision)",1000341504,1000341504,1000341504
+"Tesla P100-PCIE-12GB (0)","modulateAndNormalize_kernel(float2*, float2*, int, float)",2,"flop_count_sp","Floating Point Operations(Single Precision)",268500992,269484032,268992512
+"Tesla P100-PCIE-12GB (0)","padDataClampToBorder_kernel(float*, float*, int, int, int, int, int, int, int, int)",3,"flop_count_sp","Floating Point Operations(Single Precision)",0,0,0
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex23preprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",1,"flop_count_sp","Floating Point Operations(Single Precision)",612327424,612327424,612327424
+"Tesla P100-PCIE-12GB (0)","spProcess2D_kernel(float2*, float2*, float2*, unsigned int, unsigned int, unsigned int, float, float)",1,"flop_count_sp","Floating Point Operations(Single Precision)",1224734865,1224734865,1224734865
+"Tesla P100-PCIE-12GB (0)","__nv_static_73__60_tmpxft_00004097_00000000_10_spRealComplex_compute_70_cpp1_ii_1f28721c__ZN13spRealComplex24postprocessC2C_kernelMemIjfL9fftAxii_t3EEEvP7ComplexIT0_EPKS4_T_15coordDivisors_tIS8_E7coord_tIS8_ESC_S8_S3_10callback_t",2,"flop_count_sp","Floating Point Operations(Single Precision)",713154560,713154560,713154560
+"Tesla P100-PCIE-12GB (0)","void regular_fft<unsigned int=64, unsigned int=1, unsigned int=8, unsigned int=32, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=1, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"flop_count_sp","Floating Point Operations(Single Precision)",1417674752,1417674752,1417674752
+"Tesla P100-PCIE-12GB (0)","void vector_fft<unsigned int=4096, unsigned int=1, unsigned int=16, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int=2, unsigned int=1, unsigned int=1, unsigned int=0, unsigned int, float>(kernel_arguments_t<unsigned int>)",9,"flop_count_sp","Floating Point Operations(Single Precision)",1893728256,1893728256,1893728256
+======== Error: Application returned non-zero code 1

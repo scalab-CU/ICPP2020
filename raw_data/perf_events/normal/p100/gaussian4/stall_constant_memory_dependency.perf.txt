@@ -1,0 +1,8 @@
+==11256== NVPROF is profiling process 11256, command: ./gaussian ./data/matrix4096.txt -q 2>&1 > /dev/null
+==11256== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11256== Profiling application: ./gaussian ./data/matrix4096.txt -q 2>&1 > /dev/null
+==11256== Profiling result:
+==11256== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","Fan2(float*, float*, float*, int, int, int)",4095,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.015522%,0.336247%,0.058811%
+"Tesla P100-PCIE-12GB (0)","Fan1(float*, float*, int, int)",4095,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",15.886401%,84.124485%,41.467094%

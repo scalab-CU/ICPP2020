@@ -1,0 +1,10 @@
+==8739== NVPROF is profiling process 8739, command: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==8739== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==8739== Profiling application: ./cfd fvcorr.domn.097K 2>&1 > /dev/null
+==8739== Profiling result:
+==8739== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",42.486196%,42.806560%,42.629960%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.172052%,0.214798%,0.190293%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.416979%,0.709847%,0.560926%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.356054%,0.864627%,0.484898%

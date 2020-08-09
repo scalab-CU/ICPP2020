@@ -1,0 +1,7 @@
+==9916== NVPROF is profiling process 9916, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==9916== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==9916== Profiling result:
+==9916== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",3.137767MB/s,3.226844MB/s,3.171738MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"l2_tex_write_throughput","L2 Throughput (Texture Writes)",5.923443MB/s,8.672230MB/s,8.590738MB/s

@@ -1,0 +1,10 @@
+==9365== NVPROF is profiling process 9365, command: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==9365== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==9365== Profiling application: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==9365== Profiling result:
+==9365== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",6.908340%,11.192384%,10.371789%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",1.136655%,1.574192%,1.517181%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",10.590135%,13.631539%,13.094238%

@@ -1,0 +1,8 @@
+==21069== NVPROF is profiling process 21069, command: ./kmeans -i ./data/2048000_50.txt 2>&1 > /dev/null
+==21069== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==21069== Profiling application: ./kmeans -i ./data/2048000_50.txt 2>&1 > /dev/null
+==21069== Profiling result:
+==21069== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","invert_mapping(float*, float*, int, int)",1,"dram_write_transactions","Device Memory Write Transactions",12827044,12827044,12827044
+"Tesla P100-PCIE-12GB (0)","kmeansPoint(float*, int, int, int, int*, float*, float*, int*)",2,"dram_write_transactions","Device Memory Write Transactions",299687,2125950,1212818

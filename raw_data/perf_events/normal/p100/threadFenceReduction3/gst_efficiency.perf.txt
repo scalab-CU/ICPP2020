@@ -1,0 +1,8 @@
+==5683== NVPROF is profiling process 5683, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==5683== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==5683== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==5683== Profiling result:
+==5683== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"gst_efficiency","Global Memory Store Efficiency",12.500000%,12.500000%,12.500000%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"gst_efficiency","Global Memory Store Efficiency",12.500000%,12.500000%,12.500000%

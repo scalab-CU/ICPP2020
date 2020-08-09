@@ -1,0 +1,7 @@
+==18156== NVPROF is profiling process 18156, command: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18156== Profiling application: ./reduction -n=33554432 -type=double -kernel=4 2>&1 > /dev/null
+==18156== Profiling result:
+==18156== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=64>(double*, double*, unsigned int)",100,"gst_throughput","Global Store Throughput",7.064254MB/s,8.751814MB/s,8.642855MB/s
+"Tesla P100-PCIE-12GB (0)","void reduce4<double, unsigned int=256>(double*, double*, unsigned int)",201,"gst_throughput","Global Store Throughput",718.060661MB/s,3.249176GB/s,3.209504GB/s

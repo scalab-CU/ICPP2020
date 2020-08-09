@@ -1,0 +1,14 @@
+==24839== NVPROF is profiling process 24839, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==24839== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==24839== Profiling result:
+==24839== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",97.435241%,97.435241%,97.435241%
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",77.776526%,77.776531%,77.776528%
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",93.342682%,93.363733%,93.361102%
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",76.250000%,86.253415%,78.472981%
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",75.321691%,85.699013%,77.627763%
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",98.147388%,98.147388%,98.147388%
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",98.972827%,98.972827%,98.972827%
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",91.480781%,91.480781%,91.480781%
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",93.275917%,93.286141%,93.284863%

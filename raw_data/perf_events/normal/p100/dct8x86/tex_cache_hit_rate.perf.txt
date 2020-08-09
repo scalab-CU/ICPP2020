@@ -1,0 +1,14 @@
+==19213== NVPROF is profiling process 19213, command: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==19213== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19213== Profiling application: ./dct8x8 sample5.bmp 2>&1 > /dev/null
+==19213== Profiling result:
+==19213== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1IDCT(float*, int, int, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",25.000000%,25.000000%,25.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationFloat(float*, int)",2,"tex_cache_hit_rate","Unified Cache Hit Rate",25.000000%,25.000000%,25.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2IDCT(float*, float*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel2DCT(float*, float*, int)",101,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernel1DCT(float*, int, int, int)",10,"tex_cache_hit_rate","Unified Cache Hit Rate",25.000000%,25.000000%,25.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortIDCT(short*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelQuantizationShort(short*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",25.000772%,25.000772%,25.000772%
+"Tesla P100-PCIE-12GB (0)","CUDAkernelShortDCT(short*, int)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",50.000000%,50.000000%,50.000000%

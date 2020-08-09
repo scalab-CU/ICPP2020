@@ -1,0 +1,13 @@
+==16397== NVPROF is profiling process 16397, command: ./pathfinder 400000 100 20
+==16397== Profiling application: ./pathfinder 400000 100 20
+==16397== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.139189,0.000159,,,,,,,,,,1.525879,9.343007,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.139746,0.018100,,,,,,,,,,151.062012,8.150139,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.157853,0.000452,1852,1,1,256,1,1,14,2.000000,0,,,,,"Tesla K40m (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [117]"
+1.158308,0.000448,1852,1,1,256,1,1,14,2.000000,0,,,,,"Tesla K40m (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [127]"
+1.158758,0.000449,1852,1,1,256,1,1,14,2.000000,0,,,,,"Tesla K40m (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [137]"
+1.159210,0.000450,1852,1,1,256,1,1,14,2.000000,0,,,,,"Tesla K40m (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [147]"
+1.159663,0.000423,1852,1,1,256,1,1,14,2.000000,0,,,,,"Tesla K40m (0)","1","7","dynproc_kernel(int, int*, int*, int*, int, int, int, int) [157]"
+1.160091,0.000156,,,,,,,,,,1.525879,9.528511,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

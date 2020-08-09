@@ -1,0 +1,10 @@
+==19920== NVPROF is profiling process 19920, command: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==19920== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19920== Profiling application: ./particlefilter -x 128 -y 128 -z 10 -np 1000
+==19920== Profiling result:
+==19920== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"stall_other","Issue Stall Reasons (Other)",7.220552%,7.634385%,7.377634%
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"stall_other","Issue Stall Reasons (Other)",9.602373%,11.262786%,10.244243%
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"stall_other","Issue Stall Reasons (Other)",0.673532%,0.722308%,0.690203%
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"stall_other","Issue Stall Reasons (Other)",6.575349%,6.710519%,6.635301%

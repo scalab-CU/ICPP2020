@@ -1,0 +1,7 @@
+==316== NVPROF is profiling process 316, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==316== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==316== Profiling result:
+==316== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"warp_execution_efficiency","Warp Execution Efficiency",99.991136%,99.991184%,99.991167%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"warp_execution_efficiency","Warp Execution Efficiency",91.504854%,91.565534%,91.535801%

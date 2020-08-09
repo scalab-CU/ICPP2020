@@ -1,0 +1,7 @@
+==788== NVPROF is profiling process 788, command: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==788== Profiling application: ./threadFenceReduction -n=25000000 2>&1 > /dev/null
+==788== Profiling result:
+==788== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"l2_read_transactions","L2 Read Transactions",3125640,3125640,3125640
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"l2_read_transactions","L2 Read Transactions",3125168,3125800,3125184

@@ -1,0 +1,12 @@
+==11606== NVPROF is profiling process 11606, command: ./cdpLUDecomposition -matrix-size=10000
+==11606== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==11606== Profiling application: ./cdpLUDecomposition -matrix-size=10000
+==11606== Profiling result:
+==11606== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void magma_bdmm_kernel<double, bool=1, int=5, int=5, int=3, int=3>(int, int, int, double*, double const *, double const *, int, int, int, double const *, double const *, double, double, int, int, bool, bool, bool, bool, bool, bool)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",4.486828%,4.486828%,4.486828%
+"Tesla P100-PCIE-12GB (0)","void trmm_right_kernel_core<double, int=256, int=4, int=128, bool=0, bool=1, bool=0, bool=0, bool=1>(cublasTrmmParams<double>, double, int)",8,"tex_cache_hit_rate","Unified Cache Hit Rate",23.934659%,24.155337%,24.033584%
+"Tesla P100-PCIE-12GB (0)","maxwell_dgemm_64x64_nn",1,"tex_cache_hit_rate","Unified Cache Hit Rate",0.549316%,0.549316%,0.549316%
+"Tesla P100-PCIE-12GB (0)","dgetrf_cdpentry(Parameters_s*)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",22.867152%,22.867152%,22.867152%
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dgemm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int)",6,"tex_cache_hit_rate","Unified Cache Hit Rate",0.000000%,2.354431%,0.724894%
+"Tesla P100-PCIE-12GB (0)","void magma_lds128_dtrmm_kernel<bool=0, bool=0, int=5, int=5, int=3, int=3, int=3>(int, int, double const *, int, double const *, int, double*, int, int, int, double const *, double const *, double, double, int, int, bool, bool)",1,"tex_cache_hit_rate","Unified Cache Hit Rate",8.000987%,8.000987%,8.000987%

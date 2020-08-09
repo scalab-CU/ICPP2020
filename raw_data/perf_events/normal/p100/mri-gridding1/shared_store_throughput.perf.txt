@@ -1,0 +1,14 @@
+==14843== NVPROF is profiling process 14843, command: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==14843== Profiling application: ./mri-gridding small.uks output.txt 2>&1 > /dev/null
+==14843== Profiling result:
+==14843== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","reorder_kernel(int, unsigned int*, ReconstructionSample*, sampleArrayStruct)",1,"shared_store_throughput","Shared Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","splitRearrange(int, int, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",7,"shared_store_throughput","Shared Memory Store Throughput",9.079342GB/s,9.124553GB/s,9.110510GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter1_kernel(unsigned int*, unsigned int)",9,"shared_store_throughput","Shared Memory Store Throughput",739.097595MB/s,263.515272GB/s,46.804001GB/s
+"Tesla P100-PCIE-12GB (0)","uniformAdd(unsigned int, unsigned int*, unsigned int*)",8,"shared_store_throughput","Shared Memory Store Throughput",1.090978GB/s,5.877636GB/s,5.497807GB/s
+"Tesla P100-PCIE-12GB (0)","scan_inter2_kernel(unsigned int*, unsigned int)",9,"shared_store_throughput","Shared Memory Store Throughput",1.257285GB/s,476.837158GB/s,79.465463GB/s
+"Tesla P100-PCIE-12GB (0)","binning_kernel(unsigned int, ReconstructionSample*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",1,"shared_store_throughput","Shared Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","gridding_GPU(sampleArrayStruct, unsigned int*, float2*, float*, float)",1,"shared_store_throughput","Shared Memory Store Throughput",0.000000B/s,0.000000B/s,0.000000B/s
+"Tesla P100-PCIE-12GB (0)","splitSort(int, int, unsigned int*, unsigned int*, unsigned int*)",7,"shared_store_throughput","Shared Memory Store Throughput",2605.107757GB/s,2746.562472GB/s,2682.518668GB/s
+"Tesla P100-PCIE-12GB (0)","scan_L1_kernel(unsigned int, unsigned int*, unsigned int*)",8,"shared_store_throughput","Shared Memory Store Throughput",318.070662GB/s,1260.298437GB/s,1200.908069GB/s

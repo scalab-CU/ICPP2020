@@ -1,0 +1,9 @@
+==7086== NVPROF is profiling process 7086, command: ./simpleHyperQ -nstreams=60 2>&1 > /dev/null
+==7086== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7086== Profiling application: ./simpleHyperQ -nstreams=60 2>&1 > /dev/null
+==7086== Profiling result:
+==7086== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","kernel_A(long*, long)",60,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011470%,0.018722%,0.013470%
+"Tesla P100-PCIE-12GB (0)","sum(long*, int)",1,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",15.250797%,15.250797%,15.250797%
+"Tesla P100-PCIE-12GB (0)","kernel_B(long*, long)",60,"stall_constant_memory_dependency","Issue Stall Reasons (Immediate constant)",0.011632%,0.014053%,0.012757%

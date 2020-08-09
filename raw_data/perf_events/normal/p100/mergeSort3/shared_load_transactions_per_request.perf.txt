@@ -1,0 +1,10 @@
+==32052== NVPROF is profiling process 32052, command: ./mergeSort 3 2>&1 > /dev/null
+==32052== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==32052== Profiling application: ./mergeSort 3 2>&1 > /dev/null
+==32052== Profiling result:
+==32052== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",0.000000,0.000000,0.000000
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.501306,1.501306,1.501306
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"shared_load_transactions_per_request","Shared Memory Load Transactions Per Request",1.031403,1.089750,1.070417

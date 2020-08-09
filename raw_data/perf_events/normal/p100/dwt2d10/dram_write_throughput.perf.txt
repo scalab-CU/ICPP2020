@@ -1,0 +1,9 @@
+==516== NVPROF is profiling process 516, command: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==516== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==516== Profiling application: ./dwt2d sample8.bmp -d 1920x1080 -f -5 -l 3 2>&1 > /dev/null
+==516== Profiling result:
+==516== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=128, int=8>(int const *, int*, int, int, int)",3,"dram_write_throughput","Device Memory Write Throughput",52.602204GB/s,53.283675GB/s,52.828721GB/s
+"Tesla P100-PCIE-12GB (0)","void dwt_cuda::fdwt53Kernel<int=192, int=8>(int const *, int*, int, int, int)",6,"dram_write_throughput","Device Memory Write Throughput",94.293965GB/s,145.687693GB/s,131.251462GB/s
+"Tesla P100-PCIE-12GB (0)","void c_CopySrcToComponents<int>(int*, int*, int*, unsigned char*, int)",1,"dram_write_throughput","Device Memory Write Throughput",282.794782GB/s,282.794782GB/s,282.794782GB/s

@@ -1,0 +1,8 @@
+==24453== NVPROF is profiling process 24453, command: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==24453== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24453== Profiling application: ./threadFenceReduction -n=20000000 2>&1 > /dev/null
+==24453== Profiling result:
+==24453== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduceMultiPass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",1,"shared_efficiency","Shared Memory Efficiency",23.875000%,23.875000%,23.875000%
+"Tesla P100-PCIE-12GB (0)","void reduceSinglePass<unsigned int=128, bool=0>(float const *, float*, unsigned int)",100,"shared_efficiency","Shared Memory Efficiency",23.541667%,23.541667%,23.541667%

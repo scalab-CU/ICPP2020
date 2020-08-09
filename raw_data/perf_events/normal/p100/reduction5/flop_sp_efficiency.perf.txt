@@ -1,0 +1,8 @@
+==4126== NVPROF is profiling process 4126, command: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==4126== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==4126== Profiling application: ./reduction -n=16777216 -type=float -kernel=5 2>&1 > /dev/null
+==4126== Profiling result:
+==4126== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=256>(float*, float*, unsigned int)",201,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.061250%,1.304722%,0.677958%
+"Tesla P100-PCIE-12GB (0)","void reduce5<float, unsigned int=32>(float*, float*, unsigned int)",100,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000252%,0.000346%,0.000309%

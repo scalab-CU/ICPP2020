@@ -1,0 +1,10 @@
+==23026== NVPROF is profiling process 23026, command: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==23026== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==23026== Profiling application: ./cfd fvcorr.domn.193K 2>&1 > /dev/null
+==23026== Profiling result:
+==23026== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","cuda_initialize_variables(int, float*)",3,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",38.515288%,39.241400%,38.795074%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_step_factor(int, float*, float*, float*)",2000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.878784%,3.282709%,1.261817%
+"Tesla P100-PCIE-12GB (0)","cuda_time_step(int, int, float*, float*, float*, float*)",6000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.766788%,1.042652%,0.895454%
+"Tesla P100-PCIE-12GB (0)","cuda_compute_flux(int, int*, float*, float*, float*)",6000,"stall_memory_throttle","Issue Stall Reasons (Memory Throttle)",0.608047%,1.024814%,0.872732%

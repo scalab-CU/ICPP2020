@@ -1,0 +1,9 @@
+==13122== NVPROF is profiling process 13122, command: ./particlefilter -x 512 -y 512 -z 10 -np 6000
+==13122== Profiling application: ./particlefilter -x 512 -y 512 -z 10 -np 6000
+==13122== Profiling result:
+==13122== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","sum_kernel(float*, int)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.189454,0.385475,0.355174
+"Tesla P100-PCIE-12GB (0)","likelihood_kernel(float*, float*, float*, float*, float*, int*, int*, float*, unsigned char*, float*, float*, int, int, int, int, int, int, int*, float*)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",1.851328,1.940277,1.919632
+"Tesla P100-PCIE-12GB (0)","normalize_weights_kernel(float*, int, float*, float*, float*, int*)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.046842,0.058019,0.055810
+"Tesla P100-PCIE-12GB (0)","find_index_kernel(float*, float*, float*, float*, float*, float*, float*, int)",9,"eligible_warps_per_cycle","Eligible Warps Per Active Cycle",0.914714,0.915866,0.915252

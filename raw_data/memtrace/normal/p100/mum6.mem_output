@@ -1,0 +1,14 @@
+==3092== NVPROF is profiling process 3092, command: ./mum ./data/NC_003997.20k.fna ./data/sample4.fna
+==3092== Profiling application: ./mum ./data/NC_003997.20k.fna ./data/sample4.fna
+==3092== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,B,B,MB,GB/s,,,,,,
+0.495532,0.002322,,,,,,,,,,19.073563,8.020482,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.497973,0.000002,,,,,,,,,,0.000153,0.095033,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.497988,0.000001,,,,,,,,,,0.000153,0.141109,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.498317,0.000149,,,,,,,,,,1.625000,10.626040,"Pageable","Array","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoA]"
+0.498757,0.004707,,,,,,,,,,37.375000,7.753497,"Pageable","Array","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoA]"
+0.503775,0.004511,,,,,,,,,,37.375000,8.090230,"Pageable","Array","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoA]"
+0.508695,0.000001,,,,,,,,,,152.582092,129345.442272,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.509085,4.499207,1,1,1,40,1,1,25,0,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","mummergpuKernel(MatchCoord*, char*, int const *, int const *, int, int) [131]"
+5.008397,0.052661,,,,,,,,,,152.582092,2.829558,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

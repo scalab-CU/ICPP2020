@@ -1,0 +1,9 @@
+==10177== NVPROF is profiling process 10177, command: ./scalarProd 7168
+==10177== Profiling application: ./scalarProd 7168
+==10177== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+1.365998,0.014254,,,,,,,,,,112.000000,7.673444,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.380384,0.014276,,,,,,,,,,112.000000,7.661455,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+1.394747,0.001671,128,1,1,256,1,1,24,4.000000,0,,,,,"Tesla K40m (0)","1","7","scalarProdGPU(float*, float*, float*, int, int) [120]"
+1.396456,0.000005,,,,,,,,,,0.027344,5.563100,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

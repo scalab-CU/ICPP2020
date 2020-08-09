@@ -1,0 +1,9 @@
+==24721== NVPROF is profiling process 24721, command: ./eigenvalues --matrix-size=8000 2>&1 > /dev/null
+==24721== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24721== Profiling application: ./eigenvalues --matrix-size=8000 2>&1 > /dev/null
+==24721== Profiling result:
+==24721== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_MultIntervals(float*, float*, unsigned int, unsigned int*, unsigned int*, float*, float*, unsigned int*, unsigned int*, float*, unsigned int*, float)",100,"gld_throughput","Global Load Throughput",2.699010GB/s,2.965939GB/s,2.962327GB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge(float*, float*, unsigned int, float, float, unsigned int, unsigned int, float, unsigned int*, unsigned int*, float*, float*, unsigned int*, float*, float*, unsigned int*, unsigned int*, unsigned int*, unsigned int*)",100,"gld_throughput","Global Load Throughput",104.871192MB/s,115.981147MB/s,115.836504MB/s
+"Tesla P100-PCIE-12GB (0)","bisectKernelLarge_OneIntervals(float*, float*, unsigned int, unsigned int, float*, float*, unsigned int*, float)",100,"gld_throughput","Global Load Throughput",104.210723MB/s,115.143682MB/s,115.010337MB/s

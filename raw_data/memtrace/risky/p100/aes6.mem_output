@@ -1,0 +1,10 @@
+==20280== NVPROF is profiling process 20280, command: ././aes e 256 ./data/barbara_gray.bmp ./data/key256.txt
+==20280== Profiling application: ././aes e 256 ./data/barbara_gray.bmp ./data/key256.txt
+==20280== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,KB,GB/s,,,,,,
+0.327117,0.000025,,,,,,,,,,258.000000,9.870346,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.327151,0.000001,,,,,,,,,,0.234375,0.199569,"Pageable","Device","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy HtoD]"
+0.327198,0.000001,,,,,,,,,,258.000000,256.299973,"Device",,"Tesla P100-PCIE-12GB (0)","1","7","[CUDA memset]"
+0.327242,0.000028,258,1,1,256,1,1,30,6.000000,0,,,,,"Tesla P100-PCIE-12GB (0)","1","7","aesEncrypt256(unsigned int*, unsigned int*, int) [119]"
+0.327292,0.000021,,,,,,,,,,258.000000,11.738930,"Device","Pageable","Tesla P100-PCIE-12GB (0)","1","7","[CUDA memcpy DtoH]"

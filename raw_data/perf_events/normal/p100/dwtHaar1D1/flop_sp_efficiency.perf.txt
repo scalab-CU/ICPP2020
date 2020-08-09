@@ -1,0 +1,8 @@
+==13310== NVPROF is profiling process 13310, command: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==13310== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13310== Profiling application: ./dwtHaar1D --signal=./data/signal.dat --result=tmp.dat --gold=regression.gold.dat 2>&1 > /dev/null
+==13310== Profiling result:
+==13310== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","initValue(float*, float)",1,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000000%,0.000000%,0.000000%
+"Tesla P100-PCIE-12GB (0)","dwtHaar1D(float*, float*, float*, unsigned int, unsigned int, int)",2,"flop_sp_efficiency","FLOP Efficiency(Peak Single)",0.000022%,0.022599%,0.011311%

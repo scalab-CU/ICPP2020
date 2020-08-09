@@ -1,0 +1,8 @@
+==1905== NVPROF is profiling process 1905, command: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==1905== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==1905== Profiling application: ./reduction -n=33554432 -type=float 2>&1 > /dev/null
+==1905== Profiling result:
+==1905== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=256, bool=1>(float*, float*, unsigned int)",101,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",96.875000%,96.875000%,96.875000%
+"Tesla P100-PCIE-12GB (0)","void reduce6<float, unsigned int=32, bool=1>(float*, float*, unsigned int)",100,"l2_tex_write_hit_rate","L2 Hit Rate (Texture Writes)",0.000000%,0.000000%,0.000000%

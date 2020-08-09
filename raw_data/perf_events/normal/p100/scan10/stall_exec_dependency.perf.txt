@@ -1,0 +1,9 @@
+==13678== NVPROF is profiling process 13678, command: ./scan 72 2>&1 > /dev/null
+==13678== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13678== Profiling application: ./scan 72 2>&1 > /dev/null
+==13678== Profiling result:
+==13678== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared2(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",8.291849%,12.539546%,10.685416%
+"Tesla P100-PCIE-12GB (0)","scanExclusiveShared(uint4*, uint4*, unsigned int)",1700,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.533621%,12.072732%,10.150329%
+"Tesla P100-PCIE-12GB (0)","uniformUpdate(uint4*, unsigned int*)",800,"stall_exec_dependency","Issue Stall Reasons (Execution Dependency)",1.022669%,1.213366%,1.100164%

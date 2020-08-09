@@ -1,0 +1,16 @@
+==32331== NVPROF is profiling process 32331, command: ././crc_gpu input9.in 2>&1 > /dev/null
+nThreads = 128  
+tbSize = 1024  
+nBlocks = 1  
+value in partialcrc = 0XF3200000  
+value in hostpartialcrc = 0X6601B7B8  
+
+Execution time: 192.429764 ms
+After cuda, hostpartialcrc[0] = 0X358D42A2  
+After cuda, hostpartialcrc[0] = 898450082  
+Program Ended Successfully!
+==32331== Profiling application: ././crc_gpu input9.in 2>&1 > /dev/null
+==32331== Profiling result:
+==32331== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","crcCalKernel(char*, long*, unsigned int)",1,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",22.212142%,22.212142%,22.212142%

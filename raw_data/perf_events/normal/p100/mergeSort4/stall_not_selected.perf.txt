@@ -1,0 +1,10 @@
+==13544== NVPROF is profiling process 13544, command: ./mergeSort 4 2>&1 > /dev/null
+==13544== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==13544== Profiling application: ./mergeSort 4 2>&1 > /dev/null
+==13544== Profiling result:
+==13544== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","mergeRanksAndIndicesKernel(unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",24,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.275241%,2.255907%,1.604096%
+"Tesla P100-PCIE-12GB (0)","void generateSampleRanksKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int, unsigned int)",12,"stall_not_selected","Issue Stall Reasons (Not Selected)",0.116786%,0.279937%,0.195902%
+"Tesla P100-PCIE-12GB (0)","void mergeSortSharedKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int)",1,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.741277%,1.741277%,1.741277%
+"Tesla P100-PCIE-12GB (0)","void mergeElementaryIntervalsKernel<unsigned int=1>(unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int*, unsigned int, unsigned int)",12,"stall_not_selected","Issue Stall Reasons (Not Selected)",1.187457%,1.278322%,1.244858%

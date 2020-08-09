@@ -1,0 +1,9 @@
+==21633== NVPROF is profiling process 21633, command: ./histogram 128 2>&1 > /dev/null
+==21633== Profiling application: ./histogram 128 2>&1 > /dev/null
+==21633== Profiling result:
+==21633== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","histogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",99.979723%,99.979723%,99.979723%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram256Kernel(unsigned int*, unsigned int*, unsigned int)",17,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",71.305625%,71.305870%,71.305755%
+"Tesla P100-PCIE-12GB (0)","mergeHistogram64Kernel(unsigned int*, unsigned int*, unsigned int)",17,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",86.073826%,86.076229%,86.075470%
+"Tesla P100-PCIE-12GB (0)","histogram64Kernel(unsigned int*, uint4*, unsigned int)",17,"warp_nonpred_execution_efficiency","Warp Non-Predicated Execution Efficiency",99.831446%,99.831446%,99.831446%

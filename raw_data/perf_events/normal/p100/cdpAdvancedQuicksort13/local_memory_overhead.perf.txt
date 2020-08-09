@@ -1,0 +1,7 @@
+==19481== NVPROF is profiling process 19481, command: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=3000 2>&1 > /dev/null
+==19481== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==19481== Profiling application: ./cdpAdvancedQuicksort --size=2000000 --seed=2000 --loop-step=3000 2>&1 > /dev/null
+==19481== Profiling result:
+==19481== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","qsort_warp(unsigned int*, unsigned int*, unsigned int, unsigned int, qsortAtomicData_t*, qsortRingbuf_t*, unsigned int, unsigned int)",666,"local_memory_overhead","Local Memory Overhead",30.528798%,72.317442%,44.617856%

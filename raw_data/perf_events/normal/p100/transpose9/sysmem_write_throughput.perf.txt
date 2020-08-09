@@ -1,0 +1,13 @@
+==26605== NVPROF is profiling process 26605, command: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==26605== Profiling application: ./transpose -dimX=8000 -dimY=8000 2>&1 > /dev/null
+==26605== Profiling result:
+==26605== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","copySharedMem(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",124.021484KB/s,124.318359KB/s,124.192383KB/s
+"Tesla P100-PCIE-12GB (0)","transposeFineGrained(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",124.384766KB/s,124.731445KB/s,124.553711KB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoalesced(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",89.404297KB/s,89.883789KB/s,89.647461KB/s
+"Tesla P100-PCIE-12GB (0)","transposeNoBankConflicts(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",89.546875KB/s,90.038086KB/s,89.776367KB/s
+"Tesla P100-PCIE-12GB (0)","transposeDiagonal(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",63.448242KB/s,63.892578KB/s,63.713867KB/s
+"Tesla P100-PCIE-12GB (0)","copy(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",124.229492KB/s,124.871094KB/s,124.655273KB/s
+"Tesla P100-PCIE-12GB (0)","transposeNaive(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",20.333984KB/s,20.353516KB/s,20.343750KB/s
+"Tesla P100-PCIE-12GB (0)","transposeCoarseGrained(float*, float*, int, int)",101,"sysmem_write_throughput","System Memory Write Throughput",89.572266KB/s,90.076172KB/s,89.795898KB/s

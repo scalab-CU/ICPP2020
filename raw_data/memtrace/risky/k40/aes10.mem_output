@@ -1,0 +1,10 @@
+==9237== NVPROF is profiling process 9237, command: ././aes e 256 ./data/MARBLES.bmp ./data/key256.txt
+==9237== Profiling application: ././aes e 256 ./data/MARBLES.bmp ./data/key256.txt
+==9237== Profiling result:
+"Start","Duration","Grid X","Grid Y","Grid Z","Block X","Block Y","Block Z","Registers Per Thread","Static SMem","Dynamic SMem","Size","Throughput","SrcMemType","DstMemType","Device","Context","Stream","Name"
+s,s,,,,,,,,KB,B,MB,GB/s,,,,,,
+0.327622,0.000482,,,,,,,,,,4.067383,8.234454,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.328115,0.000001,,,,,,,,,,0.000229,0.232831,"Pageable","Device","Tesla K40m (0)","1","7","[CUDA memcpy HtoD]"
+0.328347,0.000001,,,,,,,,,,4.067383,3761.414326,"Device",,"Tesla K40m (0)","1","7","[CUDA memset]"
+0.328396,0.000931,4165,1,1,256,1,1,32,6.000000,0,,,,,"Tesla K40m (0)","1","7","aesEncrypt256(unsigned int*, unsigned int*, int) [119]"
+0.329352,0.001440,,,,,,,,,,4.067383,2.757867,"Device","Pageable","Tesla K40m (0)","1","7","[CUDA memcpy DtoH]"

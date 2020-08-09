@@ -1,0 +1,11 @@
+==24750== NVPROF is profiling process 24750, command: ./shfl_scan 500000 2>&1 > /dev/null
+==24750== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==24750== Profiling application: ./shfl_scan 500000 2>&1 > /dev/null
+==24750== Profiling result:
+==24750== Metric result:
+"Device","Kernel","Invocations","Metric Name","Metric Description","Min","Max","Avg"
+"Tesla P100-PCIE-12GB (0)","shfl_intimage_rows(uint4*, uint4*)",1,"gld_transactions_per_request","Global Load Transactions Per Request",15.000000,15.000000,15.000000
+"Tesla P100-PCIE-12GB (0)","shfl_vertical_shfl(unsigned int*, int, int)",1,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000
+"Tesla P100-PCIE-12GB (0)","uniform_add(int*, int*, int)",1,"gld_transactions_per_request","Global Load Transactions Per Request",7.222222,7.222222,7.222222
+"Tesla P100-PCIE-12GB (0)","shfl_scan_test(int*, int, int*)",2,"gld_transactions_per_request","Global Load Transactions Per Request",8.000000,8.000000,8.000000
+======== Error: Application returned non-zero code 1
